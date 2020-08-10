@@ -16,3 +16,10 @@ Vivekanand Education Society's Institute of Technology
 
 
 This project is divided into two parts
+
+
+# Streamlit
+
+
+
+# Flutter
