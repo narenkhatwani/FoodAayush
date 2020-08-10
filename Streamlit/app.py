@@ -1,4 +1,12 @@
+#import libraries
 import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.express as px
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+import matplotlib.pyplot as plt
+ 
 
 #https://docs.streamlit.io/en/stable/api.html#display-text
 #for widget types 
@@ -13,3 +21,23 @@ st.markdown('Food Quality Analysis at your fingertips')
 st.sidebar.title("Menu")
 
 st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
+
+#read csv file
+DATA_URL = ("resources/assets/01.csv")
+
+
+#for data caching
+#in streamlit the whole code is rerun everytime so cache would be stored and some error might occur in rare cases
+@st.cache(persist=True)
+#the above line is to clear the cache on every run command execution
+
+#to load the csv file
+def load_data():
+    data = pd.read_csv(DATA_URL)
+    return data
+
+#to load the csv file and display it
+data = load_data()
+
+#to print a small iframe of the csv file 
+'Dataset Preview',data

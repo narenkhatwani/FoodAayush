@@ -1,0 +1,48 @@
+{
+  "name": "@ifct2017/compositions",
+  "version": "1.1.8",
+  "description": "Detailed nutrient composition of 528 key foods in India.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifct2017/compositions.git"
+  },
+  "keywords": [
+    "ifct",
+    "2017",
+    "compositions",
+    "indian",
+    "food",
+    "composition",
+    "tables",
+    "carbohydrates",
+    "proteins",
+    "fats",
+    "amino",
+    "acids",
+    "vitamins",
+    "minerals",
+    "national",
+    "institute",
+    "nutrition",
+    "research"
+  ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifct2017/compositions/issues"
+  },
+  "homepage": "https://github.com/ifct2017/compositions#readme",
+  "devDependencies": {
+    "@ifct2017/descriptions": "1.0",
+    "@ifct2017/groups": "1.0"
+  },
+  "dependencies": {
+    "csv-parse": "4.8",
+    "lunr": "2.3",
+    "sql-extra": "0.1"
+  }
+}
