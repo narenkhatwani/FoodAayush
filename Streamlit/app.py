@@ -7,7 +7,7 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
  
-
+#https://github.com/MarcSkovMadsen/awesome-streamlit
 #https://docs.streamlit.io/en/stable/api.html#display-text
 #for widget types 
 
