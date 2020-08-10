@@ -44,3 +44,14 @@ data = load_data()
 #to print a small iframe of the csv file 
 #format is 'name displayed above dataset','variable in which csv is loaded'
 'Dataset Preview',data
+
+
+x = st.slider('Select a value')
+st.write(x, 'squared is', x * x)
+
+water = st.slider("Slider check", 0, 23)
+
+data1 = data[water]== water
+
+"test",data1
+
