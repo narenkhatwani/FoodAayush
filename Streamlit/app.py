@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 #https://github.com/MarcSkovMadsen/awesome-streamlit
 #https://docs.streamlit.io/en/stable/api.html#display-text
 #for widget types 
-
+ 
 
 # adding title
 st.title('Food Aayush')
