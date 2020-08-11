@@ -54,3 +54,34 @@ food_name_input = st.multiselect('Food name',data.groupby('name').count().reset_
 if len(food_name_input) > 0:
     subset_data = data[data['name'].isin(food_name_input)]
 
+#sidebar title
+st.sidebar.title("Filter data")
+
+#Checkbox for Hospitals
+food_list = st.sidebar.selectbox("Select food name", data["name"].unique())
+
+
+
+st.markdown(f"<span style='color: black;font-size: 24px;font-weight: bold;'>You selected- {food_list}</span>", unsafe_allow_html=True)
+
+
+#counts of various nutritional contents of a food item
+count_water = data.loc[(data["name"] == food_list) , 'water'].iloc[0]
+count_protein = data.loc[(data["name"] == food_list) , 'protcnt'].iloc[0]
+count_ash = data.loc[(data["name"] == food_list) , 'ash'].iloc[0]
+count_fat = data.loc[(data["name"] == food_list) , 'fatce'].iloc[0]
+count_fibretotal = data.loc[(data["name"] == food_list) , 'fibtg'].iloc[0]
+count_fibreinsoluble = data.loc[(data["name"] == food_list) , 'fibins'].iloc[0]
+count_fibresoluble = data.loc[(data["name"] == food_list) , 'fibsol'].iloc[0]
+count_carbohydrate = data.loc[(data["name"] == food_list) , 'choavldf'].iloc[0]
+count_energy = data.loc[(data["name"] == food_list) , 'enerc'].iloc[0]
+
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Water- {count_water}g</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Protein- {count_protein}g</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Ash- {count_ash}g</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Fat- {count_fat}g</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Total Fibre- {count_fibretotal}g</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Insoluble Fibre- {count_fibreinsoluble}g</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Soluble Fibre- {count_fibresoluble}g</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Carbohydrates- {count_carbohydrate}g</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Energy- {count_energy}kJ</span>", unsafe_allow_html=True)
