@@ -6,7 +6,7 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
- 
+import altair as alt
 #https://github.com/MarcSkovMadsen/awesome-streamlit
 #https://docs.streamlit.io/en/stable/api.html#display-text
 #for widget types 
@@ -25,7 +25,7 @@ st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the
 st.sidebar.title("Menu")
 
 #read csv file
-DATA_URL = ("resources/assets/01.csv")
+DATA_URL = ("resources/assets/demo.csv")
 
 
 #for data caching
@@ -45,13 +45,12 @@ data = load_data()
 #format is 'name displayed above dataset','variable in which csv is loaded'
 'Dataset Preview',data
 
+subset_data=data
 
-x = st.slider('Select a value')
-st.write(x, 'squared is', x * x)
+### MULTISELECT
+food_name_input = st.multiselect('Food name',data.groupby('name').count().reset_index()['name'].tolist())
 
-water = st.slider("Slider check", 0, 23)
-
-data1 = data[water]== water
-
-"test",data1
+# by food name
+if len(food_name_input) > 0:
+    subset_data = data[data['name'].isin(food_name_input)]
 
