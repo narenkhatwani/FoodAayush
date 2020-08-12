@@ -103,6 +103,6 @@ ingredient_3 = st.sidebar.selectbox("Select 3rd ingredient name", data2["ing3"].
 ingredient_4 = st.sidebar.selectbox("Select 4th ingredient name", data2["ing4"].unique())
 ingredient_5 = st.sidebar.selectbox("Select 5th ingredient name", data2["ing5"].unique())
 
-recipe = data2.loc[(data2['ing1'] == ingredient_1) & (data2['ing2'] == ingredient_2), 'name'].iloc[0]
+recipe = data2.loc[(data2['ing1'] == ingredient_1) & (data2['ing2'] == ingredient_2) & (data2['ing3'] == ingredient_3) & (data2['ing4'] == ingredient_4) & (data2['ing5'] == ingredient_5), 'name'].iloc[0]
 
 st.markdown(f"<span style='color: black;font-size: 24px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
