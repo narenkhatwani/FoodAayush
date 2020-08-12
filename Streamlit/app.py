@@ -26,7 +26,7 @@ st.sidebar.title("Menu")
 
 #read csv file
 DATA_URL = ("resources/assets/demo.csv")
-
+DATA_URL2 = ("resources/assets/ingredient.csv")
 
 #for data caching
 #in streamlit the whole code is rerun everytime so cache would be stored and some error might occur in rare cases
@@ -38,8 +38,13 @@ def load_data():
     data = pd.read_csv(DATA_URL)
     return data
 
+def load_data2():
+    data2 = pd.read_csv(DATA_URL2)
+    return data2
+
 #to load the csv file and display it
 data = load_data()
+data2= load_data2()
 
 #to print a small iframe of the csv file 
 #format is 'name displayed above dataset','variable in which csv is loaded'
@@ -85,3 +90,19 @@ st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Insol
 st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Soluble Fibre- {count_fibresoluble}g</span>", unsafe_allow_html=True)
 st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Carbohydrates- {count_carbohydrate}g</span>", unsafe_allow_html=True)
 st.markdown(f"<span style='color: blue;font-size: 24px;font-weight: bold;'>Energy- {count_energy}kJ</span>", unsafe_allow_html=True)
+
+#sidebar title
+st.sidebar.title("Search for Recipe")
+
+'Dataset Preview',data2
+
+#Checkbox for Hospitals
+ingredient_1 = st.sidebar.selectbox("Select 1st ingredient name", data2["ing1"].unique())
+ingredient_2 = st.sidebar.selectbox("Select 2nd ingredient name", data2["ing2"].unique())
+ingredient_3 = st.sidebar.selectbox("Select 3rd ingredient name", data2["ing3"].unique())
+ingredient_4 = st.sidebar.selectbox("Select 4th ingredient name", data2["ing4"].unique())
+ingredient_5 = st.sidebar.selectbox("Select 5th ingredient name", data2["ing5"].unique())
+
+recipe = data2.loc[(data2['ing1'] == ingredient_1) & (data2['ing2'] == ingredient_2), 'name'].iloc[0]
+
+st.markdown(f"<span style='color: black;font-size: 24px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
