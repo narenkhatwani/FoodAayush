@@ -25,8 +25,8 @@ st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the
 st.sidebar.title("Menu")
 
 #read csv file
-DATA_URL = ("resources/assets/demo.csv")
-DATA_URL2 = ("resources/assets/ingredient.csv")
+DATA_URL = ("resources/assets_modified/01.csv")
+DATA_URL2 = ("resources/assets_modified/ingredient.csv")
 
 #for data caching
 #in streamlit the whole code is rerun everytime so cache would be stored and some error might occur in rare cases
