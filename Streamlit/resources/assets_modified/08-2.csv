@@ -1,0 +1,529 @@
+,code,name,regn,ala,arg,asp,glu,gly,pro,ser,tyr
+0,A001,"Amaranth seed, black (Amaranthus cruentus)",1,4.26,7.77,12.57,16.12,8.5,3.76,7.79,2.85
+1,A002,"Amaranth seed, pale brown (Amaranthus cruentus)",6,3.83,7.21,12.70,17.39,8.28,3.83,7.27,3.10
+2,A003,Bajra (Pennisetum typhoideum),6,7.68,4.54,7.77,17.42,3.52,5.30,4.44,2.67
+3,A004,Barley (Hordeum vulgare),6,4.20,5.22,6.51,26.75,4.03,9.79,4.80,2.68
+4,A005,Jowar (Sorghum vulgare),6,9.19,3.96,7.09,21.54,3.08,6.99,4.02,3.61
+5,A006,"Maize, dry (Zea mays)",6,7.73,4.20,6.55,19.39,3.27,7.88,4.58,3.71
+6,A007,"Maize, tender, local (Zea mays)",6,9.90,3.05,9.24,20.05,4.50,7.91,6.07,3.15
+7,A008,"Maize, tender, sweet (Zea mays)",4,7.61,3.63,8.55,18.72,4.65,8.60,5.62,3.26
+8,A009,Quinoa(Chenopodium quinoa),1,4.35,7.85,8.4,13.75,4.8,5.67,4.56,1.98
+9,A010,Ragi (Eleusine coracana),5,6.71,4.33,6.40,20.22,3.59,5.42,4.81,3.37
+10,A011,Rice flakes (Oryza sativa ),6,6.34,7.62,9.20,18.60,4.35,4.27,4.78,3.75
+11,A012,Rice puffed (Oryza sativa ),6,6.19,7.04,8.79,17.96,4.03,4.04,4.62,4.13
+12,A013,"Rice, raw, brown (Oryza sativa )",6,6.60,7.69,8.68,18.75,4.28,4.33,4.64,4.36
+13,A014,"Rice, parboiled, milled (Oryza sativa )",6,5.60,7.95,8.51,19.22,4.19,4.04,4.60,4.43
+14,A015,"Rice, raw, milled (Oryza sativa )",6,5.51,7.72,8.73,18.92,4.18,4.31,4.95,4.36
+15,A016,Samai (Panicum miliare),6,8.60,5.96,5.51,20.22,3.43,6.04,5.60,3.43
+16,A017,Varagu (Setaria italica),5,11.00,3.18,5.61,18.25,3.12,7.33,5.50,3.87
+17,A018,"Wheat flour, refined (Triticum aestivum)",6,2.98,3.49,4.63,31.57,3.21,9.23,4.77,2.62
+18,A019,"Wheat flour, atta (Triticum aestivum)",6,3.88,4.70,5.06,29.61,3.76,10.27,4.73,2.10
+19,A020,"Wheat, whole (Triticum aestivum)",6,3.64,5.13,5.44,27.06,4.19,10.25,4.80,3.12
+20,A021,"Wheat, bulgur (Triticum aestivum)",6,3.48,5.36,5.15,30.48,4.27,10.49,4.87,2.46
+21,A022,"Wheat, semolina (Triticum aestivum)",6,3.46,4.34,4.94,31.05,3.50,9.49,4.44,3.00
+22,A023,"Wheat, vermicelli (Triticum aestivum)",6,3.59,2.98,5.39,31.96,4.54,9.89,5.33,2.18
+23,A024,"Wheat, vermicelli, roasted (Triticum aestivum)",6,3.74,2.84,4.78,34.08,4.35,9.43,5.35,1.92
+24,B001 ,"Bengal gram, dal (Cicer arietinum) ",6,4.11 ,8.83 ,11.73 ,16.52 ,3.46 ,3.53 ,4.56 ,2.72
+25,B002,"Bengal gram, whole (Cicer arietinum)",6,4.67,8.59,11.78,17.27,3.95,3.74,5.10,2.88
+26,B003,"Black gram, dal (Phaseolus mungo)",6,4.73,6.25,11.96,18.38,3.38,3.73,5.54,3.04
+27,B004,"Black gram, whole (Phaseolus mungo)",6,4.64,6.06,13.12,19.00,3.80,4.03,5.29,3.06
+28,B005,"Cowpea, brown (Vigna catjang)",6,4.24,7.10,10.11,19.02,4.69,4.60,4.44,2.83
+29,B006,"Cowpea, white (Vigna catjang)",1,5.06,7.44,11.01,18.2,4.09,4.05,4.8,3.25
+30,B007,"Field bean, black (Phaseolus vulgaris)",1,5.47,7.49,10.47,17.14,4.74,4.43,5.76,4
+31,B008,"Field bean, brown (Phaseolus vulgaris)",1,5.37,7.71,10.07,17.28,4.25,4.43,5.61,3.85
+32,B009,"Field bean, white (Phaseolus vulgaris)",5,5.19,7.01,10.61,16.59,4.04,4.24,5.51,3.84
+33,B010,"Green gram, dal (Phaseolus aureus)",6,4.59,6.51,12.10,17.43,3.70,3.67,5.01,2.95
+34,B011,"Green gram, whole (Phaseolus aureus)",6,4.94,6.62,10.99,18.59,3.78,4.07,5.50,2.83
+35,B012,"Horse gram, whole (Dolicus biflorus)",6,4.60,5.87,11.24,18.54,4.03,3.72,5.19,3.18
+36,B013,Lentil dal (Lens culinaris),6,4.45,7.92,12.69,18.31,3.67,3.63,4.90,2.95
+37,B014,"Lentil whole, brown (Lens culinaris)",6,5.75,7.44,12.48,17.25,4.78,5.01,5.51,2.40
+38,B015,"Lentil whole, yellowish (Lens culinaris)",2,5.59,7.74,12.93,16.48,4.89,4.5,5.68,2.81
+39,B016,Moth bean (Vigna aconitifolia),6,5.00,7.68,10.54,16.89,3.68,3.95,5.04,2.92
+40,B017,"Peas, dry (Pisum sativum)",6,4.51,8.09,11.34,17.52,4.19,3.73,4.83,3.25
+41,B018,"Rajmah, black (Phaseolus vulgaris)",2,4.68,5.81,12.96,18.89,3.42,3.23,5.1,3.1
+42,B019,"Rajmah, brown (Phaseolus vulgaris)",6,4.59,5.96,11.35,16.60,3.90,3.63,5.81,3.24
+43,B020,"Rajmah, red (Phaseolus vulgaris)",3,4.57,6.10,10.50,16.01,3.78,3.40,5.74,3.12
+44,B021,"Red gram, dal (Cajanus cajan)",6,4.49,5.87,10.26,21.50,3.23,3.94,4.26,2.32
+45,B022,"Red gram, whole (Cajanus cajan)",6,4.35,5.98,10.41,20.27,3.33,3.93,4.40,2.54
+46,B023,Ricebean (Vigna umbellata ),1,4.76,5.58,10.12,17.32,4.28,4.2,4.83,3.12
+47,B024,"Soya bean, brown (Glycine max)",6,4.32,6.62,11.47,18.27,3.79,4.40,4.91,3.21
+48,B025,"Soya bean, white (Glycine max)",1,4.33,7.33,11.4,16.78,3.89,3.24,4.62,3.32
+49,C001,Agathi leaves (Sesbania grandiflora),1,7.22,4.58,10.61,15.78,5.47,4.63,4.44,3.76
+50,C002,"Amaranth leaves, green (Amaranthus gangeticus)",6,6.55,6.10,9.22,12.75,5.59,4.45,4.62,3.69
+51,C003,"Amaranth leaves, red (Amaranthus gangeticus)",1,6.56,5.83,9.14,12.86,5.12,4.07,4.5,3.01
+52,C004,"Amaranth leaves, red and green (Amaranthus gangeticus)",4,7.89,6.61,9.91,13.04,5.93,4.93,4.89,3.76
+53,C005,"Amaranth spinosus, leaves, green (Amaranthus spinosus)",4,8.42,5.78,10.87,11.77,6.10,5.39,5.29,3.43
+54,C006,"Amaranth spinosus, leaves, red and green (Amaranthus spinosus)",2,8.34,5.4,9.74,11.98,6.1,5.31,5.23,3.42
+55,C007,Basella leaves (Basella alba),2,7.42,5.18,9.22,12.97,5.71,4.83,4.61,3.44
+56,C008,Bathua leaves (Chenopodium album),2,6.52,5.04,10.04,13.68,7.18,4.72,4.16,3.98
+57,C009,Beet greens (Beta vulgaris),6,6.19,2.91,6.91,12.10,4.25,3.96,3.76,2.96
+58,C010,"Betel leaves, big (kolkata) (Piper betle)",6,8.68,4.94,12.59,13.33,7.50,5.43,6.16,3.48
+59,C011,"Betel leaves, small (Piper betle)",4,7.61,4.59,11.69,12.99,7.88,5.13,6.21,3.37
+60,C012,Brussels sprouts (Brassica oleracea var. gemmifera),1,4.63,7.63,12.36,20.82,4.54,8.89,5.45,2.37
+61,C013,"Cabbage, Chinese (Brassica rupa)",1,6.37,5.84,10.84,21.42,3.82,3.76,5.82,2.05
+62,C014,"Cabbage, collard greens (Brassica oleracea var. viridis)",1,7.68,4.32,11.13,21.91,5.61,5.35,4.2,2.78
+63,C015,"Cabbage, green (Brassica oleracea var. capitata f. alba)",6,6.26,4.57,10.55,26.30,3.24,3.98,4.02,2.11
+64,C016,"Cabbage, violet (Brassica oleracea var. capitata f. rubra)",2,6.17,4.67,11.53,28.6,3.04,4.34,4.22,2.29
+65,C017,Cauliflower leaves (Brassica oleracea var. botrytis),6,6.82,5.89,11.76,22.09,3.96,4.63,5.14,0.77
+66,C018,"Colocasia leaves, green (Colocasia anti-quorum)",6,9.40,5.84,8.55,15.25,4.66,5.01,4.52,3.78
+67,C019,Drumstick leaves (Moringa oleifera),3,7.18,5.56,11.94,16.87,4.60,4.00,4.79,2.87
+68,C020,Fenugreek leaves (Trigonella foenum graecum),5,6.06,5.45,13.48,11.12,5.21,4.92,3.94,3.55
+69,C021,Garden cress (Lepidium sativum),2,7.15,4.41,12.48,15.7,5.79,5.06,4,3.5
+70,C022,"Gogu leaves, green (Hibiscus cannabinus)",4,7.30,6.04,11.78,12.63,5.17,4.31,4.88,3.40
+71,C023,"Gogu leaves, red (Hibiscus cannabinus)",1,6.79,6.92,12.21,12.82,5.57,4.69,4.79,3.8
+72,C024,"Knol-Khol, leaves (Brassica oleracea var. gongylodes)",2,6.76,5.3,10.33,18,5.31,5.39,4.48,2.9
+73,C025,Lettuce (Lactuca sativa),3,6.51,4.77,11.32,16.10,5.68,4.51,3.80,3.00
+74,C026,Mustard leaves (Brassica juncea),3,6.60,5.74,10.86,18.67,5.31,4.65,5.11,3.21
+75,C027,Pak Choi leaves(Brassica rapa var. Chinensis),1,5.86,6.58,9.58,12.86,4.87,4.76,4.61,3.48
+76,C028,Parsley (Petroselinum crispum),3,7.18,4.53,11.18,12.86,5.06,4.63,4.56,3.00
+77,C029,Ponnaganni (Alternanthera sessilis),2,6.83,4.67,9.32,14.56,6.02,5.4,4.46,3.25
+78,C030,"Pumpkin leaves, tender (Cucurbita maxima)",6,5.62,6.02,11.79,14.36,5.50,5.25,4.65,3.46
+79,C031,Radish leaves (Raphanus sativus),6,7.90,4.80,9.71,17.10,5.50,4.04,4.73,3.05
+80,C032,Rumex leaves (Rumex patientia ),2,7.99,5,10.22,15.67,7.48,3.99,5.79,2.53
+81,C033,Spinach (Spinacia oleracea),6,6.78,5.41,9.24,14.77,5.70,4.70,4.40,3.95
+82,C034,"Tamarind leaves, tender (Tamarindus indica)",3,6.63,5.58,8.29,13.45,5.81,4.68,4.32,3.93
+83,D001 ,Ash gourd (Benincasa hispida) ,6,5.66 ,7.83 ,10.67 ,17.95 ,5.59 ,3.99 ,4.06 ,2.88
+84,D002,"Bamboo shoot, tender (Bambusa vulgaris)",1,4.85,4.63,14.57,11.85,4.48,7.85,5.12,3.94
+85,D003,"Bean scarlet, tender (Phaseolus coccineus)",5,5.62,6.07,11.88,16.07,4.76,4.68,5.50,2.83
+86,D004,"Bitter gourd, jagged, teeth ridges, elongate (Momordica charantia)",6,4.90,13.97,7.65,8.50,5.45,4.74,4.11,4.77
+87,D005,"Bitter gourd, jagged, teeth ridges, short (Momordica charantia)",4,4.79,13.01,7.83,8.74,5.26,4.75,4.26,4.61
+88,D006,"Bitter gourd, jagged, smooth ridges, elongate (Momordica charantia)",1,5.64,12.77,8.34,8.9,5.34,4.66,4.41,4.68
+89,D007,"Bottle gourd, elongate, pale green (Lagenaria vulgaris)",6,7.18,5.95,9.15,17.27,5.08,4.64,4.86,3.08
+90,D008,"Bottle gourd, round, pale green (Lagenaria vulgaris)",5,6.91,5.95,9.23,16.19,5.12,4.74,5.10,3.56
+91,D009,"Bottle gourd, elongate, dark green (Lagenaria vulgaris)",1,8.94,6.19,9.33,15.69,4.95,4.85,4.74,3.65
+92,D010,Brinjal-1 (Solanum melongena),1,5.59,4.42,15.95,20.57,4.44,3.85,3.34,2.26
+93,D011,Brinjal-2 (Solanum melongena),1,3.72,5.14,16.15,20.56,3.4,3.54,3.09,2.3
+94,D012,Brinjal-3 (Solanum melongena),2,3.84,4.55,14.44,20.14,3.77,3.55,3.62,2.59
+95,D013,Brinjal-4 (Solanum melongena),4,5.03,5.27,15.98,20.30,3.97,3.74,4.03,2.68
+96,D014,Brinjal-5 (Solanum melongena),3,4.98,5.49,14.14,21.64,3.86,3.76,3.52,3.15
+97,D015,Brinjal-6 (Solanum melongena),2,5.5,4.7,15.15,22.59,4.78,3.64,3.57,4.46
+98,D016,Brinjal-7 (Solanum melongena),1,7.03,5.34,14.02,17.88,4.32,4.19,4.67,3.01
+99,D017,Brinjal-8(Solanum melongena),3,5.75,5.37,15.40,19.63,4.60,3.90,4.22,3.32
+100,D018,Brinjal-9(Solanum melongena),2,5.31,5.97,16.1,15.96,4.63,3.96,4.01,2.99
+101,D019,Brinjal-10 (Solanum melongena),2,4.39,5.95,15.27,21.73,3.66,3.25,3.01,2.48
+102,D020,Brinjal-11 (Solanum melongena),6,5.71,4.98,16.71,20.98,4.28,3.49,3.82,2.88
+103,D021,Brinjal-12 (Solanum melongena),2,5.07,5.25,15.62,19.92,4.18,3.04,3.46,2.51
+104,D022,Brinjal-13(Solanum melongena),1,5.43,5.57,16.67,18.85,3.71,3.74,3.82,2.79
+105,D023,Brinjal-14(Solanum melongena),3,5.37,5.23,16.21,19.59,3.91,4.08,3.35,2.60
+106,D024,Brinjal-15 (Solanum melongena),4,5.31,4.48,16.23,20.53,3.81,3.26,3.79,2.68
+107,D025,Brinjal-16(Solanum melongena),1,5.54,5.43,16.88,21.96,3.85,3.12,3.85,2.17
+108,D026,Brinjal-17(Solanum melongena),1,5.19,5.61,15.45,19.39,3.94,3.28,3.83,2.99
+109,D027,Brinjal-18 (Solanum melongena),3,5.51,4.98,15.68,21.38,3.82,3.39,3.87,2.83
+110,D028,Brinjal-19(Solanum melongena),3,5.70,4.34,16.98,21.76,3.64,3.73,4.28,3.16
+111,D029,Brinjal-20(Solanum melongena),5,5.61,4.32,16.36,21.23,4.45,3.30,4.15,2.66
+112,D030,Brinjal-21(Solanum melongena),2,5.48,5.02,17.23,21.64,4.3,3.45,3.9,2.58
+113,D031,Brinjal - all varieties (Solanum melongena),6,5.37,5.02,16.01,20.62,4.11,3.56,3.82,2.85
+114,D032,Broad beans (Vicia faba),3,6.43,7.61,14.41,13.83,4.80,4.51,4.54,2.83
+115,D033,"Capsicum, green (Capsicum annuum)",6,6.43,3.07,14.89,24.82,4.86,3.83,4.30,2.91
+116,D034,"Capsicum, red (Capsicum annuum)",4,6.53,3.36,14.28,25.17,5.69,2.97,4.84,2.89
+117,D035,"Capsicum, yellow (Capsicum annuum)",4,5.34,3.84,14.95,24.51,5.22,2.45,4.96,2.93
+118,D036,Cauliflower (Brassica oleracea),6,7.96,4.15,10.61,20.70,4.15,3.45,5.15,2.89
+119,D037,Celery stalk (Apium graveolens),3,3.07,3.53,20.42,25.87,3.61,2.85,4.29,2.21
+120,D038,Cho-cho-marrow (Sechium edule),4,7.29,4.01,13.25,16.75,4.85,4.18,5.90,3.35
+121,D039,Cluster beans (Cyamopsis tetragonobola),6,7.08,6.48,18.73,11.00,4.44,3.90,4.15,4.17
+122,D040,"Colocasia, stem, black (Colocasia antiquorum)",1,7.77,4.52,13.23,16.36,5.87,4.63,5.53,3.56
+123,D041,"Colocasia, stem, green (Colocasia antiquorum)",5,7.37,4.70,11.84,18.86,6.69,4.14,4.94,3.08
+124,D042,"Corn, Baby (Zea mays)",6,6.85,5.90,12.40,17.20,5.84,4.66,4.23,3.15
+125,D043,"Cucumber, green, elongate (Cucumis sativus)",6,7.18,4.47,6.96,22.84,4.47,3.30,3.79,2.98
+126,D044,"Cucumber, green, short (Cucumis sativus)",6,7.12,4.96,7.03,24.25,4.94,3.68,3.94,2.58
+127,D045,"Cucumber, orange, round (Cucumis sativus)",2,7.19,3.42,7.48,25.58,5.51,3.94,3.53,3.11
+128,D046,Drumstick (Moringa oleifera),6,5.68,10.93,9.42,23.30,3.91,3.36,4.60,2.16
+129,D047,"Field beans, tender, broad (Vicia faba)",2,5.88,6.02,13.35,14.95,4.53,4.24,5.43,3.36
+130,D048,"Field beans, tender, lean (Vicia faba)",6,5.58,6.01,13.41,16.19,4.64,4.13,5.64,3.62
+131,D049,"French beans, country (Phaseolus vulgaris)",5,5.78,5.95,11.66,15.73,4.32,4.01,5.09,3.15
+132,D050,"French beans, hybrid (Phaseolus vulgaris)",2,4.08,6.41,11.43,13.06,3.9,5.81,5.2,2.95
+133,D051,"Jack fruit, raw (Artocarpus heterophyllus)",5,6.13,3.68,21.99,10.62,5.59,4.06,4.40,2.95
+134,D052,"Jack fruit, seed, mature (Artocarpus heterophyllus)",5,4.89,3.02,15.33,11.45,5.99,4.81,5.31,5.61
+135,D053,Knol - Khol (Brassica oleracea),6,5.51,5.74,9.88,36.40,3.43,3.27,4.02,2.01
+136,D054,"Kovai, big (Coccinia cordifolia)",6,7.18,6.04,10.69,20.82,5.18,4.17,5.71,3.04
+137,D055,"Kovai, small (Coccinia cordifolia)",1,6.57,6.45,11.71,21.11,4.67,3.61,5.19,3.31
+138,D056,Ladies finger (Abelmoschus esculentus),6,5.37,5.95,15.47,16.70,3.95,3.39,3.59,2.51
+139,D057,"Mango, green, raw (Mangifera indica)",6,9.22,5.34,10.23,14.23,5.43,5.34,4.99,3.39
+140,D058,"Onion, stalk (Allium cepa)",6,5.91,4.50,9.66,14.62,7.82,5.03,4.53,3.75
+141,D059,"Papaya, raw (Carica papaya)",6,5.07,3.08,11.90,14.27,4.93,2.99,3.56,4.38
+142,D060,Parwar (Trichosanthes dioica),6,6.61,5.97,9.60,19.43,6.21,5.28,4.79,2.96
+143,D061,"Peas, fresh (Pisum sativum)",6,4.23,10.05,11.61,17.38,4.28,3.78,4.53,3.06
+144,D062,"Plantain, flower (Musa x paradisiaca)",6,6.96,5.06,10.40,21.78,5.19,4.39,5.62,2.86
+145,D063,"Plantain, green (Musa x paradisiaca)",6,5.94,4.46,14.43,20.43,3.83,3.14,4.45,2.09
+146,D064,"Plantain, stem (Musa x paradisiaca)",6,7.68,3.84,10.82,20.16,4.06,4.89,5.06,2.83
+147,D065,"Pumpkin, green, cylindrical (Cucurbita maxima)",1,4.72,5.23,12.58,20.37,3.15,3.57,4.3,4.48
+148,D066,"Pumpkin, orange, round (Cucurbita maxima)",6,4.96,3.65,12.99,19.58,5.05,3.87,4.42,2.85
+149,D067,"Red gram, tender, fresh (Cajanus cajan)",1,6.6,5.84,10.61,20.95,3.96,4.63,5.09,2.63
+150,D068,Ridge gourd (Luffa acutangula),6,6.47,5.15,9.98,21.06,5.04,3.39,4.33,3.27
+151,D069,"Ridge gourd, smooth skin (Luffa acutangula)",3,6.15,4.85,9.91,21.40,5.04,3.74,4.55,3.24
+152,D070,"Snake gourd, long, pale green (Trichosanthes anguina)",6,6.07,4.83,10.04,20.81,4.46,3.85,4.79,2.62
+153,D071,"Snake gourd, long, dark green (Trichosanthes anguina)",2,6.59,5.67,10.16,20.07,4.98,4.18,4.72,2.99
+154,D072,"Snake gourd, short (Trichosanthes anguina)",1,6.62,5.43,9.7,20.21,4.26,3.69,4.41,2.79
+155,D073,"Tinda, tender (Praecitrullus fistulosus)",6,4.37,7.03,10.29,19.87,3.52,3.92,5.06,2.94
+156,D074,"Tomato, green (Lycopersicon esculentum)",6,2.46,3.93,10.94,30.29,3.35,2.37,3.76,2.27
+157,D075,"Tomato, ripe, hybrid (Lycopersicon esculentum)",6,4.21,3.23,14.26,37.44,3.64,2.43,3.40,2.66
+158,D076,"Tomato, ripe, local (Lycopersicon esculentum)",6,4.72,4.13,12.71,39.25,3.86,2.87,3.67,2.68
+159,D077,"Zucchini, green (Cucurbita pepo)",2,6.86,3.8,10.04,22.68,3.48,4.26,4.42,2.87
+160,D078,"Zucchini, yellow (Cucurbita pepo)",2,6.66,4.25,10.68,22.29,3.56,4.71,4.44,2.89
+161,E001,"Apple, big (Malus domestica)",6,8.22,3.19,25.16,8.92,3.58,3.28,5.64,2.67
+162,E002,"Apple, green (Malus domestica)",6,7.12,3.96,20.64,9.60,4.79,4.15,5.31,2.10
+163,E003,"Apple, small (Malus domestica)",6,6.86,2.47,22.08,9.64,4.93,3.78,5.67,2.39
+164,E004,"Apple, small, Kashmir (Malus domestica)",1,6.12,2.52,18.4,9.78,4.11,5.45,5.53,1.58
+165,E005,"Apricot, dried (Prunus armeniaca)",6,4.36,3.89,18.26,9.54,3.29,8.69,3.77,3.43
+166,E006,"Apricot, processed (Prunus armeniaca)",3,5.29,2.54,17.38,13.44,3.32,8.60,3.81,1.96
+167,E007,Avocado fruit (Persea americana),1,5.38,4.45,15.56,13.37,4.25,4.48,4.46,2.64
+168,E008,Bael fruit (Aegle marmelos),1,4.82,3.86,18.2,14.26,3.86,5.26,5.4,2.43
+169,E009,"Banana, ripe, montham (Musa x paradisiaca)",1,5.25,2.52,12.92,13.91,3.35,5.11,5.99,2.3
+170,E010,"Banana, ripe, poovam (Musa x paradisiaca)",2,5.46,3.18,13.03,16.88,6.7,4.59,5.67,2.22
+171,E011,"Banana, ripe, red (Musa x paradisiaca)",1,4.89,2.75,13.32,17.9,5.37,4.16,5.39,1.97
+172,E012,"Banana, ripe, robusta (Musa x paradisiaca)",6,7.08,3.70,13.07,15.17,4.79,3.65,4.70,2.14
+173,E013,Black berry (Rubus fruticosus),5,6.40,4.31,12.08,15.66,6.02,5.55,5.36,3.03
+174,E014,"Cherries, red (Prunus cerasus)",4,4.99,1.77,28.46,15.62,6.51,4.22,4.61,2.20
+175,E015,"Currants, black (Ribes nigrum)",1,3.69,6.97,10.42,20.94,5.36,5.03,5.23,2.89
+176,E016,Custard apple (Annona squamosa),1,7.08,3.87,18.32,17.32,4.86,4.82,5.12,1.97
+177,E017,"Dates, dry, pale brown (Phoenix dactylifera)",6,6.94,4.08,12.80,15.76,6.18,5.78,5.08,2.15
+178,E018,"Dates, dry, dark brown (Phoenix dactylifera)",2,7.02,3.9,9.68,14.85,5.96,5.62,4.86,2
+179,E019,"Dates, processed (Phoenix dactylifera)",2,8.53,3.66,13.63,16.39,6.7,6.43,5.94,2.09
+180,E020,Fig (Ficus carica),6,5.74,2.02,20.90,19.36,4.71,4.89,4.63,2.80
+181,E021,Goosberry (Emblica officinalis),5,6.47,3.87,14.90,23.90,5.01,4.48,4.95,2.60
+182,E022,"Grapes, seeded, round, black (Vitis vinifera)",4,6.56,5.97,9.65,22.50,3.35,4.72,4.59,2.24
+183,E023,"Grapes, seeded, round, green (Vitis vinifera)",5,7.11,6.58,10.41,21.65,3.44,4.29,4.61,2.34
+184,E024,"Grapes, seeded, round, red (Vitis vinifera)",5,6.32,6.50,10.87,19.45,3.18,4.72,4.79,2.49
+185,E025,"Grapes, seedless, oval, black (Vitis vinifera)",5,7.26,6.86,10.39,22.33,4.27,5.39,5.26,2.01
+186,E026,"Grapes, seedless, round, green (Vitis vinifera)",5,7.35,7.01,10.39,21.53,3.46,4.84,4.69,2.40
+187,E027,"Grapes, seedless, round, black (Vitis vinifera)",5,6.05,6.46,10.60,18.37,3.76,6.93,4.83,2.06
+188,E028,"Guava, white flesh (Psidium guajava)",5,6.26,3.18,19.73,15.70,6.12,5.56,3.80,2.66
+189,E029,"Guava, pink flesh (Psidium guajava)",5,6.52,3.31,19.16,15.59,6.98,5.67,4.19,2.63
+190,E030,"Jack fruit, ripe (Artocarpus heterophyllus)",5,6.16,3.22,26.27,9.24,5.40,4.42,5.39,3.22
+191,E031,"Jambu fruit, ripe (Syzygium cumini)",2,7.04,1.54,11.99,15.22,6.59,6.09,5.54,3.23
+192,E032,Karonda fruit (Carissa carandas),1,5.62,4.21,15.38,15.62,3.85,3.82,4.85,3.12
+193,E033,"Lemon, juice (Citrus limon)",6,5.22,4.28,20.55,15.10,2.03,7.60,3.86,1.35
+194,E034,"Lime, sweet,pulp (Citrus limetta)",6,3.39,1.30,19.78,5.41,2.16,6.81,3.40,0.80
+195,E035,Litchi (Nephelium litchi),4,10.56,2.24,11.65,16.07,5.56,5.72,5.16,2.92
+196,E036,"Mango, ripe, banganapalli (Mangifera indica)",6,8.21,4.26,11.58,15.60,5.88,4.07,4.14,2.21
+197,E037,"Mango, ripe, gulabkhas (Mangifera indica)",2,9.02,4.64,11.82,14.59,5.25,3.97,4.53,2.41
+198,E038,"Mango, ripe, himsagar (Mangifera indica)",3,10.14,4.41,12.41,14.99,5.99,4.11,4.44,2.82
+199,E039,"Mango, ripe, kesar (Mangifera indica)",4,8.62,4.48,12.75,14.51,6.13,4.24,4.52,2.70
+200,E040,"Mango, ripe, neelam (Mangifera indica)",2,9.93,4.29,12.33,15.06,6.03,3.48,6.55,2.54
+201,E041,"Mango, ripe, paheri (Mangifera indica)",2,9.03,3.9,12.19,14.82,5.49,3.95,4.06,2.45
+202,E042,"Mango, ripe, totapari (Mangifera indica)",1,8.84,4.53,13.49,13.95,5.86,3.47,4.26,2.27
+203,E043,Mangosteen (Garcinia mangostana),1,7.6,2.64,14.16,13.3,7.07,4.27,4.76,2.86
+204,E044,Manila tamarind (Pithecellobium dulce),1,6.25,3.35,13.85,16.45,4.21,3.56,4.86,1.85
+205,E045,"Musk melon, orange flesh (Cucumis melon)",5,12.72,2.12,10.60,28.92,3.89,2.97,4.26,1.65
+206,E046,"Musk melon, yellow flesh (Cucumis melon)",6,12.94,2.51,9.99,25.89,3.76,3.20,4.82,1.69
+207,E047,"Orange, pulp (Citrus aurantium)",6,2.28,6.51,13.29,5.82,2.46,12.17,3.38,1.08
+208,E048,"Palm fruit, tender (Borassus flabellifer)",1,6.84,3.85,13.86,16.82,4.56,4.17,5.18,1.25
+209,E049,"Papaya, ripe (Carcia papaya)",6,4.23,2.59,15.42,13.85,5.23,4.55,4.70,2.85
+210,E050,Peach (Prunus communis),1,5.77,4.14,21.02,19.19,3.23,4.07,4.79,1.78
+211,E051,Pear (Pyrus sp.),6,6.55,2.48,25.05,11.67,4.31,3.64,4.46,1.36
+212,E052,Phalsa (Grewia asiatica),2,5.27,5.86,12.12,18.54,4.96,5.31,5.01,2.18
+213,E053,Pineapple (Ananas comosus),6,6.94,2.64,27.04,14.92,5.32,3.76,5.31,3.10
+214,E054,Plum (Prunus domestica),3,4.25,2.67,32.17,4.85,2.06,5.83,4.23,1.61
+215,E055,"Pomegranate, maroon seeds (Punica granatum)",6,4.80,8.35,8.50,27.33,3.55,3.46,4.83,1.83
+216,E056,Pummelo (Citrus maxima),3,7.62,5.19,27.70,12.35,2.74,9.41,4.78,1.83
+217,E057,"Raisins, dried, black (Vitis vinifera)",6,6.28,13.13,7.35,10.49,3.29,8.53,4.32,2.20
+218,E058,"Raisins, dried, golden (Vitis vinifera)",6,6.64,14.04,6.30,11.02,3.75,9.38,5.15,1.56
+219,E059,Rambutan (Nephelium lappaceum),1,5.87,6.75,12.73,28.08,6.62,4.66,2.69,2.7
+220,E060,Sapota (Achras sapota),6,5.92,6.70,10.90,10.63,5.20,3.80,5.60,3.35
+221,E061,Soursop (Annona muricata),1,4.3,3.63,15.84,19.99,5.07,5.69,5.17,3.31
+222,E062,Star fruit (Averrhoa carambola),1,6.1,5.37,17.4,18.55,4.45,3.35,4.67,3.89
+223,E063,Strawberry (Fragaria ananassa),6,4.98,4.51,19.70,15.88,5.63,3.41,4.10,2.88
+224,E064,"Tamarind, pulp (Tamarindus indicus)",6,4.34,3.15,12.28,15.19,4.01,5.04,3.51,3.43
+225,E065,"Water melon, dark green (sugar baby) (Citrullus vulgaris)",6,3.86,7.87,16.26,13.85,1.74,3.70,2.51,1.89
+226,E066,"Water melon, pale green (Citrullus vulgaris)",6,4.04,8.19,16.50,14.70,2.40,4.21,3.47,1.87
+227,E067,Wood Apple (Limonia acidissima),3,5.51,7.54,31.42,15.65,2.92,4.20,4.26,2.51
+228,E068,Zizyphus (Zizyphus jujube),1,4.62,5.51,31.84,17.33,3.14,2.52,3.86,3.46
+229,F001 ,Beet root (Beta vulgaris) ,6,8.76 ,3.51 ,7.52 ,28.73 ,3.37 ,3.35 ,4.28 ,2.76
+230,F002,"Carrot, orange (Dacus carota)",6,10.44,3.30,14.35,26.56,3.64,3.74,3.72,1.71
+231,F003,"Carrot, red (Dacus carota)",4,10.23,2.47,15.01,28.68,3.07,5.50,3.97,1.74
+232,F004,Colocasia (Colocasia antiquorum),6,4.74,7.60,12.77,14.22,4.57,4.03,4.17,3.89
+233,F005,Lotus root (Nelumbium nelumbo),3,5.11,5.57,26.00,14.81,3.91,3.16,4.33,2.70
+234,F006,"Potato, brown skin, big (Solanum tuberosum)",6,5.81,3.58,21.07,18.54,3.31,3.60,4.39,3.23
+235,F007,"Potato, brown skin, small (Solanum tuberosum)",1,5.63,3.55,9.76,19.04,3,3.19,4.17,2.94
+236,F008,"Potato, red skin (Solanum tuberosum)",1,7.52,3.64,6.81,20.4,2.8,3.36,4.54,3.92
+237,F009,"Radish, elongate, red skin (Raphanus sativus)",3,7.36,4.53,9.70,28.02,4.08,4.29,4.33,1.62
+238,F010,"Radish, elongate, white skin (Raphanus sativus)",6,7.49,4.15,9.78,26.26,4.51,4.28,4.55,1.73
+239,F011,"Radish, round, red skin (Raphanus sativus)",1,7.12,4.89,10.1,24.98,4.12,4.84,4.01,1.43
+240,F012,"Radish, round, white skin (Raphanus sativus)",2,7.37,4.16,10.49,27.62,3.83,4.45,4.12,1.78
+241,F013,"Sweet potato, brown skin (Ipomoes batatas)",4,8.00,3.48,22.80,9.65,4.90,3.83,5.21,3.26
+242,F014,"Sweet potato, pink skin (Ipomoes batatas)",3,8.18,3.19,14.21,10.60,5.46,3.98,5.26,2.69
+243,F015,Tapioca (Manihot esculenta),3,8.75,3.77,13.86,14.54,5.65,3.83,5.76,1.92
+244,F016,Water Chestnut (Eleocharis dulcis),1,6.21,5.43,15.82,14.54,5.21,3.68,5.86,3.62
+245,F017,"Yam, elephant (Amorphophallus campanulatus)",6,5.37,9.26,11.47,16.63,4.61,5.03,6.48,3.17
+246,F018,"Yam, ordinary (Amorphophallus campanulatus)",4,5.82,7.78,11.40,14.97,4.52,4.47,5.48,3.09
+247,F019,"Yam, wild (Dioscorea versicolor)",2,6.78,8.61,11.93,16.15,4.78,5.3,6.28,3.34
+248,G001,"Chillies, green-1 (Capsicum annum)",5,4.98,4.99,16.33,16.66,4.95,3.16,4.59,2.71
+249,G002,"Chillies, green-2 (Capsicum annum)",3,4.79,4.83,16.93,18.31,4.03,2.81,4.17,2.49
+250,G003,"Chillies, green-3 (Capsicum annum)",5,5.01,4.78,18.29,19.15,4.57,2.65,4.66,2.58
+251,G004,"Chillies, green-4 (Capsicum annum)",3,4.60,4.78,17.72,17.31,4.98,2.76,4.21,2.93
+252,G005,"Chillies, green-5 (Capsicum annum)",2,5.12,4.36,17.19,17.64,4.40,2.71,4.70,2.51
+253,G006,"Chillies, green-6 (Capsicum annum)",1,3.91,4.3,18.43,19.59,3.64,2.08,4.01,2.11
+254,G007,"Chillies, green-7 (Capsicum annum)",1,5.02,5.13,16.38,17.96,3.69,3.44,4.37,2.93
+255,G008,"Chillies, green - all varieties (Capsicum annum)",6,4.86,4.79,17.24,17.94,4.46,2.85,4.42,2.64
+256,G009,Coriander leaves (Coriandrum sativum),6,5.56,5.04,14.75,12.31,5.07,4.09,3.94,3.42
+257,G010,Curry leaves (Murraya koenigii),6,7.75,4.64,15.17,11.12,6.48,6.19,5.94,2.81
+258,G011,"Garlic, big clove (Allium sativum)",6,4.44,16.46,11.11,16.97,3.03,3.47,3.65,3.31
+259,G012,"Garlic, small clove (Allium sativum)",3,3.73,14.66,10.45,17.60,2.94,3.92,3.20,3.27
+260,G013,"Garlic, single clove, Kashmir (Allium sativum)",1,4.25,16.42,12.15,16.92,3.85,3.85,4.6,3.07
+261,G014,"Ginger, fresh (Zinziber officinale)",6,4.73,5.93,15.34,13.82,4.91,3.28,4.80,3.78
+262,G015,Mango ginger (Curcuma amada),3,4.59,4.35,17.86,14.13,5.51,4.03,5.05,3.29
+263,G016,Mint leaves (Mentha spicata ),4,5.25,4.96,13.21,15.47,5.46,4.81,4.54,3.32
+264,G017,"Onion, big (Allium cepa)",6,3.61,13.21,8.96,25.10,3.86,2.01,2.68,1.92
+265,G018,"Onion, small (Allium cepa)",5,5.48,12.28,9.51,25.34,6.50,3.55,3.03,2.24
+266,G019,Asafoetida (Ferula assa-foetida),6,3.99,3.33,13.74,27.68,4.34,7.15,6.03,2.40
+267,G020,"Cardamom, green (Elettaria cardamomum)",6,6.24,9.33,11.96,19.21,5.29,3.60,5.82,2.39
+268,G021,"Cardamom, black (Elettaria cardamomum)",4,6.19,7.36,15.14,17.81,5.64,4.25,5.37,1.97
+269,G022,"Chillies, red (Capsicum annum)",6,4.77,4.96,14.05,17.32,5.13,5.67,4.32,3.09
+270,G023,Cloves (Syzygium aromaticum),6,4.31,6.38,11.01,18.47,4.58,3.90,5.32,2.57
+271,G024,Coriander seeds (Coriandrum sativum),6,4.97,6.01,10.72,15.62,6.29,4.91,4.70,3.05
+272,G025,Cumin seeds (Cuminum cyminum),6,5.22,6.82,8.96,20.91,7.22,4.33,5.07,3.27
+273,G026,Fenugreek seeds (Trigonella foenum graecum),6,4.31,8.38,11.01,18.47,4.92,3.90,5.32,2.57
+274,G027,Mace (Myristica fragrans),6,7.39,4.80,12.36,10.93,6.24,5.21,5.92,3.78
+275,G028,Nutmeg (Myristica fragrans),6,5.98,6.88,10.96,16.10,5.72,4.54,6.20,2.43
+276,G029,Omum (Trachyspermum ammi),6,5.47,5.91,10.87,18.46,7.84,4.72,5.33,2.74
+277,G030,Pippali (Piper longum),6,6.12,7.69,15.24,15.04,4.70,6.61,5.25,4.97
+278,G031,"Pepper, black (Piper nigrum)",6,5.45,2.31,12.11,15.96,4.72,6.58,4.16,4.50
+279,G032,Poppy seeds (Papaver somniferum),6,4.89,8.87,10.98,24.34,5.12,14.39,5.29,3.41
+280,G033,Turmeric powder (Curcuma domestica),6,3.75,5.35,14.66,13.44,4.53,2.61,4.46,3.12
+281,H001,Almond (Prunus amygdalus),6,4.20,11.01,11.77,27.98,6.04,4.03,4.27,3.38
+282,H002,"Arecanut, dried, brown (Areca catechu)",6,3.80,11.15,8.03,19.36,4.70,3.71,4.68,3.18
+283,H003,"Arecanut, dried, red color (Areca catechu)",3,6.70,12.68,8.22,19.61,5.21,4.62,5.89,2.84
+284,H004,"Arecanut, fresh (Areca catechu)",2,3.8,10.99,8.2,22.03,4.54,4.25,5.01,2.84
+285,H005,Cashew nut (Anacardium occidentale),6,5.35,9.75,9.85,22.76,5.25,3.97,6.39,2.81
+286,H006,"Coconut, kernal, dry (Cocos nucifera)",6,5.51,13.08,9.59,22.14,4.54,3.50,5.11,2.69
+287,H007,"Coconut, kernel, fresh (Cocos nucifera)",6,5.27,13.87,9.62,19.12,4.63,4.61,5.33,3.20
+288,H008,"Garden cress, seeds (Lepidium sativum)",5,5.33,10.67,10.29,21.34,5.22,4.37,4.99,3.47
+289,H009,"Gingelly seeds, black (Sesamum indicum)",6,5.92,11.02,8.63,20.14,5.66,3.76,5.48,3.22
+290,H010,"Gingelly seeds, brown (Sesamum indicum)",4,5.67,11.30,8.65,20.73,5.58,3.48,5.43,3.36
+291,H011,"Gingelly seeds, white (Sesamum indicum)",5,5.62,11.18,9.06,20.03,6.32,3.76,5.63,3.30
+292,H012,Ground nut (Arachis hypogea),6,4.23,10.85,11.68,19.41,5.56,3.74,5.05,3.86
+293,H013,Mustard seeds (Brassica juncea),6,4.62,6.71,7.14,19.70,5.08,6.11,4.20,3.03
+294,H014,Linseeds (Linum usitatissimum),6,4.89,11.15,10.87,17.70,5.71,4.39,5.25,3.48
+295,H015,"Niger seeds, black (Guizotia abyssinica)",4,6.92,7.54,9.85,22.85,6.13,4.46,4.16,3.02
+296,H016,"Niger seeds, gray (Guizotia abyssinica)",5,4.90,8.33,10.53,21.33,6.24,4.20,6.18,2.87
+297,H017,Pine seed (Pinus gerardiana),5,4.33,16.73,8.97,18.23,4.34,4.59,4.18,2.74
+298,H018,Pistachio nuts (Pistacla vera),6,5.17,8.52,9.94,16.37,5.99,3.69,4.19,3.18
+299,H019,Safflower seeds (Carthamus tinctorius),5,5.71,9.34,10.22,20.14,5.96,4.05,5.56,3.24
+300,H020,Sunflower seeds (Helianthus annuus),5,5.69,8.55,9.80,22.29,6.29,4.76,5.51,2.47
+301,H021,Walnut (Juglans regia),6,5.44,13.47,10.18,20.50,5.55,3.42,6.54,2.73
+302,I001,"Jaggery, cane (Saccharum officinarum)",6,4.53,3.01,31.24,12.89,2.72,1.71,3.34,1.00
+303,I002,"Sugarcane, juice (Saccharum officinarum)",6,5.22,3.43,30.49,11.60,2.70,2.46,3.55,2.35
+304,J001,"Button mushroom, fresh (Agaricus sp.)",1,5.6,6.6,10.24,14.35,5.38,3.8,4.32,3.2
+305,J002,"Chicken mushroom, fresh (Lactiporus sp.)",1,6.2,7.23,10.3,15.8,5.26,4.21,4.5,3.18
+306,J003,"Shiitake mushroom, fresh (Lentinula sp.)",1,6.38,6.8,10.51,14.67,5.8,3.66,4.45,3.1
+307,J004,"Oyster mushroom, dried (Pleurotus sp.)",1,6.46,6.94,10.72,15.6,5.69,4.4,4.8,3.08
+308,K001 ,Toddy ,10,0,0,0,0,0,0,0,0
+309,K002,Coconut Water,6,20.28,5.13,10.81,31.01,1.97,4.25,5.05,1.57
+310,L001 ,"Milk, whole, Buffalo ",6,3.38 ,3.09 ,8.21 ,16.21 ,2.43 ,7.60 ,5.78 ,4.86
+311,L002,"Milk, whole, Cow",6,3.87,3.25,8.84,17.88,2.35,6.82,6.36,5.48
+312,L003,Paneer,6,3.39,3.56,7.69,20.24,2.18,10.45,5.27,5.36
+313,L004,Khoa,6,3.99,1.06,7.95,21.82,2.02,11.32,5.37,4.95
+314,M001,"Egg, poultry, whole, raw",6,3.12,13.53,3.23,2.28,4.11,5.36,6.71,3.93
+315,M002,"Egg, poultry, white, raw",6,3.06,14.15,3.49,2.35,4.88,5.31,6.45,3.62
+316,M003,"Egg, poultry, yolk, raw",6,2.72,13.69,3.20,2.11,3.97,5.35,7.97,4.05
+317,M004,"Egg, poultry, whole, boiled",6,2.86,13.69,3.20,2.30,3.88,5.23,6.85,4.03
+318,M005,"Egg, poultry, white, boiled",6,3.34,13.03,3.42,2.25,4.53,5.24,7.36,3.48
+319,M006,"Egg, poultry, yolk, boiled",6,2.43,13.06,3.04,2.08,3.46,5.29,7.44,4.06
+320,M007,"Egg, poultry, omlet",3,2.98,13.73,3.32,2.04,4.91,5.24,6.68,3.93
+321,M008,"Egg, country hen, whole, raw",1,2.97,13.04,3.54,2.15,3.36,5.74,7.54,3.7
+322,M009,"Egg, country hen, whole, boiled",1,3.1,13.24,3.28,2.18,3.82,5.82,6.65,3.99
+323,M010,"Egg, country hen, omlet",1,2.88,13.87,3.26,2.2,3.83,5.33,6.9,3.71
+324,M011,"Egg, duck, whole, boiled",1,3.03,13.41,2.76,2.12,3.59,5.42,5.74,3.93
+325,M012,"Egg, duck, whole, raw",1,2.82,13.61,3.62,2.08,3.5,5.24,6.49,3.96
+326,M013,"Egg, duck, whole, omlet",1,3.18,13.88,2.88,1.98,3.91,5.42,5.61,3.53
+327,M014,"Egg, quial, whole, raw",1,2.64,13.77,4.14,1.85,3.36,5.77,6.43,3.73
+328,M015,"Egg, quial, whole, boiled",1,2.72,13.44,3.45,1.88,3.71,5.82,6,3.89
+329,N001,"Chicken, poultry, leg, skinless",4,2.39,16.40,4.98,1.16,4.30,4.75,3.91,3.71
+330,N002,"Chicken, poultry, thigh, skinless",6,2.63,16.87,4.85,1.20,3.93,4.89,4.01,3.51
+331,N003,"Chicken, poultry, breast, skinless",5,2.49,16.92,4.80,1.08,4.77,5.48,4.15,3.89
+332,N004,"Chicken, poultry, wing, skinless",5,2.69,16.01,5.01,1.42,4.37,4.77,3.85,3.15
+333,N005,"Poultry, chicken, liver",1,2.53,12.74,4.65,1.44,4.51,5.11,4.44,3.81
+334,N006,"Poultry, chicken, gizzard",1,2.55,14.29,5.63,1.67,5.9,4.53,4.01,3.78
+335,N007,"Country hen, leg, with skin",1,2.49,15.12,3.03,1.19,3.69,5.16,5.57,3.97
+336,N008,"Country hen, thigh, with skin",1,2.63,15.54,4.76,1.08,4.87,5.04,4.96,3.99
+337,N009,"Country hen, breast, with skin",1,2.47,15.91,4.34,1.08,5.06,4.98,4.78,4.09
+338,N010,"Country hen, wing, with skin",1,2.84,15.93,5.37,1.16,4.6,4.64,3.77,3.86
+339,N011,"Duck, meat, with skin",1,2.65,14.99,4.8,1.14,4.47,5.46,4.43,4.59
+340,N012,"Emu, meat, skinless",1,2.89,14.36,4.83,1.24,4.53,5.77,4.26,4.39
+341,N013,"Guinea fowl, meat, with skin",1,2.58,14.57,4.98,0.99,4.2,4.88,4.04,3.45
+342,N014,"Pigeon, meat, with skin",1,3.02,14.38,4.77,1.16,4.14,5.33,4.19,3.62
+343,N015,"Quail, meat, skinless",1,2.89,14.35,5.03,1.27,3.5,5.74,4.46,4.13
+344,N016,"Turkey, leg, with skin",1,3.08,15.71,4.55,1.43,4.13,5.8,4.46,4.04
+345,N017,"Turkey, thigh, with skin",1,2.69,16.08,4.66,1.44,4.27,5.82,4.65,3.89
+346,N018,"Turkey, breast, with skin",1,2.57,15.39,4.62,1.12,4.26,5.46,4.09,4.36
+347,N019,"Turkey, wing, with skin",1,2.35,16.62,5.2,1.43,4.28,5.1,4.22,4.07
+348,O001,"Goat, shoulder",6,2.17,14.68,5.63,1.35,4.72,4.19,4.34,3.95
+349,O002,"Goat, chops",6,2.56,14.31,6.05,1.35,4.20,4.59,4.24,3.71
+350,O003,"Goat, legs",6,2.79,14.02,5.64,1.67,4.08,4.63,4.43,4.66
+351,O004,"Goat, brain",5,3.05,13.68,5.72,1.29,4.20,4.82,5.29,4.68
+352,O005,"Goat, tongue",4,2.38,13.47,6.34,1.45,4.78,4.15,4.64,3.97
+353,O006,"Goat, lungs",4,2.46,11.41,6.06,1.48,5.59,3.26,4.58,4.51
+354,O007,"Goat, heart",5,2.41,13.14,6.71,1.71,4.38,4.27,4.74,3.97
+355,O008,"Goat, liver",6,2.49,12.09,5.29,1.71,4.76,4.61,4.93,3.50
+356,O009,"Goat, tripe",5,2.88,11.46,8.20,1.62,5.02,3.24,4.48,4.11
+357,O010,"Goat, spleen",4,2.48,12.26,7.86,1.37,4.54,3.44,4.26,3.74
+358,O011,"Goat, kidneys",4,2.66,12.62,6.98,1.71,4.73,4.08,5.08,4.77
+359,O012,"Goat, tube (small intestine)",3,2.31,12.78,9.29,1.44,5.30,3.50,4.61,3.13
+360,O013,"Goat, testis",2,2.41,12.92,9.35,1.32,5.51,3.4,4.31,3.94
+361,O014,"Sheep, shoulder",5,2.48,14.72,5.47,1.31,4.64,4.19,4.34,4.10
+362,O015,"Sheep, chops",4,2.76,14.31,5.91,1.39,4.24,4.64,4.33,3.59
+363,O016,"Sheep, leg",5,2.42,14.46,5.86,1.54,3.97,4.19,4.57,4.10
+364,O017,"Sheep, brain",1,3.2,13.47,5.28,1.34,3.89,4.69,5.19,4.23
+365,O018,"Sheep, tongue",1,2.72,14.42,6.28,1.48,4.3,3.72,4.79,3.78
+366,O019,"Sheep, lungs",2,2.48,10.53,8.33,1.4,5.48,3.22,4.64,3.37
+367,O020,"Sheep, heart",1,2.09,13.75,5.5,1.61,4.23,4.15,4.72,3.81
+368,O021,"Sheep, liver",4,2.64,10.93,5.17,1.68,4.79,4.53,4.91,3.67
+369,O022,"Sheep, tripe",2,2.6,10.8,8.76,1.48,5.11,3.32,4.36,4.42
+370,O023,"Sheep, spleen",1,2.27,12.11,6.76,1.46,4.38,4.02,4.39,3.34
+371,O024,"Sheep, kidneys",2,2.57,12.78,6.65,1.69,4.9,3.78,4.91,4.36
+372,O025,"Beef, shoulder",6,2.60,13.85,5.96,1.38,4.46,4.25,4.45,3.97
+373,O026,"Beef, chops",4,2.87,14.07,6.26,1.25,4.80,4.73,4.79,3.80
+374,O027,"Beef, round (leg)",6,2.90,14.70,5.82,1.63,4.13,4.49,4.19,4.28
+375,O028,"Beef, brain",4,2.75,12.75,5.65,1.35,4.05,4.17,5.43,4.87
+376,O029,"Beef, tongue",4,3.02,13.80,5.72,1.25,4.77,4.35,4.67,3.71
+377,O030,"Beef, lungs",3,2.61,11.46,8.15,1.64,5.74,3.56,4.78,3.87
+378,O031,"Beef, heart",5,2.84,13.39,4.60,1.61,4.30,4.53,4.92,4.92
+379,O032,"Beef, liver",6,2.82,11.84,5.60,1.30,4.59,4.24,4.66,3.77
+380,O033,"Beef, tripe",5,2.82,11.70,7.40,1.75,5.40,4.07,4.54,4.16
+381,O034,"Beef, spleen",6,2.54,11.81,7.41,1.65,4.75,3.78,4.86,3.17
+382,O035,"Beef, kidneys",3,2.56,12.93,5.26,1.56,5.05,3.78,4.96,4.26
+383,O036,"Calf, shoulder",2,2.36,13.73,5.07,1.04,4.59,3.95,4.64,3.11
+384,O037,"Calf, chops",2,2.82,14.47,5.09,1.08,4.33,4.9,4.43,3.68
+385,O038,"Calf, round (leg)",2,3.01,14.32,5.38,1.66,4.37,4.62,4.52,4.09
+386,O039,"Calf, brain",2,2.3,13.19,5.12,1.32,4.08,4.37,5.59,4.4
+387,O040,"Calf, tongue",2,2.21,12.73,6.61,1.2,4.43,3.92,4.7,3.5
+388,O041,"Calf, heart",1,2.29,13.82,5.5,1.49,3.78,4.13,4.2,4.28
+389,O042,"Calf, liver",1,2.65,12.77,5.66,1.52,4.55,4.28,4.62,3.62
+390,O043,"Calf, spleen",1,2.26,13.25,7.83,1.47,4.54,3.45,4.51,3.25
+391,O044,"Calf, kidneys",2,2.81,12.5,6.08,1.55,5.23,3.88,5.1,4.19
+392,O045,"Mithun, shoulder",1,2.52,16.4,5.63,1.28,4.83,4.45,4.2,3.87
+393,O046,"Mithun, chops",1,3.1,15.61,5.6,1.14,4.29,4.71,4.5,3.87
+394,O047,"Mithun, round (leg)",1,2.58,14.79,5.38,1.21,4.16,4.4,4.37,4.58
+395,O048,"Pork, shoulder",6,2.89,13.31,5.37,1.35,5.74,4.40,4.33,3.23
+396,O049,"Pork, chops",6,2.88,14.27,5.50,1.41,5.27,4.55,4.69,3.46
+397,O050,"Pork, ham",6,2.78,14.18,5.41,1.77,4.79,4.81,4.49,4.47
+398,O051,"Pork, lungs",4,2.27,11.71,8.27,1.84,6.23,3.17,4.75,2.93
+399,O052,"Pork, heart",4,2.86,13.97,6.09,1.68,4.49,4.44,4.41,4.51
+400,O053,"Pork, liver",5,2.57,12.99,5.89,1.53,4.34,4.28,4.87,3.61
+401,O054,"Pork, stomach",1,2.89,9.24,8.41,1.22,4.56,4.49,5.29,5.48
+402,O055,"Pork, spleen",3,2.43,12.65,7.08,1.50,4.59,3.61,4.78,2.71
+403,O056,"Pork, kidneys",5,2.53,11.65,7.22,1.36,4.73,4.07,5.08,3.98
+404,O057,"Pork, tube (small intestine)",1,2.25,13.19,9.15,1.26,5.32,3.62,4.97,2.92
+405,O058,"Hare, shoulder",1,2.53,15.99,6.27,1.03,4.75,5.04,4.08,3.99
+406,O059,"Hare, chops",1,2.93,14.89,5.53,1.2,4.24,5.26,4.32,3.8
+407,O060,"Hare, leg",1,2.71,15.68,5.22,1.05,4.43,5.18,4.12,4.03
+408,O061,"Rabbit, shoulder",1,2.88,15.43,5.01,1.21,3.83,5.42,4.29,4.35
+409,O062,"Rabbit, chops",1,3.17,15.31,4.8,1.34,4.46,5.56,4.31,4.21
+410,O063,"Rabbit, leg",1,2.54,14.4,6.02,1.21,4.62,5.31,4.26,4.41
+411,P001,Allathi (Elops machnata),1,5.41,5.95,10.7,14.01,4.68,3.39,3.88,5.15
+412,P002,Aluva (Parastromateus niger),3,5.55,6.97,9.56,13.13,5.47,3.53,4.34,5.13
+413,P003,Anchovy (Stolephorus indicus),2,5.28,5.83,7.89,14.66,5.57,3.35,4.39,4.15
+414,P004,Ari fish (Aprion virescens),1,5.39,7.56,10.65,12.16,5.83,3.28,4.38,4.26
+415,P005,Betki (Lates calcarifer),1,2.15,5.93,10.35,13.28,6.51,5.55,4.46,5.28
+416,P006,Black snapper (Macolor niger),1,5.67,5.74,11.43,15.7,5.36,3.58,4.07,3.85
+417,P007,Bombay duck (Harpadon nehereus),2,5.95,5.25,9.93,11.16,6.17,6.14,4.5,4.23
+418,P008,Bommuralu (Muraenesox cinerius),3,4.52,6.73,10.19,13.89,4.76,3.29,4.54,5.46
+419,P009,Cat fish (Tachysurus thalassinus),1,5.84,5.77,12,15.36,5.19,3.62,4.18,3.91
+420,P010,Chakla (Rachycentron canadum),5,5.57,6.88,10.25,13.92,4.96,3.44,4.30,4.41
+421,P011,Chappal (Aluterus monoceros ),1,5.73,8.17,9.16,14.1,6.1,3.75,4.97,3.35
+422,P012,Chelu (Elagatis bipinnulata),2,5.15,6.98,9.86,14.88,5.07,3.34,5.11,4.47
+423,P013,Chembali (Lutjanus quinquelineatus),1,5.72,5.98,11.41,12.69,5.6,3.21,4.28,5.44
+424,P014,Eri meen (Pristipomoides filamentosus),1,5.72,5.97,10.33,15.02,5.89,3.56,4.4,3.48
+425,P015,Gobro (Epinephelus diacanthus),2,5.43,6.38,9.19,14.35,5.02,3.37,4.49,4.26
+426,P016,Guitar fish (Rhinobatus prahli),1,6.14,6.69,9.13,14.68,5.78,5.29,4.29,4.85
+427,P017,Hilsa (Tenualosa ilisha),2,4.43,4.15,1.72,13.13,6.66,6.85,4.43,3.83
+428,P018,Jallal (Arius sp.),1,5.11,6.87,9.54,13.98,5.33,3.14,5.41,4.28
+429,P019,Jathi vela meen (Lethrinus lentjan),2,5.61,6.42,9.92,14.07,5.38,3.73,4.23,4.18
+430,P020,Kadal bral (Synodus indicus),1,5,6.44,10.46,13.8,5.37,3.2,4.34,3.51
+431,P021,Kadali (Nemipterus mesoprion),1,6.23,5.35,8.51,16.44,5.13,3.74,3.87,5.27
+432,P022,Kalamaara (Leptomelanosoma indicum),2,5.48,7.75,8.39,13.66,5.38,3.55,4.44,5.55
+433,P023,Kalava (Epinephelus coioides),1,5.41,6.54,9.33,14.2,5.83,3.82,4.44,4.5
+434,P024,Kanamayya (Lutjanus rivulatus),2,5.66,6.09,10.96,14.6,5.42,3.73,4.63,5.24
+435,P025,Kannadi paarai (Alectis indicus),3,5.34,6.01,9.73,13.56,5.09,3.37,4.43,4.28
+436,P026,Karimeen (Etroplus suratensis),1,6.36,6.48,11.62,15.32,6.34,3.69,4.5,3.2
+437,P027,Karnagawala (Anchoa hepsetus),1,5.69,6.63,9.28,13.8,5.18,3.33,5.36,3.39
+438,P028,Kayrai (Thunnus albacores),2,5.56,6.33,9.56,13.19,4.56,3.69,4.04,4.71
+439,P029,Kiriyan (Atule mate),1,5.54,6.56,10.05,14.49,6.06,3.37,4.22,3.93
+440,P030,Kite fish (Mobula kuhlii),1,5.25,6.7,10.35,14.85,6.3,3.57,4.47,4.96
+441,P031,Korka (Terapon jarbua),1,5.36,8.53,8.38,13.01,5.75,3.14,4.22,3.03
+442,P032,Kulam paarai (Carangoides fulvoguttatus),1,5.64,7.64,10.08,12.26,6.13,3.68,5.02,4.09
+443,P033,Maagaa (Polynemus plebeius),1,5.67,6.34,8.91,15.62,4.96,3.54,4.45,5.61
+444,P034,Mackerel (Rastrelliger kanagurta),3,5.41,5.81,9.96,13.38,5.28,3.27,4.46,4.59
+445,P035,Manda clathi (Naso reticulatus),1,5.29,6.64,10.88,13.48,5.35,3.22,4.13,4.61
+446,P036,Matha (Acanthurus mata),2,5.52,8.02,8.66,13.56,5.22,3.63,4.39,4.8
+447,P037,Milk fish (Chanos chanos),1,6.23,6.15,8.6,14.07,5.06,3.96,3.93,4.84
+448,P038,Moon fish (Mene maculata),1,5.67,5.74,11.43,14.7,5.36,3.58,4.07,4.26
+449,P039,Mullet (Mugil cephalus),3,5.57,7.18,8.33,14.52,5.76,3.54,4.60,5.27
+450,P040,Mural (Tylosurus crocodilus crocodilus),1,5.56,6.08,8.24,14.67,5.8,3.83,4.29,4.98
+451,P041,Myil meen (Istiophorus platypterus),2,5.44,7.37,8.56,13.97,5.65,3.53,4.5,4.08
+452,P042,Nalla bontha (Epinephelus sp.),1,6.61,7.43,9.59,13.21,4.71,2.73,5.41,4.9
+453,P043,Narba (Caranx sexfasciatus),2,5.42,6.11,9.75,13.59,5.44,3.36,4.12,4.74
+454,P044,Paarai (Caranx heberi),1,6.36,6.08,11.1,14.51,6.78,4.66,3.94,3.36
+455,P045,Padayappa (Canthidermis maculata),1,6.3,6.06,13.85,15.76,6.4,4.06,4.3,3.55
+456,P046,Pali kora (Panna microdon),1,5.49,5.72,10.57,15.68,4.78,3.12,4.57,3.19
+457,P047,Pambada (Lepturacanthus savala),2,5.71,6.09,8.95,14.1,6.45,3.77,4.43,5.59
+458,P048,Pandukopa (Pseudosciaena manchurica),1,5.31,7.08,9.66,14.1,5.19,3.75,4.45,5.44
+459,P049,Parava (Lactarius lactarius),1,6.01,6.15,8.08,13.19,6.42,3.45,4,3.15
+460,P050,Parcus (Psettodes erumei),1,5.29,6.43,9.08,14.97,4.69,3.35,4.43,5.58
+461,P051,Parrot fish (Scarus ghobban),1,5.78,5.12,10.4,14.96,5.59,3.64,4.36,4.85
+462,P052,Perinkilichai (Pinjalo pinjalo),1,5.59,7.3,9.94,14.94,4.5,3.47,4.49,4.56
+463,P053,Phopat (Coryphaena hippurus),4,5.63,6.02,10.00,14.08,5.54,3.55,4.41,4.89
+464,P054,Piranha (Pygopritis sp.),1,6.18,5.66,11.24,15.79,6.56,3.96,4.33,4.13
+465,P055,"Pomfret, black (Parastromateus niger)",2,5.75,6.86,9.77,12.54,6.07,4.7,4.91,4.98
+466,P056,"Pomfret, snub nose (Trachinotus blochii)",2,5.7,6.07,10.89,14.65,5.01,3.51,4.08,3.74
+467,P057,"Pomfret, white (Pampus argenteus)",2,5.09,6.11,9.11,14.69,5.66,3.15,4.34,5.98
+468,P058,Pranel (Gerres sp.),1,6.41,5.22,8.96,16.31,6.51,3.76,3.85,5.47
+469,P059,Pulli paarai (Gnathanodon speciosus),1,6.42,5.06,11.6,14.05,5.5,3.99,3.93,5.86
+470,P060,Queen fish (Scomberoides commersonianus),3,5.21,6.26,9.83,14.51,4.84,3.29,4.62,3.93
+471,P061,Raai fish (Lobotes surinamensis),2,5.67,7.02,8.14,14.18,5.58,3.76,4.61,5.04
+472,P062,Raai vanthu (Epinephelus chlorostigma),1,5.47,7.8,10.14,13.69,4.68,3.32,4.26,4.4
+473,P063,Rani (Pink perch),1,5.4,8.24,9.1,12.08,5.9,4.11,4.34,5.73
+474,P064,"Ray fish, bow head, spotted (Rhina ancylostoma)",1,5.76,6.03,8.38,16.86,6.76,3.94,4.05,3.25
+475,P065,Red snapper (Lutjanus argentimaculatus),1,5.21,6.48,8.8,13.92,5.17,3.31,4.76,5.48
+476,P066,"Red snapper, small (Priacanthus hamrur)",1,5.21,6.75,9.36,13.86,5.88,3.11,4.65,5.26
+477,P067,Sadaya (Platax orbicularis ),1,5.28,7.92,9.15,14,5.28,3.54,4.52,3.95
+478,P068,Salmon (Salmo salar),1,5.31,7.25,9.77,14.05,5.5,3.53,4.82,4.97
+479,P069,Sangada (Nemipterus japonicus),1,4.9,7.36,8.21,13.48,5.29,3.12,4.81,5.92
+480,P070,Sankata paarai (Caranx ignobilis),1,5.56,4.9,10.62,14.54,4.94,3.59,4.87,4.55
+481,P071,Sardine (Sardinella longiceps),1,5.36,6.45,10.65,13.86,5.66,4.41,4.62,4.11
+482,P072,Shark (Carcharhinus sorrah),2,5.54,6.71,8.89,14.2,6.72,3.65,4.57,3.65
+483,P073,"Shark, hammer head (Sphyrna mokarran)",1,5.75,4.23,9.04,13.68,6.24,6.3,4.13,3.54
+484,P074,"Shark, spotted (Stegostoma fasciatum)",1,6.02,6.69,8.71,16.23,6.87,4.56,4.88,3.25
+485,P075,Shelavu (Sphyraena jello),4,5.58,7.31,9.05,14.24,5.41,3.39,4.24,3.87
+486,P076,Silan (Silonia silondia),1,5.18,7.44,7.79,15.05,5.76,4.02,6.41,4.26
+487,P077,Silk fish (Beryx sp.),1,5.43,7.53,10.21,14.57,5.25,3.45,4.39,3.53
+488,P078,Silver carp (Hypophthalmichthys molitrix),1,3.31,3.97,9.43,13.75,9.82,7.72,4.54,3.4
+489,P079,Sole fish (Cynoglossus arel),1,5.71,6.24,8.01,14.66,4.98,3.36,4.65,5.79
+490,P080,Stingray (Dasyatis pastinaca),1,5.21,5.94,8.21,13.94,5.65,4.18,5.65,4.33
+491,P081,Tarlava (Drepane punctata),2,5.94,5.94,9.79,14.51,4.96,4.11,4.21,4.64
+492,P082,Tholam (Plectorhinchus schotaf),2,5.86,5.68,9.51,15.03,5.8,3.7,4.36,3.67
+493,P083,Tilapia (Oreochromis niloticus),1,3.05,6.47,9.02,13.03,4.89,5.62,5.17,5.67
+494,P084,Tuna (Euthynnus affinis),5,5.28,6.46,8.60,13.49,5.60,3.49,4.53,5.19
+495,P085,"Tuna, striped (Katsuwonus pelamis)",1,5.97,7.02,8.04,14.2,5.24,3.46,4.5,5.72
+496,P086,Valava (Chirocentrus nudus),1,5.6,5.02,10.14,16.04,4.41,3.3,4.9,4.21
+497,P087,Vanjaram (Scomberomorus commerson),2,5.71,6.81,10.31,14.51,5.9,3.74,4.35,3.74
+498,P088,Vela meen (Aprion virescens),1,5.42,6.57,8.71,14.28,6.04,3.53,4.46,4.69
+499,P089,Vora (Siganus javus),2,5.85,4.46,9.41,15.08,5.14,3.7,4.16,4.56
+500,P090,Whale shark (Galeocerdo cuvier),1,5.49,5.88,9.02,13.93,6.13,3.85,4.37,5.16
+501,P091,Xiphinis (Xiphias gladius),1,5.12,5.67,8.73,13.64,5.41,3.51,4.36,4.38
+502,P092,"Eggs, Cat fish (Ompok bimaculatus)",1,3.38,6.53,9.31,12.24,5.28,5.38,4.72,5.57
+503,Q001 ,Crab (Menippe mercenaria) ,1,2.8,3.37,8.31,13.53,7.58,3.34,4.17,3.56
+504,Q002,"Crab, sea (Portunus sanguinolentus)",1,6.19,6.91,8.11,15.34,7.97,3.97,3.62,3.81
+505,Q003,"Lobster, brown (Thenus orientalis)",1,6.08,6.81,10.35,15.93,6.69,3.86,4.68,3.43
+506,Q004,"Lobster, king size (Thenus orientalis)",1,3.43,5.13,8.32,13.76,6.38,7.55,4.77,4.53
+507,Q005,Mud crab (Scylla tranquebarica),1,5.47,7.47,8.68,14.34,7.48,4.85,3.7,3.88
+508,Q006,Oyster (Crassostrea sp.),1,5.57,6.07,10.93,14.64,7.88,5.24,4.61,3.61
+509,Q007,"Tiger prawns, brown (Solenocera crassicornis)",1,5.25,7.69,8.84,14.31,5.94,3.52,4.16,3.79
+510,Q008,"Tiger Prawns, orange (Penaeus monodon)",1,5.37,5.65,8.6,14.5,5.95,3.41,4.07,3.4
+511,R001 ,"Clam, green shell (Perna viridis ) ",1,4.44,6.21,10.19,13.15,8.87,3.64,5.2,3.67
+512,R002,"Clam, white shell, ribbed (Meretrix meretrix)",1,6.8,7.54,10.2,13.55,8.43,3.35,4.71,3.17
+513,R003,Octopus (Octopus vulgaris),1,5.34,6.59,8.9,10.43,5.84,4.43,4.75,6.32
+514,R004,"Squid, black (Loligo sp.)",1,5.27,6.99,10.65,13.08,5.95,4.56,4.16,4.3
+515,R005,"Squid, hard shell (Sepia pharaonis)",1,4.43,7.03,9.96,13.99,4.64,4.44,4.5,2.91
+516,R006,"Squid, red (Loligo duvauceli)",2,5.71,6.75,8.86,12.38,5.48,3.27,5.79,5.63
+517,R007,"Squid, white, small (Uroteuthis duvauceli )",1,4.74,4.67,9.75,8.18,5.33,4.34,4.6,4.46
+518,S001,Cat fish (Tandanus tandanus),2,2.38,4.03,1.56,6.74,8.78,7.13,4.72,3.82
+519,S002,Catla (Catla catla),6,2.64,3.53,1.08,6.64,9.32,6.75,4.43,2.88
+520,S003,Freshwater Eel (Anguilla anguilla),1,2.06,4.06,1.12,7.74,6.53,5.97,3.52,3.78
+521,S004,Gold fish (Carassius auratus),1,3.12,3.19,1.61,7.39,8.61,7.77,4.38,3.14
+522,S005,Pangas (Pangasianodon hypophthalmus),2,13.64,95.04,3.34,6.08,2.84,8.44,6.51,5.31
+523,S006,Rohu (Labeo rohita),6,2.45,3.68,1.45,7.19,9.60,6.41,4.63,3.40
+524,S007,Crab (Pachygrapsus sp.),1,2.92,5.27,2.03,9.15,8.42,7.73,3.8,5.17
+525,S008,"Prawns, big (Macrobrachium rosenbergii)",3,2.79,3.28,1.82,9.11,9.1,5.49,4.13,2.66
+526,S009,"Prawns, small (Macrobrachium sp.)",6,2.56,4.42,1.51,6.52,8.32,6.30,4.36,3.86
+527,S010,Tiger prawns (Macrobrachium sp.),2,2.35,4.06,1.41,10.29,8.84,4.24,4.3,3.59
