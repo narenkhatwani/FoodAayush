@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "917161577622",
+    "firebase_url": "https://food-aayush.firebaseio.com",
+    "project_id": "food-aayush",
+    "storage_bucket": "food-aayush.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917161577622:android:8317a723a9bb47ad2f86b7",
+        "android_client_info": {
+          "package_name": "com.example.foodaayush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917161577622-dqt0inoqed3a5o3mgirj3dmkj2fam0uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5tDYCKdywH3zDW6qT84biLYtZ_x3CgJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917161577622-dqt0inoqed3a5o3mgirj3dmkj2fam0uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
