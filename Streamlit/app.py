@@ -100,7 +100,7 @@ st.sidebar.title("Search for Recipe")
 st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
 data2
 
-#Checkbox for Hospitals
+#Dropdown for ingredients
 ingredient_1 = st.sidebar.selectbox("Select 1st ingredient name", data2["ing1"].unique())
 ingredient_2 = st.sidebar.selectbox("Select 2nd ingredient name", data2["ing2"].unique())
 ingredient_3 = st.sidebar.selectbox("Select 3rd ingredient name", data2["ing3"].unique())
