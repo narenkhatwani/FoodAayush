@@ -7,6 +7,7 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import altair as alt
+import awesome_streamlit as ast
 #https://github.com/MarcSkovMadsen/awesome-streamlit
 #https://docs.streamlit.io/en/stable/api.html#display-text
 #for widget types 
@@ -16,8 +17,6 @@ import altair as alt
 st.title('Food Aayush')
 # adding text    
 st.markdown('Food Quality Analysis at your fingertips')
-
-
 
 st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
 
@@ -96,18 +95,63 @@ st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Energ
 
 #sidebar title
 st.sidebar.title("Search for Recipe")
+st.sidebar.markdown("Minimum Two ingredients required")
 
 st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
 data2
 
-#Dropdown for ingredients
-ingredient_1 = st.sidebar.selectbox("Select 1st ingredient name", data2["ing1"].unique())
-ingredient_2 = st.sidebar.selectbox("Select 2nd ingredient name", data2["ing2"].unique())
-ingredient_3 = st.sidebar.selectbox("Select 3rd ingredient name", data2["ing3"].unique())
-ingredient_4 = st.sidebar.selectbox("Select 4th ingredient name", data2["ing4"].unique())
-ingredient_5 = st.sidebar.selectbox("Select 5th ingredient name", data2["ing5"].unique())
+#Get All Ingredients from CSV
+all_ingredients = ["NA"]
+gg = data2.loc[:, data2.columns != 'name'].values.tolist()
+# all_dishes = list(x for x in data2['name'])
 
-recipe = data2.loc[(data2['ing1'] == ingredient_1) & (data2['ing2'] == ingredient_2) & (data2['ing3'] == ingredient_3) & (data2['ing4'] == ingredient_4) & (data2['ing5'] == ingredient_5), 'name'].iloc[0]
+# dish_dict = dict(zip(all_dishes,gg))
+# st.markdown(dish_dict)
+
+for i in gg:
+    for j in i:
+        all_ingredients.append(j)
+
+#To remove Duplicates
+all_ingredients = list(dict.fromkeys(all_ingredients))
+# st.markdown(all_ingredients)
+
+#Dropdown for ingredients
+ingredient_1 = st.sidebar.selectbox("Select 1st ingredient name", all_ingredients)
+ingredient_2 = st.sidebar.selectbox("Select 2nd ingredient name", all_ingredients)
+ingredient_3 = st.sidebar.selectbox("Select 3rd ingredient name", all_ingredients)
+ingredient_4 = st.sidebar.selectbox("Select 4th ingredient name", all_ingredients)
+ingredient_5 = st.sidebar.selectbox("Select 5th ingredient name", all_ingredients)
+
+ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
+
+#Remove NA keyword from list
+ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
+ingredient_list = list(ingredient_list)
+# st.markdown(ingredient_list)
+
+#got all recipe names
+all_recipes = list(x for x in data2['name'])
+# st.markdown(gg)
+
+#compare ingredients
+def intersection(list1,list2):
+    list3 = [value for value in list2 if value in list1]
+    return list3
+
+score = [0]*len(gg)
+for i in range(len(gg)):
+    score[i] = len(intersection(gg[i],ingredient_list))
+ 
+max_score = max(score) if max(score) > 1 or len(ingredient_list)==1 else -999
+
+# st.markdown(max_score)
+
+most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
+recipe = []
+# st.markdown(score)
+# st.markdown(most_prob)
+recipe = ", ".join(most_prob)
 
 st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
 
@@ -115,13 +159,11 @@ st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->
 
 x = st.slider('(in terms of Calories)',0,3000)
 
-
 fat_value= x*(30/100)
 sat_fat_value= x*(7/100)
 trans_fat_value= x*(1/100)
 total_carbs_value= x*(50/100)
 protein_value= x*(20/100)
-
 
 st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Total Fat content should be- {fat_value} Cal</span>", unsafe_allow_html=True)
 st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Saturated Fat count should be- {sat_fat_value} Cal</span>", unsafe_allow_html=True)
@@ -147,4 +189,3 @@ elif (gender == 'Other'):
     st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
 else:
     st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
-    

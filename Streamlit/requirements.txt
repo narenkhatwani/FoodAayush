@@ -4,3 +4,4 @@ streamlit==0.64.0
 altair==4.1.0
 matplotlib==3.2.2
 numpy==1.18.5
+awesome-streamlit==20191014.2
