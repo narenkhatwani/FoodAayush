@@ -189,3 +189,14 @@ elif (gender == 'Other'):
     st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
 else:
     st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
+
+
+
+
+
+nutrition_labels = ['Protein','Fats','Fruits and Veg','Fibre Rich Carbs']
+
+colors = ['gold', 'mediumturquoise', 'darkorange', 'lightgreen']
+fig5 = go.Figure(data=[go.Pie(labels=nutrition_labels, values=[25,10,40,25])])
+fig5.update_traces(hoverinfo='label+percent', textinfo='value', textfont_size=20,marker=dict(colors=colors, line=dict(color='#000000', width=2)))
+st.plotly_chart(fig5)
