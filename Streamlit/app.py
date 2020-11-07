@@ -200,3 +200,36 @@ colors = ['gold', 'mediumturquoise', 'darkorange', 'lightgreen']
 fig5 = go.Figure(data=[go.Pie(labels=nutrition_labels, values=[25,10,40,25])])
 fig5.update_traces(hoverinfo='label+percent', textinfo='value', textfont_size=20,marker=dict(colors=colors, line=dict(color='#000000', width=2)))
 st.plotly_chart(fig5)
+
+
+
+
+
+headerColor = 'grey'
+rowEvenColor = 'lightgrey'
+rowOddColor = 'white'
+
+fig = go.Figure(data=[go.Table(
+  header=dict(
+    values=['<b>X</b>','<b>Dairy Products</b>','<b>Citrus Fruits</b>','<b>Vegetables</b>','<b>Other Fruits</b>','<b>Breads</b>','<b>Grains</b>'],
+    line_color='darkslategray',
+    fill_color=headerColor,
+    align=['left','center'],
+    font=dict(color='white', size=12)
+  ),
+  cells=dict(
+    values=[
+      ['<b>X</b>','<b>Dairy Products</b>','<b>Citrus Fruits</b>','<b>Vegetables</b>','<b>Other Fruits</b>','<b>Breads</b>','<b>Grains</b>'],
+      [1200000, 20000, 80000, 2000, 12120000],
+      [1300000, 20000, 70000, 2000, 130902000],
+      [1300000, 20000, 120000, 2000, 131222000],
+      [1400000, 20000, 90000, 2000, 14102000]],
+    line_color='darkslategray',
+    # 2-D list of colors for alternating rows
+    fill_color = [[rowOddColor,rowEvenColor,rowOddColor, rowEvenColor,rowOddColor]*5],
+    align = ['left', 'center'],
+    font = dict(color = 'darkslategray', size = 11)
+    ))
+])
+
+st.plotly_chart(fig)
