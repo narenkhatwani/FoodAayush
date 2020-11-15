@@ -196,7 +196,7 @@ else:
 st.title('Indian Map for Heart Disease')
 
 #https://plotly.com/python/builtin-colorscales/
-df = pd.read_csv("resources/streamlit_map/cases.csv")
+df = pd.read_csv("resources/streamlit_map/cases2.csv")
 
 fig11 = go.Figure(data=go.Choropleth(
     geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
