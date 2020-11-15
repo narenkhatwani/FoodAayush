@@ -193,43 +193,63 @@ else:
 
 
 
+st.title('Indian Map for Heart Disease')
 
-nutrition_labels = ['Protein','Fats','Fruits and Veg','Fibre Rich Carbs']
+#https://plotly.com/python/builtin-colorscales/
+df = pd.read_csv("resources/streamlit_map/cases.csv")
 
-colors = ['gold', 'mediumturquoise', 'darkorange', 'lightgreen']
-fig5 = go.Figure(data=[go.Pie(labels=nutrition_labels, values=[25,10,40,25])])
-fig5.update_traces(hoverinfo='label+percent', textinfo='value', textfont_size=20,marker=dict(colors=colors, line=dict(color='#000000', width=2)))
-st.plotly_chart(fig5)
+fig11 = go.Figure(data=go.Choropleth(
+    geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
+    featureidkey='properties.ST_NM',
+    locationmode='geojson-id',
+    locations=df['state'],
+    z=df['active cases'],
 
+    autocolorscale=False,
+    colorscale='darkmint',
+    marker_line_color='black',
 
+    colorbar=dict(
+        title={'text': "Active Cases"},
 
+        thickness=15,
+        len=0.35,
+        bgcolor='rgba(255,255,255,0.6)',
 
+        tick0=0,
+        dtick=20000,
 
-headerColor = 'grey'
-rowEvenColor = 'lightgrey'
-rowOddColor = 'white'
+        xanchor='left',
+        x=0.01,
+        yanchor='bottom',
+        y=0.05
+    )
+))
 
-fig = go.Figure(data=[go.Table(
-  header=dict(
-    values=['<b>X</b>','<b>Dairy Products</b>','<b>Citrus Fruits</b>','<b>Vegetables</b>','<b>Other Fruits</b>','<b>Breads</b>','<b>Grains</b>'],
-    line_color='darkslategray',
-    fill_color=headerColor,
-    align=['left','center'],
-    font=dict(color='white', size=12)
-  ),
-  cells=dict(
-    values=[
-      ['<b>X</b>','<b>Dairy Products</b>','<b>Citrus Fruits</b>','<b>Vegetables</b>','<b>Other Fruits</b>','<b>Breads</b>','<b>Grains</b>'],
-      [1200000, 20000, 80000, 2000, 12120000],
-      [1300000, 20000, 70000, 2000, 130902000],
-      [1300000, 20000, 120000, 2000, 131222000],
-      [1400000, 20000, 90000, 2000, 14102000]],
-    line_color='darkslategray',
-    # 2-D list of colors for alternating rows
-    fill_color = [[rowOddColor,rowEvenColor,rowOddColor, rowEvenColor,rowOddColor]*5],
-    align = ['left', 'center'],
-    font = dict(color = 'darkslategray', size = 11)
-    ))
-])
+fig11.update_geos(
+    visible=False,
+    projection=dict(
+        type='conic conformal',
+        parallels=[12.472944444, 35.172805555556],
+        rotation={'lat': 24, 'lon': 80}
+    ),
+    lonaxis={'range': [68, 98]},
+    lataxis={'range': [6, 38]}
+)
 
-st.plotly_chart(fig)
+fig11.update_layout(
+    title=dict(
+        text="",
+        xanchor='center',
+        x=0.5,
+        yref='paper',
+        yanchor='bottom',
+        y=1,
+        pad={'b': 10}
+    ),
+    margin={'r': 0, 't': 30, 'l': 0, 'b': 0},
+    height=550,
+    width=550
+)
+
+st.plotly_chart(fig11)
