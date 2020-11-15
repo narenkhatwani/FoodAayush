@@ -19,11 +19,6 @@ st.sidebar.markdown(f"<span style='color: black;font-size: 36px;font-weight: bol
 # adding text
 st.sidebar.markdown(f"<span style='color: black;font-size: 14px;'>Food Quality Analysis at your fingertips</span>", unsafe_allow_html=True)
 
-#declare and add sidebar
-st.sidebar.title("Menu")
-
-st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
-
 #read csv file
 DATA_URL = ("resources/assets_modified/01.csv")
 DATA_URL2 = ("resources/assets_modified/ingredient.csv")
@@ -53,13 +48,13 @@ def main():
     # Register your pages
     pages = {
         "About": about_page,
-        "First page": page_first,
-        "Second page": page_second,
-        "Three page": page_three,
-        "Four page": page_fourth
+        "Ingredient Information": page_first,
+        "Search for Recipe": page_second,
+        "Calorie Calculator": page_three,
+        "Heart Disease Map": page_fourth,
     }
 
-    st.sidebar.title("App with pages")
+    st.sidebar.title("Index")
 
     # Widget to select your page, you can choose between radio buttons or a selectbox
     page = st.sidebar.radio("Select your page", tuple(pages.keys()))
@@ -69,17 +64,19 @@ def main():
     pages[page]()
 
 def about_page():
-    st.title("About Section")
+    st.title("Food Aayush")
+
+    st.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
 
 def page_first():
     #to print a small iframe of the csv file
     #format is 'name displayed above dataset','variable in which csv is loaded'
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
+    st.title("Ingredient Information")
 
-    data
+    # st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
 
-    subset_data=data
+    # data
 
     ### MULTISELECT
     #food_name_input = st.multiselect('Food name',data.groupby('name').count().reset_index()['name'].tolist())
@@ -88,11 +85,8 @@ def page_first():
     #if len(food_name_input) > 0:
      #   subset_data = data[data['name'].isin(food_name_input)]
 
-    #sidebar title
-    st.sidebar.title("Filter data")
-
     #Checkbox for Hospitals
-    food_list = st.sidebar.selectbox("Select food name", data["name"].unique())
+    food_list = st.selectbox("Select ingredient name", data["name"].unique())
 
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Filter Data Results</span>", unsafe_allow_html=True)
@@ -185,6 +179,8 @@ def page_second():
     st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
     
 def page_three():
+    st.title("Calorie Calculator")
+    
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Add your total daily intake of calories</span>", unsafe_allow_html=True)
 
     x = st.slider('(in terms of Calories)',0,3000)
@@ -222,6 +218,9 @@ def page_three():
 
 def page_fourth():
     st.title('Indian Map for Heart Disease')
+    st.markdown("Data from 2017 - In DALYs Per 100,000 People")
+    #Data Source
+    #https://www.factchecker.in/punjab-tamil-nadu-haryana-have-highest-burden-of-heart-disease-in-india/
 
     #For plotly visuals
     #https://plotly.com/python/builtin-colorscales/
