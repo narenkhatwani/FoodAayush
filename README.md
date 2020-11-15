@@ -30,13 +30,13 @@ The requirements file would contain the names of the libraries and their version
 
 **Example:**
 
-altair==4.1.0
-streamlit==0.64.0
-matplotlib==3.2.2
-pandas==1.0.5
-plotly==4.9.0
-numpy==1.18.5
-dash==1.17.0
+- altair==4.1.0
+- streamlit==0.64.0
+- matplotlib==3.2.2
+- pandas==1.0.5
+- plotly==4.9.0
+- numpy==1.18.5
+- dash==1.17.0
 
 ###  Step 3:  ###
 
