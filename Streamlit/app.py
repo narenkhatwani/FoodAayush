@@ -48,118 +48,71 @@ def load_data2():
 data = load_data()
 data2= load_data2()
 
-#to print a small iframe of the csv file 
-#format is 'name displayed above dataset','variable in which csv is loaded'
+
+
+
+
+    #sidebar title
+st.title("Search for Recipe")
+st.markdown("Minimum Two ingredients required")
 
 st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
+data2
 
-data
+#Get All Ingredients from CSV
+all_ingredients = ["NA"]
+gg = data2.loc[:, data2.columns != 'name'].values.tolist()
+# all_dishes = list(x for x in data2['name'])
 
-subset_data=data
+# dish_dict = dict(zip(all_dishes,gg))
+# st.markdown(dish_dict)
 
-### MULTISELECT
-#food_name_input = st.multiselect('Food name',data.groupby('name').count().reset_index()['name'].tolist())
+for i in gg:
+    for j in i:
+        all_ingredients.append(j)
 
-# by food name
-#if len(food_name_input) > 0:
- #   subset_data = data[data['name'].isin(food_name_input)]
+#To remove Duplicates
+all_ingredients = list(dict.fromkeys(all_ingredients))
+# st.markdown(all_ingredients)
 
-#sidebar title
-st.sidebar.title("Filter data")
+#Dropdown for ingredients
+ingredient_1 = st.selectbox("Select 1st ingredient name", all_ingredients)
+ingredient_2 = st.selectbox("Select 2nd ingredient name", all_ingredients)
+ingredient_3 = st.selectbox("Select 3rd ingredient name", all_ingredients)
+ingredient_4 = st.selectbox("Select 4th ingredient name", all_ingredients)
+ingredient_5 = st.selectbox("Select 5th ingredient name", all_ingredients)
 
-#Checkbox for Hospitals
-food_list = st.sidebar.selectbox("Select food name", data["name"].unique())
+ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
 
+#Remove NA keyword from list
+ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
+ingredient_list = list(ingredient_list)
+# st.markdown(ingredient_list)
 
-st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Filter Data Results</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>You selected- {food_list}</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Nutritional Analysis for filtered Data is as follows-</span>", unsafe_allow_html=True)
+#got all recipe names
+all_recipes = list(x for x in data2['name'])
+# st.markdown(gg)
 
-#counts of various nutritional contents of a food item
-count_water = data.loc[(data["name"] == food_list) , 'water'].iloc[0]
-count_protein = data.loc[(data["name"] == food_list) , 'protcnt'].iloc[0]
-count_ash = data.loc[(data["name"] == food_list) , 'ash'].iloc[0]
-count_fat = data.loc[(data["name"] == food_list) , 'fatce'].iloc[0]
-count_fibretotal = data.loc[(data["name"] == food_list) , 'fibtg'].iloc[0]
-count_fibreinsoluble = data.loc[(data["name"] == food_list) , 'fibins'].iloc[0]
-count_fibresoluble = data.loc[(data["name"] == food_list) , 'fibsol'].iloc[0]
-count_carbohydrate = data.loc[(data["name"] == food_list) , 'choavldf'].iloc[0]
-count_energy = data.loc[(data["name"] == food_list) , 'enerc'].iloc[0]
+#compare ingredients
+def intersection(list1,list2):
+    list3 = [value for value in list2 if value in list1]
+    return list3
 
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Water- {count_water}g</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Protein- {count_protein}g</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Ash- {count_ash}g</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Fat- {count_fat}g</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Total Fibre- {count_fibretotal}g</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Insoluble Fibre- {count_fibreinsoluble}g</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Soluble Fibre- {count_fibresoluble}g</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Carbohydrates- {count_carbohydrate}g</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Energy- {count_energy}kJ</span>", unsafe_allow_html=True)
+score = [0]*len(gg)
+for i in range(len(gg)):
+    score[i] = len(intersection(gg[i],ingredient_list))
 
+max_score = max(score) if max(score) > 1 or len(ingredient_list)==1 else -999
 
+# st.markdown(max_score)
 
-if st.sidebar.checkbox('Custom Dish'):
-        #sidebar title
-    st.title("Search for Recipe")
-    st.markdown("Minimum Two ingredients required")
+most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
+recipe = []
+# st.markdown(score)
+# st.markdown(most_prob)
+recipe = ", ".join(most_prob)
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
-    data2
-
-    #Get All Ingredients from CSV
-    all_ingredients = ["NA"]
-    gg = data2.loc[:, data2.columns != 'name'].values.tolist()
-    # all_dishes = list(x for x in data2['name'])
-
-    # dish_dict = dict(zip(all_dishes,gg))
-    # st.markdown(dish_dict)
-
-    for i in gg:
-        for j in i:
-            all_ingredients.append(j)
-
-    #To remove Duplicates
-    all_ingredients = list(dict.fromkeys(all_ingredients))
-    # st.markdown(all_ingredients)
-
-    #Dropdown for ingredients
-    ingredient_1 = st.selectbox("Select 1st ingredient name", all_ingredients)
-    ingredient_2 = st.selectbox("Select 2nd ingredient name", all_ingredients)
-    ingredient_3 = st.selectbox("Select 3rd ingredient name", all_ingredients)
-    ingredient_4 = st.selectbox("Select 4th ingredient name", all_ingredients)
-    ingredient_5 = st.selectbox("Select 5th ingredient name", all_ingredients)
-
-    ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
-
-    #Remove NA keyword from list
-    ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
-    ingredient_list = list(ingredient_list)
-    # st.markdown(ingredient_list)
-
-    #got all recipe names
-    all_recipes = list(x for x in data2['name'])
-    # st.markdown(gg)
-
-    #compare ingredients
-    def intersection(list1,list2):
-        list3 = [value for value in list2 if value in list1]
-        return list3
-
-    score = [0]*len(gg)
-    for i in range(len(gg)):
-        score[i] = len(intersection(gg[i],ingredient_list))
-    
-    max_score = max(score) if max(score) > 1 or len(ingredient_list)==1 else -999
-
-    # st.markdown(max_score)
-
-    most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
-    recipe = []
-    # st.markdown(score)
-    # st.markdown(most_prob)
-    recipe = ", ".join(most_prob)
-
-    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
+st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
 
 st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Add your total daily intake of calories</span>", unsafe_allow_html=True)
 
@@ -198,9 +151,87 @@ else:
 
 
 
-st.sidebar.title("Map Heart")
 
-if st.sidebar.checkbox('Show Map'):
+    
+    
+    
+    
+def main():
+    # Register your pages
+    pages = {"First page": page_first,"Second page": page_second,"Three page": page_three,"Four page": page_fourth}
+
+    st.sidebar.title("App with pages")
+
+    # Widget to select your page, you can choose between radio buttons or a selectbox
+    page = st.sidebar.radio("Select your page", tuple(pages.keys()))
+    #page = st.sidebar.selectbox("Select your page", tuple(pages.keys()))
+
+    # Display the selected page
+    pages[page]()
+
+def page_first():
+    st.title("This is my first page")
+    #to print a small iframe of the csv file
+    #format is 'name displayed above dataset','variable in which csv is loaded'
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
+
+    data
+
+    subset_data=data
+
+    ### MULTISELECT
+    #food_name_input = st.multiselect('Food name',data.groupby('name').count().reset_index()['name'].tolist())
+
+    # by food name
+    #if len(food_name_input) > 0:
+     #   subset_data = data[data['name'].isin(food_name_input)]
+
+    #sidebar title
+    st.sidebar.title("Filter data")
+
+    #Checkbox for Hospitals
+    food_list = st.sidebar.selectbox("Select food name", data["name"].unique())
+
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Filter Data Results</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>You selected- {food_list}</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Nutritional Analysis for filtered Data is as follows-</span>", unsafe_allow_html=True)
+
+    #counts of various nutritional contents of a food item
+    count_water = data.loc[(data["name"] == food_list) , 'water'].iloc[0]
+    count_protein = data.loc[(data["name"] == food_list) , 'protcnt'].iloc[0]
+    count_ash = data.loc[(data["name"] == food_list) , 'ash'].iloc[0]
+    count_fat = data.loc[(data["name"] == food_list) , 'fatce'].iloc[0]
+    count_fibretotal = data.loc[(data["name"] == food_list) , 'fibtg'].iloc[0]
+    count_fibreinsoluble = data.loc[(data["name"] == food_list) , 'fibins'].iloc[0]
+    count_fibresoluble = data.loc[(data["name"] == food_list) , 'fibsol'].iloc[0]
+    count_carbohydrate = data.loc[(data["name"] == food_list) , 'choavldf'].iloc[0]
+    count_energy = data.loc[(data["name"] == food_list) , 'enerc'].iloc[0]
+
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Water- {count_water}g</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Protein- {count_protein}g</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Ash- {count_ash}g</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Fat- {count_fat}g</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Total Fibre- {count_fibretotal}g</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Insoluble Fibre- {count_fibreinsoluble}g</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Soluble Fibre- {count_fibresoluble}g</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Carbohydrates- {count_carbohydrate}g</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Energy- {count_energy}kJ</span>", unsafe_allow_html=True)
+
+
+def page_second():
+    st.title("This second page")
+    # ...
+    
+def page_three():
+    st.title("This three page")
+    # ...
+
+def page_fourth():
+    st.title("This four page")
+    st.sidebar.title("Map Heart")
+
     st.title('Indian Map for Heart Disease')
 
     #https://plotly.com/python/builtin-colorscales/
@@ -261,3 +292,7 @@ if st.sidebar.checkbox('Show Map'):
     )
 
     st.plotly_chart(fig11)
+
+
+if __name__ == "__main__":
+    main()
