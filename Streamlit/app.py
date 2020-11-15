@@ -13,15 +13,18 @@ import altair as alt
 #for widget types 
 #for demo purpose 
 
+
+#declare and add sidebar
+st.sidebar.title("Menu")
+
+
+st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
+
 # adding title
 st.title('Food Aayush')
 # adding text    
 st.markdown('Food Quality Analysis at your fingertips')
 
-st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
-
-#declare and add sidebar
-st.sidebar.title("Menu")
 
 #read csv file
 DATA_URL = ("resources/assets_modified/01.csv")
@@ -93,67 +96,70 @@ st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Solub
 st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Carbohydrates- {count_carbohydrate}g</span>", unsafe_allow_html=True)
 st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Energy- {count_energy}kJ</span>", unsafe_allow_html=True)
 
-#sidebar title
-st.sidebar.title("Search for Recipe")
-st.sidebar.markdown("Minimum Two ingredients required")
 
-st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
-data2
 
-#Get All Ingredients from CSV
-all_ingredients = ["NA"]
-gg = data2.loc[:, data2.columns != 'name'].values.tolist()
-# all_dishes = list(x for x in data2['name'])
+if st.sidebar.checkbox('Custom Dish'):
+        #sidebar title
+    st.title("Search for Recipe")
+    st.markdown("Minimum Two ingredients required")
 
-# dish_dict = dict(zip(all_dishes,gg))
-# st.markdown(dish_dict)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
+    data2
 
-for i in gg:
-    for j in i:
-        all_ingredients.append(j)
+    #Get All Ingredients from CSV
+    all_ingredients = ["NA"]
+    gg = data2.loc[:, data2.columns != 'name'].values.tolist()
+    # all_dishes = list(x for x in data2['name'])
 
-#To remove Duplicates
-all_ingredients = list(dict.fromkeys(all_ingredients))
-# st.markdown(all_ingredients)
+    # dish_dict = dict(zip(all_dishes,gg))
+    # st.markdown(dish_dict)
 
-#Dropdown for ingredients
-ingredient_1 = st.sidebar.selectbox("Select 1st ingredient name", all_ingredients)
-ingredient_2 = st.sidebar.selectbox("Select 2nd ingredient name", all_ingredients)
-ingredient_3 = st.sidebar.selectbox("Select 3rd ingredient name", all_ingredients)
-ingredient_4 = st.sidebar.selectbox("Select 4th ingredient name", all_ingredients)
-ingredient_5 = st.sidebar.selectbox("Select 5th ingredient name", all_ingredients)
+    for i in gg:
+        for j in i:
+            all_ingredients.append(j)
 
-ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
+    #To remove Duplicates
+    all_ingredients = list(dict.fromkeys(all_ingredients))
+    # st.markdown(all_ingredients)
 
-#Remove NA keyword from list
-ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
-ingredient_list = list(ingredient_list)
-# st.markdown(ingredient_list)
+    #Dropdown for ingredients
+    ingredient_1 = st.selectbox("Select 1st ingredient name", all_ingredients)
+    ingredient_2 = st.selectbox("Select 2nd ingredient name", all_ingredients)
+    ingredient_3 = st.selectbox("Select 3rd ingredient name", all_ingredients)
+    ingredient_4 = st.selectbox("Select 4th ingredient name", all_ingredients)
+    ingredient_5 = st.selectbox("Select 5th ingredient name", all_ingredients)
 
-#got all recipe names
-all_recipes = list(x for x in data2['name'])
-# st.markdown(gg)
+    ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
 
-#compare ingredients
-def intersection(list1,list2):
-    list3 = [value for value in list2 if value in list1]
-    return list3
+    #Remove NA keyword from list
+    ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
+    ingredient_list = list(ingredient_list)
+    # st.markdown(ingredient_list)
 
-score = [0]*len(gg)
-for i in range(len(gg)):
-    score[i] = len(intersection(gg[i],ingredient_list))
- 
-max_score = max(score) if max(score) > 1 or len(ingredient_list)==1 else -999
+    #got all recipe names
+    all_recipes = list(x for x in data2['name'])
+    # st.markdown(gg)
 
-# st.markdown(max_score)
+    #compare ingredients
+    def intersection(list1,list2):
+        list3 = [value for value in list2 if value in list1]
+        return list3
 
-most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
-recipe = []
-# st.markdown(score)
-# st.markdown(most_prob)
-recipe = ", ".join(most_prob)
+    score = [0]*len(gg)
+    for i in range(len(gg)):
+        score[i] = len(intersection(gg[i],ingredient_list))
+    
+    max_score = max(score) if max(score) > 1 or len(ingredient_list)==1 else -999
 
-st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
+    # st.markdown(max_score)
+
+    most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
+    recipe = []
+    # st.markdown(score)
+    # st.markdown(most_prob)
+    recipe = ", ".join(most_prob)
+
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
 
 st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Add your total daily intake of calories</span>", unsafe_allow_html=True)
 
@@ -192,64 +198,66 @@ else:
 
 
 
+st.sidebar.title("Map Heart")
 
-st.title('Indian Map for Heart Disease')
+if st.sidebar.checkbox('Show Map'):
+    st.title('Indian Map for Heart Disease')
 
-#https://plotly.com/python/builtin-colorscales/
-df = pd.read_csv("resources/streamlit_map/cases2.csv")
+    #https://plotly.com/python/builtin-colorscales/
+    df = pd.read_csv("resources/streamlit_map/cases2.csv")
 
-fig11 = go.Figure(data=go.Choropleth(
-    geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
-    featureidkey='properties.ST_NM',
-    locationmode='geojson-id',
-    locations=df['state'],
-    z=df['active cases'],
+    fig11 = go.Figure(data=go.Choropleth(
+        geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
+        featureidkey='properties.ST_NM',
+        locationmode='geojson-id',
+        locations=df['state'],
+        z=df['active cases'],
 
-    autocolorscale=False,
-    colorscale='darkmint',
-    marker_line_color='black',
+        autocolorscale=False,
+        colorscale='darkmint',
+        marker_line_color='black',
 
-    colorbar=dict(
-        title={'text': "Active Cases"},
+        colorbar=dict(
+            title={'text': "Active Cases"},
 
-        thickness=15,
-        len=0.35,
-        bgcolor='rgba(255,255,255,0.6)',
+            thickness=15,
+            len=0.35,
+            bgcolor='rgba(255,255,255,0.6)',
 
-        tick0=0,
-        dtick=20000,
+            tick0=0,
+            dtick=20000,
 
-        xanchor='left',
-        x=0.01,
-        yanchor='bottom',
-        y=0.05
+            xanchor='left',
+            x=0.01,
+            yanchor='bottom',
+            y=0.05
+        )
+    ))
+
+    fig11.update_geos(
+        visible=False,
+        projection=dict(
+            type='conic conformal',
+            parallels=[12.472944444, 35.172805555556],
+            rotation={'lat': 24, 'lon': 80}
+        ),
+        lonaxis={'range': [68, 98]},
+        lataxis={'range': [6, 38]}
     )
-))
 
-fig11.update_geos(
-    visible=False,
-    projection=dict(
-        type='conic conformal',
-        parallels=[12.472944444, 35.172805555556],
-        rotation={'lat': 24, 'lon': 80}
-    ),
-    lonaxis={'range': [68, 98]},
-    lataxis={'range': [6, 38]}
-)
+    fig11.update_layout(
+        title=dict(
+            text="",
+            xanchor='center',
+            x=0.5,
+            yref='paper',
+            yanchor='bottom',
+            y=1,
+            pad={'b': 10}
+        ),
+        margin={'r': 0, 't': 30, 'l': 0, 'b': 0},
+        height=550,
+        width=550
+    )
 
-fig11.update_layout(
-    title=dict(
-        text="",
-        xanchor='center',
-        x=0.5,
-        yref='paper',
-        yanchor='bottom',
-        y=1,
-        pad={'b': 10}
-    ),
-    margin={'r': 0, 't': 30, 'l': 0, 'b': 0},
-    height=550,
-    width=550
-)
-
-st.plotly_chart(fig11)
+    st.plotly_chart(fig11)
