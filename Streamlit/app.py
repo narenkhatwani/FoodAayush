@@ -14,18 +14,15 @@ import json
 #for widget types 
 #for demo purpose 
 
+# adding title
+st.sidebar.markdown(f"<span style='color: black;font-size: 36px;font-weight: bold;'>Food Aayush</span>", unsafe_allow_html=True)
+# adding text
+st.sidebar.markdown(f"<span style='color: black;font-size: 14px;'>Food Quality Analysis at your fingertips</span>", unsafe_allow_html=True)
 
 #declare and add sidebar
 st.sidebar.title("Menu")
 
-
 st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
-
-# adding title
-st.title('Food Aayush')
-# adding text    
-st.markdown('Food Quality Analysis at your fingertips')
-
 
 #read csv file
 DATA_URL = ("resources/assets_modified/01.csv")
@@ -51,7 +48,6 @@ data2= load_data2()
 
 #loading Map data from CSV file
 df = pd.read_csv("resources/streamlit_map/cases2.csv")
-
 
 def main():
     # Register your pages
@@ -225,18 +221,17 @@ def page_three():
         st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
 
 def page_fourth():
-    st.sidebar.title("Map Heart")
-
     st.title('Indian Map for Heart Disease')
 
+    #For plotly visuals
     #https://plotly.com/python/builtin-colorscales/
 
     #Loading JSON file
+    #File Source: https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson
     with open("resources/streamlit_map/india_states.geojson") as json_file:
         indian_map = json.load(json_file)
 
     fig11 = go.Figure(data=go.Choropleth(
-        #geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
         geojson=indian_map,
         featureidkey='properties.ST_NM',
         locationmode='geojson-id',
@@ -291,7 +286,6 @@ def page_fourth():
     )
 
     st.plotly_chart(fig11)
-
 
 if __name__ == "__main__":
     main()
