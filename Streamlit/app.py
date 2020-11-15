@@ -7,6 +7,7 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import altair as alt
+import json
 
 #https://github.com/MarcSkovMadsen/awesome-streamlit
 #https://docs.streamlit.io/en/stable/api.html#display-text
@@ -48,117 +49,19 @@ def load_data2():
 data = load_data()
 data2= load_data2()
 
+#loading Map data from CSV file
+df = pd.read_csv("resources/streamlit_map/cases2.csv")
 
 
-
-
-    #sidebar title
-st.title("Search for Recipe")
-st.markdown("Minimum Two ingredients required")
-
-st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
-data2
-
-#Get All Ingredients from CSV
-all_ingredients = ["NA"]
-gg = data2.loc[:, data2.columns != 'name'].values.tolist()
-# all_dishes = list(x for x in data2['name'])
-
-# dish_dict = dict(zip(all_dishes,gg))
-# st.markdown(dish_dict)
-
-for i in gg:
-    for j in i:
-        all_ingredients.append(j)
-
-#To remove Duplicates
-all_ingredients = list(dict.fromkeys(all_ingredients))
-# st.markdown(all_ingredients)
-
-#Dropdown for ingredients
-ingredient_1 = st.selectbox("Select 1st ingredient name", all_ingredients)
-ingredient_2 = st.selectbox("Select 2nd ingredient name", all_ingredients)
-ingredient_3 = st.selectbox("Select 3rd ingredient name", all_ingredients)
-ingredient_4 = st.selectbox("Select 4th ingredient name", all_ingredients)
-ingredient_5 = st.selectbox("Select 5th ingredient name", all_ingredients)
-
-ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
-
-#Remove NA keyword from list
-ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
-ingredient_list = list(ingredient_list)
-# st.markdown(ingredient_list)
-
-#got all recipe names
-all_recipes = list(x for x in data2['name'])
-# st.markdown(gg)
-
-#compare ingredients
-def intersection(list1,list2):
-    list3 = [value for value in list2 if value in list1]
-    return list3
-
-score = [0]*len(gg)
-for i in range(len(gg)):
-    score[i] = len(intersection(gg[i],ingredient_list))
-
-max_score = max(score) if max(score) > 1 or len(ingredient_list)==1 else -999
-
-# st.markdown(max_score)
-
-most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
-recipe = []
-# st.markdown(score)
-# st.markdown(most_prob)
-recipe = ", ".join(most_prob)
-
-st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
-
-st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Add your total daily intake of calories</span>", unsafe_allow_html=True)
-
-x = st.slider('(in terms of Calories)',0,3000)
-
-fat_value= x*(30/100)
-sat_fat_value= x*(7/100)
-trans_fat_value= x*(1/100)
-total_carbs_value= x*(50/100)
-protein_value= x*(20/100)
-
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Total Fat content should be- {fat_value} Cal</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Saturated Fat count should be- {sat_fat_value} Cal</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Trans Fat count should be- {trans_fat_value} Cal</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Total Carbohydrates count should be- {total_carbs_value} Cal</span>", unsafe_allow_html=True)
-st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Protein count should be- {protein_value} Cal</span>", unsafe_allow_html=True)
-
-
-st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Want to know your ideal calorie intake ??</span>", unsafe_allow_html=True)
-
-st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>Choose your gender</span>", unsafe_allow_html=True)
-gender = st.selectbox('*Your calorie intake depends on your gender',('Male', 'Female', 'Other','Rather Not Say'))
-
-st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>You selected: {gender}</span>", unsafe_allow_html=True)
-
-if (gender == 'Male'):
-    st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Your ideal daily calorie intake should be 2500 Cal</span>", unsafe_allow_html=True)
-    st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Your ideal daily water intake should be 3.7 L</span>", unsafe_allow_html=True)
-elif (gender == 'Female'):
-    st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Your ideal daily calorie intake should be 2000 Cal</span>", unsafe_allow_html=True)
-    st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Your ideal daily water intake should be 2.7 L</span>", unsafe_allow_html=True)
-elif (gender == 'Other'):
-    st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
-else:
-    st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
-
-
-
-
-    
-    
-    
-    
 def main():
     # Register your pages
-    pages = {"First page": page_first,"Second page": page_second,"Three page": page_three,"Four page": page_fourth}
+    pages = {
+        "About": about_page,
+        "First page": page_first,
+        "Second page": page_second,
+        "Three page": page_three,
+        "Four page": page_fourth
+    }
 
     st.sidebar.title("App with pages")
 
@@ -169,8 +72,10 @@ def main():
     # Display the selected page
     pages[page]()
 
+def about_page():
+    st.title("About Section")
+
 def page_first():
-    st.title("This is my first page")
     #to print a small iframe of the csv file
     #format is 'name displayed above dataset','variable in which csv is loaded'
 
@@ -221,24 +126,118 @@ def page_first():
 
 
 def page_second():
-    st.title("This second page")
-    # ...
+    #sidebar title
+    st.title("Search for Recipe")
+    st.markdown("Minimum Two ingredients required")
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
+    data2
+
+    #Get All Ingredients from CSV
+    all_ingredients = ["NA"]
+    gg = data2.loc[:, data2.columns != 'name'].values.tolist()
+    # all_dishes = list(x for x in data2['name'])
+
+    # dish_dict = dict(zip(all_dishes,gg))
+    # st.markdown(dish_dict)
+
+    for i in gg:
+        for j in i:
+            all_ingredients.append(j)
+
+    #To remove Duplicates
+    all_ingredients = list(dict.fromkeys(all_ingredients))
+    # st.markdown(all_ingredients)
+
+    #Dropdown for ingredients
+    ingredient_1 = st.selectbox("Select 1st ingredient name", all_ingredients)
+    ingredient_2 = st.selectbox("Select 2nd ingredient name", all_ingredients)
+    ingredient_3 = st.selectbox("Select 3rd ingredient name", all_ingredients)
+    ingredient_4 = st.selectbox("Select 4th ingredient name", all_ingredients)
+    ingredient_5 = st.selectbox("Select 5th ingredient name", all_ingredients)
+
+    ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
+
+    #Remove NA keyword from list
+    ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
+    ingredient_list = list(ingredient_list)
+    # st.markdown(ingredient_list)
+
+    #got all recipe names
+    all_recipes = list(x for x in data2['name'])
+    # st.markdown(gg)
+
+    #compare ingredients
+    def intersection(list1,list2):
+        list3 = [value for value in list2 if value in list1]
+        return list3
+
+    score = [0]*len(gg)
+    for i in range(len(gg)):
+        score[i] = len(intersection(gg[i],ingredient_list))
+
+    max_score = max(score) if max(score) > 1 or len(ingredient_list)==1 else -999
+
+    # st.markdown(max_score)
+
+    most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
+    recipe = []
+    # st.markdown(score)
+    # st.markdown(most_prob)
+    recipe = ", ".join(most_prob)
+
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
     
 def page_three():
-    st.title("This three page")
-    # ...
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Add your total daily intake of calories</span>", unsafe_allow_html=True)
+
+    x = st.slider('(in terms of Calories)',0,3000)
+
+    fat_value= x*(30/100)
+    sat_fat_value= x*(7/100)
+    trans_fat_value= x*(1/100)
+    total_carbs_value= x*(50/100)
+    protein_value= x*(20/100)
+
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Total Fat content should be- {fat_value} Cal</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Saturated Fat count should be- {sat_fat_value} Cal</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Trans Fat count should be- {trans_fat_value} Cal</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Total Carbohydrates count should be- {total_carbs_value} Cal</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Protein count should be- {protein_value} Cal</span>", unsafe_allow_html=True)
+
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Want to know your ideal calorie intake ??</span>", unsafe_allow_html=True)
+
+    st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>Choose your gender</span>", unsafe_allow_html=True)
+    gender = st.selectbox('*Your calorie intake depends on your gender',('Male', 'Female', 'Other','Rather Not Say'))
+
+    st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>You selected: {gender}</span>", unsafe_allow_html=True)
+
+    if (gender == 'Male'):
+        st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Your ideal daily calorie intake should be 2500 Cal</span>", unsafe_allow_html=True)
+        st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Your ideal daily water intake should be 3.7 L</span>", unsafe_allow_html=True)
+    elif (gender == 'Female'):
+        st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Your ideal daily calorie intake should be 2000 Cal</span>", unsafe_allow_html=True)
+        st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Your ideal daily water intake should be 2.7 L</span>", unsafe_allow_html=True)
+    elif (gender == 'Other'):
+        st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
+    else:
+        st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
 
 def page_fourth():
-    st.title("This four page")
     st.sidebar.title("Map Heart")
 
     st.title('Indian Map for Heart Disease')
 
     #https://plotly.com/python/builtin-colorscales/
-    df = pd.read_csv("resources/streamlit_map/cases2.csv")
+
+    #Loading JSON file
+    with open("resources/streamlit_map/india_states.geojson") as json_file:
+        indian_map = json.load(json_file)
 
     fig11 = go.Figure(data=go.Choropleth(
-        geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
+        #geojson="https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson",
+        geojson=indian_map,
         featureidkey='properties.ST_NM',
         locationmode='geojson-id',
         locations=df['state'],
