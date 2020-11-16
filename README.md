@@ -44,6 +44,12 @@ The requirements file would contain the names of the libraries and their version
 
 The setup.sh file contains some commands to set the problem on the Heroku side, so create a setup.sh file (you can use the nano command) and save the following in that file (change the email in the middle of the file to your correct email)
 
+Make sure that your terminal is in your project folder
+
+Type the command 
+```nano setup.sh```
+
+Now you will see a setup.sh file has been opened. Copy one of the codes that you like and paste it in the setup.sh file
 
 **setup.sh (without email verification - preferrable)**
 
@@ -58,7 +64,7 @@ port = $PORT\n 
 " > ~/.streamlit/config.toml 
 ```
 
-**setup.sh (with email verification - preferrable)**
+**setup.sh (with email verification - not preferrable)**
 
 ```
 mkdir -p ~/.streamlit/
@@ -72,7 +78,18 @@ headless = true\n\
 enableCORS=false\n\
 port = $PORT\n\
 ```
+*Procfile*
 
+Again,Make sure that your terminal is in your project folder
+
+Type the command 
+```nano Procfile```  (Procfile here is case sensitive - type it as it is mentioned)
+
+and now insert the following piece of code in the Procfile file
+
+```web: sh setup.sh && streamlit run [name-of-app].py```
+
+**Note- [name-of-app] being the name of your project's main .py file**
 
 ###  Step 4:  ###
 
