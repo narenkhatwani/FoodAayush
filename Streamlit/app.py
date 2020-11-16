@@ -73,9 +73,11 @@ def about_page():
 
     st.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
 
-    st.subheader("About")
+    st.subheader("About FoodAayush")
 
     st.write("Food is an essential parameter that plays an important role in the survival of humans. It also plays a major part in depicting a country’s culture. Healthy, nutritious, and high-quality food results in not only a better lifestyle but also develops a person’s immunity and health. Likewise, the consumption of low-quality food which might be deprived of nutritional value impacts a person’s health negatively and makes them susceptible to all types of diseases. In India, there is a persistent complaint, in any civic body-related food section, about the quality of meals available. Likewise, the quality of the oil is also an important factor while cooking any meal. Therefore, the Quality of oil used in frying the food to affect its taste must be monitored too. Its continuous exposure to relatively high temperatures results in degradation of its quality. The purpose of this study is to build an application for the detection of the quality of food and also to detect repeated frying on cooking oils based on the visual properties of the oils. Classification of food items is done on the basis of time left for consumption, edibility, quality, color, and rancidity. The food items are further classified as stale or usable using artificial intelligence algorithms based on the images acquired through a Cell Phone’s camera.")
+
+    st.subheader("About Streamlit")
 
     st.write("""[Streamlit](https://streamlit.io/) is The fastest way to build and share data apps Turn data scripts into sharable web apps in minutes. All in Python. All for free. No front-end experience required.""")
     
@@ -99,10 +101,11 @@ def page_first():
      #   subset_data = data[data['name'].isin(food_name_input)]
 
     #Checkbox for Hospitals
-    food_list = st.selectbox("Select ingredient name", data["name"].unique())
+    st.subheader("Search for an Ingredient")
+    food_list = st.selectbox("Search Here:", data["name"].unique())
 
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Filter Data Results</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Filter Data Results are :</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>You selected- {food_list}</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Nutritional Analysis for filtered Data is as follows-</span>", unsafe_allow_html=True)
 
@@ -133,7 +136,7 @@ def page_second():
     st.title("Search for Recipe")
     st.markdown("Minimum Two ingredients required")
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Dataset Preview</span>", unsafe_allow_html=True)
     data2
 
     #Get All Ingredients from CSV
@@ -153,11 +156,29 @@ def page_second():
     # st.markdown(all_ingredients)
 
     #Dropdown for ingredients
-    ingredient_1 = st.selectbox("Select 1st ingredient name", all_ingredients)
-    ingredient_2 = st.selectbox("Select 2nd ingredient name", all_ingredients)
-    ingredient_3 = st.selectbox("Select 3rd ingredient name", all_ingredients)
-    ingredient_4 = st.selectbox("Select 4th ingredient name", all_ingredients)
-    ingredient_5 = st.selectbox("Select 5th ingredient name", all_ingredients)
+    st.subheader("Search for 1st Ingredient")
+    ingredient_1 = st.selectbox("1st ingredient name", all_ingredients)
+    st.subheader("Search for 2nd Ingredient")
+    ingredient_2 = st.selectbox("2nd ingredient name", all_ingredients)
+    st.subheader("Search for 3rd Ingredient")
+    ingredient_3 = st.selectbox("3rd ingredient name", all_ingredients)
+    st.subheader("Search for 4th Ingredient")
+    ingredient_4 = st.selectbox("4th ingredient name", all_ingredients)
+    st.subheader("Search for 5th Ingredient")
+    ingredient_5 = st.selectbox("5th ingredient name", all_ingredients)
+    st.subheader("Search for 6th Ingredient")
+    ingredient_5 = st.selectbox("6th ingredient name", all_ingredients)
+    st.subheader("Search for 7th Ingredient")
+    ingredient_5 = st.selectbox("7th ingredient name", all_ingredients)
+    st.subheader("Search for 8th Ingredient")
+    ingredient_5 = st.selectbox("8th ingredient name", all_ingredients)
+    st.subheader("Search for 9th Ingredient")
+    ingredient_5 = st.selectbox("9th ingredient name", all_ingredients)
+    st.subheader("Search for 10th Ingredient")
+    ingredient_5 = st.selectbox("10th ingredient name", all_ingredients)
+    st.subheader("Search for 11th Ingredient")
+    ingredient_5 = st.selectbox("11th ingredient name", all_ingredients)
+    
 
     ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
 
@@ -194,7 +215,7 @@ def page_second():
 def page_three():
     st.title("Calorie Calculator")
     
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Add your total daily intake of calories</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Add your total daily intake of calories</span>", unsafe_allow_html=True)
 
     x = st.slider('(in terms of Calories)',0,3000)
 
@@ -211,7 +232,7 @@ def page_three():
     st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Protein count should be- {protein_value} Cal</span>", unsafe_allow_html=True)
 
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>->Want to know your ideal calorie intake ??</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Want to know your ideal calorie intake ??</span>", unsafe_allow_html=True)
 
     st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>Choose your gender</span>", unsafe_allow_html=True)
     gender = st.selectbox('*Your calorie intake depends on your gender',('Male', 'Female', 'Other','Rather Not Say'))
@@ -320,8 +341,11 @@ background-size: cover;
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+'''
+alignment code
+st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
 
-
+'''
 
 
 

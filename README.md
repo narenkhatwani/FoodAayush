@@ -45,6 +45,27 @@ The requirements file would contain the names of the libraries and their version
 The setup.sh file contains some commands to set the problem on the Heroku side, so create a setup.sh file (you can use the nano command) and save the following in that file (change the email in the middle of the file to your correct email)
 
 
+**setup.sh (without email verification - preferrable)**
+
+```
+mkdir -p ~/.streamlit/ echo " [server]\n headless = true\n enableCORS=false\n port = $PORT\n \n " > ~/.streamlit/config.toml 
+```
+
+**setup.sh (with email verification - preferrable)**
+
+```
+mkdir -p ~/.streamlit/
+echo "\
+[general]\n\
+email = \"your@domain.com\"\n\
+" > ~/.streamlit/credentials.toml
+echo "\
+[server]\n\
+headless = true\n\
+enableCORS=false\n\
+port = $PORT\n\
+```
+
 
 ###  Step 4:  ###
 
@@ -54,12 +75,6 @@ The setup.sh file contains some commands to set the problem on the Heroku side, 
 ###  Step 6:  ###
 
 ###  Step 7:  ###
-
-
-
-
-
-
 
 
 
