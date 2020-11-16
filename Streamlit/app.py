@@ -16,8 +16,11 @@ import json
 
 # adding title
 st.sidebar.markdown(f"<span style='color: black;font-size: 36px;font-weight: bold;'>Food Aayush</span>", unsafe_allow_html=True)
+
+st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
 # adding text
 st.sidebar.markdown(f"<span style='color: black;font-size: 14px;'>Food Quality Analysis at your fingertips</span>", unsafe_allow_html=True)
+
 
 #read csv file
 DATA_URL = ("resources/assets_modified/01.csv")
@@ -54,10 +57,12 @@ def main():
         "Heart Disease Map": page_fourth,
     }
 
-    st.sidebar.title("Index")
+    st.sidebar.title("Navigation")
 
+    st.sidebar.subheader("Go To :")
     # Widget to select your page, you can choose between radio buttons or a selectbox
-    page = st.sidebar.radio("Select your page", tuple(pages.keys()))
+    page = st.sidebar.radio("(Choose an option to get redirected)", tuple(pages.keys()))
+    
     #page = st.sidebar.selectbox("Select your page", tuple(pages.keys()))
 
     # Display the selected page
@@ -67,6 +72,14 @@ def about_page():
     st.title("Food Aayush")
 
     st.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
+
+    st.subheader("About")
+
+    st.write("Food is an essential parameter that plays an important role in the survival of humans. It also plays a major part in depicting a country’s culture. Healthy, nutritious, and high-quality food results in not only a better lifestyle but also develops a person’s immunity and health. Likewise, the consumption of low-quality food which might be deprived of nutritional value impacts a person’s health negatively and makes them susceptible to all types of diseases. In India, there is a persistent complaint, in any civic body-related food section, about the quality of meals available. Likewise, the quality of the oil is also an important factor while cooking any meal. Therefore, the Quality of oil used in frying the food to affect its taste must be monitored too. Its continuous exposure to relatively high temperatures results in degradation of its quality. The purpose of this study is to build an application for the detection of the quality of food and also to detect repeated frying on cooking oils based on the visual properties of the oils. Classification of food items is done on the basis of time left for consumption, edibility, quality, color, and rancidity. The food items are further classified as stale or usable using artificial intelligence algorithms based on the images acquired through a Cell Phone’s camera.")
+
+    st.write("""[Streamlit](https://streamlit.io/) is The fastest way to build and share data apps Turn data scripts into sharable web apps in minutes. All in Python. All for free. No front-end experience required.""")
+    
+
 
 def page_first():
     #to print a small iframe of the csv file
@@ -288,3 +301,31 @@ def page_fourth():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+#background image for the webapp
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
