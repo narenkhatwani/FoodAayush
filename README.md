@@ -7,6 +7,7 @@
 
 
 ![alt text](https://imgur.com/OqjjZQA)
+[Imgur](https://i.imgur.com/OqjjZQA.jpg)
 
 
 # Streamlit
