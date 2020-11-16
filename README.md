@@ -48,7 +48,14 @@ The setup.sh file contains some commands to set the problem on the Heroku side, 
 **setup.sh (without email verification - preferrable)**
 
 ```
-mkdir -p ~/.streamlit/ echo " [server]\n headless = true\n enableCORS=false\n port = $PORT\n \n " > ~/.streamlit/config.toml 
+mkdir -p ~/.streamlit/ 
+echo " 
+[server]\n 
+headless = true\n 
+enableCORS=false\n 
+port = $PORT\n 
+\n 
+" > ~/.streamlit/config.toml 
 ```
 
 **setup.sh (with email verification - preferrable)**
