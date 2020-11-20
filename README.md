@@ -21,7 +21,7 @@
 
 ## How to Run the Project
 
-Open the terminal folder in the Streamlit Folder and run the following command
+Open the terminal/cmd in the Streamlit Folder and run the following command
 
 ```streamlit run app.py```
 
