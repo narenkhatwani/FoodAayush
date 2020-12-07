@@ -333,7 +333,7 @@ if __name__ == "__main__":
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
+background-image: url("https://ibb.co/r4nbpRF");
 background-size: cover;
 }
 </style>
