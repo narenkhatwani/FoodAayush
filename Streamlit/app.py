@@ -70,7 +70,6 @@ def main():
 
 def about_page():
     st.title("Food Aayush")
-
     st.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
 
     st.subheader("About FoodAayush")
@@ -333,7 +332,7 @@ if __name__ == "__main__":
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://i.imgur.com/s372Lj3.png?1");
+background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
 background-size: cover;
 }
 </style>
