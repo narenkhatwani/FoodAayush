@@ -333,22 +333,13 @@ if __name__ == "__main__":
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://ibb.co/r4nbpRF");
+background-image: url("https://i.imgur.com/s372Lj3.png?1");
 background-size: cover;
 }
 </style>
 '''
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-
-'''
-alignment code
-st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
-
-'''
-
-
-
 
 
 
