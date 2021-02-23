@@ -80,6 +80,12 @@ def about_page():
 
     st.write("""[Streamlit](https://streamlit.io/) is The fastest way to build and share data apps Turn data scripts into sharable web apps in minutes. All in Python. All for free. No front-end experience required.""")
     
+    URL = ("DEMO.csv")
+    def load_data65():
+        data65 = pd.read_csv(URL)
+        return data65
+
+    data65=load_data65()
 
 
 def page_first():
@@ -318,6 +324,8 @@ def page_fourth():
     )
 
     st.plotly_chart(fig11)
+
+
 
 if __name__ == "__main__":
     main()

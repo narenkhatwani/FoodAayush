@@ -2,7 +2,6 @@ altair==4.1.0
 streamlit==0.71.0
 matplotlib==3.3.3
 pandas==1.1.4
-plotly==4.9.0
 numpy==1.18.5
 dash==1.17.0
 plotly==4.12.0
