@@ -1,4 +1,0 @@
-# Column ordering
-# ---------------
-# before: Before column
-# code:   Column

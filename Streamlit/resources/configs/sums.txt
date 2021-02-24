@@ -1,4 +1,0 @@
-# Column sums
-# -----------
-# code:       Sum column
-# expression: Expression

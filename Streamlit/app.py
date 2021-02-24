@@ -48,8 +48,6 @@ def load_data2():
 data = load_data()
 data2= load_data2()
 
-#loading Map data from CSV file
-df = pd.read_csv("resources/streamlit_map/cases2.csv")
 
 def main():
     # Register your pages
@@ -84,7 +82,18 @@ def about_page():
     st.subheader("About Streamlit")
 
     st.write("""[Streamlit](https://streamlit.io/) is The fastest way to build and share data apps Turn data scripts into sharable web apps in minutes. All in Python. All for free. No front-end experience required.""")
-    
+    #background image for the webapp
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
+    background-size: cover;
+    }
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
+
    
 
 
@@ -134,6 +143,17 @@ def page_first():
     st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Soluble Fibre- {count_fibresoluble}g</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Carbohydrates- {count_carbohydrate}g</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Energy- {count_energy}kJ</span>", unsafe_allow_html=True)
+    #background image for the webapp
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
+    background-size: cover;
+    }
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 
 def page_second():
@@ -216,7 +236,18 @@ def page_second():
     recipe = ", ".join(most_prob)
 
     st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
-    
+    #background image for the webapp
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
+    background-size: cover;
+    }
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
+ 
 def page_three():
     st.title("Calorie Calculator")
     
@@ -254,10 +285,31 @@ def page_three():
         st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
     else:
         st.markdown(f"<span style='color: blue;font-size: 18px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
+    #background image for the webapp
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
+    background-size: cover;
+    }
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 def page_fourth():
     st.title('Indian Map for Heart Disease')
-    st.markdown("Data from 2017 - In DALYs Per 100,000 People")
+    st.header("Data from 2017 - In DALYs Per 100,000 People")
+    st.markdown("The disability-adjusted life year (DALY) is a measure of overall disease burden, expressed as the number of years lost due to ill-health, disability or early death.")
+    
+    #loading Map data from CSV file
+    df = pd.read_csv("resources/streamlit_map/cases2.csv")
+
+    raw_data=st.checkbox('See Raw Data')
+    if raw_data: 
+        st.write(df)
+    
+    
     #Data Source
     #https://www.factchecker.in/punjab-tamil-nadu-haryana-have-highest-burden-of-heart-disease-in-india/
 
@@ -334,7 +386,7 @@ def page_five():
 
     st.write(df)  # visualize my dataframe in the Streamlit app
 
-
+    st.title("Food Compatibility Matrix (Food Categories)")  # add a title
     data = pd.read_csv('Food_Matrix - Sheet1 (2).csv' , na_values= "NaN")
     data.fillna(0 , inplace = True)
 
@@ -384,15 +436,4 @@ if __name__ == "__main__":
 
 
 
-
-#background image for the webapp
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
-background-size: cover;
-}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
 

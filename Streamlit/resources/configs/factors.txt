@@ -1,4 +1,0 @@
-# Conversion factors
-# ------------------
-# code:   Column code
-# factor: Conversion factor (in grams / kcal)
