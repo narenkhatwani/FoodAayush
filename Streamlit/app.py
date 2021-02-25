@@ -93,22 +93,12 @@ def page_first():
     #to print a small iframe of the csv file
     #format is 'name displayed above dataset','variable in which csv is loaded'
 
-    st.title("Ingredient Information")
+    st.title("Ingredient Information 🍅 🥕 🥒 ")
 
-    # st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'> ->Dataset Preview</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.0;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all nutrients, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the  nutritional value of any food item being consumed is a very important parameter. The content of different nutrients in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
 
-    # data
-
-    ### MULTISELECT
-    #food_name_input = st.multiselect('Food name',data.groupby('name').count().reset_index()['name'].tolist())
-
-    # by food name
-    #if len(food_name_input) > 0:
-     #   subset_data = data[data['name'].isin(food_name_input)]
-
-    #Checkbox for Hospitals
-    st.subheader("Search for an Ingredient")
-    food_list = st.selectbox("Search Here:", data["name"].unique())
+    
+    food_list = st.selectbox("Search your ingredient here:", data["name"].unique())
 
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Filter Data Results are :</span>", unsafe_allow_html=True)
