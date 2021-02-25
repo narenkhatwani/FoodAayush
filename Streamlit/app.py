@@ -13,18 +13,10 @@ from matplotlib import cm
 from matplotlib.font_manager import FontProperties
 
 
-#https://github.com/MarcSkovMadsen/awesome-streamlit
-#https://docs.streamlit.io/en/stable/api.html#display-text
-#for widget types 
-#for demo purpose 
-
 # adding title
 st.sidebar.markdown(f"<span style='color: black;font-size: 36px;font-weight: bold;'>Food Aayush</span>", unsafe_allow_html=True)
 
 st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
-# adding text
-st.sidebar.markdown(f"<span style='color: black;font-size: 14px;'>Food Quality Analysis at your fingertips</span>", unsafe_allow_html=True)
-
 
 #read csv file
 DATA_URL = ("resources/assets_modified/01.csv")
@@ -60,28 +52,28 @@ def main():
         "Food Matrix": page_five
     }
 
-    st.sidebar.title("Navigation")
+    st.sidebar.title("Navigation 🧭")
 
-    st.sidebar.subheader("Go To :")
     # Widget to select your page, you can choose between radio buttons or a selectbox
     page = st.sidebar.radio("(Choose an option to get redirected)", tuple(pages.keys()))
     
-    #page = st.sidebar.selectbox("Select your page", tuple(pages.keys()))
-
     # Display the selected page
     pages[page]()
 
 def about_page():
-    st.title("Food Aayush")
-    st.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
+    st.markdown("<h1 style='text-align: center;'>Food Aayush 🍲 🩺</h1>", unsafe_allow_html=True)
+    
+    st.subheader("About FoodAayush 🤔")
 
-    st.subheader("About FoodAayush")
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial, sans-serif;line-height: 1.5;'>Food is an essential parameter that plays an important role in the survival of humans. It also plays a major part in depicting a country’s culture. Healthy, nutritious, and high-quality food results in not only a better lifestyle but also develops a person’s immunity and health. Likewise, the consumption of low-quality food which might be deprived of nutritional value impacts a person’s health negatively and makes them susceptible to all types of diseases. In India, there is a persistent complaint, in any civic body-related food section, about the quality of meals available. Likewise, the quality of the oil is also an important factor while cooking any meal. Therefore, the Quality of oil used in frying the food to affect its taste must be monitored too. Its continuous exposure to relatively high temperatures results in degradation of its quality. The purpose of this study is to build an application for the detection of the quality of food and also to detect repeated frying on cooking oils based on the visual properties of the oils. Classification of food items is done on the basis of time left for consumption, edibility, quality, color, and rancidity. The food items are further classified as stale or usable using artificial intelligence algorithms based on the images acquired through a Cell Phone’s camera.</h6>", unsafe_allow_html=True)
+    st.markdown("")
+    st.subheader("Activity Diagram ♺")
+    st.image('resources/about_process_diagram/1.png')
 
-    st.write("Food is an essential parameter that plays an important role in the survival of humans. It also plays a major part in depicting a country’s culture. Healthy, nutritious, and high-quality food results in not only a better lifestyle but also develops a person’s immunity and health. Likewise, the consumption of low-quality food which might be deprived of nutritional value impacts a person’s health negatively and makes them susceptible to all types of diseases. In India, there is a persistent complaint, in any civic body-related food section, about the quality of meals available. Likewise, the quality of the oil is also an important factor while cooking any meal. Therefore, the Quality of oil used in frying the food to affect its taste must be monitored too. Its continuous exposure to relatively high temperatures results in degradation of its quality. The purpose of this study is to build an application for the detection of the quality of food and also to detect repeated frying on cooking oils based on the visual properties of the oils. Classification of food items is done on the basis of time left for consumption, edibility, quality, color, and rancidity. The food items are further classified as stale or usable using artificial intelligence algorithms based on the images acquired through a Cell Phone’s camera.")
-
-    st.subheader("About Streamlit")
-
-    st.write("""[Streamlit](https://streamlit.io/) is The fastest way to build and share data apps Turn data scripts into sharable web apps in minutes. All in Python. All for free. No front-end experience required.""")
+    st.markdown("")
+    st.subheader("Some other content")
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>Some explanation</h6>", unsafe_allow_html=True)
+    
     #background image for the webapp
     page_bg_img = '''
     <style>
@@ -121,7 +113,7 @@ def page_first():
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Filter Data Results are :</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>You selected- {food_list}</span>", unsafe_allow_html=True)
-    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Nutritional Analysis for filtered Data is as follows-</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Nutritional Analysis for your selection is as follows-</span>", unsafe_allow_html=True)
 
     #counts of various nutritional contents of a food item
     count_water = data.loc[(data["name"] == food_list) , 'water'].iloc[0]
@@ -158,7 +150,7 @@ def page_first():
 
 def page_second():
     #sidebar title
-    st.title("Search for Recipe")
+    st.title("Search for a Recipe 😋")
     st.markdown("Minimum Two ingredients required")
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Dataset Preview</span>", unsafe_allow_html=True)
@@ -298,10 +290,10 @@ def page_three():
 
 
 def page_fourth():
-    st.title('Indian Map for Heart Disease')
+    st.title('Indian Map for Heart Disease 🫀')
     st.header("Data from 2017 - In DALYs Per 100,000 People")
-    st.markdown("The disability-adjusted life year (DALY) is a measure of overall disease burden, expressed as the number of years lost due to ill-health, disability or early death.")
-    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.0;'>The disability-adjusted life year (DALY) is a measure of overall disease burden, expressed as the number of years lost due to ill-health, disability or early death. The below map shows the DALY associated with heart disease for each state in India.</h6>",unsafe_allow_html=True)
+    st.markdown("")
     #loading Map data from CSV file
     df = pd.read_csv("resources/streamlit_map/cases2.csv")
 
@@ -333,7 +325,7 @@ def page_fourth():
         marker_line_color='black',
 
         colorbar=dict(
-            title={'text': "Active Cases"},
+            title={'text': "No of patients"},
 
             thickness=15,
             len=0.35,
@@ -378,32 +370,59 @@ def page_fourth():
 
     st.plotly_chart(fig11)
 
+
+    df_statefood = pd.read_csv("resources/streamlit_map/State_food.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
+
+
+    st.title("Prominent Heart Disease causing Foods")  # add a title
+
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>One of the major causes of heart disease is the consumption of unhealthy food. In India, heart disease is a serious and widespread problem due to the excessive use of oil, spices and salt in cooking. Excessive use of oil increases cholesterol, which contributes to heart disease. Although spices are good for health, excessive consumption of chilli peppers is not good for the heart. Excessive consumption of salt increases blood pressure which also leads to coronary heart disease.</h6",unsafe_allow_html=True)
+
+    st.subheader("Calorie Content of Heart Disease causing Foods in each Indian State")
+   
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>There are many cuisines in India, as each state has its own popular foods. In each of these cuisines, there are many unhealthy food items which may contribute to heart disease. The below data shows popular food items from each of the Indian states which contribute to heart disease, along with their calorie content.</h6",unsafe_allow_html=True)
+
+    st.markdown("")
+    
+    st.write(df_statefood)  # visualize my dataframe in the Streamlit app
+
+
 def page_five():
-    df = pd.read_csv("Food_Matrix - Sheet1 (2).csv")  # read a CSV file inside the 'data" folder next to 'app.py'
+    df = pd.read_csv("resources/Food_Matrix/Food_Matrix1.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
 
 
-    st.title("Food Matrix")  # add a title
+    st.title("Food Matrix 🍔")  # add a title
+    st.markdown("There are many combinations of foods which are harmful to human health, and are still consumed by people due to lack of awareness. These include combinations of generalized food categories and also of specific food items. These combinations can be indicated using a matrix. There are two matrix representations below that indicate harmful combinations of foods. The first one is for generalized food categories while the second one is for specific food items.")
 
-    st.write(df)  # visualize my dataframe in the Streamlit app
+    st.subheader("1. Food Compatibility Matrix (Food Categories)")
+    st.markdown("There are certain combinations of foods which are harmful to health when consumed together. They may become difficult to digest, and may cause problems such as acidity. They may even be toxic and lead to diseases. For example, fruits should be consumed separately and not with any meal. It is necessary for people to be aware of such food combinations, so that they do not consume them together, or use them together in cooking. The below data shows various combinations of generalized food categories, and indicates which of these combinations are harmful (toxic) or harmless (non-toxic). ")
+    
+    df_display1 = pd.read_csv("resources/Food_Matrix/Food_Matrix1.csv")
+    
+    df = pd.read_csv("resources/Food_Matrix/Food_Matrix1.csv")
 
-    st.title("Food Compatibility Matrix (Food Categories)")  # add a title
-    data = pd.read_csv('Food_Matrix - Sheet1 (2).csv' , na_values= "NaN")
+    raw_data=st.checkbox('See Raw Data')
+    if raw_data: 
+        st.write(df)
+
+    st.subheader("Visualization of the raw data")  # add a title
+    data = pd.read_csv('resources/Food_Matrix/Food_Matrix1.csv' , na_values= "NaN")
     data.fillna(0 , inplace = True)
 
 
     id_labels = data.columns[1:]
-    print(id_labels)
+    
     # take the transpose since you want to see id on y-axis
     id_matrix = np.array(data[id_labels].values, dtype=float).T
 
-    fig, ax = plt.subplots(figsize=(11,11))
+    fig, ax = plt.subplots(figsize=(8,8))
 
 
     mat = ax.imshow(id_matrix, cmap="Reds", interpolation='nearest')
 
     plt.yticks(range(id_matrix.shape[0]), id_labels)
     plt.xticks(range(id_matrix.shape[1]), id_labels)
-    plt.xticks(rotation=30)
+    plt.xticks(rotation=25)
 
     blue_patch = mpatches.Patch(color='maroon', label='Toxic')
     white_patch = mpatches.Patch(color='#FFF5F0', label='Non-Toxic')
@@ -421,13 +440,62 @@ def page_five():
     #legend inside
     #plt.legend(handles = [blue_patch , white_patch])
 
-    plt.xlabel('FOOD MATRIX')
+    plt.xlabel('Food Compatibility Matrix (Food Categories)')
 
 
     st.pyplot(plt,dpi=100)
 
+    st.subheader("2. Food compatibility matrix (For harmful combinations of specific food items)")
+    st.markdown("Apart from the above generalized categories, there are some specific food items which are harmful when consumed together. Most people are not aware of these combinations. A prominent example is banana milkshake. It is a popular beverage but most people are not aware that milk should not be consumed with bananas as it causes heaviness and may also lead to lethargy. Such combinations of food items are indicated in the below data.")
+
+    df2 = pd.read_csv("resources/Food_Matrix/Food_Matrix2.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
+
+    df21 = pd.read_csv("resources/Food_Matrix/Food_Matrix2.csv")
+
+    raw_data2= st.checkbox('See Raw Data ')
+    if raw_data2: 
+        st.write(df21)
 
 
+    st.subheader("Visualization of the above given data")  # add a title
+    data2 = pd.read_csv('resources/Food_Matrix/Food_Matrix2.csv' , na_values= "NaN")
+    data2.fillna(0 , inplace = True)
+
+
+    id_labels = data2.columns[1:]
+    
+    # take the transpose since you want to see id on y-axis
+    id_matrix = np.array(data2[id_labels].values, dtype=float).T
+
+    fig, ax = plt.subplots(figsize=(8,8))
+
+
+    mat = ax.imshow(id_matrix, cmap="Blues", interpolation='nearest')
+
+    plt.yticks(range(id_matrix.shape[0]), id_labels)
+    plt.xticks(range(id_matrix.shape[1]), id_labels)
+    plt.xticks(rotation=25)
+
+    blue_patch = mpatches.Patch(color='#0b306b', label='Toxic')
+    white_patch = mpatches.Patch(color='#f7fbff', label='Non-Toxic')
+
+
+    fontP = FontProperties()
+    fontP.set_size('xx-small')
+
+    #legend outside
+    plt.legend(handles = [blue_patch , white_patch], bbox_to_anchor=(1.05, 1), loc='upper left', prop={'size':15}) 
+
+
+    #plt.legend(handles = [blue_patch , white_patch],title='title', bbox_to_anchor=(1.05, 1), loc='upper left', prop={'size':15}) 
+
+    #legend inside
+    #plt.legend(handles = [blue_patch , white_patch])
+
+    plt.xlabel('For harmful combinations of specific food items')
+
+
+    st.pyplot(plt,dpi=100)
 if __name__ == "__main__":
     main()
 
