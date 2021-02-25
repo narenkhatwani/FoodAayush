@@ -125,6 +125,21 @@ def page_first():
     st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Soluble Fibre- {count_fibresoluble}g</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Carbohydrates- {count_carbohydrate}g</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: blue;font-size: 22px;font-weight: bold;'>Energy- {count_energy}kJ</span>", unsafe_allow_html=True)
+    
+
+    #infct information
+    st.subheader("Some Information about the data source")
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>The above data is taken from the dataset “Indian Food Composition Tables, 2017”, of the National Institute of Nutrition. The approach taken for creation of this dataset was to sample the key foods from all over India which contribute to the nutrient intake of 75% of the population. The consumption data and nutrient composition for the various foods is found and the foods have been ranked according to their contribution to the diet in terms of nutrients.</h6>", unsafe_allow_html=True)
+    st.markdown("")
+    
+    raw_data=st.checkbox('See Raw Data')
+    if raw_data: 
+        st.write(data)
+
+    
+
+    #ifct image
+    st.image("resources/ingredient_page/ifct_cover.png")
     #background image for the webapp
     page_bg_img = '''
     <style>
