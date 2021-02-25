@@ -1,8 +1,8 @@
 # FoodAayush
 
-Incase you want to skip the documentation part 🥱 jump to the output directly 😎
+### Incase you want to skip the documentation part 🥱 jump to the output directly 😎
 
-https://warm-eyrie-72803.herokuapp.com/
+## https://warm-eyrie-72803.herokuapp.com/
 
 #### Abstract ####
 
