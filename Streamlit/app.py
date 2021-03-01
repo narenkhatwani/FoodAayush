@@ -578,8 +578,6 @@ def page_second():
 
     st.title("View calories and cuisine of a dish 🥗 🧑🏾‍🤝‍🧑🏼")
 
-    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>All recipes require a variety of ingredients, such as vegetables, flour, spices and milk products. Here, you can search the possible dishes with any desired combination of ingredients. You can also view the calories in the dish and the cuisine. Please enter a minimum of two ingredients to search for dishes.</h6>", unsafe_allow_html=True)
-
     dish_name = st.selectbox("Search your dish here:", data2["Name of Dish"].unique())
 
 
