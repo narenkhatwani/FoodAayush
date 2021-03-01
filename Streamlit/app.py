@@ -98,7 +98,7 @@ def page_first():
 
     st.title("Ingredient Information 🍅 🥕 🥒 ")
 
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.0;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all nutrients, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the  nutritional value of any food item being consumed is a very important parameter. The content of different nutrients in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all nutrients, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the  nutritional value of any food item being consumed is a very important parameter. The content of different nutrients in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
 
     
     food_list = st.selectbox("Search your ingredient here:", data["name"].unique())
@@ -322,8 +322,8 @@ def page_second():
     #got all recipe names
     all_recipes = list(x for x in data2['Name of Dish'])
     
-    
-    # st.markdown(gg)
+
+    #st.markdown(gg)
 
     #compare ingredients
     def intersection(list1,list2):
@@ -615,6 +615,8 @@ def page_five():
 
 
     st.pyplot(plt,dpi=100)
+
+    
 if __name__ == "__main__":
     main()
 
