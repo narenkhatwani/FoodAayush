@@ -75,8 +75,8 @@ def about_page():
     st.image('resources/about_process_diagram/1.png')
 
     st.markdown("")
-    st.subheader("Some other content")
-    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>Some explanation</h6>", unsafe_allow_html=True)
+    st.subheader("Classification of food items and cooking oils based on quality")
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>Food becomes stale if there is excessive exposure to environmental factors such as heat and humidity. Similarly, if a cooking oil sample is exposed to heat, or is used in cooking repeatedly, it will become rancid. The second part of our application is the classification of food items based on their freshness and oils based on their rancidity. A classification model is developed for classifying food items into various freshness levels based on their visual properties. For oils, the classification is done on the basis of the visual properties as well as the pH value of the oil sample. The pH value is recorded using a pH sensor integrated with the application. These features are included in our mobile application which is developed using the Flutter toolkit.</h6>", unsafe_allow_html=True)
     
     #background image for the webapp
     page_bg_img = '''
@@ -576,13 +576,13 @@ def page_second():
     st.markdown(f"<span style='color: #000080;font-size: 22px;font-weight: bold;'>{recipe}</span>", unsafe_allow_html=True)
     
 
-
+    st.title("View calories and cuisine of a dish 🥗 🧑🏾‍🤝‍🧑🏼")
     dish_name = st.selectbox("Search your dish here:", data2["Name of Dish"].unique())
 
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Filter Data Results are :</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>You selected- {dish_name}</span>", unsafe_allow_html=True)
-    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Nutritional Analysis for your selection is as follows-</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Analysis for your selection is as follows-</span>", unsafe_allow_html=True)
 
     #counts of various nutritional contents of a food item
     count_calories = data2.loc[(data2["Name of Dish"] == dish_name) , 'Calories'].iloc[0]
@@ -621,7 +621,7 @@ def page_three():
     total_carbs_value= x*(50/100)
     protein_value= x*(20/100)
 
-    st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Total Fat content should be- {fat_value} Cal</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Total Fat count should be- {fat_value} Cal</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Saturated Fat count should be- {sat_fat_value} Cal</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Trans Fat count should be- {trans_fat_value} Cal</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Total Carbohydrates count should be- {total_carbs_value} Cal</span>", unsafe_allow_html=True)
@@ -664,11 +664,11 @@ def page_fourth():
     st.markdown("")
     #loading Map data from CSV file
     df = pd.read_csv("resources/streamlit_map/cases2.csv")
+    df2 = pd.read_csv("resources/streamlit_map/Heart_disease_display.csv")
 
     raw_data=st.checkbox('See Raw Data')
     if raw_data: 
-        st.write(df)
-    
+        st.write(df2)
     
     #Data Source
     #https://www.factchecker.in/punjab-tamil-nadu-haryana-have-highest-burden-of-heart-disease-in-india/
@@ -754,6 +754,28 @@ def page_fourth():
     
     st.write(df_statefood)  # visualize my dataframe in the Streamlit app
 
+    st.title("View Statewise food trend 🥗 ")
+    
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>Each state in India has its own unique cuisine. In all Indian cuisines, there are food items that are high in fat, or consist of other ingredients that may contribute to heart disease. Here are some popular  Indian food items that can increase a person’s risk of heart disease. Please enter a state in the dropdown below. You can find an unhealthy food item specific to that state, along with its calorie content and the reason why it may contribute to heart disease.</h6",unsafe_allow_html=True)
+
+    state_name = st.selectbox("Search your state here:", df_statefood["States"].unique())
+
+    
+
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>You selected- {state_name}</span>", unsafe_allow_html=True)
+    
+    #counts of various nutritional contents of a food item
+    item_name = df_statefood.loc[(df_statefood["States"] == state_name) , 'Food Items'].iloc[0]
+    calorie_count = df_statefood.loc[(df_statefood["States"] == state_name) , 'Calories'].iloc[0]
+    reason_item = df_statefood.loc[(df_statefood["States"] == state_name) , 'Reason '].iloc[0]
+
+    st.subheader("Popular dish in this state is :")
+    st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>{item_name}</span>", unsafe_allow_html=True)
+    st.subheader("Its calorie count is:")
+    st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>{calorie_count} kCal </span>", unsafe_allow_html=True)
+    st.subheader("Reason for possible contribution to heart disease -")
+    st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'> {reason_item}</span>", unsafe_allow_html=True)
+  
 
 def page_five():
     df = pd.read_csv("resources/Food_Matrix/Food_Matrix1.csv")  # read a CSV file inside the 'data" folder next to 'app.py'

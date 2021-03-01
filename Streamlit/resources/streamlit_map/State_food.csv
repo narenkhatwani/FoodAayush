@@ -1,36 +1,36 @@
-States,Food Items,Calories
-Andaman & Nicobar,,
-Andhra Pradesh,,
-Arunachal Pradesh,,
-Assam,,
-Bihar,,
-Chandigarh,,
-Chhattisgarh,,
-Daman and Diu,,
-Delhi,,
-Goa,,
-Gujarat,,
-Haryana,,
-Himachal Pradesh,,
-Jammu & Kashmir,,
-Jharkhand,,
-Karnataka,,
-Kerala,,
-Ladakh,,
-Madhya Pradesh,,
-Maharashtra,Vada Pav,
-Manipur,,
-Meghalaya,,
-Mizoram,,
-Nagaland,,
-Odisha,,
-Puducherry,,
-Punjab,,
-Rajasthan,,
-Sikkim,,
-Tamil Nadu,,
-Telangana,,
-Tripura,,
-Uttarakhand,,
-Uttar Pradesh,,
-West Bengal,,
+States,Food Items,Calories,Reason 
+Andaman & Nicobar,Chicken Tikka Masala (Gravy),768,It is very high in fat due to ghee and cream present in the gravy.
+Andhra Pradesh,Andhra Style Gongura Mutton Curry,350,"It consists of lamb meat (mutton), which is red meat. Red meat contains high amounts of saturated fat, and also contains a compound called carnitine which causes clogging of arteries."
+Arunachal Pradesh,Lukter (Beef),250,"Beef is red meat, which contains high amounts of saturated fat, and also contains a compound called carnitine which causes clogging of arteries."
+Assam,Duck Meat,235,It increases bad cholesterol and thereby increases the risk of heart disease.
+Bihar,Pedakiya,659,"It contains maida, mawa, milk, nuts, sugar and ghee. Therefore, it is extremely high in fat and not good for the heart."
+Chandigarh,Mutton,234,"Mutton is red meat, which contains high amounts of saturated fat, and also contains a compound called carnitine which causes clogging of arteries."
+Chhattisgarh,Bhajia,275,"It is deep fried, thus it increases fat levels and also causes inflammation which may contribute to heart disease. "
+Daman and Diu,Jetty Rolls,354,"It contains maida, eggs and oil. Therefore it is high in fat and increases cholesterol, and may contribute to heart disease."
+Delhi,Chhole Bhature,427,"The bhatura is deep fried, and therefore it increases fat levels and also causes inflammation which may contribute to heart disease. "
+Goa,Pork Vindaloo,242,"Pork is red meat, which contains high amounts of saturated fat, and also contains a compound called carnitine which causes clogging of arteries."
+Gujarat,Dabeli,199,"It is deep fried, thus it increases fat levels and also causes inflammation which may contribute to heart disease. "
+Haryana,Curry Pakoda,276,"Pakodas are deep fried, and therefore they increase cholesterol and may contribute to heart disease."
+Himachal Pradesh,Babru (A variety of Kachori),392,"It is deep fried, therefore it increases cholesterol and may contribute to heart disease."
+Jammu & Kashmir,Mutton Rogan Josh,538,"It consists of mutton, a form of red meat. Red meat Also, it is cooked in butter, which increases cholesterol."
+Jharkhand,Meetha Khaja,240,"It contains maida, ghee and sugar. Therefore, it is high in fat and not good for the heart."
+Karnataka,Mysore Bonda,353,"It contains maida, which is fattening and may contribute to heart disease. Also, it is fried and increases cholesterol."
+Kerala,Puttu (Rice Cake),305,"It is made from rice which is high in Glycemic Index. Thus, it is not good for heart patients."
+Ladakh,Momos,356,"They are high in fat due to the maida covering. Therefore, they are not good for the heart."
+Madhya Pradesh,Mawa Baati,535,"It is made of semolina, mawa, sugar and is deep fried. Therefore, it is very fattening and is not good for the heart."
+Maharashtra,Vada Pav,197,"It is deep fried, thus it increases fat levels and also causes inflammation which may contribute to heart disease. "
+Manipur,Aloo Kangmet,214,It is fattening and thus may contribute to heart disease.
+Meghalaya,Jadoh (Rice and Pork),423,"It consists of rice and pork, and is also sometimes garnished with eggs or fried fish. Thus, it is high in fat. Pork is red meat and contains carnitine. Rice is high in Glycemic Index and is therefore not good for the heart."
+Mizoram,Mizo Vawksa,375,"It contains pork, which is red meat and is therefore unhealthy. It contains carnitine which causes clogging of arteries. Also, it is eaten with steamed or sticky rice. Rice is high in Glycemic Index and is therefore not good for heart patients."
+Nagaland,Smoked Pork with Akhuni,300,"It contains pork, which is red meat. Red meat contains carnitine, which causes clogging of arteries and may lead to heart disease."
+Odisha,Chhena Jhili,412,"It contains semolina, cheese, sugar and is also deep fried. Therefore it is not good for the heart."
+Puducherry,Mutton Samosa,184,"It is deep fried, and also consists of mutton which is red meat."
+Punjab,Amritsari Kulcha,345,"It contains white flour, sugar, and butter. Therefore it is high in fat, increases cholesterol and may contribute to heart disease."
+Rajasthan,Mawa Kachori,304,"It contains maida, sugar syrup, and is also deep fried in ghee."
+Sikkim,Sel Roti,188,"It is deep fried, and contains a lot of sugar. It also contains rice, which is high in Glycemic Index and therefore bad for the heart."
+Tamil Nadu,Medu Vada,350,"It is deep fried, thus it increases fat levels and also causes inflammation which may contribute to heart disease. "
+Telangana,Kajjikaya,152,"It contains maida, semolina, and is deep fried. Therefore, it is very fattening and may contribute to heart disease."
+Tripura,Wahan Mosdeng,242,"It is made from pork, which is red meat. Red meat contains carnitine, which causes clogging of arteries and may lead to heart disease."
+Uttarakhand,Arsa,441,"It contains cane sugar, and is therefore fattening. Also, it is made from rice, which is high in Glycemic Index and is therefore not good for the heart. It is deep fried, and therefore it increases cholesterol."
+Uttar Pradesh,Malai Kofta,362,"It contains excessive amounts of sugar, which raises blood sugar level and also slows down the fat burning process. It also contains excessive amounts of butter, which increases cholesterol."
+West Bengal,Langcha,200,"It contains maida, mawa, sugar syrup, all of which are very fattening and thus bad for the heart. Also, it is deep fried and therefore increases cholesterol."
