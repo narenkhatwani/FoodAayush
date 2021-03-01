@@ -577,6 +577,22 @@ def page_second():
     
 
 
+    dish_name = st.selectbox("Search your dish here:", data2["Name of Dish"].unique())
+
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Filter Data Results are :</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>You selected- {dish_name}</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Nutritional Analysis for your selection is as follows-</span>", unsafe_allow_html=True)
+
+    #counts of various nutritional contents of a food item
+    count_calories = data2.loc[(data2["Name of Dish"] == dish_name) , 'Calories'].iloc[0]
+    cuisine = data2.loc[(data2["Name of Dish"] == dish_name) , 'Cuisine'].iloc[0]
+    
+    st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Calorie Count - {count_calories} kCal</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Cuisine - {cuisine}</span>", unsafe_allow_html=True)
+  
+    
+
     #background image for the page
     page_bg_img = '''
     <style>
