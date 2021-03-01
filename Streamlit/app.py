@@ -20,7 +20,10 @@ st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the
 
 #read csv file
 DATA_URL = ("resources/assets_modified/01.csv")
-DATA_URL2 = ("resources/assets_modified/ingredient.csv")
+#DATA_URL2 = ("resources/assets_modified/ingredient.csv")
+
+DATA_URL2 = ("resources/recipe_page/recipe.csv")
+
 
 #for data caching
 #in streamlit the whole code is rerun everytime so cache would be stored and some error might occur in rare cases
@@ -161,48 +164,155 @@ def page_second():
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Dataset Preview</span>", unsafe_allow_html=True)
     data2
 
-    #Get All Ingredients from CSV
-    all_ingredients = ["NA"]
-    gg = data2.loc[:, data2.columns != 'name'].values.tolist()
-    # all_dishes = list(x for x in data2['name'])
-
-    # dish_dict = dict(zip(all_dishes,gg))
-    # st.markdown(dish_dict)
+    #Ingredient 1
+    all_ingredients1 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 1 (Vegetable)'].values.tolist()
 
     for i in gg:
         for j in i:
-            all_ingredients.append(j)
+            all_ingredients1.append(j)
 
     #To remove Duplicates
-    all_ingredients = list(dict.fromkeys(all_ingredients))
-    # st.markdown(all_ingredients)
+    all_ingredients1 = list(dict.fromkeys(all_ingredients1))
+
+    #Ingredient 2
+    all_ingredients2 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 2 (Vegetable)'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients2.append(j)
+
+    #To remove Duplicates
+    all_ingredients2 = list(dict.fromkeys(all_ingredients2))
+    
+    #Ingredient 3
+    all_ingredients3 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 3 (Vegetable)'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients3.append(j)
+
+    #To remove Duplicates
+    all_ingredients3 = list(dict.fromkeys(all_ingredients3))
+    
+    #Ingredient 4
+    all_ingredients4 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 4 (Vegetable)'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients4.append(j)
+
+    #To remove Duplicates
+    all_ingredients4 = list(dict.fromkeys(all_ingredients4))
+
+    #Ingredient 5
+    all_ingredients5 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 5 (Grains, pulses and flour )'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients5.append(j)
+
+    #To remove Duplicates
+    all_ingredients5 = list(dict.fromkeys(all_ingredients5))
+
+    #Ingredient 6
+    all_spices = ["NA"]
+    spices = data2.loc[:, data2.columns == 'Ingredient 6 (Spices)'].values.tolist()
+
+
+    
+    for i in spices:
+        for j in i:
+            all_spices.append(j)
+
+    #To remove Duplicates
+    all_spices = list(dict.fromkeys(all_spices))
+
+    #Ingredient 7
+    all_ingredients7 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 7 (Spices)'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients7.append(j)
+
+    #To remove Duplicates
+    all_ingredients7 = list(dict.fromkeys(all_ingredients7))
+
+    #Ingredient 8
+    all_ingredients8 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 8 (Spices)'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients8.append(j)
+
+    #To remove Duplicates
+    all_ingredients8 = list(dict.fromkeys(all_ingredients8))
+
+    #Ingredient 9
+    all_ingredients9 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 9 (Spices)'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients9.append(j)
+
+    #To remove Duplicates
+    all_ingredients9 = list(dict.fromkeys(all_ingredients9))
+
+    #Ingredient 10
+    all_ingredients10 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 10 (Breads)'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients10.append(j)
+
+    #To remove Duplicates
+    all_ingredients10 = list(dict.fromkeys(all_ingredients10))
+
+    #Ingredient 11
+    all_ingredients11 = ["NA"]
+    gg = data2.loc[:, data2.columns == 'Ingredient 11 (Milk products)'].values.tolist()
+
+    for i in gg:
+        for j in i:
+            all_ingredients11.append(j)
+
+    #To remove Duplicates
+    all_ingredients11 = list(dict.fromkeys(all_ingredients11))
 
     #Dropdown for ingredients
     st.subheader("Search for 1st Ingredient")
-    ingredient_1 = st.selectbox("1st ingredient name", all_ingredients)
+    ingredient_1 = st.selectbox("1st ingredient name", all_ingredients1)
     st.subheader("Search for 2nd Ingredient")
-    ingredient_2 = st.selectbox("2nd ingredient name", all_ingredients)
+    ingredient_2 = st.selectbox("2nd ingredient name", all_ingredients2)
     st.subheader("Search for 3rd Ingredient")
-    ingredient_3 = st.selectbox("3rd ingredient name", all_ingredients)
+    ingredient_3 = st.selectbox("3rd ingredient name", all_ingredients3)
     st.subheader("Search for 4th Ingredient")
-    ingredient_4 = st.selectbox("4th ingredient name", all_ingredients)
+    ingredient_4 = st.selectbox("4th ingredient name", all_ingredients4)
     st.subheader("Search for 5th Ingredient")
-    ingredient_5 = st.selectbox("5th ingredient name", all_ingredients)
+    ingredient_5 = st.selectbox("5th ingredient name", all_ingredients5)
     st.subheader("Search for 6th Ingredient")
-    ingredient_5 = st.selectbox("6th ingredient name", all_ingredients)
+    ingredient_6 = st.selectbox("6th ingredient name", all_spices)
     st.subheader("Search for 7th Ingredient")
-    ingredient_5 = st.selectbox("7th ingredient name", all_ingredients)
+    ingredient_7 = st.selectbox("7th ingredient name", all_ingredients7)
     st.subheader("Search for 8th Ingredient")
-    ingredient_5 = st.selectbox("8th ingredient name", all_ingredients)
+    ingredient_8 = st.selectbox("8th ingredient name", all_ingredients8)
     st.subheader("Search for 9th Ingredient")
-    ingredient_5 = st.selectbox("9th ingredient name", all_ingredients)
+    ingredient_9 = st.selectbox("9th ingredient name", all_ingredients9)
     st.subheader("Search for 10th Ingredient")
-    ingredient_5 = st.selectbox("10th ingredient name", all_ingredients)
+    ingredient_10 = st.selectbox("10th ingredient name", all_ingredients10)
     st.subheader("Search for 11th Ingredient")
-    ingredient_5 = st.selectbox("11th ingredient name", all_ingredients)
+    ingredient_11 = st.selectbox("11th ingredient name", all_ingredients11)
     
 
-    ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5]
+    ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5,ingredient_6,ingredient_7,ingredient_8,ingredient_9,ingredient_10,ingredient_11]
 
     #Remove NA keyword from list
     ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
@@ -210,7 +320,9 @@ def page_second():
     # st.markdown(ingredient_list)
 
     #got all recipe names
-    all_recipes = list(x for x in data2['name'])
+    all_recipes = list(x for x in data2['Name of Dish'])
+    
+    
     # st.markdown(gg)
 
     #compare ingredients
@@ -228,11 +340,13 @@ def page_second():
 
     most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
     recipe = []
-    # st.markdown(score)
-    # st.markdown(most_prob)
+    
+
     recipe = ", ".join(most_prob)
 
     st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
+    
+    
     #background image for the webapp
     page_bg_img = '''
     <style>
