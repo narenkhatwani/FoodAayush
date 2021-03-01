@@ -39,6 +39,7 @@ def load_data2():
     data2 = pd.read_csv(DATA_URL2)
     return data2
 
+
 #to load the csv file and display it
 data = load_data()
 data2= load_data2()
@@ -89,16 +90,13 @@ def about_page():
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-   
-
-
 def page_first():
     #to print a small iframe of the csv file
     #format is 'name displayed above dataset','variable in which csv is loaded'
 
     st.title("Ingredient Information 🍅 🥕 🥒 ")
 
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all nutrients, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the  nutritional value of any food item being consumed is a very important parameter. The content of different nutrients in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.2;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all nutrients, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the  nutritional value of any food item being consumed is a very important parameter. The content of different nutrients in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
 
     
     food_list = st.selectbox("Search your ingredient here:", data["name"].unique())
@@ -131,7 +129,7 @@ def page_first():
     
 
     #infct information
-    st.subheader("Some Information about the data source")
+    st.subheader("Some Information about the data source 📊")
     st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>The above data is taken from the dataset “Indian Food Composition Tables, 2017”, of the National Institute of Nutrition. The approach taken for creation of this dataset was to sample the key foods from all over India which contribute to the nutrient intake of 75% of the population. The consumption data and nutrient composition for the various foods is found and the foods have been ranked according to their contribution to the diet in terms of nutrients.</h6>", unsafe_allow_html=True)
     st.markdown("")
     
@@ -159,171 +157,402 @@ def page_first():
 def page_second():
     #sidebar title
     st.title("Search for a Recipe 😋")
-    st.markdown("Minimum Two ingredients required")
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>All recipes require a variety of ingredients, such as vegetables, flour, spices and milk products. Here, you can search the possible dishes with any desired combination of ingredients. You can also view the calories in the dish and the cuisine. Please enter a minimum of two ingredients to search for dishes.</h6>",unsafe_allow_html=True)
+    st.markdown("")
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Dataset Preview</span>", unsafe_allow_html=True)
     data2
 
-    #Ingredient 1
     all_ingredients1 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 1 (Vegetable)'].values.tolist()
-
-    for i in gg:
-        for j in i:
-            all_ingredients1.append(j)
-
-    #To remove Duplicates
-    all_ingredients1 = list(dict.fromkeys(all_ingredients1))
-
-    #Ingredient 2
-    all_ingredients2 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 2 (Vegetable)'].values.tolist()
-
-    for i in gg:
-        for j in i:
-            all_ingredients2.append(j)
-
-    #To remove Duplicates
-    all_ingredients2 = list(dict.fromkeys(all_ingredients2))
-    
-    #Ingredient 3
-    all_ingredients3 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 3 (Vegetable)'].values.tolist()
-
-    for i in gg:
-        for j in i:
-            all_ingredients3.append(j)
-
-    #To remove Duplicates
-    all_ingredients3 = list(dict.fromkeys(all_ingredients3))
-    
-    #Ingredient 4
-    all_ingredients4 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 4 (Vegetable)'].values.tolist()
-
-    for i in gg:
-        for j in i:
-            all_ingredients4.append(j)
-
-    #To remove Duplicates
-    all_ingredients4 = list(dict.fromkeys(all_ingredients4))
-
-    #Ingredient 5
-    all_ingredients5 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 5 (Grains, pulses and flour )'].values.tolist()
-
-    for i in gg:
-        for j in i:
-            all_ingredients5.append(j)
-
-    #To remove Duplicates
-    all_ingredients5 = list(dict.fromkeys(all_ingredients5))
-
-    #Ingredient 6
-    all_spices = ["NA"]
-    spices = data2.loc[:, data2.columns == 'Ingredient 6 (Spices)'].values.tolist()
+    gg = data2.loc[:, data2.columns != 'Name of Dish'].values.tolist()
 
 
-    
-    for i in spices:
-        for j in i:
-            all_spices.append(j)
+    ingredient_1 = st.selectbox('Search for 1st Ingredient',([
+    "NA",
+    "Potato",
+    "Tomato",
+    "Cilantro(Coriander leaves)",
+    "Brinjal",
+    "Carrot",
+    "Coriander",
+    "Onion",
+    "Drumsticks",
+    "Capsicum",
+    "None",
+    "Cabbage",
+    "Peas",
+    "Fenugreek",
+    "Mushrooms",
+    "Spinach",
+    "Olives",
+    "Sweet corn",
+    "Kidney beans(Rajma)",
+    "Zucchini",
+    "Cauliflower",
+    "Bitter Gourd",
+    "Cucumber",
+    "Beetroot",
+    "Garlic",
+    "Pumpkin",
+    "Beans",
+    "Green chilli",
+    "Broccoli",
+    "Bottle Gourd",
+    "Sweet potato",
+    "Baby corn",
+    "Cluster Beans(Gavar)",
+    "Colocasia",
+    "Radish",
+    "Turnip",
+    "Ladyfinger(Okra)",
+    "Celery",
+    "Soyabean",
+    "Mint",
+    "Ginger",
+    "Black Beans",
+    "Lemon juice",
+    "Lettuce",
+    "Spring Onion",
+    "Fennel Bulbs",
+    "White Beans",
+    "Asparagus",
+    "Jalapenos",
+    "Leek",
+    "Brussels Sprouts",
+    "Artichoke",
+    "Curry leaves",
+    "Ivy Gourd (Tendli)",
+    "Yam"
+    ]))
+    st.write('You selected:', ingredient_1)
 
-    #To remove Duplicates
-    all_spices = list(dict.fromkeys(all_spices))
 
-    #Ingredient 7
-    all_ingredients7 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 7 (Spices)'].values.tolist()
+    ingredient_2 = st.selectbox('Search for 2nd Ingredient',([
+    "NA",
+    "Tomato",
+    "Beans",
+    "Garlic",
+    "Onion",
+    "Peas",
+    "Capsicum",
+    "Baby corn",
+    "Carrot",
+    "Curry leaves",
+    "Coriander",
+    "Potato",
+    "None",
+    "Bottle Gourd",
+    "Cabbage",
+    "Mint",
+    "Jalapenos",
+    "Brinjal",
+    "Cucumber",
+    "Cauliflower",
+    "Ginger",
+    "Olives",
+    "Fenugreek",
+    "Green chilli",
+    "Spinach",
+    "Sweet corn",
+    "Lemon juice",
+    "Cilantro(Coriander leaves)",
+    "Beetroot",
+    "Spring Onion",
+    "Mustard Greens",
+    "Mushrooms",
+    "Leek",
+    "Fennel Bulbs",
+    "Broccoli",
+    "Celery",
+    "White Beans",
+    "Turnip"
+    ]))
+    st.write('You selected:', ingredient_2)
 
-    for i in gg:
-        for j in i:
-            all_ingredients7.append(j)
 
-    #To remove Duplicates
-    all_ingredients7 = list(dict.fromkeys(all_ingredients7))
 
-    #Ingredient 8
-    all_ingredients8 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 8 (Spices)'].values.tolist()
+    ingredient_3 = st.selectbox('Search for 3rd Ingredient',([
+    "NA",
+    "Onion",
+    "Carrot",
+    "Mushrooms",
+    "Garlic",
+    "Pickles",
+    "Cabbage",
+    "Capsicum",
+    "Ginger",
+    "Green chilli",
+    "Olives",
+    "None",
+    "Cauliflower",
+    "Coriander",
+    "Tomato",
+    "Pumpkin",
+    "Potato",
+    "Jalapenos",
+    "Curry leaves",
+    "Peas",
+    "Fenugreek",
+    "Beetroot",
+    "Sweet corn",
+    "Celery",
+    "Lemon juice",
+    "Cilantro(Coriander leaves)",
+    "Lettuce",
+    "Kidney beans(Rajma)",
+    "Spring Onion",
+    "Mint",
+    "Spinach",
+    "Artichoke"
+    ]))
+    st.write('You selected:', ingredient_3)
 
-    for i in gg:
-        for j in i:
-            all_ingredients8.append(j)
+    ingredient_4 = st.selectbox('Search for 4th Ingredient',([
+    "NA",
+    "Peas",
+    "None",
+    "Olives",
+    "Lemon juice",
+    "Tomato",
+    "Green chilli",
+    "Jalapenos",
+    "Garlic",
+    "Capsicum",
+    "Beetroot",
+    "Ladyfinger(Okra)",
+    "Sweet corn",
+    "Beans",
+    "Coriander",
+    "Onion",
+    "Ginger",
+    "Cauliflower",
+    "Mushrooms",
+    "Baby corn",
+    "Curry leaves",
+    "Cabbage",
+    "Carrot",
+    "Pickles",
+    "Kidney beans(Rajma)",
+    "Celery",
+    "Mint",
+    "Potato",
+    "White Beans",
+    "Cilantro(Coriander leaves)",
+    "Broccoli",
+    "Spring Onion",
+    "Spinach",
+    "Soyabean",
+    "Radish"
+    ]))
+    st.write('You selected:', ingredient_4)
 
-    #To remove Duplicates
-    all_ingredients8 = list(dict.fromkeys(all_ingredients8))
+    ingredient_5 = st.selectbox('Search for 5th Ingredient',([
+    "NA",
+    "Moong dal",
+    "Whole wheat flour(Atta)",
+    "White flour(Maida)",
+    "Chickpeas(Chhole)",
+    "Rice",
+    "Masoor dal",
+    "None",
+    "Gram(Chana)",
+    "Toor dal",
+    "Gram flour(Besan)",
+    "Urad dal",
+    "Chana dal",
+    "Oats",
+    "Corn flour",
+    "Bajra(Millet Flour)",
+    "Sabudana",
+    "Jowar Flour",
+    "Rice Flour",
+    "Rawa(Semolina)"
+    ]))
+    st.write('You selected:', ingredient_5)
 
-    #Ingredient 9
-    all_ingredients9 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 9 (Spices)'].values.tolist()
+    ingredient_6 = st.selectbox('Search for 6th Ingredient',([
+    "NA",
+    "Red Chilli",
+    "Garam Masala",
+    "Black Pepper",
+    "Turmeric",
+    "Cumin",
+    "Oregano",
+    "Cardamom",
+    "None",
+    "Mustard",
+    "Cinnamon",
+    "Bay leaves",
+    "Parsley",
+    "Garlic Cloves",
+    "Basil",
+    "Coriander seeds",
+    "Thyme",
+    "Dill",
+    "Onion",
+    "Fennel seeds",
+    "Coriander",
+    "Green Chilli",
+    "Asafoetida",
+    "Ginger",
+    "Vanilla",
+    "Rosemary",
+    "Sesame seeds",
+    "Flax Seeds",
+    "Saffron",
+    "Quinoa",
+    "Nigella Seeds",
+    "Nutmeg"
+    ]))
+    st.write('You selected:', ingredient_6)
 
-    for i in gg:
-        for j in i:
-            all_ingredients9.append(j)
+    ingredient_7 = st.selectbox('Search for 7th Ingredient',([
+    "NA",
+    "Turmeric",
+    "Paprika",
+    "Black Pepper",
+    "Cumin",
+    "Cinnamon",
+    "Garam Masala",
+    "Red Chilli",
+    "Oregano",
+    "Asafoetida",
+    "None",
+    "Mustard",
+    "Nutmeg",
+    "Cardamom",
+    "Bay leaves",
+    "Garlic Cloves",
+    "Fennel seeds",
+    "Cloves",
+    "Basil",
+    "Parsley",
+    "Onion",
+    "Dill",
+    "Green Chilli",
+    "Coriander",
+    "Sesame seeds",
+    "Fenugreek seeds",
+    "Ginger",
+    "Poppy seeds",
+    "Thyme",
+    "Cayenne Peppers",
+    "Sunflower Seeds",
+    "Rosemary"
+    ]))
+    st.write('You selected:', ingredient_7)
 
-    #To remove Duplicates
-    all_ingredients9 = list(dict.fromkeys(all_ingredients9))
+    ingredient_8 = st.selectbox('Search for 8th Ingredient',([
+    "NA",
+    "Asafoetida",
+    "None",
+    "Oregano",
+    "Coriander seeds",
+    "Nutmeg",
+    "Cinnamon",
+    "Fennel seeds",
+    "Turmeric",
+    "Black Pepper",
+    "Garam Masala",
+    "Red Chilli",
+    "Cumin",
+    "Mustard",
+    "Saffron",
+    "Cloves",
+    "Onion",
+    "Bay leaves",
+    "Paprika",
+    "Parsley",
+    "Garlic Cloves",
+    "Basil",
+    "Coriander",
+    "Green Chilli",
+    "Thyme",
+    "Sesame seeds",
+    "Dill",
+    "Cardamom",
+    "Ginger",
+    "Kasoori Methi",
+    "Flax Seeds",
+    "Rosemary",
+    "Fenugreek seeds",
+    "Sunflower Seeds"
+    ]))
+    st.write('You selected:', ingredient_8)
 
-    #Ingredient 10
-    all_ingredients10 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 10 (Breads)'].values.tolist()
+    ingredient_9 = st.selectbox('Search for 9th Ingredient',([
+    "NA",
+    "Garam Masala",
+    "None",
+    "Parsley",
+    "Saffron",
+    "Turmeric",
+    "Bay leaves",
+    "Oregano",
+    "Mustard",
+    "Cardamom",
+    "Black Pepper",
+    "Coriander seeds",
+    "Red Chilli",
+    "Fenugreek seeds",
+    "Poppy seeds",
+    "Cloves",
+    "Cumin",
+    "Cinnamon",
+    "Asafoetida",
+    "Basil",
+    "Green Chilli",
+    "Thyme",
+    "Coriander",
+    "Cayenne Peppers",
+    "Fennel seeds",
+    "Onion",
+    "Garlic Cloves",
+    "Sesame seeds",
+    "Kasoori Methi",
+    "Dill",
+    "Sunflower Seeds",
+    "Flax Seeds"
+    ]))
+    st.write('You selected:', ingredient_9)
 
-    for i in gg:
-        for j in i:
-            all_ingredients10.append(j)
+    ingredient_10 = st.selectbox('Search for 10th Ingredient',([
+    "NA",
+    "White Bread",
+    "None",
+    "Pita Bread",
+    "Whole Wheat Bread",
+    "Baguette",
+    "Bun",
+    "Papad",
+    "French Bread"
+    ]))
+    st.write('You selected:', ingredient_10)
 
-    #To remove Duplicates
-    all_ingredients10 = list(dict.fromkeys(all_ingredients10))
+    ingredient_11 = st.selectbox('Search for 11th Ingredient',([
+    "NA",
+    "Butter",
+    "Cheese",
+    "None",
+    "Ghee",
+    "Milk",
+    "Paneer(Cottage cheese)",
+    "Curd",
+    "Sour cream",
+    "Buttermilk",
+    "Cream"
+    ]))
+    st.write('You selected:', ingredient_11)
 
-    #Ingredient 11
-    all_ingredients11 = ["NA"]
-    gg = data2.loc[:, data2.columns == 'Ingredient 11 (Milk products)'].values.tolist()
-
-    for i in gg:
-        for j in i:
-            all_ingredients11.append(j)
-
-    #To remove Duplicates
-    all_ingredients11 = list(dict.fromkeys(all_ingredients11))
-
-    #Dropdown for ingredients
-    st.subheader("Search for 1st Ingredient")
-    ingredient_1 = st.selectbox("1st ingredient name", all_ingredients1)
-    st.subheader("Search for 2nd Ingredient")
-    ingredient_2 = st.selectbox("2nd ingredient name", all_ingredients2)
-    st.subheader("Search for 3rd Ingredient")
-    ingredient_3 = st.selectbox("3rd ingredient name", all_ingredients3)
-    st.subheader("Search for 4th Ingredient")
-    ingredient_4 = st.selectbox("4th ingredient name", all_ingredients4)
-    st.subheader("Search for 5th Ingredient")
-    ingredient_5 = st.selectbox("5th ingredient name", all_ingredients5)
-    st.subheader("Search for 6th Ingredient")
-    ingredient_6 = st.selectbox("6th ingredient name", all_spices)
-    st.subheader("Search for 7th Ingredient")
-    ingredient_7 = st.selectbox("7th ingredient name", all_ingredients7)
-    st.subheader("Search for 8th Ingredient")
-    ingredient_8 = st.selectbox("8th ingredient name", all_ingredients8)
-    st.subheader("Search for 9th Ingredient")
-    ingredient_9 = st.selectbox("9th ingredient name", all_ingredients9)
-    st.subheader("Search for 10th Ingredient")
-    ingredient_10 = st.selectbox("10th ingredient name", all_ingredients10)
-    st.subheader("Search for 11th Ingredient")
-    ingredient_11 = st.selectbox("11th ingredient name", all_ingredients11)
-    
 
     ingredient_list = [ingredient_1,ingredient_2,ingredient_3,ingredient_4,ingredient_5,ingredient_6,ingredient_7,ingredient_8,ingredient_9,ingredient_10,ingredient_11]
 
     #Remove NA keyword from list
     ingredient_list = set(filter(lambda x: x != 'NA', ingredient_list))
     ingredient_list = list(ingredient_list)
-    # st.markdown(ingredient_list)
 
-    #got all recipe names
+    #get all recipe names
     all_recipes = list(x for x in data2['Name of Dish'])
-    
-
-    #st.markdown(gg)
 
     #compare ingredients
     def intersection(list1,list2):
@@ -336,18 +565,17 @@ def page_second():
 
     max_score = max(score) if max(score) > 1 or len(ingredient_list)==1 else -999
 
-    # st.markdown(max_score)
-
+    #find the best match
     most_prob = [all_recipes[x] for x in range(len(score)) if score[x] == max_score]
     recipe = []
-    
 
+    #join results with ,
     recipe = ", ".join(most_prob)
 
     st.markdown(f"<span style='color: black;font-size: 22px;font-weight: bold;'>Possible Dishes- {recipe}</span>", unsafe_allow_html=True)
-    
-    
-    #background image for the webapp
+
+
+    #background image for the page
     page_bg_img = '''
     <style>
     body {
@@ -357,11 +585,14 @@ def page_second():
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
-
+    
  
 def page_three():
-    st.title("Calorie Calculator")
+    st.title("Calorie Calculator 🍲 🧮")
     
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Nutrients are classified into two categories, macronutrients and micronutrients. Macronutrients are those nutrients which are required in large quantities, and include carbohydrates, proteins, fats and water. Micronutrients are those which are required in relatively small quantities, and  include vitamins and minerals. Adequate amounts of these nutrients are required to maintain good health. The adequate amounts vary from person to person, and also depend on the person’s daily calorie consumption. Moreover, the ideal calorie consumption for a person also depends on various factors, including gender. Here, you can find your ideal consumption of various nutrients depending on your daily calorie consumption, and can also find your ideal daily calorie consumption based on your gender.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Add your total daily intake of calories</span>", unsafe_allow_html=True)
 
     x = st.slider('(in terms of Calories)',0,3000)
@@ -381,7 +612,7 @@ def page_three():
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Want to know your ideal calorie intake ??</span>", unsafe_allow_html=True)
 
-    st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>Choose your gender</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>Choose your gender ⚥</span>", unsafe_allow_html=True)
     gender = st.selectbox('*Your calorie intake depends on your gender',('Male', 'Female', 'Other','Rather Not Say'))
 
     st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>You selected: {gender}</span>", unsafe_allow_html=True)
@@ -411,7 +642,7 @@ def page_three():
 def page_fourth():
     st.title('Indian Map for Heart Disease 🫀')
     st.header("Data from 2017 - In DALYs Per 100,000 People")
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.0;'>The disability-adjusted life year (DALY) is a measure of overall disease burden, expressed as the number of years lost due to ill-health, disability or early death. The below map shows the DALY associated with heart disease for each state in India.</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The disability-adjusted life year (DALY) is a measure of overall disease burden, expressed as the number of years lost due to ill-health, disability or early death. The below map shows the DALY associated with heart disease for each state in India.</h6>",unsafe_allow_html=True)
     st.markdown("")
     #loading Map data from CSV file
     df = pd.read_csv("resources/streamlit_map/cases2.csv")
@@ -494,10 +725,10 @@ def page_fourth():
 
 
     st.title("Prominent Heart Disease causing Foods")  # add a title
-
+    st.subheader("(Example- 🍟,🍕,🧁)")
     st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>One of the major causes of heart disease is the consumption of unhealthy food. In India, heart disease is a serious and widespread problem due to the excessive use of oil, spices and salt in cooking. Excessive use of oil increases cholesterol, which contributes to heart disease. Although spices are good for health, excessive consumption of chilli peppers is not good for the heart. Excessive consumption of salt increases blood pressure which also leads to coronary heart disease.</h6",unsafe_allow_html=True)
 
-    st.subheader("Calorie Content of Heart Disease causing Foods in each Indian State")
+    st.subheader("Calorie Content of Heart Disease causing Foods in each Indian State ✔️")
    
     st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>There are many cuisines in India, as each state has its own popular foods. In each of these cuisines, there are many unhealthy food items which may contribute to heart disease. The below data shows popular food items from each of the Indian states which contribute to heart disease, along with their calorie content.</h6",unsafe_allow_html=True)
 
@@ -524,7 +755,7 @@ def page_five():
     if raw_data: 
         st.write(df)
 
-    st.subheader("Visualization of the raw data")  # add a title
+    st.subheader("Visualization of the raw data 📈")  # add a title
     data = pd.read_csv('resources/Food_Matrix/Food_Matrix1.csv' , na_values= "NaN")
     data.fillna(0 , inplace = True)
 
@@ -553,12 +784,6 @@ def page_five():
     #legend outside
     plt.legend(handles = [blue_patch , white_patch], bbox_to_anchor=(1.05, 1), loc='upper left', prop={'size':15}) 
 
-
-    #plt.legend(handles = [blue_patch , white_patch],title='title', bbox_to_anchor=(1.05, 1), loc='upper left', prop={'size':15}) 
-
-    #legend inside
-    #plt.legend(handles = [blue_patch , white_patch])
-
     plt.xlabel('Food Compatibility Matrix (Food Categories)')
 
 
@@ -576,7 +801,7 @@ def page_five():
         st.write(df21)
 
 
-    st.subheader("Visualization of the above given data")  # add a title
+    st.subheader("Visualization of the above given data 📈")  # add a title
     data2 = pd.read_csv('resources/Food_Matrix/Food_Matrix2.csv' , na_values= "NaN")
     data2.fillna(0 , inplace = True)
 
@@ -616,7 +841,7 @@ def page_five():
 
     st.pyplot(plt,dpi=100)
 
-    
+
 if __name__ == "__main__":
     main()
 

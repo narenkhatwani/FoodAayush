@@ -1,0 +1,377 @@
+Name of Dish,Ingredient 1 (Vegetable),Ingredient 2 (Vegetable),Ingredient 3 (Vegetable),Ingredient 4 (Vegetable),"Ingredient 5 (Grains, pulses and flour )",Ingredient 6 (Spices),Ingredient 7 (Spices),Ingredient 8 (Spices),Ingredient 9 (Spices),Ingredient 10 (Breads),Ingredient 11 (Milk products),Cuisine,Calories
+Aloo matar paneer,Potato,Tomato,Onion,Peas,Moong dal,Red Chilli,Turmeric,Asafoetida,Garam Masala,White Bread,Butter,Indian,276
+Aloo paratha,Potato,Beans,Carrot,None,Whole wheat flour(Atta),Garam Masala,Paprika,None,None,None,Butter,Punjabi,330
+Arrabbiata sauce Pasta,Tomato,Garlic,Mushrooms,Olives,White flour(Maida),Red Chilli,Black Pepper,Oregano,None,None,Cheese,Italian,311
+Baked Falafel,Cilantro(Coriander leaves),Onion,Garlic,Lemon juice,Chickpeas(Chhole),Black Pepper,Cumin,Coriander seeds,Parsley,Pita Bread,None,Middle Eastern,354
+Biryani,Potato,Peas,Onion,Tomato,Rice,Red Chilli,Turmeric,Coriander seeds,Saffron,None,Ghee,Hyderabadi,241
+Brinjal ,Brinjal,Garlic,Pickles,Green chilli,Masoor dal,Black Pepper,Cinnamon,Nutmeg,Turmeric,White Bread,Ghee,Indian,65
+Burger,Potato,Tomato,Cabbage,Jalapenos,None,Red Chilli,Black Pepper,Oregano,None,Pita Bread,Cheese,Continental,295
+Carrot capsicum veggie,Carrot,Onion,Capsicum,Garlic,Whole wheat flour(Atta),Turmeric,Cumin,Cinnamon,Turmeric,Whole Wheat Bread,Ghee,Indian,298
+Cholle Bhatura,Tomato,Onion,Ginger,Garlic,Chickpeas(Chhole),Red Chilli,Garam Masala,Fennel seeds,Bay leaves,Pita Bread,Ghee,Punjabi,427
+Chane ki sabji,Coriander,Capsicum,Green chilli,Lemon juice,Gram(Chana),Cumin,Red Chilli,Turmeric,Garam Masala,None,Ghee,Indian,144
+Cheese Pizza,Tomato,Onion,Olives,Capsicum,White flour(Maida),Oregano,Red Chilli,Black Pepper,None,None,Cheese,Continental,1300
+Cheesy crispy potato balls,Potato,Baby corn,Ginger,Garlic,White flour(Maida),Black Pepper,Oregano,Garam Masala,None,White Bread,Cheese,Continental,332
+chole sandwich,Tomato,Carrot,Capsicum,Beetroot,Chickpeas(Chhole),Black Pepper,Cumin,Asafoetida,Oregano,Baguette,Cheese,Indian,179
+Cholle,Onion,Garlic,None,None,Chickpeas(Chhole),Garam Masala,Turmeric,Red Chilli,None,None,None,Punjabi,223
+Curry rice,Drumsticks,Curry leaves,Cauliflower,Ladyfinger(Okra),Rice,Red Chilli,Cumin,Asafoetida,Mustard,None,None,South Indian,153
+Dal Khichadi,Tomato,Onion,Capsicum,Green chilli,Toor dal,Red Chilli,Turmeric,Black Pepper,Cardamom,None,None,Indian,320
+Dal Makhani,Tomato,Coriander,Onion,Garlic,Toor dal,Red Chilli,Turmeric,Cumin,Garam Masala,None,Butter,Punjabi,278
+Dum aloo,Potato,Tomato,Coriander,Lemon juice,None,Red Chilli,Black Pepper,Turmeric,Garam Masala,None,None,Kashmiri,269
+Farmhouse Pizza ,Capsicum,Tomato,Olives,Sweet corn,White flour(Maida),Black Pepper,Red Chilli,Cinnamon,Oregano,White Bread,Cheese,Continental,870
+Fried Beans&Potato,Carrot,Potato,Tomato,Beans,None,Cardamom,Asafoetida,Cumin,Black Pepper,None,None,Andhra,214
+Grilled cheese sandwich,Capsicum,Potato,Tomato,Beetroot,None,Black Pepper,None,None,None,White Bread,Cheese,American,464
+Gulabjamun,None,None,None,None,White flour(Maida),Cardamom,None,None,None,None,Milk,Punjabi,260
+Hash browns,Potato,Onion,Garlic,Coriander,White flour(Maida),Red Chilli,Black Pepper,None,None,None,Cheese,American,238
+Sambhar,Drumsticks,Bottle Gourd,Pumpkin,Onion,Toor dal,Red Chilli,Cumin,Asafoetida,Coriander seeds,None,None,South Indian,273
+Manchow Soup,Capsicum,Cabbage,Carrot,Sweet corn,None,None,None,None,Black Pepper,None,None,Indo Chinese,87
+Manchurian ,Cabbage,Capsicum,Onion,Ginger,None,Red Chilli,Black Pepper,None,None,None,None,Chinese,183
+Masala dosa,Potato,Curry leaves,Onion,Capsicum,Rice,Garam Masala,Mustard,Turmeric,Red Chilli,None,None,South Indian,539
+Matar paneer,Peas,Onion,Tomato,Garlic,None,Garam Masala,Turmeric,Red Chilli,Fenugreek seeds,None,Paneer(Cottage cheese),North Indian,143.7
+Methi jhunka bhakari,Fenugreek,Garlic,Coriander,Onion,Gram(Chana),Cumin,Asafoetida,Mustard,Turmeric,None,None,Maharashtrian,252
+Misal Pav,Onion,Tomato,Garlic,Coriander,Moong dal,Red Chilli,Turmeric,Garam Masala,Poppy seeds,Bun,None,Maharashtrian,289
+Mushroom,Mushrooms,Onion,Garlic,Green chilli,None,Red Chilli,Turmeric,Garam Masala,Bay leaves,None,None,Indian,43
+Noodles,Capsicum,Carrot,Cabbage,Onion,White flour(Maida),Black Pepper,Red Chilli,Oregano,None,None,Butter,Chinese,338
+Palak Paneer,Spinach,Tomato,Onion,Ginger,Gram flour(Besan),Red Chilli,Nutmeg,Coriander seeds,Cloves,None,Paneer(Cottage cheese),Punjabi,470
+Paneer Butter Masala,Tomato,Onion,Ginger,Capsicum,None,Turmeric,Garam Masala,Saffron,Red Chilli,None,Paneer(Cottage cheese),Hyderabadi,229
+Paneer chilli,Capsicum,Onion,Green chilli,Garlic,None,Black Pepper,Paprika,Oregano,None,None,Paneer(Cottage cheese),Indo Chinese,316
+Paneer makhani,Tomato,Coriander,None,None,None,Red Chilli,Cardamom,Cinnamon,Bay leaves,Whole Wheat Bread,Paneer(Cottage cheese),Punjabi,456
+Paneer Palak Kabab,Spinach,Potato,Garlic,Onion,None,Turmeric,Red Chilli,Cumin,Garam Masala,None,Paneer(Cottage cheese),Indian,654
+Paneer Tikka ,Onion,Capsicum,Tomato,None,None,Red Chilli,Garam Masala,Turmeric,Cumin,None,Paneer(Cottage cheese),Punjabi,279
+Pani puri,Coriander,Mint,Potato,None,White flour(Maida),Red Chilli,Black Pepper,Garam Masala,None,None,None,Indian,188
+Pav bhaji,Potato,Capsicum,Tomato,Cauliflower,None,Mustard,Turmeric,Cinnamon,Cardamom,Bun,None,Indian,400
+Pink sauce Pasta,Capsicum,Onion,Jalapenos,Olives,White flour(Maida),Black Pepper,Oregano,Red Chilli,None,Pita Bread,None,Italian,358
+Pizza with Paneer,Capsicum,Jalapenos,Pickles,Olives,White flour(Maida),Mustard,Black Pepper,Red Chilli,Cinnamon,Pita Bread,Paneer(Cottage cheese),Continental,842
+Pizza with Mushrooms,Capsicum,Jalapenos,Olives,Mushrooms,White flour(Maida),Oregano,Paprika,Red Chilli,None,None,Cheese,Continental,884
+Baby Corn Pizza,Capsicum,Onion,Tomato,Baby corn,None,Red Chilli,Black Pepper,Oregano,None,Pita Bread,Cheese,Continental,1024
+Sweet Corn Pizza,Olives,Tomato,Onion,Sweet corn,None,Red Chilli,Black Pepper,Oregano,Garam Masala,None,Cheese,Continental,1078
+Poha,Coriander,Onion,Curry leaves,Green chilli,Rice,Mustard,Turmeric,Cumin,None,None,None,Maharashtrian,180
+Potato Poha,Potato,Onion,Peas,Curry leaves,Rice,Garam Masala,None,None,None,None,None,Maharashtrian,229
+Pulav,Sweet corn,Onion,Garlic,None,Rice,Cinnamon,Bay leaves,Cloves,Garam Masala,None,Milk,Indian,231
+Rajma Chawal,Kidney beans(Rajma),Onion,Tomato,Green chilli,Rice,Bay leaves,Cumin,Asafoetida,Garam Masala,None,Ghee,North Indian,261
+Ratatouille,Zucchini,Brinjal,Tomato,Capsicum,None,Black Pepper,Garlic Cloves,Onion,Parsley,None,None,French,80
+Sandga,Onion,None,None,None,Moong dal,Garam Masala,Cinnamon,Cumin,Asafoetida,None,None,Maharashtrian,235
+Schezwan Fried Rice,Capsicum,Carrot,Garlic,Cabbage,Rice,Red Chilli,Black Pepper,None,None,None,None,Indo Chinese,327
+Sindhi mix vegetable,Cauliflower,Tomato,Potato,Carrot,None,Cumin,Red Chilli,Cinnamon,Turmeric,None,None,Sindhi,167
+Smash,Tomato,Potato,Garlic,Onion,None,Black Pepper,Red Chilli,Garam Masala,None,None,None,British,97
+Spaghetti,Tomato,Garlic,Onion,Mushrooms,White flour(Maida),Black Pepper,Oregano,Bay leaves,None,None,None,Italian,173
+Spinach masala,Spinach,Onion,Capsicum,Sweet corn,Gram flour(Besan),Turmeric,Red Chilli,None,None,None,Ghee,Indian,137
+Stuffed brinjal.,Brinjal,Onion,Garlic,Beans,Gram(Chana),Red Chilli,Garam Masala,Cumin,Turmeric,None,None,Indian,127
+Stuffed karela,Bitter Gourd,Onion,Coriander,Jalapenos,None,Turmeric,Fennel seeds,Cumin,Red Chilli,Whole Wheat Bread,Curd,Punjabi,152
+Sweetcorn Salad ,Sweet corn,Cucumber,Tomato,Onion,None,Oregano,Red Chilli,Black Pepper,None,None,Paneer(Cottage cheese),American,127
+Eggless Tomato Omlette,Tomato,Onion,Fenugreek,None,Urad dal,Red Chilli,Black Pepper,None,None,None,None,Indian,143
+Paneer biryani,Onion,Cauliflower,Capsicum,Carrot,Rice,Red Chilli,Garam Masala,Cumin,Cinnamon,White Bread,Paneer(Cottage cheese),Hyderabadi,300
+Veg Beetroot Sandwich,Tomato,Capsicum,Beetroot,Onion,None,Black Pepper,Oregano,None,None,White Bread,Butter,Indian,338
+Vegetable Fried Rice,Onion,Carrot,Cabbage,Garlic,Rice,Black Pepper,Cloves,Garam Masala,Turmeric,None,None,Chinese,202
+Vegetable Corn Sandwich,Potato,Tomato,Cabbage,Sweet corn,None,Red Chilli,Black Pepper,None,Cumin,White Bread,Butter,Indian,279
+Vegetable Curd Sandwich,Cucumber,Onion,Capsicum,Capsicum,None,Black Pepper,Oregano,None,None,White Bread,Curd,Indian,285
+Vinegret (Russian Salad),Beetroot,Potato,Carrot,Pickles,None,None,None,None,None,None,None,Russian,86
+White sauce pasta,Capsicum,Garlic,Sweet corn,Onion,White flour(Maida),Black Pepper,Oregano,Paprika,None,None,Milk,Italian,339
+Medu Vada,Onion,Ginger,Curry leaves,None,Gram flour(Besan),Black Pepper,Red Chilli,Fennel seeds,None,None,None,South Indian,76
+Italian Potato Salad,Potato,Onion,None,None,None,Parsley,Oregano,Black Pepper,None,None,Cheese,Italian,168
+Garlic Bread,Garlic,None,None,None,None,Parsley,None,None,None,Baguette,Butter,Continental,342
+Spring Green Risotto,Spinach,Peas,Onion,Mushrooms,Rice,Garlic Cloves,None,None,None,None,Cheese,American,105
+Marinated Tomatoes,Tomato,Onion,None,None,None,Garlic Cloves,Black Pepper,Parsley,Basil,None,None,American,35
+Italian Cheese Loaf,Tomato,Olives,None,None,None,Oregano,Basil,None,None,Baguette,Cheese,Italian,536
+Italian Zucchini Casserole,Zucchini,Tomato,Onion,None,None,Black Pepper,Oregano,Garlic Cloves,Basil,None,Cheese,Italian,267
+Texas-Style Spanish Rice,Onion,Tomato,Green chilli,Garlic,Rice,Turmeric,Cumin,None,None,None,None,American,166
+German Cucumber Salad,Cucumber,Tomato,Onion,None,None,Mustard,Black Pepper,Parsley,None,None,Sour cream,German,76
+Spinach Quesadillas,Spinach,Onion,Tomato,Garlic,White flour(Maida),Cumin,None,None,None,None,Cheese,Mexican,281
+Pumpkin Stir Fry Sabzi,Pumpkin,Fenugreek,Coriander,None,None,Cumin,Red Chilli,Mustard,Turmeric,None,Ghee,Indian,162.5
+Tomato Soup,Tomato,Onion,Celery,None,None,Black Pepper,Oregano,Basil,None,None,None,Continental,209
+Garlic Parmesan Grilled Eggplant (Brinjal),Brinjal,Garlic,None,None,None,Black Pepper,Oregano,None,None,None,Cheese,Italian,191
+Sauteed green beans,Beans,Onion,Garlic,None,None,Parsley,Black Pepper,None,None,None,Butter,Continental,120
+Roasted Garlic Butter Mushrooms ,Mushrooms,Garlic,None,None,None,Basil,Parsley,None,None,None,Butter,American,169.5
+Cilantro Lime Rice,Cilantro(Coriander leaves),Garlic,Onion,Lemon juice,Rice,None,None,None,None,None,Butter,Mexican,133
+Aloo Beans Sabzi,Beans,Potato,Coriander,None,None,Turmeric,Asafoetida,Garam Masala,Cumin,None,None,Indian,180
+Crispy Baked Parmesan Garlic Fries,Garlic,Potato,None,None,None,Parsley,Black Pepper,None,None,None,Cheese,Continental,270
+Raita,Cucumber,Mint,Onion,None,None,Black Pepper,Cumin,None,None,None,Curd,Indian,95.4
+Sindhi Koki,Green chilli,Coriander,Onion,None,Whole wheat flour(Atta),Coriander seeds,Cumin,None,None,None,None,Sindhi,297
+Chilli Cheese Toast,Green chilli,Ginger,None,None,None,Black Pepper,None,None,None,Whole Wheat Bread,Cheese,Indian,135
+Masoor Dal,Tomato,Green chilli,None,None,Masoor dal,Cumin,Asafoetida,Red Chilli,Turmeric,None,Ghee,Indian,85
+Brinjal Chutney,Brinjal,Coriander,Tomato,Ginger,None,Garlic Cloves,Red Chilli,Onion,None,None,None,Andhra,15
+Vegetable Borscht Soup,Beetroot,Potato,Celery,Kidney beans(Rajma),None,Garlic Cloves,Onion,Parsley,Basil,None,None,Russian,160
+Split Peas Soup,Peas,Onion,Celery,Carrot,None,None,None,None,None,None,None,Continental,158
+Pumpkin Soup,Pumpkin,Onion,Garlic,None,None,Cumin,Red Chilli,None,None,None,None,Continental,34
+Cheddar Broccoli Potato Soup,Broccoli,Potato,Carrot,Celery,White flour(Maida),Thyme,Onion,Garlic Cloves,None,None,Cheese,American,276
+Lauki Chana Dal,Bottle Gourd,Tomato,Ginger,Coriander,Chana dal,Red Chilli,Onion,Garlic Cloves,Asafoetida,None,None,North Indian,120
+Spinach Stuffed Sweet Potatoes,Sweet potato,Spinach,None,None,None,Black Pepper,Garlic Cloves,None,None,None,None,Continental,275
+Stuffed Portobello Mushrooms with Spinach and Feta,Mushrooms,Spinach,Garlic,None,None,Black Pepper,Garlic Cloves,None,None,None,Cheese,Continental,418
+Lemon and Garlic Broccoli,Broccoli,Garlic,Lemon juice,None,None,None,None,None,None,None,None,American,49
+Cabbage salad with corn,Cabbage,Cucumber,Sweet corn,None,None,Dill,Black Pepper,None,None,None,None,American,173
+Aloo Oats Pattis,Potato,Fenugreek,Cilantro(Coriander leaves),None,Oats,Garam Masala,Red Chilli,None,None,None,None,Indian,175
+Parmesan Zucchini and Corn,Zucchini,Sweet corn,Cilantro(Coriander leaves),Lemon juice,None,Black Pepper,Garlic Cloves,Oregano,Basil,None,Cheese,Continental,143
+Chilli Roasted Zucchini,Zucchini,Garlic,None,None,None,Red Chilli,Black Pepper,None,None,None,None,American,75
+Garlic Parmesan Roasted Sweet Potato,Sweet potato,Garlic,None,None,None,Thyme,None,None,None,None,Cheese,American,152
+Lemon Coriander Soup,Cilantro(Coriander leaves),Lemon juice,Carrot,Ginger,None,Black Pepper,Garlic Cloves,Onion,Green Chilli,None,None,Indian,67
+Roasted Red Pepper Cauliflower Soup,Cauliflower,Capsicum,Onion,None,None,Garlic Cloves,Black Pepper,Paprika,Thyme,None,None,American,68.1
+Kadai Paneer,Tomato,Capsicum,Cilantro(Coriander leaves),Ginger,None,Onion,Garlic Cloves,Garam Masala,Red Chilli,None,Paneer(Cottage cheese),Indian,255
+Paneer Cutlet,Potato,Sweet corn,Coriander,Ginger,Gram flour(Besan),Red Chilli,Cumin,Onion,Garam Masala,None,Paneer(Cottage cheese),North Indian,199
+Pan fried baby corn,Baby corn,Cilantro(Coriander leaves),Ginger,Garlic,Corn flour,Red Chilli,Turmeric,Cumin,None,None,Curd,Indian,184
+Paneer Paratha,Cilantro(Coriander leaves),Green chilli,None,None,Whole wheat flour(Atta),Cumin,Red Chilli,Garam Masala,None,None,Paneer(Cottage cheese),Punjabi,320
+Methi Paratha,Fenugreek,Garlic,Ginger,None,Whole wheat flour(Atta),Red Chilli,Cumin,Oregano,None,None,None,Punjabi,91
+Methi Sabzi,Fenugreek,Potato,Carrot,Lemon juice,None,Turmeric,Garam Masala,Red Chilli,Coriander,None,None,North Indian ,244
+Cluster Beans(Gavar) Sabzi,Cluster Beans(Gavar),Potato,Carrot,Lemon juice,None,Turmeric,Garam Masala,Coriander,Red Chilli,None,None,Indian,110
+Karela (Bitter Gourd) Sabzi,Bitter Gourd,Tomato,Ginger,Garlic,None,Turmeric,Garam Masala,Red Chilli,Coriander,None,None,Indian,106
+Colocasia(Arbi) and Paneer Sabzi,Colocasia,Cilantro(Coriander leaves),Lemon juice,None,Gram flour(Besan),Turmeric,Garam Masala,Red Chilli,Coriander,None,Paneer(Cottage cheese),Indian,246
+Colocasia(Arbi) Curry,Colocasia,Tomato,Ginger,Garlic,None,Turmeric,Asafoetida,Garam Masala,Red Chilli,None,Curd,Indian,193
+Dahi Aloo Sabzi,Potato,Cilantro(Coriander leaves),None,None,None,Garam Masala,Cumin,Asafoetida,Turmeric,None,Curd,North Indian,169
+Mooli Paratha,Radish,Cilantro(Coriander leaves),Ginger,Green chilli,Whole wheat flour(Atta),Red Chilli,Turmeric,Asafoetida,None,None,Ghee,Punjabi,120
+Turnip Salad,Turnip,Onion,None,None,None,Parsley,Black Pepper,None,None,None,None,Continental,25
+Cabbage Sabzi,Cabbage,Potato,Cilantro(Coriander leaves),None,None,Cumin,Asafoetida,Garam Masala,Turmeric,None,None,Indian,208
+Cauliflower Sabzi,Cauliflower,Potato,Carrot,Peas,None,Turmeric,Red Chilli,Garam Masala,Coriander,None,None,Indian,64
+Stuffed Capsicum Sabzi,Capsicum,Potato,Cilantro(Coriander leaves),None,None,Fennel seeds,Garam Masala,Red Chilli,Asafoetida,None,None,North Indian,195
+Palak Aloo Sabzi,Spinach,Potato,Tomato,Ginger,None,Garam Masala,Garlic Cloves,Red Chilli,Turmeric,None,None,Indian,203
+Lauki Sabzi,Bottle Gourd,Tomato,Cilantro(Coriander leaves),None,None,Turmeric,Asafoetida,Red Chilli,Garam Masala,None,Ghee,Indian,72
+Palak Chane ki Dal,Spinach,Tomato,Ginger,Garlic,Chana dal,Turmeric,Red Chilli,Garam Masala,Coriander,None,None,Indian,141
+Herb and garlic mashed potatoes,Potato,Garlic,None,None,None,Parsley,Dill,Black Pepper,None,None,Butter,American,155
+Moong Dal Methi Sabzi,Fenugreek,Garlic,Onion,Green chilli,Moong dal,Turmeric,Cumin,None,None,None,None,Indian,71
+Indian Chickpea Salad,Tomato,Cucumber,Cilantro(Coriander leaves),Mint,Chickpeas(Chhole),Onion,Black Pepper,None,None,None,Curd,Indian,167
+Garlic Paneer,Garlic,None,None,None,Corn flour,Red Chilli,Black Pepper,Oregano,None,None,Paneer(Cottage cheese),North Indian,240
+South Indian Bread Upma,Tomato,Capsicum,Ginger,Curry leaves,None,Turmeric,Red Chilli,Green Chilli,Mustard,Whole Wheat Bread,None,South Indian,211
+Lemon Garlic Baked Grated Carrots,Carrot,Onion,Lemon juice,None,None,Black Pepper,Garlic Cloves,None,None,None,Butter,American,127
+Vegan Carrot Hot Dogs,Carrot,Onion,Tomato,Garlic,None,Black Pepper,Paprika,None,None,Baguette,None,American,81
+Scrambled Paneer,Tomato,Ginger,Cilantro(Coriander leaves),Garlic,None,Red Chilli,Garam Masala,Turmeric,Cumin,None,Paneer(Cottage cheese),Indian,370
+Moong sprouts tikki,Onion,Ginger,Cilantro(Coriander leaves),Potato,Moong dal,Red Chilli,Garam Masala,None,None,None,None,Indian,31
+Punjabi Green Moong Dal,Cilantro(Coriander leaves),Onion,Tomato,Ginger,Moong dal,Red Chilli,Garam Masala,Cumin,Turmeric,None,None,Punjabi,136
+Sprouted Moong Dal Salad,Onion,Tomato,Cilantro(Coriander leaves),Lemon juice,Moong dal,Red Chilli,Green Chilli,None,None,None,None,Indian,99
+Creamy Spinach Soup,Spinach,Onion,Garlic,Jalapenos,None,Black Pepper,None,None,None,None,Cheese,Continental,91
+Lauki Soup,Bottle Gourd,Onion,Cilantro(Coriander leaves),Ginger,None,Black Pepper,Garlic Cloves,Green Chilli,None,None,None,Indian,37
+Roasted Carrot Soup,Carrot,Ginger,None,None,None,Coriander,Garlic Cloves,Black Pepper,Garam Masala,None,Sour cream,Continental,235
+Potato cakes with carrot and rice,Potato,Onion,Carrot,None,Rice,Parsley,None,None,None,None,None,Continental,54
+Bombay Chutney(Side dish for Puri),Tomato,Ginger,Curry leaves,Garlic,Gram flour(Besan),Green Chilli,Onion,Mustard,Turmeric,None,None,Indian,333
+British Mushy Peas,Peas,Mint,Lemon juice,None,None,Black Pepper,None,None,None,None,Butter,British,173
+Portobello Mushroom Burger,Mushrooms,Tomato,Lettuce,Garlic,None,Onion,Black Pepper,Paprika,None,Bun,Cheese,American,204.5
+Onion Bhaji,Onion,Cilantro(Coriander leaves),None,None,Gram flour(Besan),Cumin,Coriander,Turmeric,Red Chilli,None,None,Maharashtrian,126.5
+Onion Paratha,Onion,Green chilli,Cilantro(Coriander leaves),None,Whole wheat flour(Atta),Red Chilli,Garam Masala,None,None,None,Ghee,Punjabi,158
+Vegan Zucchini Soup,Zucchini,Carrot,Celery,White Beans,None,Onion,Garlic Cloves,Thyme,Cayenne Peppers,None,None,American,106
+Caprese Bites,Tomato,None,None,None,None,Basil,None,None,None,None,Cheese,Italian,148
+Cabbage Paratha,Cabbage,Cilantro(Coriander leaves),Green chilli,Ginger,Whole wheat flour(Atta),Cumin,Coriander,Garam Masala,None,None,Ghee,Punjabi,114
+Sindhi Onion Pickle,Onion,None,None,None,None,Turmeric,Red Chilli,Mustard,None,None,None,Sindhi,80
+Coriander Mint Chutney,Cilantro(Coriander leaves),Mint,Ginger,Lemon juice,None,Cumin,Green Chilli,Garlic Cloves,None,None,None,Indian,8
+Onion Tomato Chutney,Onion,Tomato,Ginger,Curry leaves,Urad dal,Red Chilli,Garlic Cloves,Asafoetida,Mustard,None,None,South Indian,31
+Bhugi Bhaji,Potato,Brinjal,Peas,Ginger,None,Onion,Coriander,Red Chilli,Garam Masala,None,None,Sindhi,674
+Besan Cheele,Fenugreek,Ginger,Green chilli,Garlic,Gram flour(Besan),Red Chilli,Turmeric,Coriander,None,None,Curd,North Indian,236
+Gujarati Methi Muthiya,Fenugreek,Ginger,None,None,Gram flour(Besan),Red Chilli,Coriander,Cumin,Turmeric,None,Curd,Gujarati,37
+Kothmir Wadi,Cilantro(Coriander leaves),Ginger,Green chilli,Lemon juice,Gram flour(Besan),Red Chilli,Turmeric,Sesame seeds,Garam Masala,None,None,Maharashtrian,44
+Pennsylvania Dutch Pepper Cabbage,Cabbage,Carrot,Celery,None,None,Black Pepper,None,None,None,None,None,American,104
+Bread Pizza Pocket,Carrot,Sweet corn,Olives,Capsicum,None,Garlic Cloves,Onion,None,None,White Bread,Cheese,Italian,216
+Rajasthani Matar Ki Kachori,Peas,Cilantro(Coriander leaves),Green chilli,Ginger,White flour(Maida),Red Chilli,Garam Masala,Bay leaves,Fennel seeds,None,Ghee,Rajasthani,200
+Oats Cheela,Tomato,Cilantro(Coriander leaves),Ginger,Mint,Oats,Turmeric,Red Chilli,Onion,Garam Masala,None,None,North Indian,249
+Dahi Bhindi,Ladyfinger(Okra),Tomato,Onion,Garlic,Gram flour(Besan),Turmeric,Red Chilli,Garam Masala,Coriander,None,Curd,North Indian,43
+Moong Dal Appam,Potato,Cilantro(Coriander leaves),Ginger,Onion,Moong dal,Turmeric,Red Chilli,Garam Masala,Coriander,None,None,South Indian,72
+Paneer Bread Rolls,Onion,Garlic,Ginger,Cilantro(Coriander leaves),None,Green Chilli,Red Chilli,Garam Masala,None,White Bread,Paneer(Cottage cheese),Indian,197
+Spinach Corn Momos,Spinach,Sweet corn,Garlic,Mint,White flour(Maida),Coriander,Red Chilli,Garam Masala,Green Chilli,None,Cheese,Indo Chinese,303
+Batata Vada,Potato,Cilantro(Coriander leaves),Garlic,Green chilli,Gram flour(Besan),Turmeric,Red Chilli,Onion,Mustard,None,None,Maharashtrian,156
+Middle Eastern Pickled Turnips,Turnip,Beetroot,None,None,None,Bay leaves,Garlic Cloves,None,None,None,None,Middle Eastern ,9
+Besan Curry,Green chilli,Cilantro(Coriander leaves),None,None,Gram flour(Besan),Asafoetida,Garam Masala,Turmeric,Red Chilli,None,Curd,Punjabi,151
+Dal Palak,Spinach,Tomato,Ginger,Garlic,Moong dal,Garam Masala,Turmeric,Red Chilli,Onion,None,None,Indian,132
+Roasted Broccoli Chickpea Salad,Broccoli,Olives,Cilantro(Coriander leaves),Lemon juice,Chickpeas(Chhole),Red Chilli,Black Pepper,Garlic Cloves,None,None,None,American,150
+Baked Feta with Olives,Olives,Tomato,Garlic,None,None,Black Pepper,Parsley,Thyme,Oregano,White Bread,Cheese,Mediterranean,304
+Creamy Celery Soup,Celery,Potato,Onion,Garlic,None,Black Pepper,Red Chilli,Dill,Parsley,None,Butter,American,242
+Soyabean Curry,Soyabean,Garlic,Cilantro(Coriander leaves),None,None,Cumin,Red Chilli,Turmeric,Garam Masala,None,None,Indian,195
+Soyabean Cutlets,Soyabean,Potato,Ginger,Garlic,None,Green Chilli,Onion,Coriander,Red Chilli,None,None,Indian,44
+Okra Soup,Ladyfinger(Okra),Tomato,Onion,Garlic,Rice,Black Pepper,Red Chilli,Parsley,Thyme,None,Butter,African,201
+Dhokla,Cilantro(Coriander leaves),Curry leaves,None,None,Gram flour(Besan),Red Chilli,Green Chilli,Mustard,None,None,Curd,Gujarati,81
+Stuffed Mini Dosas,Potato,Capsicum,Onion,Ginger,Moong dal,Red Chilli,Green Chilli,Asafoetida,None,None,Butter,South Indian,132
+Amritsari Kulcha,Cilantro(Coriander leaves),Potato,Green chilli,None,White flour(Maida),Garam Masala,Red Chilli,Coriander,None,None,Curd,Punjabi,210
+Paneer Kofta,Mint,Onion,Green chilli,Ginger,Gram flour(Besan),Garam Masala,Red Chilli,Coriander,Turmeric,None,Paneer(Cottage cheese),Punjabi,208
+Lauki Kofta,Bottle Gourd,Tomato,Ginger,Onion,Gram flour(Besan),Garam Masala,Coriander,Red Chilli,Turmeric,None,Butter,Uttar Pradesh,110
+Corn pattice,Potato,Sweet corn,Capsicum,Cilantro(Coriander leaves),None,Black Pepper,Cumin,Sesame seeds,Garam Masala,None,None,Indian,79
+Poha wada,Potato,Ginger,Onion,Green chilli,Rice,Black Pepper,Cumin,Green Chilli,Garam Masala,None,None,South Indian,74
+Cabbage chanadal sabji,Cabbage,Ginger,Cilantro(Coriander leaves),Garlic,Chana dal,Red Chilli,Asafoetida,Mustard,Garam Masala,None,None,North Indian,159
+Mughali Paratha,Carrot,Potato,Cabbage,Onion,Whole wheat flour(Atta),Cumin,Red Chilli,Garam Masala,Coriander,None,Paneer(Cottage cheese),Bengali,115
+Garlic fried rice ,Capsicum,Carrot,Cabbage,Onion,Rice,Black Pepper,Cumin,Cloves,Cumin,None,None,Chinese,286
+Oats dosa ,Green chilli,Onion,Cilantro(Coriander leaves),None,Oats,Red Chilli,Garam Masala,Asafoetida,None,None,Curd,South Indian,144
+Cheese paratha,Garlic,Cilantro(Coriander leaves),None,None,Whole wheat flour(Atta),Black Pepper,Oregano,None,None,None,Cheese,Punjabi,166
+Dahi bread roll ,Potato,Tomato,Capsicum,Carrot,None,Coriander,Garam Masala,Green Chilli,Garlic Cloves,Whole Wheat Bread,None,North Indian,160
+Mughali Gobi masala,Cauliflower,Tomato,Garlic,Onion,None,Red Chilli,Turmeric,Coriander,Garam Masala,None,Sour cream,Mughlai,111
+Rice carrot pancake ,Capsicum,Carrot,Potato,Onion,Rice,Red Chilli,Turmeric,Cumin,Garam Masala,None,Curd,Karnataka,93
+Paneer jalfrezi,Tomato,Capsicum,Onion,Broccoli,None,Red Chilli,Turmeric,Garam Masala,Cumin,None,Paneer(Cottage cheese),Indian,268
+Gujarati Khandvi,Ginger,Cilantro(Coriander leaves),Curry leaves,Lemon juice,Gram flour(Besan),Mustard,Turmeric,Green Chilli,None,None,Curd,Gujarati,282
+Vaghareli Roti,Green chilli,Curry leaves,Cilantro(Coriander leaves),None,Whole wheat flour(Atta),Mustard,Turmeric,Asafoetida,Sesame seeds,None,Curd,Gujarati,277
+Vaal Nu Shak,Soyabean,Cilantro(Coriander leaves),None,None,Gram flour(Besan),Turmeric,Red Chilli,Asafoetida,Garam Masala,None,None,Gujarati,406
+Kathiyawadi Dhokli Shaak,Onion,Spring Onion,Green chilli,Ginger,Gram flour(Besan),Red Chilli,Coriander,Turmeric,Cumin,None,Buttermilk,Gujarati,448
+Bajri Methi Dhebra,Fenugreek,Green chilli,None,None,Bajra(Millet Flour),Red Chilli,Coriander,Turmeric,Sesame seeds,None,Curd,Gujarati,39
+Spicy Bajra Roti,Onion,Curry leaves,Cilantro(Coriander leaves),None,Bajra(Millet Flour),Green Chilli,Sesame seeds,None,None,None,None,Rajasthani,123
+Baingan Methi,Brinjal,Fenugreek,Tomato,Ginger,None,Turmeric,Red Chilli,Mustard,Garlic Cloves,None,None,Indian,96
+Stuffed Spinach Paratha,Spinach,Carrot,Ginger,None,Whole wheat flour(Atta),Coriander,Green Chilli,None,None,None,Paneer(Cottage cheese),Indian,141
+Methi Matar Malai,Fenugreek,Peas,Ginger,Cilantro(Coriander leaves),None,Garlic Cloves,Onion,Green Chilli,Cumin,None,Cream,North Indian,258
+Paneer Pudina Tikki,Mint,Green chilli,None,None,Corn flour,Garam Masala,None,None,None,None,Paneer(Cottage cheese),North Indian,70
+Papad Potato Roll,Potato,Green chilli,Lemon juice,None,Whole wheat flour(Atta),Red Chilli,Garam Masala,Coriander,None,Papad,None,Indian,132
+Moyettes (Mexican Style Open Bun),Cabbage,Tomato,Kidney beans(Rajma),Spring Onion,None,Red Chilli,Green Chilli,Coriander,Garlic Cloves,Bun,Cheese,Mexican,179
+Makki ka Dhokla,Sweet corn,Curry leaves,Ginger,Lemon juice,Corn flour,Turmeric,Mustard,Sesame seeds,None,None,Curd,Gujarati,266
+Bajra Cauliflower Roti,Cauliflower,Cilantro(Coriander leaves),Spring Onion,Garlic,Bajra(Millet Flour),Ginger,Green Chilli,None,None,None,None,Indian,33
+Creamed Cabbage with Onion,Cabbage,Onion,Garlic,Lemon juice,None,Black Pepper,None,None,None,None,Cream,American,114.7
+Canadian Poutine,Potato,Garlic,None,None,White flour(Maida),Onion,Black Pepper,None,None,None,Cheese,Canadian,513
+Swedish potatoes with dill cream sauce,Potato,None,None,None,White flour(Maida),Dill,Black Pepper,Nutmeg,None,None,Cream,Swedish,228
+Norwegian Oatmeal Cookies,None,None,None,None,Oats,Vanilla,Cinnamon,Nutmeg,None,None,Butter,Norwegian,105
+Polish Potato Pancakes,Potato,Carrot,Onion,None,White flour(Maida),Garlic Cloves,Black Pepper,None,None,None,None,Polish,45
+Kashmiri Dahi Baingan ,Brinjal,Onion,Garlic,Ginger,None,Green Chilli,Red Chilli,Turmeric,Garam Masala,None,Curd,Kashmiri,211
+Mirch Pakoda,Potato,None,None,None,White flour(Maida),Red Chilli,Cumin,Oregano,Garam Masala,None,None,Rajasthani,165
+Corn Capsicum Masala,Sweet corn,Capsicum,Tomato,Garlic,None,Cumin,Cinnamon,Cardamom,Garam Masala,None,Paneer(Cottage cheese),North Indian,101
+Gobi Manchurian,Cauliflower,Onion,Ginger,Garlic,Corn flour,Green Chilli,None,None,None,None,None,Indo Chinese,294
+Punjabi Masoor Dal,Tomato,Onion,Cilantro(Coriander leaves),Garlic,Masoor dal,Garam Masala,Turmeric,Ginger,Red Chilli,None,None,Punjabi,127
+Toor Dal,Cilantro(Coriander leaves),Garlic,None,None,Toor dal,Cumin,Turmeric,Red Chilli,Asafoetida,None,None,Indian,143
+Urad Dal,Onion,Cilantro(Coriander leaves),Ginger,Garlic,Urad dal,Cumin,Asafoetida,Turmeric,Red Chilli,None,None,Indian,235
+Newari Pancakes,Ginger,Garlic,None,None,Masoor dal,Asafoetida,Cumin,Turmeric,None,None,None,Nepali,115
+Tibetan Potato Curry,Potato,Tomato,Onion,Ginger,None,Red Chilli,Garam Masala,Garlic Cloves,Fenugreek seeds,None,None,Tibetan,191
+Pickled Radish,Radish,Garlic,Ginger,Green chilli,None,Cumin,Coriander,Red Chilli,Mustard,None,None,Nepali,15
+Mustard Brinjal Curry,Brinjal,Onion,Tomato,Garlic,None,Mustard,Fenugreek seeds,Green Chilli,Garam Masala,None,None,South Indian,277
+Tibetan Noodle Soup,Carrot,Spinach,Tomato,Cilantro(Coriander leaves),White flour(Maida),Onion,Ginger,Garlic Cloves,Black Pepper,None,None,Tibetan,415
+Welsh Onion Cake,Potato,Onion,None,None,None,Rosemary,Black Pepper,None,None,None,Butter,Welsh,247
+Bihari Ghugni,Onion,Garlic,Ginger,Lemon juice,Gram(Chana),Green Chilli,Bay leaves,Cinnamon,Garam Masala,None,None,Bihari,145
+Curried Spinach(Saag),Spinach,Mustard Greens,Cabbage,Cilantro(Coriander leaves),None,Garlic Cloves,Garam Masala,Cumin,Turmeric,None,None,North Indian,126
+Brazilian Black Beans,Black Beans,Onion,Garlic,Cilantro(Coriander leaves),None,Bay leaves,Black Pepper,Paprika,Oregano,None,None,Brazilian,121
+Dutch Farmer's Cheese Soup,Potato,Carrot,Cauliflower,Onion,None,None,None,None,None,French Bread,Cheese,Dutch,708
+Sabudana Vada,Potato,Cilantro(Coriander leaves),Ginger,Lemon juice,Sabudana,Green Chilli,Red Chilli,Cumin,None,None,None,Maharashtrian,126
+Matar ki Puri,Peas,Mint,None,None,Whole wheat flour(Atta),Coriander,Red Chilli,Turmeric,None,None,None,Indian,150
+Bitter Gourd Chips,Bitter Gourd,Curry leaves,None,None,Gram flour(Besan),Red Chilli,Turmeric,None,None,None,None,Gujarati,360
+Sweet Potato Chips,Sweet potato,None,None,None,None,Red Chilli,Turmeric,Asafoetida,None,None,None,South American,148
+Mushroom Stuffed Potato Cakes,Potato,Mushrooms,Onion,Lemon juice,White flour(Maida),Garlic Cloves,Dill,Red Chilli,Black Pepper,None,None,Russian,197
+Veggie Croquettes,Potato,Carrot,Capsicum,Spinach,White flour(Maida),Onion,Garlic Cloves,None,None,White Bread,Butter,French,60
+Masala Jowar Roti,Cilantro(Coriander leaves),Cucumber,Onion,Curry leaves,Jowar Flour,Sesame seeds,Cumin,None,None,None,None,Karnataka,49
+Onion Masala Buns,Onion,Garlic,Green chilli,Cilantro(Coriander leaves),White flour(Maida),Cumin,Paprika,None,None,None,Milk,Indian,240
+Roasted Cauliflower Steaks,Cauliflower,Garlic,None,None,None,Parsley,Black Pepper,Paprika,None,None,None,American,241
+Beetroot Raita,Beetroot,Green chilli,Curry leaves,None,None,Red Chilli,Mustard,Cumin,None,None,Curd,Indian,187
+Baked Nippattu,Onion,Green chilli,Cilantro(Coriander leaves),None,Whole wheat flour(Atta),Sesame seeds,None,None,None,None,Butter,South Indian,130
+Gujarati Khichu(Steamed Rice Flour Savory Donuts),Ginger,Green chilli,None,None,Rice Flour,Cumin,Oregano,None,None,None,None,Gujarati,169
+Baked Methi Mathri,Fenugreek,None,None,None,Whole wheat flour(Atta),Red Chilli,Turmeric,Sesame seeds,Oregano,None,Ghee,Rajasthani,26
+Pumpkin Bread,Pumpkin,None,None,None,White flour(Maida),Flax Seeds,Cinnamon,Nutmeg,Cloves,None,Milk,American,259
+Tomato Raita,Tomato,Curry leaves,Green chilli,None,Chana dal,Mustard,Cumin,Asafoetida,Turmeric,None,Curd,Indian,126
+Onion Mint Sandwich,Onion,Mint,None,None,Urad dal,Red Chilli,Garam Masala,Turmeric,None,Whole Wheat Bread,Ghee,Indian,240
+Crispy Fennel Seed Flatbread Crackers,Lemon juice,None,None,None,White flour(Maida),Fennel seeds,Poppy seeds,Sesame seeds,Black Pepper,None,None,Continental,36
+Makki Di Roti,Fenugreek,None,None,None,Corn flour,Oregano,Turmeric,None,None,None,Ghee,Punjabi,90
+Bajra Khichu with Masala Dahi,Green chilli,Curry leaves,None,None,Bajra(Millet Flour),Red Chilli,Garam Masala,Cumin,Coriander,None,Curd,Gujarati,264
+Onion and Spinach Pakoras,Onion,Spinach,Ginger,Green chilli,Gram flour(Besan),Asafoetida,Red Chilli,Fennel seeds,Garam Masala,None,None,Indian,339
+Sweet Corn Vada,Sweet corn,Spring Onion,Garlic,Cilantro(Coriander leaves),Rice Flour,Ginger,Green Chilli,Red Chilli,None,None,None,Indian,52
+Sweet Potato Masala Puri,Sweet potato,Cilantro(Coriander leaves),Lemon juice,None,Whole wheat flour(Atta),Red Chilli,Asafoetida,Kasoori Methi,Garam Masala,None,None,Indian,432
+Lettuce and Pea Soup,Lettuce,Peas,None,None,None,Black Pepper,Dill,Asafoetida,None,None,None,Continental,46
+Spicy Cheesy Swirl Buns with Potato-Bell Pepper Masala ,Potato,Capsicum,Onion,None,White flour(Maida),Flax Seeds,Red Chilli,Garam Masala,Cumin,None,None,Indian,396
+Corn and Capsicum Tikki,Sweet corn,Capsicum,None,None,Rice Flour,Green Chilli,None,None,None,None,None,Indian,79
+Icelandic Vegetable and Oat Soup,Potato,Carrot,Cauliflower,Celery,Oats,Bay leaves,Onion,Garlic Cloves,None,None,None,Icelandic,94
+Gujarati Masala Bhakri,None,None,None,None,Whole wheat flour(Atta),Red Chilli,Turmeric,Cumin,None,None,None,Gujarati,169
+Vegetarian French Onion Soup,Onion,Garlic,None,None,None,Bay leaves,Thyme,Black Pepper,None,French Bread,Cheese,French,76
+Cabbage Vada,Cabbage,Cilantro(Coriander leaves),Green chilli,Mint,Rice Flour,Ginger,Red Chilli,Garam Masala,None,None,None,Indian,16
+Rajasthani Mirchi Vada,Potato,Ginger,Green chilli,None,Gram flour(Besan),Red Chilli,Turmeric,Garam Masala,Oregano,None,None,Rajasthani,100
+Dahi ke Kabab,Cilantro(Coriander leaves),Onion,None,None,Gram flour(Besan),Green Chilli,Ginger,Garam Masala,None,Whole Wheat Bread,Curd,North Indian,227
+Makai Galouti Kabab,Sweet corn,Potato,Onion,Ginger,Whole wheat flour(Atta),Green Chilli,Garam Masala,Turmeric,Coriander,Whole Wheat Bread,Paneer(Cottage cheese),Punjabi,147
+Bengali Matar Kachori,Peas,Green chilli,Ginger,None,Gram flour(Besan),Cumin,Garam Masala,Cardamom,Asafoetida,None,Ghee,Bengali,200
+Onion Bhajis,Onion,Cilantro(Coriander leaves),Green chilli,Lemon juice,Gram flour(Besan),Cumin,Turmeric,Garam Masala,None,None,None,Maharashtrian,158
+Sweet Potato Corn Cakes,Sweet potato,Sweet corn,Cilantro(Coriander leaves),Onion,Corn flour,Garlic Cloves,Cayenne Peppers,Cumin,None,White Bread,Curd,Continental,153
+Beetroot Rice,Beetroot,Cilantro(Coriander leaves),Mint,Onion,Rice,Green Chilli,Ginger,Red Chilli,Garam Masala,None,None,South Indian,215
+Spinach Puri,Spinach,Green chilli,None,None,Whole wheat flour(Atta),Fennel seeds,None,None,None,None,None,Indian,46
+Tomato Puri,Tomato,None,None,None,Whole wheat flour(Atta),Red Chilli,Oregano,Garam Masala,Kasoori Methi,None,None,North Indian,47
+Hare Matar ki Puri,Peas,Green chilli,Lemon juice,None,Whole wheat flour(Atta),Cumin,Garam Masala,None,None,None,Curd,Rajasthani,150
+Mint and Masoor Tikki,Mint,Ginger,Green chilli,None,Masoor dal,None,None,None,None,Whole Wheat Bread,Paneer(Cottage cheese),Indian,93
+Besan Bread Toast,Cilantro(Coriander leaves),Green chilli,Onion,None,Gram flour(Besan),Black Pepper,Red Chilli,Turmeric,Oregano,White Bread,None,Indian,252
+Saffron Rice,Cilantro(Coriander leaves),None,None,None,Rice,Saffron,Mustard,Turmeric,Black Pepper,None,None,Indian,146
+Mint Hummus,Mint,Garlic,Lemon juice,None,Chickpeas(Chhole),Sesame seeds,None,None,None,None,None,Middle Eastern,200
+Steamed Lentil Dumplings,Green chilli,Curry leaves,Ginger,None,Chana dal,Coriander,Dill,Asafoetida,Cumin,None,None,Karnataka,93
+Kala Chana Kabab,Cilantro(Coriander leaves),Green chilli,Onion,Ginger,Gram(Chana),Garam Masala,Red Chilli,Garlic Cloves,None,None,None,Indian,110
+Jowar Pancakes,Onion,Cucumber,Green chilli,None,Jowar Flour,Turmeric,Coriander,None,None,None,Curd,Indian,43
+Sesame Fingers,Celery,Potato,Spring Onion,Capsicum,White flour(Maida),Sesame seeds,Red Chilli,None,None,White Bread,None,Chinese,103
+Cheesy Spring Onion Fingers,Spring Onion,Carrot,Cabbage,Tomato,None,Green Chilli,None,None,None,White Bread,Cheese,Indian,43
+Rice and Dhaniya Mathri,Cilantro(Coriander leaves),None,None,None,Rice Flour,Red Chilli,Oregano,None,None,None,Ghee,Rajasthani,159
+Crispy Eggless Pinwheels,Potato,Onion,Green chilli,None,None,Red Chilli,Oregano,Thyme,Garam Masala,Whole Wheat Bread,Cheese,American,121
+Paneer Bhurji,Tomato,Onion,Green chilli,Cilantro(Coriander leaves),None,Garlic Cloves,Red Chilli,Garam Masala,Turmeric,None,Paneer(Cottage cheese),Punjabi,370
+Broccoli and Carrot Paratha,Broccoli,Carrot,Cilantro(Coriander leaves),Ginger,Whole wheat flour(Atta),Red Chilli,Cumin,Mustard,None,None,None,Indian,179
+Mooli Jowar ki Roti,Radish,Ginger,Garlic,None,Jowar Flour,Red Chilli,None,None,None,None,Curd,Punjabi,99
+Broccoli Masala Stir Fry,Broccoli,Green chilli,Onion,Garlic,Gram flour(Besan),Red Chilli,Cumin,Turmeric,Asafoetida,None,None,Indian,112
+Dahi Papad Sabzi,Onion,Green chilli,Ginger,Garlic,None,Turmeric,Garam Masala,Kasoori Methi,Mustard,Papad,Curd,Rajasthani,157
+Vegan Mushroom Stroganoff,Mushrooms,Onion,Garlic,Soyabean,Corn flour,Red Chilli,Black Pepper,Paprika,Thyme,None,Cream,Russian,220
+Capsicum Besan Sabzi,Capsicum,Green chilli,Cilantro(Coriander leaves),None,Gram flour(Besan),Fennel seeds,Asafoetida,Mustard,Turmeric,None,None,South Indian,213
+Methi Mushroom Curry,Fenugreek,Mushrooms,Tomato,Garlic,None,Ginger,Onion,Red Chilli,Garam Masala,None,None,Punjabi,180
+Onion Bhakri,Onion,Green chilli,Cilantro(Coriander leaves),None,Rawa(Semolina),Turmeric,None,None,None,None,Ghee,Maharashtrian,126
+Spinach and Feta Gozleme,Spinach,Onion,Garlic,None,White flour(Maida),Red Chilli,None,None,None,None,Cheese,Turkish,434
+Creamy Cucumber and Dill Salad,Cucumber,Onion,Garlic,Lemon juice,None,Dill,Black Pepper,None,None,None,Curd,Persian,304
+Vegetable Au Gratin,Capsicum,Tomato,Carrot,Broccoli,White flour(Maida),Garlic Cloves,Bay leaves,Black Pepper,Oregano,None,Cheese,French,250
+Sweet Potatoes stuffed with Quinoa and Spinach,Sweet potato,Spinach,Garlic,None,None,Quinoa,Black Pepper,Flax Seeds,None,None,Cheese,American,275
+Potatoes au Gratin,Potato,Leek,None,None,None,Thyme,Red Chilli,Black Pepper,Dill,None,Cream,French,323
+Roasted Fennel and Potato Soup,Potato,Fennel Bulbs,Onion,None,None,Black Pepper,None,None,None,None,Milk,American,277
+Fennel Slaw with Mint Vinaigrette,Fennel Bulbs,Mint,Onion,Lemon juice,None,Mustard,None,None,None,None,None,Italian,120
+Creamed Fennel and Cauliflower Soup,Cauliflower,Fennel Bulbs,Onion,None,None,Garlic Cloves,Black Pepper,None,None,None,Milk,American,191
+Garlic Herb Foccacia Bread ,Garlic,None,None,None,White flour(Maida),Basil,Thyme,Rosemary,Black Pepper,None,None,Italian,224
+Chermoula Sauce,Cilantro(Coriander leaves),Garlic,Lemon juice,None,None,Cumin,Coriander,Paprika,Parsley,None,None,African,138
+White Bean Soup with Broccoli,White Beans,Broccoli,Onion,None,None,Garlic Cloves,Black Pepper,None,None,None,Cream,American,217
+Irish Potato and Leek Soup,Potato,Leek,Onion,None,None,Thyme,Dill,Black Pepper,None,None,Cream,Irish,116
+Creamy Asparagus Soup,Asparagus,Onion,Lemon juice,None,None,Garlic Cloves,Black Pepper,None,None,None,Cream,American,181
+Nepali Aloo Achar,Potato,Cilantro(Coriander leaves),Ginger,Lemon juice,None,Red Chilli,Turmeric,Asafoetida,Fenugreek seeds,None,None,Nepali,318
+Sooji Potato Pancake,Potato,Spring Onion,Carrot,None,Rawa(Semolina),Black Pepper,None,None,None,None,Ghee,Indian,47
+Aloo and Green Peas Stuffed Tarts,Potato,Peas,Green chilli,Ginger,White flour(Maida),Red Chilli,Coriander,Garam Masala,Cumin,None,None,Indian,43
+Mushroom Bourguinon,Mushrooms,Carrot,Onion,Tomato,None,Garlic Cloves,Thyme,Black Pepper,Bay leaves,None,None,French,340
+Vegan Black Bean Soup,Black Beans,Carrot,Onion,Garlic,None,Basil,Black Pepper,Oregano,Cumin,None,None,American,168
+Black Bean and Mushroom Burger Pattice,Black Beans,Mushrooms,Spinach,Carrot,Oats,Garlic Cloves,Cumin,None,None,None,None,American,280
+Roasted Capsicum Raita,Capsicum,Cilantro(Coriander leaves),None,None,None,Red Chilli,Mustard,Cumin,None,None,Curd,South Indian,125
+Chawal ki Roti,Garlic,Ginger,None,None,Rice Flour,Green Chilli,None,None,None,None,Curd,Maharashtrian,147
+Sweet Potato Curry,Sweet potato,Capsicum,Spinach,Onion,Chickpeas(Chhole),Garlic Cloves,Garam Masala,None,None,None,Milk,South Indian,186
+Cabbage Carrot Sprouts Stirfry,Cabbage,Carrot,Green chilli,None,Moong dal,Asafoetida,Cumin,Red Chilli,Turmeric,None,None,Indian,74
+Jalapeno Ranch,Jalapenos,Garlic,None,None,None,Dill,Onion,Black Pepper,Parsley,None,Curd,"American, Mexican",100
+Broccoli Quinoa Cakes,Broccoli,Spring Onion,None,None,Whole wheat flour(Atta),Quinoa,Garlic Cloves,Black Pepper,None,None,Cheese,American,255
+Maharashtrian Style Takatla Palak (Spinach Curry),Spinach,Green chilli,Garlic,None,Chana dal,Asafoetida,Cumin,Mustard,Turmeric,None,Curd,Maharashtrian,240
+Zucchini Tortilla,Zucchini,Garlic,None,None,White flour(Maida),Black Pepper,Cumin,None,None,White Bread,Cheese,Mexican,79
+Quick Pickled Celery,Celery,Onion,Garlic,None,None,Bay leaves,Dill,Mustard,Black Pepper,None,None,American,189
+Celery Leaf Pesto,Celery,Garlic,Lemon juice,None,None,Parsley,Sunflower Seeds,None,None,None,Cheese,Italian,187
+Cheesy Asparagus Cassarole,Asparagus,Onion,Garlic,None,None,Red Chilli,Black Pepper,Parsley,None,None,Cheese,American,717
+Creamy Asparagus Rice,Asparagus,Onion,Garlic,None,Rice,Basil,Parsley,Black Pepper,None,None,Cream,Italian,492
+Braised Leeks,Leek,Garlic,Lemon juice,None,None,Black Pepper,None,None,None,None,Butter,French,142.5
+Chimichurri Sauce,Cilantro(Coriander leaves),Onion,Garlic,Lemon juice,None,Parsley,Oregano,Red Chilli,None,None,None,Argentinian,60
+Zucchini Fritters,Zucchini,Spring Onion,Mint,Lemon juice,Whole wheat flour(Atta),Dill,Garlic Cloves,Black Pepper,None,None,Cheese,American,105
+Corn Chowder,Sweet corn,Celery,Cilantro(Coriander leaves),Potato,White flour(Maida),Onion,Parsley,Paprika,Red Chilli,None,Milk,American,202.5
+Cilantro Jalapeno Sauce,Cilantro(Coriander leaves),Jalapenos,Lemon juice,None,None,Garlic Cloves,Black Pepper,None,None,None,Cream,Mexican,38.3
+Tomato Chips,Tomato,Capsicum,Lemon juice,None,None,Oregano,Red Chilli,Paprika,Sunflower Seeds,None,None,American,134
+Oven Roasted Garlic Parmesan Brussels Sprouts,Brussels Sprouts,Garlic,None,None,None,Black Pepper,None,None,None,None,Cheese,American,114
+Cauliflower Pakoda,Cauliflower,Garlic,Ginger,Cilantro(Coriander leaves),Gram flour(Besan),Turmeric,Garam Masala,Red Chilli,None,None,None,Punjabi,377
+Lehsun Methi Raita,Garlic,Fenugreek,None,None,None,Red Chilli,Garam Masala,Cumin,None,None,Curd,Indian,78
+Oven Baked Zucchini Chips,Zucchini,Garlic,None,None,None,Black Pepper,Cayenne Peppers,None,None,Whole Wheat Bread,Cheese,American,23
+Roasted Cauliflower Hummus,Cauliflower,Garlic,Lemon juice,None,None,Sesame seeds,Black Pepper,Cumin,None,None,None,Middle Eastern,118
+Tandoori Garlic Roti,Cilantro(Coriander leaves),Garlic,None,None,Whole wheat flour(Atta),Nigella Seeds,None,None,None,None,Buttermilk,Indian,85
+Dudhi Jowar Dhebra,Bottle Gourd,Green chilli,Ginger,None,Jowar Flour,Turmeric,Sesame seeds,None,None,None,Curd,Gujarati,167
+Colcannon (Mashed potatoes with Cabbage),Potato,Cabbage,Onion,Garlic,None,Black Pepper,None,None,None,None,Milk,Irish,158.5
+Potato Tacos,Potato,Cilantro(Coriander leaves),Garlic,None,Corn flour,Black Pepper,Cumin,None,None,None,Cheese,Mexican,380
+Roasted Garlic and Rosemary White Bean Dip,Garlic,White Beans,Lemon juice,None,None,Rosemary,Black Pepper,None,None,None,None,Italian,140
+Pea Fritters,Peas,Spring Onion,None,None,White flour(Maida),Parsley,Black Pepper,None,None,None,Cheese,American,69
+Lemon Quinoa,Lemon juice,Curry leaves,Ginger,None,Chana dal,Quinoa,Red Chilli,Mustard,Asafoetida,None,None,South Indian,314
+Braised Artichokes,Artichoke,Garlic,Lemon juice,None,Corn flour,Black Pepper,Red Chilli,None,None,None,None,Italian,230
+Artichoke Salad,Artichoke,Olives,Tomato,Lemon juice,None,Garlic Cloves,Oregano,Onion,Black Pepper,None,None,American,159
+Spinach and Artichoke Stuffed Potatoes,Potato,Spinach,Artichoke,Garlic,None,Black Pepper,None,None,None,None,Cheese,American,247
+Brocccoli and Red Capsicum Dip,Broccoli,Capsicum,Celery,Garlic,None,Green Chilli,Onion,None,None,None,Cheese,Indian,23
+Carrot Chips,Carrot,None,None,None,None,Cinnamon,Cumin,None,None,None,None,American,107
+Curried Corn with Spinach ,Spinach,Sweet corn,Tomato,Onion,None,Ginger,Garlic Cloves,Garam Masala,Red Chilli,None,Cream,Punjabi,107
+Sabudana Khichdi,Potato,Green chilli,None,None,Sabudana,Flax Seeds,Sesame seeds,Cumin,None,None,None,Maharashtrian,655
+Curd Quinoa,Carrot,Cilantro(Coriander leaves),None,None,Urad dal,Quinoa,Asafoetida,Sesame seeds,Mustard,None,Curd,South Indian,190
+Moong and Mushroom Curry,Mushrooms,Tomato,Onion,Curry leaves,Moong dal,Ginger,Turmeric,Mustard,Red Chilli,None,None,Indian,240
+Gujarati Kadhi,Curry leaves,Ginger,Green chilli,None,Gram flour(Besan),Red Chilli,Mustard,Fenugreek seeds,Asafoetida,None,Curd,Gujarati,241
+Sri Lankan Beetroot Curry ,Beetroot,Curry leaves,Onion,Green chilli,None,Garlic Cloves,Turmeric,Coriander,Cumin,None,Milk,Sri Lankan,76
+Beetroot Hummus,Beetroot,Garlic,Lemon juice,None,Chickpeas(Chhole),Sesame seeds,Parsley,Cumin,None,None,None,Middle Eastern,116
+Garlic Roasted Turnips,Turnip,Garlic,Spring Onion,None,None,Onion,Black Pepper,Parsley,Dill,None,Butter,American,90
+Radish Curry,Radish,Curry leaves,Onion,Cilantro(Coriander leaves),None,Green Chilli,Red Chilli,Mustard,Turmeric,None,None,South Indian,55
+Mashed Turnips,Turnip,Spring Onion,None,None,None,Nutmeg,Black Pepper,None,None,None,Cream,Continental,50
+Carrot and Turnip Casserole,Carrot,Turnip,Lemon juice,None,None,Onion,Garlic Cloves,Basil,Black Pepper,None,Butter,Continental,157
+Mushroom Matar,Mushrooms,Peas,Tomato,Garlic,None,Onion,Red Chilli,Turmeric,Garam Masala,None,Cream,Indian,123
+"Zucchini, Bell Pepper and Moong Dal Salad",Zucchini,Capsicum,Tomato,Lemon juice,Moong dal,Black Pepper,None,None,None,None,None,Indian,161
+"Nepali Potato, Tomato and Pea Curry",Potato,Tomato,Peas,Ginger,None,Onion,Green Chilli,Coriander,Turmeric,None,None,Nepali,209.7
+Eggplant and Red Pepper Tarine,Brinjal,Capsicum,Tomato,None,None,Garlic Cloves,Parsley,Black Pepper,None,None,Cheese,French,304
+Dill and Celery Salad,Celery,Olives,Cilantro(Coriander leaves),Lemon juice,None,Dill,Parsley,Sunflower Seeds,None,None,None,Continental,44
+Karela and Peas,Bitter Gourd,Peas,Potato,Tomato,None,Ginger,Garlic Cloves,Asafoetida,Garam Masala,None,None,Indian,233
+Tindora ki Sabzi (Ivy Gourd),Ivy Gourd (Tendli),Tomato,Cilantro(Coriander leaves),Onion,None,Red Chilli,Turmeric,Garam Masala,Asafoetida,None,None,Indian,218
+Andhra Ivy Gourd Pickle,Ivy Gourd (Tendli),Curry leaves,None,None,None,Asafoetida,Red Chilli,Fenugreek seeds,Turmeric,None,None,South Indian,40
+Kundru Chutney (Ivy Gourd Chutney),Ivy Gourd (Tendli),Cilantro(Coriander leaves),Curry leaves,Green chilli,Chana dal,Red Chilli,Mustard,Cumin,Asafoetida,None,None,South Indian,130
+Arbi Chips,Colocasia,Lemon juice,None,None,None,Black Pepper,Red Chilli,Cumin,None,None,None,Indian,271
+Cucumber Cheddar Chips,Cucumber,Garlic,None,None,None,Onion,Black Pepper,None,None,None,Cheese,American,127
+Vegan Fajitas,Mushrooms,Capsicum,Onion,Garlic,White flour(Maida),Red Chilli,Black Pepper,Paprika,Cumin,None,None,Mexican,473.7
+Soya Kheema Matar,Soyabean,Peas,Onion,Ginger,None,Red Chilli,Turmeric,Garam Masala,Fennel seeds,None,None,Indian,108
+Dill Leaves Sabzi,Green chilli,Garlic,None,None,Moong dal,Dill,Cumin,Turmeric,Asafoetida,None,None,Maharashtrian,73
+Yam Fry,Yam,Curry leaves,None,None,Urad dal,Turmeric,Red Chilli,Garam Masala,Mustard,None,None,South Indian,24
+Creamy Roasted Yam Soup,Yam,Garlic,Onion,None,None,Black Pepper,Cayenne Peppers,Cumin,None,None,Cream,Continental,369
+Millet Yam Cakes,Yam,Garlic,None,None,Bajra(Millet Flour),Parsley,Rosemary,Black Pepper,None,None,Curd,American,168
+Drumstick Soup,Drumsticks,Cilantro(Coriander leaves),Onion,Garlic,None,Black Pepper,Cumin,None,None,None,Ghee,Indian,81
+Drumstick Curry,Drumsticks,Potato,Tomato,Onion,None,Garlic Cloves,Mustard,Cumin,Black Pepper,None,None,South Indian,290
+Olive Tapenade,Olives,Tomato,Garlic,Lemon juice,None,Oregano,Parsley,Black Pepper,None,None,None,French,182
+Cluster Beans Curry,Cluster Beans(Gavar),Curry leaves,None,None,Toor dal,Mustard,Turmeric,Black Pepper,Red Chilli,None,Milk,South Indian,120
+Blended Chana and Cluster Beans Curry,Cluster Beans(Gavar),Curry leaves,Onion,Green chilli,Chana dal,Mustard,Cumin,None,None,None,None,Indian,254
+Vegan Spring Onion Soup,Spring Onion,Potato,Lemon juice,None,None,Garlic Cloves,Black Pepper,None,None,White Bread,None,Continental,170
+Mushroom and Spring Onion Dumplings,Mushrooms,Spring Onion,Ginger,None,White flour(Maida),Cumin,Red Chilli,Black Pepper,None,None,None,Italian,540
+"Roasted Spring Onions with Dill, Butter and Lemon",Spring Onion,Lemon juice,None,None,None,Dill,Black Pepper,None,None,None,Butter,American,109
+Spring Onion Pakoda,Spring Onion,Green chilli,Ginger,None,Gram flour(Besan),Red Chilli,Turmeric,Garam Masala,None,None,None,North Indian,399
+Okroshka (Russian Summer Soup),Potato,Cucumber,Mint,Radish,None,Dill,Mustard,Black Pepper,Flax Seeds,None,Buttermilk,Russian,379
+Vada Pav,Potato,Garlic,Ginger,Curry leaves,Gram flour(Besan),Asafoetida,Mustard,Green Chilli,Turmeric,Bun,None,Maharashtrian,197
