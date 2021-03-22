@@ -13,7 +13,7 @@ from matplotlib import cm
 from matplotlib.font_manager import FontProperties
 
 
-# adding title
+# adding title in streamlit
 st.sidebar.markdown(f"<span style='color: black;font-size: 36px;font-weight: bold;'>Food Aayush</span>", unsafe_allow_html=True)
 
 st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the nutritional value of food and draw some schematics")
