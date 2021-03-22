@@ -901,7 +901,7 @@ def demographic_main():
     }
 
 
-    st.title("Navigate 🧭")
+    st.title("Navigate through demographics 🧭")
 
     # Widget to select your page, you can choose between radio buttons or a selectbox
     page = st.radio("(Choose an option to get redirected)", tuple(pages.keys()))
@@ -913,25 +913,33 @@ def demographic_pruning_page():
     st.title("Dataset Pruning and Exploration")
 
     #description of the demographics page
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Before performing any analysis on the data, it is necessary to prune the dataset. This is mainly done to remove any discrepancies in the data, which may cause a hindrance to the data analysis.The following are some ways in which the dataset can be pruned to make it fit for analysis.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
     #display the data frame with checkbox
     raw_data=st.checkbox('See Raw Data')
     
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The following are some of the steps undertaken by us in order to make the dataset fit for analysis.</h6>",unsafe_allow_html=True)
+
     if raw_data: #checkbox true or not 
         st.write(df_demographics.head(10))
 
-    st.header("Checking the data types")
+    st.markdown("")
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>1. Checking the data types</span>", unsafe_allow_html=True)
     
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>In this step, we check the data types of all the parameters before moving ahead with the analysis. This is done to ensure that the analysis is done smoothly without the hassle of getting any data type errors during visualization.</h6>",unsafe_allow_html=True)
     
+    st.markdown("")
+
     #print data types of columns
     st.write(df_demographics.dtypes)
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'> Therefore, all our data is in desired datatypes.</h6>",unsafe_allow_html=True)
 
-    st.header("Quick last checks on data quality")
+    st.markdown("")
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>2. Quick last checks on data quality</span>", unsafe_allow_html=True)
     
     st.subheader("Null Value Check")
     #null values check
@@ -972,9 +980,13 @@ def demographic_nutrient_analysis_page():
     st.title("Analysis of Nutrient content")
     
     #description of the demographics page
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Certain foods have higher proportions of specific nutrients than others. The most notable example is that meat, fish, and eggs contain higher amounts of protein than plant-based foods. Here, the data is analyzed to find the foods with the highest amounts of various nutrients, including proteins, carbohydrates, and fats. This is explained with the help of graphical representations.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Protein Content</span>", unsafe_allow_html=True)
+    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>First, we have found the foods having the highest amounts of protein and have represented the amounts of protein in these foods graphically.</h6>",unsafe_allow_html=True)
+    st.markdown("")
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
 
@@ -994,12 +1006,57 @@ def demographic_categorized_page():
     st.title("Categorized distribution of Nutrients")
 
     #description of the demographics page
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, for each nutrient, the quantities of that nutrient present in each food item in the dataset are summed up to find that nutrient’s total quantity.  Then, the percentage of this total quantity present in each food category is found. These percentages are represented graphically in the form of a pie chart. This process is carried out for each nutrient. The pie charts for each nutrient are displayed below.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
     #category wise statistics
-    category_dist=df_demographics.groupby(['category']).sum()
-    category_dist
+    category_dist= df_demographics.groupby(['category']).sum()
+    st.write(category_dist)
+
+    fig = make_subplots(rows=3, cols=2,specs=[[{"type": "domain"},{"type": "domain"}],[{"type": "domain"},{"type": "domain"}],[{"type": "domain"},{"type": "domain"}]])
+    
+    fig.add_trace(go.Pie(values=category_dist['protcnt'].values, title='CALORIES', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=1, col=1)
+    
+    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='FAT', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=1, col=2)
+
+    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='PROTEIN', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=2, col=1)
+
+    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='FIBER', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=2, col=2)
+
+    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='SAT.FAT', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=3, col=1)
+
+    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='CARBS', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=3, col=2)
+    
+    fig.update_layout(title_text="Category wise distribution of all metrics",height=1200, width=800)
+    
+    st.plotly_chart(fig)
+
+
+    #high protein seafood items 
+    seafood= df_demographics[df_demographics['category'].isin(['Seafood'])]
+
+    seafood_top=seafood.sort_values(by='protcnt', ascending= False)
+    
+    seafood_top=seafood_top.head(10)
+
+    fig_protein_seafood = go.Figure(go.Funnelarea(values=seafood_top['protcnt'].values, text=seafood_top['name'],title = { "text": "Seafood with high protein percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
+
+    fig_protein_seafood.update_layout(height=600, width=700)
+
+    st.plotly_chart(fig_protein_seafood)
+
+    #high protein legumes (for vegetarians)
+    legumes= df_demographics[df_demographics['category'].isin(['Legumes'])]
+
+    legumes_top=legumes.sort_values(by='protcnt', ascending= False)
+    
+    legumes_top=legumes_top.head(10)
+
+    fig_protein_seafood = go.Figure(go.Funnelarea(values=legumes_top['protcnt'].values, text=legumes_top['name'],title = { "text": "Legumes with high protein percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
+
+    fig_protein_seafood.update_layout(height=600, width=700)
+
+    st.plotly_chart(fig_protein_seafood)
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
 if __name__ == "__main__":
@@ -1009,5 +1066,7 @@ if __name__ == "__main__":
 
 
 
+#st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+#st.markdown("")
 
 
