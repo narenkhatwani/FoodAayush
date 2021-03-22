@@ -941,11 +941,23 @@ def demographic_pruning_page():
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>2. Quick last checks on data quality</span>", unsafe_allow_html=True)
     
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>To obtain accurate results, it is necessary to ensure that the dataset is complete and of good quality.</h6>",unsafe_allow_html=True)
+    
     st.subheader("Null Value Check")
+    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The next step is checking the presence of null values in the dataset. This is important to avoid obtaining biased results due to missing data. The dataset is checked column-wise for null values, and no null values are found.</h6>",unsafe_allow_html=True)
+    
+    st.markdown("")
+    
     #null values check
     st.write(df_demographics.isnull().any())
     
     st.subheader("Descriptions of all the parameters")
+    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Now, to analyze the parameters (columns) in the dataset, which are the quantities of various nutrients present in the food items, some mathematical operations have been performed on the columns. The count, the mean and standard deviation, the minimum and maximum of the values in each column are calculated as shown below.</h6>",unsafe_allow_html=True)
+
+    st.markdown("")
+
     #values 
     st.write(df_demographics.describe())
    
