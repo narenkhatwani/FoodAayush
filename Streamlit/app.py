@@ -11,7 +11,7 @@ import json
 import matplotlib.patches as mpatches
 from matplotlib import cm
 from matplotlib.font_manager import FontProperties
-
+import seaborn as sns
 
 # adding title in streamlit
 st.sidebar.markdown(f"<span style='color: black;font-size: 36px;font-weight: bold;'>Food Aayush</span>", unsafe_allow_html=True)
@@ -20,7 +20,6 @@ st.sidebar.info("Welcome to Food Aayush Data Analytics. Here you can analyse the
 
 #read csv file
 DATA_URL = ("resources/assets_modified/01.csv")
-#DATA_URL2 = ("resources/assets_modified/ingredient.csv")
 
 DATA_URL2 = ("resources/recipe_page/recipe.csv")
 
@@ -29,6 +28,7 @@ DATA_URL2 = ("resources/recipe_page/recipe.csv")
 #in streamlit the whole code is rerun everytime so cache would be stored and some error might occur in rare cases
 @st.cache(persist=True)
 #the above line is to clear the cache on every run command execution
+
 
 #to load the csv file
 def load_data():
@@ -44,18 +44,25 @@ def load_data2():
 data = load_data()
 data2= load_data2()
 
+#global variable/dataframe
+#path to the csv file of the ifct database for demographics page
+df_demographics = pd.read_csv("resources/assets_modified/01cat.csv")
+    
+df_demographics.dropna()
+
 
 def main():
     # Register your pages
     pages = {
         "About": about_page,
         "Ingredient Information": page_first,
+        "IFCT Demographics": demographic_main,
         "Search for Recipe": page_second,
         "Calorie Calculator": page_three,
         "Heart Disease Map": page_fourth,
-        "Food Matrix": page_five
+        "Food Matrix": page_five,
+        
     }
-
     st.sidebar.title("Navigation 🧭")
 
     # Widget to select your page, you can choose between radio buttons or a selectbox
@@ -63,6 +70,7 @@ def main():
     
     # Display the selected page
     pages[page]()
+
 
 def about_page():
     st.markdown("<h1 style='text-align: center;'>Food Aayush 🍲 🩺</h1>", unsafe_allow_html=True)
@@ -91,12 +99,10 @@ def about_page():
 
 
 def page_first():
-    #to print a small iframe of the csv file
-    #format is 'name displayed above dataset','variable in which csv is loaded'
-
+    
     st.title("Ingredient Information 🍅 🥕 🥒 ")
 
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.2;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all nutrients, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the  nutritional value of any food item being consumed is a very important parameter. The content of different nutrients in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.2;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all dfsns.kdeplot(df_demographics, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the  nutritional value of any food item being consumed is a very important parameter. The content of different dfsns.kdeplot(df_demographics in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
 
     
     food_list = st.selectbox("Search your ingredient here:", data["name"].unique())
@@ -130,9 +136,10 @@ def page_first():
 
     #infct information
     st.subheader("Some Information about the data source 📊")
-    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>The above data is taken from the dataset “Indian Food Composition Tables, 2017”, of the National Institute of Nutrition. The approach taken for creation of this dataset was to sample the key foods from all over India which contribute to the nutrient intake of 75% of the population. The consumption data and nutrient composition for the various foods is found and the foods have been ranked according to their contribution to the diet in terms of nutrients.</h6>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>The above data is taken from the dataset “Indian Food Composition Tables, 2017”, of the National Institute of Nutrition. The approach taken for creation of this dataset was to sample the key foods from all over India which contribute to the nutrient intake of 75% of the population. The consumption data and nutrient composition for the various foods is found and the foods have been ranked according to their contribution to the diet in terms of dfsns.kdeplot(df_demographics.</h6>", unsafe_allow_html=True)
     st.markdown("")
     
+    #to print a small iframe of the csv file
     raw_data=st.checkbox('See Raw Data')
     if raw_data: 
         st.write(data)
@@ -609,7 +616,7 @@ def page_second():
 def page_three():
     st.title("Calorie Calculator 🍲 🧮")
     
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Nutrients are classified into two categories, macronutrients and micronutrients. Macronutrients are those nutrients which are required in large quantities, and include carbohydrates, proteins, fats and water. Micronutrients are those which are required in relatively small quantities, and  include vitamins and minerals. Adequate amounts of these nutrients are required to maintain good health. The adequate amounts vary from person to person, and also depend on the person’s daily calorie consumption. Moreover, the ideal calorie consumption for a person also depends on various factors, including gender. Here, you can find your ideal consumption of various nutrients depending on your daily calorie consumption, and can also find your ideal daily calorie consumption based on your gender.</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>dfsns.kdeplot(df_demographics are classified into two categories, macrodfsns.kdeplot(df_demographics and microdfsns.kdeplot(df_demographics. Macrodfsns.kdeplot(df_demographics are those dfsns.kdeplot(df_demographics which are required in large quantities, and include carbohydrates, proteins, fats and water. Microdfsns.kdeplot(df_demographics are those which are required in relatively small quantities, and  include vitamins and minerals. Adequate amounts of these dfsns.kdeplot(df_demographics are required to maintain good health. The adequate amounts vary from person to person, and also depend on the person’s daily calorie consumption. Moreover, the ideal calorie consumption for a person also depends on various factors, including gender. Here, you can find your ideal consumption of various dfsns.kdeplot(df_demographics depending on your daily calorie consumption, and can also find your ideal daily calorie consumption based on your gender.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Add your total daily intake of calories</span>", unsafe_allow_html=True)
@@ -667,6 +674,7 @@ def page_fourth():
     df = pd.read_csv("resources/streamlit_map/cases2.csv")
     df2 = pd.read_csv("resources/streamlit_map/Heart_disease_display.csv")
 
+    #to print a small iframe of the csv file
     raw_data=st.checkbox('See Raw Data')
     if raw_data: 
         st.write(df2)
@@ -883,6 +891,117 @@ def page_five():
     st.pyplot(plt,dpi=100)
 
 
+def demographic_main():
+    # Register your pages
+    pages = {
+        "1. Dataset Pruning and Exploration": demographic_pruning_page,
+        "2. Correlation between presence of Nutrients":demographic_correlation_page,
+        "3. Analysis of Nutrient Content":demographic_nutrient_analysis_page,
+        "4. Categorized distribution of Nutrients":demographic_categorized_page
+    }
+
+
+    st.title("Navigate 🧭")
+
+    # Widget to select your page, you can choose between radio buttons or a selectbox
+    page = st.radio("(Choose an option to get redirected)", tuple(pages.keys()))
+    
+    # Display the selected page
+    pages[page]()
+
+def demographic_pruning_page():
+    st.title("Dataset Pruning and Exploration")
+
+    #description of the demographics page
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+    #display the data frame with checkbox
+    raw_data=st.checkbox('See Raw Data')
+    
+    if raw_data: #checkbox true or not 
+        st.write(df_demographics.head(10))
+
+    st.header("Checking the data types")
+    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    
+    #print data types of columns
+    st.write(df_demographics.dtypes)
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'> Therefore, all our data is in desired datatypes.</h6>",unsafe_allow_html=True)
+
+    st.header("Quick last checks on data quality")
+    
+    st.subheader("Null Value Check")
+    #null values check
+    st.write(df_demographics.isnull().any())
+    
+    st.subheader("Descriptions of all the parameters")
+    #values 
+    st.write(df_demographics.describe())
+   
+def demographic_correlation_page():
+    st.title("Correlation between presence of nutrients")
+    
+    #description of the demographics page
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+    #kde plot
+    fig, ax = plt.subplots(figsize=(12,3))
+
+    cmap = sns.cubehelix_palette(start=0.0, light=1, as_cmap=True)
+
+    sns.kdeplot(df_demographics['fatce'],df_demographics['protcnt'],cmap=cmap,shade=True)
+
+    #kde plot title X axis
+    plt.xlabel("X axis label")
+
+    #kde plot title Y axis
+    plt.ylabel("Y axis label")
+
+    #kde plot title    
+    plt.title("title dalneka plot ka ")
+
+    st.pyplot(plt,dpi=100)
+    #kde plot invoke  
+
+
+def demographic_nutrient_analysis_page():
+    st.title("Analysis of Nutrient content")
+    
+    #description of the demographics page
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
+
+
+    prot= df_demographics[df_demographics['category'].isin(categories)]
+
+    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    
+    top_20=protein_rich.head(20)
+    
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt', title=' Top 10 protein rich foods')
+    fig.update_layout(title='Title', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig)
+
+
+def demographic_categorized_page():
+    st.title("Categorized distribution of Nutrients")
+
+    #description of the demographics page
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+    #category wise statistics
+    category_dist=df_demographics.groupby(['category']).sum()
+    category_dist
+
+#https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
 if __name__ == "__main__":
     main()
 
