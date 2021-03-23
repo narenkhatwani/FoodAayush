@@ -897,7 +897,8 @@ def demographic_main():
         "1. Dataset Pruning and Exploration": demographic_pruning_page,
         "2. Correlation between presence of Nutrients":demographic_correlation_page,
         "3. Analysis of Nutrient Content":demographic_nutrient_analysis_page,
-        "4. Categorized distribution of Nutrients":demographic_categorized_page
+        "4. Categorized distribution of Nutrients":demographic_categorized_page,
+        "5. 3D relation":demographic_dimensional_page
     }
 
 
@@ -965,7 +966,7 @@ def demographic_correlation_page():
     st.title("Correlation between presence of nutrients")
     
     #description of the demographics page
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Description lorem ipsum</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>There is a relationship between the amounts of different nutrients present in food items. Every food item is not rich in all nutrients. Certain food items are richer in proteins, while others may be abundant in carbohydrates and so on. Here, we show the relationship between different nutrients in the food items present in the dataset.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
     #kde plot
@@ -1069,6 +1070,11 @@ def demographic_categorized_page():
     fig_protein_seafood.update_layout(height=600, width=700)
 
     st.plotly_chart(fig_protein_seafood)
+
+
+def demographic_dimensional_page():
+    st.title("3d relation")
+
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
 if __name__ == "__main__":
