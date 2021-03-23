@@ -6,3 +6,4 @@ numpy==1.18.5
 dash==1.17.0
 plotly==4.12.0
 boto3==1.16.19
+seaborn==0.10.1

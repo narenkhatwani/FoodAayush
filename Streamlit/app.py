@@ -57,6 +57,7 @@ def main():
         "About": about_page,
         "Ingredient Information": page_first,
         "IFCT Demographics": demographic_main,
+        "Disease vala tab":disease_demographics,
         "Search for Recipe": page_second,
         "Calorie Calculator": page_three,
         "Heart Disease Map": page_fourth,
@@ -64,14 +65,13 @@ def main():
         
     }
     st.sidebar.title("Navigation 🧭")
-
     # Widget to select your page, you can choose between radio buttons or a selectbox
     page = st.sidebar.radio("(Choose an option to get redirected)", tuple(pages.keys()))
     
     # Display the selected page
     pages[page]()
 
-
+    st.sidebar.subheader("Check out our [Github Repository](https://github.com/narenkhatwani/FoodAayush)")
 def about_page():
     st.markdown("<h1 style='text-align: center;'>Food Aayush 🍲 🩺</h1>", unsafe_allow_html=True)
     
@@ -1224,6 +1224,32 @@ def demographic_foodgroup_page():
     #plt.legend(loc="upper right",fontsize=14,ncol=5,title='Category',title_fontsize=22,framealpha=0.99)
     
     st.pyplot(plt,dpi=100)
+
+
+def disease_demographics():
+    # Register your pages
+    pages = {
+        "1. Dataset Pruning and Exploration": test_page,
+        "2. Correlation between presence of Nutrients":test_page,
+        "3. Analysis of Nutrient Content":test_page,
+        "4. Categorized distribution of Nutrients":test_page,
+        "5. 3D relation":test_page,
+        "6. foodgroup":test_page
+    }
+
+
+    st.title("Navigate through demographics 🧭")
+
+    # Widget to select your page, you can choose between radio buttons or a selectbox
+    page = st.radio("(Choose an option to get redirected)", tuple(pages.keys()))
+    
+    # Display the selected page
+    pages[page]()
+
+def test_page():
+    st.title("title test")
+
+
 
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
