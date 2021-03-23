@@ -102,7 +102,7 @@ def page_first():
     
     st.title("Ingredient Information 🍅 🥕 🥒 ")
 
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.2;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all dfsns.kdeplot(df_demographics, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the  nutritional value of any food item being consumed is a very important parameter. The content of different dfsns.kdeplot(df_demographics in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.2;'>In order to ensure proper development and growth of the body, immunity against diseases, and energy to function throughout the day, it is necessary to consume adequate amounts of all nutrients, including proteins, carbohydrates, fats, vitamins, minerals and water. Therefore, the nutritional value of any food item being consumed is a very important parameter. The content of different nutrients in various foods, consumed either individually or as ingredients in dishes can be found here.</h6>",unsafe_allow_html=True)
 
     
     food_list = st.selectbox("Search your ingredient here:", data["name"].unique())
@@ -136,7 +136,7 @@ def page_first():
 
     #infct information
     st.subheader("Some Information about the data source 📊")
-    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>The above data is taken from the dataset “Indian Food Composition Tables, 2017”, of the National Institute of Nutrition. The approach taken for creation of this dataset was to sample the key foods from all over India which contribute to the nutrient intake of 75% of the population. The consumption data and nutrient composition for the various foods is found and the foods have been ranked according to their contribution to the diet in terms of dfsns.kdeplot(df_demographics.</h6>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>The above data is taken from the dataset “Indian Food Composition Tables, 2017”, of the National Institute of Nutrition. The approach taken for creation of this dataset was to sample the key foods from all over India which contribute to the nutrient intake of 75% of the population. The consumption data and nutrient composition for the various foods is found and the foods have been ranked according to their contribution to the diet in terms of nutrients.</h6>", unsafe_allow_html=True)
     st.markdown("")
     
     #to print a small iframe of the csv file
@@ -616,7 +616,7 @@ def page_second():
 def page_three():
     st.title("Calorie Calculator 🍲 🧮")
     
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>dfsns.kdeplot(df_demographics are classified into two categories, macrodfsns.kdeplot(df_demographics and microdfsns.kdeplot(df_demographics. Macrodfsns.kdeplot(df_demographics are those dfsns.kdeplot(df_demographics which are required in large quantities, and include carbohydrates, proteins, fats and water. Microdfsns.kdeplot(df_demographics are those which are required in relatively small quantities, and  include vitamins and minerals. Adequate amounts of these dfsns.kdeplot(df_demographics are required to maintain good health. The adequate amounts vary from person to person, and also depend on the person’s daily calorie consumption. Moreover, the ideal calorie consumption for a person also depends on various factors, including gender. Here, you can find your ideal consumption of various dfsns.kdeplot(df_demographics depending on your daily calorie consumption, and can also find your ideal daily calorie consumption based on your gender.</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Nutrients are classified into two categories, macronutrients and micronutrients. Macronutrients are those nutrients which are required in large quantities, and include carbohydrates, proteins, fats and water. Micronutrients are those which are required in relatively small quantities, and include vitamins and minerals. Adequate amounts of these nutrients are required to maintain good health. The adequate amounts vary from person to person, and also depend on the person’s daily calorie consumption. Moreover, the ideal calorie consumption for a person also depends on various factors, including gender. Here, you can find your ideal consumption of various nutrients depending on your daily calorie consumption, and can also find your ideal daily calorie consumption based on your gender.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Add your total daily intake of calories</span>", unsafe_allow_html=True)
@@ -1075,6 +1075,26 @@ def demographic_categorized_page():
 def demographic_dimensional_page():
     st.title("3d relation")
 
+    trace1 = go.Scatter3d(
+    x=df_demographics['category'].values,
+    y=df_demographics['name'].values,
+    z=df_demographics['fasat'].values,
+    text=df_demographics['name'].values,
+    mode='markers',
+    marker=dict(
+        sizemode='diameter',
+         sizeref=750,
+        color = df_demographics['fasat'].values,
+        colorscale = 'Portland',
+        colorbar = dict(title = 'Total Fat (% Daily Value)'),
+        line=dict(color='rgb(255, 255, 255)')
+        )
+    )
+    data=[trace1]
+    layout=dict(height=800, width=800, title='3D Scatter Plot of Fatty foods (% Daily Value)')
+    fig=dict(data=data, layout=layout)
+
+    st.plotly_chart(fig)
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
 if __name__ == "__main__":
