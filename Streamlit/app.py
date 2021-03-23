@@ -969,22 +969,123 @@ def demographic_correlation_page():
     #description of the demographics page
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>There is a relationship between the amounts of different nutrients present in food items. Every food item is not rich in all nutrients. Certain food items are richer in proteins, while others may be abundant in carbohydrates and so on. Here, we show the relationship between different nutrients in the food items present in the dataset.</h6>",unsafe_allow_html=True)
     st.markdown("")
-    
+
     #kde plot
     fig, ax = plt.subplots(figsize=(12,3))
 
     cmap = sns.cubehelix_palette(start=0.0, light=1, as_cmap=True)
 
-    sns.kdeplot(df_demographics['fatce'],df_demographics['protcnt'],cmap=cmap,shade=True)
+    sns.kdeplot(df_demographics['choavldf'],df_demographics['protcnt'],cmap=cmap,shade=True)
 
     #kde plot title X axis
-    plt.xlabel("X axis label")
+    plt.xlabel("Carbohydrates")
 
     #kde plot title Y axis
-    plt.ylabel("Y axis label")
+    plt.ylabel("Protein")
 
     #kde plot title    
-    plt.title("title dalneka plot ka ")
+    plt.title("Carbohydrates and Protein")
+
+    st.pyplot(plt,dpi=100)
+    #kde plot invoke  
+
+    #2nd plot
+
+    #kde plot
+    fig, ax = plt.subplots(figsize=(12,3))
+
+    cmap = sns.cubehelix_palette(start=0.25, light=1, as_cmap=True)
+
+    sns.kdeplot(df_demographics['fatce'],df_demographics['choavldf'],cmap=cmap,shade=True)
+
+    #kde plot title X axis
+    plt.xlabel("Fats")
+
+    #kde plot title Y axis
+    plt.ylabel("Carbohydrates")
+
+    #kde plot title    
+    plt.title("Fats and Carbohydrates")
+
+    st.pyplot(plt,dpi=100)
+    #kde plot invoke  
+
+    #3rd plot
+    #kde plot
+    fig, ax = plt.subplots(figsize=(12,3))
+
+    cmap = sns.cubehelix_palette(start=0.33, light=1, as_cmap=True)
+
+    sns.kdeplot(df_demographics['choavldf'],df_demographics['fibtg'],cmap=cmap,shade=True)
+
+    #kde plot title X axis
+    plt.xlabel("Carbohydrates")
+
+    #kde plot title Y axis
+    plt.ylabel("Fiber")
+
+    #kde plot title    
+    plt.title("Carbohydrates and Fiber")
+
+    st.pyplot(plt,dpi=100)
+    #kde plot invoke  
+
+    #4th plot
+    #kde plot
+    fig, ax = plt.subplots(figsize=(12,3))
+
+    cmap = sns.cubehelix_palette(start=0.45, light=1, as_cmap=True)
+
+    sns.kdeplot(df_demographics['fibtg'],df_demographics['fatce'],cmap=cmap,shade=True)
+
+    #kde plot title X axis
+    plt.xlabel("Fiber")
+
+    #kde plot title Y axis
+    plt.ylabel("Fat")
+
+    #kde plot title    
+    plt.title("Fiber and Fat")
+
+    st.pyplot(plt,dpi=100)
+    #kde plot invoke  
+
+    #5th plot
+    #kde plot
+    fig, ax = plt.subplots(figsize=(12,3))
+
+    cmap = sns.cubehelix_palette(start=0.56, light=1, as_cmap=True)
+
+    sns.kdeplot(df_demographics['fatce'],df_demographics['fasat'],cmap=cmap,shade=True)
+
+    #kde plot title X axis
+    plt.xlabel("Total Fat")
+
+    #kde plot title Y axis
+    plt.ylabel("Saturated Fat")
+
+    #kde plot title    
+    plt.title("Total Fat and Saturated Fat")
+
+    st.pyplot(plt,dpi=100)
+    #kde plot invoke  
+
+    #6th plot
+    #kde plot
+    fig, ax = plt.subplots(figsize=(12,3))
+
+    cmap = sns.cubehelix_palette(start=0.68, light=1, as_cmap=True)
+
+    sns.kdeplot(df_demographics['choavldf'],df_demographics['enerc'],cmap=cmap,shade=True)
+
+    #kde plot title X axis
+    plt.xlabel("Carbohydrates")
+
+    #kde plot title Y axis
+    plt.ylabel("Energy (in kJ)")
+
+    #kde plot title    
+    plt.title("Carbohydrates and Eneegy")
 
     st.pyplot(plt,dpi=100)
     #kde plot invoke  
