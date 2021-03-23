@@ -898,7 +898,8 @@ def demographic_main():
         "2. Correlation between presence of Nutrients":demographic_correlation_page,
         "3. Analysis of Nutrient Content":demographic_nutrient_analysis_page,
         "4. Categorized distribution of Nutrients":demographic_categorized_page,
-        "5. 3D relation":demographic_dimensional_page
+        "5. 3D relation":demographic_dimensional_page,
+        "6. foodgroup":demographic_foodgroup_page
     }
 
 
@@ -1095,6 +1096,34 @@ def demographic_dimensional_page():
     fig=dict(data=data, layout=layout)
 
     st.plotly_chart(fig)
+
+def demographic_foodgroup_page():
+    
+    sns.set_style("whitegrid")
+    plt.figure(figsize=(19,10))
+    #plt.figure()
+
+    ax = sns.boxenplot(x="category", y='fasat', data=df_demographics, color='#eeeeee', palette="tab10")
+
+    # Add transparency to colors
+    for patch in ax.artists:
+        r, g, b, a = patch.get_facecolor()
+        patch.set_facecolor((r, g, b, .9))
+        
+    #ax = sns.stripplot(x='Category', y='Cholesterol (% Daily Value)', data=menu, color="orange", jitter=0.5, size=5,alpha=0.15)
+    #
+    plt.title("Total Calorie Content \n", loc="center",size=32,color='#be0c0c',alpha=0.6)
+    plt.xlabel('Category',color='#34495E',fontsize=20) 
+    plt.ylabel('Total Fat (% Daily Value)',color='#34495E',fontsize=20)
+    plt.xticks(size=16,color='#008abc',rotation=90, wrap=True)  
+    plt.yticks(size=15,color='#006600')
+
+    #plt.text(2.5, 1, 'Courtesy: https://seaborn.pydata.org/examples/grouped_boxplot.html', fontsize=13,alpha=0.2)
+    #plt.ylim(0,200)
+    #plt.legend(loc="upper right",fontsize=14,ncol=5,title='Category',title_fontsize=22,framealpha=0.99)
+    
+    st.pyplot(plt,dpi=100)
+
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
 if __name__ == "__main__":
