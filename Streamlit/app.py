@@ -47,7 +47,8 @@ data2= load_data2()
 #global variable/dataframe
 #path to the csv file of the ifct database for demographics page
 df_demographics = pd.read_csv("resources/assets_modified/01cat.csv")
-    
+df_demographics_nonveg= pd.read_csv("resources/assets_modified/02cat.csv")
+
 df_demographics.dropna()
 
 
@@ -1290,22 +1291,22 @@ def demographic_dimensional_page():
     st.title("3d relation")
     
     trace1 = go.Scatter3d(
-    x=(df_demographics['category']).values,
-    y=df_demographics['name'].values,
-    z=df_demographics['fatce'].values,
-    text=df_demographics['name'].values,
+    x=(df_demographics_nonveg['category']).values,
+    y=df_demographics_nonveg['protcnt'].values,
+    z=df_demographics_nonveg['cholc'].values,
+    text=df_demographics_nonveg['name'].values,
     mode='markers',
     marker=dict(
         sizemode='diameter',
          sizeref=750,
-        color = df_demographics['fasat'].values,
+        color = df_demographics_nonveg['fasat'].values,
         colorscale = 'Portland',
         colorbar = dict(title = 'Total Fat (% Daily Value)'),
         line=dict(color='rgb(255, 255, 255)')
         )
     )
     data=[trace1]
-    layout=dict(height=800, width=800, title='3D Scatter Plot of Fatty foods (% Daily Value)')
+    layout=dict(scene = dict(xaxis_title='',yaxis_title='Y AXIS TITLE',zaxis_title='Z AXIS TITLE'),height=800, width=800, title='3D Scatter Plot of Fatty foods (% Daily Value)')
     fig=dict(data=data, layout=layout)
 
     st.plotly_chart(fig)
