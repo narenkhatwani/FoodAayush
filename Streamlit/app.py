@@ -57,7 +57,7 @@ def main():
         "About": about_page,
         "Ingredient Information": page_first,
         "IFCT Demographics": demographic_main,
-        "Disease vala tab":disease_demographics,
+        "Medical Condition Demographics":disease_demographics,
         "Search for Recipe": page_second,
         "Calorie Calculator": page_three,
         "Heart Disease Map": page_fourth,
@@ -899,7 +899,7 @@ def demographic_main():
         "3. Analysis of Nutrient Content":demographic_nutrient_analysis_page,
         "4. Categorized distribution of Nutrients":demographic_categorized_page,
         "5. 3D relation":demographic_dimensional_page,
-        "6. foodgroup":demographic_foodgroup_page
+        "6. Variation in nutrient content":demographic_foodgroup_page
     }
 
 
@@ -970,6 +970,12 @@ def demographic_correlation_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>There is a relationship between the amounts of different nutrients present in food items. Every food item is not rich in all nutrients. Certain food items are richer in proteins, while others may be abundant in carbohydrates and so on. Here, we show the relationship between different nutrients in the food items present in the dataset.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>1. Variation of Protein Content with Carbohydrate Content</span>", unsafe_allow_html=True)
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of protein v/s carbohydrates. It shows the trend between the amount of protein and the amount of carbohydrates in the food items present in the dataset.</h6>",unsafe_allow_html=True)
+    
+    #1st plot
     #kde plot
     fig, ax = plt.subplots(figsize=(12,3))
 
@@ -987,10 +993,18 @@ def demographic_correlation_page():
     plt.title("Carbohydrates and Protein")
 
     st.pyplot(plt,dpi=100)
+
+    st.markdown(f"<span style='color: #367588;font-size: 18px;font-weight: bold;'>Inference:</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Foods high in carbohydrates are usually low in protein and vice versa. We can see an inverse variation between carbohydrates and protein in the above graph</h6>",unsafe_allow_html=True)
+    
     #kde plot invoke  
 
     #2nd plot
 
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>2. Variation of Carbohydrate Content with Fat Content</span>", unsafe_allow_html=True)
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of carbohydrates v/s fat. It shows the trend between the amount of carbohydrates and the amount of fat in the food items present in the dataset.</h6>",unsafe_allow_html=True)
+    
     #kde plot
     fig, ax = plt.subplots(figsize=(12,3))
 
@@ -1009,8 +1023,16 @@ def demographic_correlation_page():
 
     st.pyplot(plt,dpi=100)
     #kde plot invoke  
+    st.markdown(f"<span style='color: #367588;font-size: 18px;font-weight: bold;'>Inference:</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>A food item would either be high in carbohydrates or high in fat content. Thus, we can see from the graph that as the carbohydrate content in a food item increases, the fat content decreases. Having a high fat, low carbohydrate diet is found to be healthier, as it is better for blood glucose control and weight loss, as compared to a low fat, high carbohydrate diet.</h6>",unsafe_allow_html=True)
+    st.markdown("")
 
     #3rd plot
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>3. Variation of Fibre Content with Carbohydrate Content</span>", unsafe_allow_html=True)
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of fiber v/s carbohydrates. It shows the trend between the amount of fiber and the amount of carbohydrates in the food items present in the dataset.</h6>",unsafe_allow_html=True)
+    
     #kde plot
     fig, ax = plt.subplots(figsize=(12,3))
 
@@ -1029,8 +1051,15 @@ def demographic_correlation_page():
 
     st.pyplot(plt,dpi=100)
     #kde plot invoke  
-
+    st.markdown(f"<span style='color: #367588;font-size: 18px;font-weight: bold;'>Inference:</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Fiber is a type of carbohydrate that the body cannot digest. It is of two types, soluble and insoluble. Soluble fiber dissolves in water, and it is useful for lowering blood glucose and cholesterol levels. Insoluble fiber does not dissolve in water. It helps in clearing the intestines and prevents constipation. We can see from the above graph that the fiber content is increasing along with the total carbohydrate content in the food item. The net carbohydrate content is the total carbohydrate content minus the fiber content.</h6>",unsafe_allow_html=True)
+    
     #4th plot
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>4. Variation of Fat Content with Fibre Content</span>", unsafe_allow_html=True)
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of fat v/s fiber. It shows the trend between the amount of fat and the amount of fiber in the food items present in the dataset.</h6>",unsafe_allow_html=True)
+    
     #kde plot
     fig, ax = plt.subplots(figsize=(12,3))
 
@@ -1049,8 +1078,17 @@ def demographic_correlation_page():
 
     st.pyplot(plt,dpi=100)
     #kde plot invoke  
-
+    st.markdown(f"<span style='color: #367588;font-size: 18px;font-weight: bold;'>Inference:</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Foods high in fiber are generally low in fat. We can observe a decrease in fat content as the amount of fibre increases.</h6>",unsafe_allow_html=True)
+    
     #5th plot
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>5. Variation of Saturated Fat Content with Total Fat Content</span>", unsafe_allow_html=True)
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>There are four types of fats: saturated fats, trans fats, monounsaturated fats, and polyunsaturated fats. The graph shown below is the plot of saturated fat v/s total fat. It shows the trend between the amount of saturated fat and the total fat content in the food items present in the dataset. </h6>",unsafe_allow_html=True)
+    
+    st.markdown("")
+
     #kde plot
     fig, ax = plt.subplots(figsize=(12,3))
 
@@ -1070,7 +1108,16 @@ def demographic_correlation_page():
     st.pyplot(plt,dpi=100)
     #kde plot invoke  
 
+    st.markdown(f"<span style='color: #367588;font-size: 18px;font-weight: bold;'>Inference:</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Saturated fat is 'bad' fat, as it causes obesity and increases the levels of LDL cholesterol in the blood, thus increasing the risk of cardiovascular disease. The consumption of saturated fats should therefore be kept as low as possible. Unsaturated fats, on the other hand, help to reduce inflammation and also lower LDL cholesterol. Also, they help to build healthy cell membranes in the body. Thus, unsaturated fats are healthy.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
     #6th plot
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>6. Variation of Energy with Carbohydrate Content</span>", unsafe_allow_html=True)
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of energy v/s carbohydrates. It shows the trend between the total energy (in kJ)  and the amount of carbohydrates in the food items present in the dataset. </h6>",unsafe_allow_html=True)
+    
     #kde plot
     fig, ax = plt.subplots(figsize=(12,3))
 
@@ -1085,10 +1132,13 @@ def demographic_correlation_page():
     plt.ylabel("Energy (in kJ)")
 
     #kde plot title    
-    plt.title("Carbohydrates and Eneegy")
+    plt.title("Carbohydrates and Energy")
 
     st.pyplot(plt,dpi=100)
     #kde plot invoke  
+
+    st.markdown(f"<span style='color: #367588;font-size: 18px;font-weight: bold;'>Inference:</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The primary function of carbohydrates is to provide energy to the body. We can infer from the graph that the amount of energy in the food items increases with the carbohydrate content.</h6>",unsafe_allow_html=True)
 
 
 def demographic_nutrient_analysis_page():
@@ -1104,7 +1154,8 @@ def demographic_nutrient_analysis_page():
     st.markdown("")
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
-
+    
+    #protein
 
     prot= df_demographics[df_demographics['category'].isin(categories)]
 
@@ -1112,40 +1163,84 @@ def demographic_nutrient_analysis_page():
     
     top_20=protein_rich.head(20)
     
-    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt', title=' Top 10 protein rich foods')
-    fig.update_layout(title='Title', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
+    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig)
+
+    #fat
+    
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Fat Content</span>", unsafe_allow_html=True)
+    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Next, we have found the foods having the highest amounts of fat. We can see that the highest amounts of fat are in mostly in nuts and seeds, closely followed by eggs and red meat.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+    fat= df_demographics[df_demographics['category'].isin(categories)]
+
+    fat_rich= fat.sort_values(by='fatce', ascending= False)
+    
+    top_20_fat=fat_rich.head(20)
+    
+    fig1 = px.bar(top_20_fat, x='name', y='fatce', color='fatce')
+    fig1.update_layout(title='Top 10 Foods High in Fat', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig1)
+    
+    #carbohydrates
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Carbohydrate Content</span>", unsafe_allow_html=True)
+    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, the foods highest in carbohydrate content are displayed. Jaggery, which is a form of cane sugar, has the highest amount of carbohydrates among the food items present in the dataset. Most of the high-carbohydrate foods include grains, some fruits such as dates, raisins, and apricot, and some nuts such as areca nut.</h6>",unsafe_allow_html=True)
+    
+    st.markdown("")
+    
+    
+    carbs= df_demographics[df_demographics['category'].isin(categories)]
+
+    carbs_rich= carbs.sort_values(by='choavldf', ascending= False)
+    
+    top_20_carbs=carbs_rich.head(20)
+    
+    fig1 = px.bar(top_20_carbs, x='name', y='choavldf', color='choavldf')
+    fig1.update_layout(title='Top 10 Foods High in Carbohydrates', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig1)
 
 
 def demographic_categorized_page():
     st.title("Categorized distribution of Nutrients")
-
+    
     #description of the demographics page
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, for each nutrient, the quantities of that nutrient present in each food item in the dataset are summed up to find that nutrient’s total quantity.  Then, the percentage of this total quantity present in each food category is found. These percentages are represented graphically in the form of a pie chart. This process is carried out for each nutrient. The pie charts for each nutrient are displayed below.</h6>",unsafe_allow_html=True)
     st.markdown("")
+    
+    
 
     #category wise statistics
     category_dist= df_demographics.groupby(['category']).sum()
     st.write(category_dist)
 
+    st.markdown("")
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Visualization :</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>    The following pie charts show the distribution of the total quantity of each nutrient across the food categories present in the dataset.</h6>",unsafe_allow_html=True)
+
     fig = make_subplots(rows=3, cols=2,specs=[[{"type": "domain"},{"type": "domain"}],[{"type": "domain"},{"type": "domain"}],[{"type": "domain"},{"type": "domain"}]])
     
-    fig.add_trace(go.Pie(values=category_dist['protcnt'].values, title='CALORIES', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=1, col=1)
+    fig.add_trace(go.Pie(values=category_dist['enerc'].values, title='CALORIES', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=1, col=1)
     
-    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='FAT', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=1, col=2)
+    fig.add_trace(go.Pie(values=category_dist['fatce'].values,title='FAT', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=3, col=1)
 
-    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='PROTEIN', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=2, col=1)
+    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='PROTEIN', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=1, col=2)
 
-    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='FIBER', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=2, col=2)
+    fig.add_trace(go.Pie(values=category_dist['fibtg'].values,title='FIBER', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=2, col=2)
 
-    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='SAT.FAT', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=3, col=1)
+    #removed graph due to overlap and un necessity
+    fig.add_trace(go.Pie(values=category_dist['fasat'].values,title='SATURATED FAT', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=3, col=2)
 
-    fig.add_trace(go.Pie(values=category_dist['protcnt'].values,title='CARBS', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=3, col=2)
+    fig.add_trace(go.Pie(values=category_dist['choavldf'].values,title='CARBOHYDRATES', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=2, col=1)
     
     fig.update_layout(title_text="Category wise distribution of all metrics",height=1200, width=800)
     
     st.plotly_chart(fig)
 
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top 10 Protein Rich Seafood Items</span>", unsafe_allow_html=True)
 
     #high protein seafood items 
     seafood= df_demographics[df_demographics['category'].isin(['Seafood'])]
@@ -1156,9 +1251,16 @@ def demographic_categorized_page():
 
     fig_protein_seafood = go.Figure(go.Funnelarea(values=seafood_top['protcnt'].values, text=seafood_top['name'],title = { "text": "Seafood with high protein percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
 
-    fig_protein_seafood.update_layout(height=600, width=700)
+    fig_protein_seafood.update_layout(height=620, width=700)
 
     st.plotly_chart(fig_protein_seafood)
+
+    #description
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Seafood and meat are sources of high protein. Among these, seafood is an excellent option, as it also contains higher amounts of omega-3 fatty acids, which is a type of unsaturated fat that is beneficial for the heart. Seafood is healthier than red meat, as red meat has much higher amounts of saturated fat. The seafood items having the highest protein content have been displayed here.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+    #title 2nd pyramid graph blue text
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Alternatvies to seafood for Vegetarians</span>", unsafe_allow_html=True)
 
     #high protein legumes (for vegetarians)
     legumes= df_demographics[df_demographics['category'].isin(['Legumes'])]
@@ -1169,18 +1271,28 @@ def demographic_categorized_page():
 
     fig_protein_seafood = go.Figure(go.Funnelarea(values=legumes_top['protcnt'].values, text=legumes_top['name'],title = { "text": "Legumes with high protein percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
 
-    fig_protein_seafood.update_layout(height=600, width=700)
+    fig_protein_seafood.update_layout(height=620, width=700)
 
     st.plotly_chart(fig_protein_seafood)
 
+    #description
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Vegetarians often have protein deficiencies as they do not consume animal protein. Therefore, they must consume vegetarian alternatives to incorporate the necessary amount of protein in their diet. Among vegetarian foods, legumes such as soyabean, gram, and lentils are very good protein sources. The legumes having highest protein content are shown below.</h6>",unsafe_allow_html=True)
+    st.title("")
+
+
+    my_expander=st.beta_expander("Data Sources")
+    with my_expander:
+        'Hello there! [Click to view](www.google.com)'
+        '--------------------------------------------'
+        'source 2'
 
 def demographic_dimensional_page():
     st.title("3d relation")
-
+    
     trace1 = go.Scatter3d(
-    x=df_demographics['category'].values,
+    x=(df_demographics['category']).values,
     y=df_demographics['name'].values,
-    z=df_demographics['fasat'].values,
+    z=df_demographics['fatce'].values,
     text=df_demographics['name'].values,
     mode='markers',
     marker=dict(
@@ -1199,7 +1311,7 @@ def demographic_dimensional_page():
     st.plotly_chart(fig)
 
 def demographic_foodgroup_page():
-    
+    st.title("Variation in nutrient content")
     sns.set_style("whitegrid")
     plt.figure(figsize=(19,10))
     #plt.figure()
@@ -1229,12 +1341,10 @@ def demographic_foodgroup_page():
 def disease_demographics():
     # Register your pages
     pages = {
-        "1. Dataset Pruning and Exploration": test_page,
-        "2. Correlation between presence of Nutrients":test_page,
-        "3. Analysis of Nutrient Content":test_page,
-        "4. Categorized distribution of Nutrients":test_page,
-        "5. 3D relation":test_page,
-        "6. foodgroup":test_page
+        "1. Food Suggestions for Diabetic Patients": diabetes_page,
+        "2. Food Suggestions for Lactose Intolerance":lactose_page,
+        "3. Food Suggestions for Vitiligo Patients":vitiligo_page,
+        "4. Food Suggestions for patients suffering from Kidney/Gall Bladder Stones":gallstones_page
     }
 
 
@@ -1246,10 +1356,32 @@ def disease_demographics():
     # Display the selected page
     pages[page]()
 
-def test_page():
-    st.title("title test")
+def diabetes_page():
+    st.title("Diabetes")
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("")
 
 
+def lactose_page():
+    st.title("Lactose")
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+
+def vitiligo_page():
+    st.title("Vitiligo")
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+
+def gallstones_page():
+    st.title("Kidney/ Gall Bladder Stones")
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("")
 
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
@@ -1259,8 +1391,9 @@ if __name__ == "__main__":
 
 
 
-
 #st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
 #st.markdown("")
 
-
+#blue title
+#st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>1</span>", unsafe_allow_html=True)
+    #x=([df_demographics['category'].isin(categories)]).values
