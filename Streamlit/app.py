@@ -87,6 +87,47 @@ def about_page():
     st.subheader("Classification of food items and cooking oils based on quality")
     st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>Food becomes stale if there is excessive exposure to environmental factors such as heat and humidity. Similarly, if a cooking oil sample is exposed to heat, or is used in cooking repeatedly, it will become rancid. The second part of our application is the classification of food items based on their freshness and oils based on their rancidity. A classification model is developed for classifying food items into various freshness levels based on their visual properties. For oils, the classification is done on the basis of the visual properties as well as the pH value of the oil sample. The pH value is recorded using a pH sensor integrated with the application. These features are included in our mobile application which is developed using the Flutter toolkit.</h6>", unsafe_allow_html=True)
     
+    st.title("For Data Sources ")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        '[Click to view the accesible page of the below source](http://www.ifct2017.com/frame.php?page=home)'
+        '[Click to view the credibility of the below source](https://www.icrisat.org/india-releases-the-worlds-most-advanced-and-comprehensive-analytical-data-base-of-national-food-nutritional-composition/)'
+        '---------------------------------------------------------------'
+        "Indian Food Composition Tables 2017"
+        "T. Longvah, R. Ananthan, K. Bhaskarachary and K. Venkaiah"
+
+        "Copyright  © 2017 by National Institute of Nutrition"
+        "Indian Council of Medical Research"
+        "Department of Health Research Ministry of Health and Family Welfare, Government of India"
+        "Jamai Osmania (PO), Hyderabad – 500 007"
+        "Telangana, India Phone: +91 40 27197334, Fax: +91 40 27000339, Email: nin@ap.nic.in"
+        "------------------------------------------------------------------------------------------"
+        "Columns abbreviation and units (used in the demographics and analysis):"
+        "water - Moisture [g]"
+        "protcnt - Protein [g]"
+        "ash - Ash [g]"
+        "fatce - Total Fat [g]"
+        "fibtg - Total fibre[g]"
+        "fibins - Insoluble fibre[g]"
+        "fibsol - Soluble [g]"
+        "choavldf - Carbohydrate [g]"
+        "enerc - Energy [kJ]"
+        "cholc - Cholesterol [mg]"
+        "fasat - Total Saturated Fatty Acids (TSFA) [mg]"
+        "fams - Total Mono Unsaturated Fatty Acids (TMUFA) [mg]"
+        "fapu - Total Poly Unsaturated Fatty Acids (TPUFA) [mg]"
+        "starch - Total Starch [g]"
+        "frus - Fructose [g]"
+        "glus - Glucose [g]"
+        "sucs - Sucrose [g]"
+        "mals - Maltose [g]"
+        "fsugar - Total Free Sugars [g]"
+        "lactose - Lactose content (g/100) [g]"
+        "fe - Iron (Fe) [mg]"
+        "ca - Calcium (Ca) [mg]"
+        "zn - Zinc (Zn) [mg]"
+        "k - Potassium (K) [mg]"
+
     #background image for the webapp
     page_bg_img = '''
     <style>
@@ -899,12 +940,12 @@ def demographic_main():
         "2. Correlation between presence of Nutrients":demographic_correlation_page,
         "3. Analysis of Nutrient Content":demographic_nutrient_analysis_page,
         "4. Categorized distribution of Nutrients":demographic_categorized_page,
-        "5. 3D relation":demographic_dimensional_page,
+        "5. Evaluation of Non Vegetarian Food":demographic_dimensional_page,
         "6. Variation in nutrient content":demographic_foodgroup_page
     }
 
 
-    st.title("Navigate through demographics 🧭")
+    st.title("Navigate through demographics 🧭 📊")
 
     # Widget to select your page, you can choose between radio buttons or a selectbox
     page = st.radio("(Choose an option to get redirected)", tuple(pages.keys()))
@@ -913,7 +954,7 @@ def demographic_main():
     pages[page]()
 
 def demographic_pruning_page():
-    st.title("Dataset Pruning and Exploration")
+    st.title("Dataset Pruning and Exploration 🧹 🔍")
 
     #description of the demographics page
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Before performing any analysis on the data, it is necessary to prune the dataset. This is mainly done to remove any discrepancies in the data, which may cause a hindrance to the data analysis.The following are some ways in which the dataset can be pruned to make it fit for analysis.</h6>",unsafe_allow_html=True)
@@ -929,7 +970,7 @@ def demographic_pruning_page():
 
     st.markdown("")
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>1. Checking the data types</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>1. Checking the data types 📋</span>", unsafe_allow_html=True)
     
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>In this step, we check the data types of all the parameters before moving ahead with the analysis. This is done to ensure that the analysis is done smoothly without the hassle of getting any data type errors during visualization.</h6>",unsafe_allow_html=True)
     
@@ -942,11 +983,11 @@ def demographic_pruning_page():
 
     st.markdown("")
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>2. Quick last checks on data quality</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>2. Quick last checks on data quality </span>", unsafe_allow_html=True)
     
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>To obtain accurate results, it is necessary to ensure that the dataset is complete and of good quality.</h6>",unsafe_allow_html=True)
     
-    st.subheader("Null Value Check")
+    st.subheader("Null Value Check #️⃣")
     
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The next step is checking the presence of null values in the dataset. This is important to avoid obtaining biased results due to missing data. The dataset is checked column-wise for null values, and no null values are found.</h6>",unsafe_allow_html=True)
     
@@ -963,9 +1004,40 @@ def demographic_pruning_page():
 
     #values 
     st.write(df_demographics.describe())
-   
+    
+    st.subheader("For the abbreviation and units used in the upcoming features")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "Columns abbreviation and units (used in the demographics and analysis):"
+        "water - Moisture [g]"
+        "protcnt - Protein [g]"
+        "ash - Ash [g]"
+        "fatce - Total Fat [g]"
+        "fibtg - Total fibre[g]"
+        "fibins - Insoluble fibre[g]"
+        "fibsol - Soluble [g]"
+        "choavldf - Carbohydrate [g]"
+        "enerc - Energy [kJ]"
+        "cholc - Cholesterol [mg]"
+        "fasat - Total Saturated Fatty Acids (TSFA) [mg]"
+        "fams - Total Mono Unsaturated Fatty Acids (TMUFA) [mg]"
+        "fapu - Total Poly Unsaturated Fatty Acids (TPUFA) [mg]"
+        "starch - Total Starch [g]"
+        "frus - Fructose [g]"
+        "glus - Glucose [g]"
+        "sucs - Sucrose [g]"
+        "mals - Maltose [g]"
+        "fsugar - Total Free Sugars [g]"
+        "lactose - Lactose content (g/100) [g]"
+        "fe - Iron (Fe) [mg]"
+        "ca - Calcium (Ca) [mg]"
+        "zn - Zinc (Zn) [mg]"
+        "k - Potassium (K) [mg]"
+
+
+
 def demographic_correlation_page():
-    st.title("Correlation between presence of nutrients")
+    st.title("Correlation between presence of nutrients 🥒 🔛 🥔 ")
     
     #description of the demographics page
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>There is a relationship between the amounts of different nutrients present in food items. Every food item is not rich in all nutrients. Certain food items are richer in proteins, while others may be abundant in carbohydrates and so on. Here, we show the relationship between different nutrients in the food items present in the dataset.</h6>",unsafe_allow_html=True)
@@ -973,6 +1045,7 @@ def demographic_correlation_page():
 
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>1. Variation of Protein Content with Carbohydrate Content</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Protein (grams) & Carbohydrates (grams)</span>", unsafe_allow_html=True)
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of protein v/s carbohydrates. It shows the trend between the amount of protein and the amount of carbohydrates in the food items present in the dataset.</h6>",unsafe_allow_html=True)
     
@@ -985,10 +1058,10 @@ def demographic_correlation_page():
     sns.kdeplot(df_demographics['choavldf'],df_demographics['protcnt'],cmap=cmap,shade=True)
 
     #kde plot title X axis
-    plt.xlabel("Carbohydrates")
+    plt.xlabel("Carbohydrates (g)")
 
     #kde plot title Y axis
-    plt.ylabel("Protein")
+    plt.ylabel("Protein (g)")
 
     #kde plot title    
     plt.title("Carbohydrates and Protein")
@@ -997,12 +1070,12 @@ def demographic_correlation_page():
 
     st.markdown(f"<span style='color: #367588;font-size: 18px;font-weight: bold;'>Inference:</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Foods high in carbohydrates are usually low in protein and vice versa. We can see an inverse variation between carbohydrates and protein in the above graph</h6>",unsafe_allow_html=True)
-    
     #kde plot invoke  
 
     #2nd plot
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>2. Variation of Carbohydrate Content with Fat Content</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Carbohydrates (grams) and Fat (grams)</span>", unsafe_allow_html=True)
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of carbohydrates v/s fat. It shows the trend between the amount of carbohydrates and the amount of fat in the food items present in the dataset.</h6>",unsafe_allow_html=True)
     
@@ -1014,10 +1087,10 @@ def demographic_correlation_page():
     sns.kdeplot(df_demographics['fatce'],df_demographics['choavldf'],cmap=cmap,shade=True)
 
     #kde plot title X axis
-    plt.xlabel("Fats")
+    plt.xlabel("Fats (g)")
 
     #kde plot title Y axis
-    plt.ylabel("Carbohydrates")
+    plt.ylabel("Carbohydrates (g)")
 
     #kde plot title    
     plt.title("Fats and Carbohydrates")
@@ -1031,6 +1104,7 @@ def demographic_correlation_page():
     #3rd plot
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>3. Variation of Fibre Content with Carbohydrate Content</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Fiber (grams) & Carbohydrates (grams)</span>", unsafe_allow_html=True)
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of fiber v/s carbohydrates. It shows the trend between the amount of fiber and the amount of carbohydrates in the food items present in the dataset.</h6>",unsafe_allow_html=True)
     
@@ -1042,10 +1116,10 @@ def demographic_correlation_page():
     sns.kdeplot(df_demographics['choavldf'],df_demographics['fibtg'],cmap=cmap,shade=True)
 
     #kde plot title X axis
-    plt.xlabel("Carbohydrates")
+    plt.xlabel("Carbohydrates (g)")
 
     #kde plot title Y axis
-    plt.ylabel("Fiber")
+    plt.ylabel("Fiber (g)")
 
     #kde plot title    
     plt.title("Carbohydrates and Fiber")
@@ -1058,6 +1132,7 @@ def demographic_correlation_page():
     #4th plot
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>4. Variation of Fat Content with Fibre Content</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Fat (grams) & Fiber (grams)</span>", unsafe_allow_html=True)
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of fat v/s fiber. It shows the trend between the amount of fat and the amount of fiber in the food items present in the dataset.</h6>",unsafe_allow_html=True)
     
@@ -1069,10 +1144,10 @@ def demographic_correlation_page():
     sns.kdeplot(df_demographics['fibtg'],df_demographics['fatce'],cmap=cmap,shade=True)
 
     #kde plot title X axis
-    plt.xlabel("Fiber")
+    plt.xlabel("Fiber (g)")
 
     #kde plot title Y axis
-    plt.ylabel("Fat")
+    plt.ylabel("Fat (g)")
 
     #kde plot title    
     plt.title("Fiber and Fat")
@@ -1085,7 +1160,7 @@ def demographic_correlation_page():
     #5th plot
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>5. Variation of Saturated Fat Content with Total Fat Content</span>", unsafe_allow_html=True)
-
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Saturated Fat (milligrams) & Total Fat (grams)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>There are four types of fats: saturated fats, trans fats, monounsaturated fats, and polyunsaturated fats. The graph shown below is the plot of saturated fat v/s total fat. It shows the trend between the amount of saturated fat and the total fat content in the food items present in the dataset. </h6>",unsafe_allow_html=True)
     
     st.markdown("")
@@ -1098,10 +1173,10 @@ def demographic_correlation_page():
     sns.kdeplot(df_demographics['fatce'],df_demographics['fasat'],cmap=cmap,shade=True)
 
     #kde plot title X axis
-    plt.xlabel("Total Fat")
+    plt.xlabel("Total Fat (g)")
 
     #kde plot title Y axis
-    plt.ylabel("Saturated Fat")
+    plt.ylabel("Saturated Fat (mg)")
 
     #kde plot title    
     plt.title("Total Fat and Saturated Fat")
@@ -1116,7 +1191,7 @@ def demographic_correlation_page():
     #6th plot
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>6. Variation of Energy with Carbohydrate Content</span>", unsafe_allow_html=True)
-
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Energy (Kilo Joules) & Total Carbohydrates (grams)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of energy v/s carbohydrates. It shows the trend between the total energy (in kJ)  and the amount of carbohydrates in the food items present in the dataset. </h6>",unsafe_allow_html=True)
     
     #kde plot
@@ -1127,10 +1202,10 @@ def demographic_correlation_page():
     sns.kdeplot(df_demographics['choavldf'],df_demographics['enerc'],cmap=cmap,shade=True)
 
     #kde plot title X axis
-    plt.xlabel("Carbohydrates")
+    plt.xlabel("Carbohydrates (g)")
 
     #kde plot title Y axis
-    plt.ylabel("Energy (in kJ)")
+    plt.ylabel("Energy (kJ)")
 
     #kde plot title    
     plt.title("Carbohydrates and Energy")
@@ -1143,14 +1218,14 @@ def demographic_correlation_page():
 
 
 def demographic_nutrient_analysis_page():
-    st.title("Analysis of Nutrient content")
+    st.title("Analysis of Nutrient content 🧑‍🔬")
     
     #description of the demographics page
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Certain foods have higher proportions of specific nutrients than others. The most notable example is that meat, fish, and eggs contain higher amounts of protein than plant-based foods. Here, the data is analyzed to find the foods with the highest amounts of various nutrients, including proteins, carbohydrates, and fats. This is explained with the help of graphical representations.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Protein Content</span>", unsafe_allow_html=True)
-    
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Protein (grams)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>First, we have found the foods having the highest amounts of protein and have represented the amounts of protein in these foods graphically.</h6>",unsafe_allow_html=True)
     st.markdown("")
     #Based on categories
@@ -1171,7 +1246,7 @@ def demographic_nutrient_analysis_page():
     #fat
     
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Fat Content</span>", unsafe_allow_html=True)
-    
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Fat (grams)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Next, we have found the foods having the highest amounts of fat. We can see that the highest amounts of fat are in mostly in nuts and seeds, closely followed by eggs and red meat.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
@@ -1188,7 +1263,7 @@ def demographic_nutrient_analysis_page():
     #carbohydrates
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Carbohydrate Content</span>", unsafe_allow_html=True)
-    
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Carbohydrates (grams)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, the foods highest in carbohydrate content are displayed. Jaggery, which is a form of cane sugar, has the highest amount of carbohydrates among the food items present in the dataset. Most of the high-carbohydrate foods include grains, some fruits such as dates, raisins, and apricot, and some nuts such as areca nut.</h6>",unsafe_allow_html=True)
     
     st.markdown("")
@@ -1206,7 +1281,7 @@ def demographic_nutrient_analysis_page():
 
 
 def demographic_categorized_page():
-    st.title("Categorized distribution of Nutrients")
+    st.title("Categorized distribution of Nutrients 🧮")
     
     #description of the demographics page
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, for each nutrient, the quantities of that nutrient present in each food item in the dataset are summed up to find that nutrient’s total quantity.  Then, the percentage of this total quantity present in each food category is found. These percentages are represented graphically in the form of a pie chart. This process is carried out for each nutrient. The pie charts for each nutrient are displayed below.</h6>",unsafe_allow_html=True)
@@ -1232,7 +1307,7 @@ def demographic_categorized_page():
 
     fig.add_trace(go.Pie(values=category_dist['fibtg'].values,title='FIBER', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=2, col=2)
 
-    #removed graph due to overlap and un necessity
+    
     fig.add_trace(go.Pie(values=category_dist['fasat'].values,title='SATURATED FAT', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=3, col=2)
 
     fig.add_trace(go.Pie(values=category_dist['choavldf'].values,title='CARBOHYDRATES', labels=category_dist.index,marker=dict(colors=['#100b','#f00560'], line=dict(color='#FFFFFF', width=2.5))),row=2, col=1)
@@ -1281,15 +1356,18 @@ def demographic_categorized_page():
     st.title("")
 
 
-    my_expander=st.beta_expander("Data Sources")
-    with my_expander:
-        'Hello there! [Click to view](www.google.com)'
-        '--------------------------------------------'
-        'source 2'
-
-def demographic_dimensional_page():
-    st.title("3d relation")
     
+def demographic_dimensional_page():
+    st.title("Evaluation of Non Vegetarian Food 🥚 🦀")
+    
+    #subtitle
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Protein and Cholesterol levels</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Cholesterol (grams) and Protein (grams)</span>", unsafe_allow_html=True)
+    
+    #description
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Non-vegetarian foods are excellent protein sources. However, foods such as red meat are also high in cholesterol. The nutritional value of non-vegetarian foods (including eggs) is evaluated here based on their protein and cholesterol levels. The cholesterol level should be low and the protein content should be high.</h6>",unsafe_allow_html=True)
+
+
     trace1 = go.Scatter3d(
     x=(df_demographics_nonveg['category']).values,
     y=df_demographics_nonveg['protcnt'].values,
@@ -1306,18 +1384,22 @@ def demographic_dimensional_page():
         )
     )
     data=[trace1]
-    layout=dict(scene = dict(xaxis_title='',yaxis_title='Y AXIS TITLE',zaxis_title='Z AXIS TITLE'),height=800, width=800, title='3D Scatter Plot of Fatty foods (% Daily Value)')
-    fig=dict(data=data, layout=layout)
+    layout=dict(scene = dict(xaxis_title='',yaxis_title='Protein (g)',zaxis_title='Cholesterol (g)'),height=800, width=800, title='3D Scatter Plot of Fatty foods (% Daily Value)')
+    fig=dict(data=data, layout=layout) 
 
     st.plotly_chart(fig)
 
 def demographic_foodgroup_page():
-    st.title("Variation in nutrient content")
+    st.title("Variation in nutrient content 📈 📉")
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Fat (grams)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, we have shown the variation in the percentage of fat in all food items present in each category with the help of boxplots. Each boxplot represents one food category. The percentage of fat is shown on the y-axis. The food categories are shown on the x-axis, and the width of the boxplot at a particular y-coordinate represents the number of food items in that particular food category that have that particular percentage of fat. We can see from the graph that the maximum variation in the percentage of fat is in the nuts category.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
     sns.set_style("whitegrid")
     plt.figure(figsize=(19,10))
     #plt.figure()
 
-    ax = sns.boxenplot(x="category", y='fasat', data=df_demographics, color='#eeeeee', palette="tab10")
+    ax = sns.boxenplot(x="category", y='fatce', data=df_demographics, color='#eeeeee', palette="tab10")
 
     # Add transparency to colors
     for patch in ax.artists:
@@ -1325,8 +1407,8 @@ def demographic_foodgroup_page():
         patch.set_facecolor((r, g, b, .9))
         
     #ax = sns.stripplot(x='Category', y='Cholesterol (% Daily Value)', data=menu, color="orange", jitter=0.5, size=5,alpha=0.15)
-    #
-    plt.title("Total Calorie Content \n", loc="center",size=32,color='#be0c0c',alpha=0.6)
+    
+    plt.title("Total Fat Content \n", loc="center",size=32,color='#be0c0c',alpha=0.6)
     plt.xlabel('Category',color='#34495E',fontsize=20) 
     plt.ylabel('Total Fat (% Daily Value)',color='#34495E',fontsize=20)
     plt.xticks(size=16,color='#008abc',rotation=90, wrap=True)  
@@ -1349,7 +1431,7 @@ def disease_demographics():
     }
 
 
-    st.title("Navigate through demographics 🧭")
+    st.title("Navigate through demographics 🧭 ")
 
     # Widget to select your page, you can choose between radio buttons or a selectbox
     page = st.radio("(Choose an option to get redirected)", tuple(pages.keys()))
@@ -1397,4 +1479,3 @@ if __name__ == "__main__":
 
 #blue title
 #st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>1</span>", unsafe_allow_html=True)
-    #x=([df_demographics['category'].isin(categories)]).values

@@ -1,0 +1,36 @@
+Indian Food Composition Tables 2017
+T. Longvah, R. Ananthan, K. Bhaskarachary and K. Venkaiah
+
+Copyright  © 2017 by National Institute of Nutrition
+Indian Council of Medical Research
+Department of Health Research Ministry of Health and Family Welfare, Government of India
+Jamai Osmania (PO), Hyderabad – 500 007
+Telangana, India Phone: +91 40 27197334, Fax: +91 40 27000339, Email: nin@ap.nic.in
+
+Columns abbreviation and units (used in the demographics and analysis): 
+
+water - Moisture [g]
+protcnt - Protein [g]
+ash - Ash [g]
+fatce - Total Fat [g]
+fibtg - Total fibre[g]
+fibins - Insoluble fibre[g]
+fibsol - Soluble [g]
+choavldf - Carbohydrate [g]
+enerc - Energy [kJ]
+cholc - Cholesterol [mg]
+fasat - Total Saturated Fatty Acids (TSFA) [mg]
+fams - Total Mono Unsaturated Fatty Acids (TMUFA) [mg]
+fapu - Total Poly Unsaturated Fatty Acids (TPUFA) [mg]
+starch - Total Starch [g]
+frus - Fructose [g]
+glus - Glucose [g]
+sucs - Sucrose [g]
+mals - Maltose [g]
+fsugar - Total Free Sugars [g]
+lactose - Lactose content (g/100) [g]
+fe - Iron (Fe) [mg]
+ca - Calcium (Ca) [mg]
+zn - Zinc (Zn) [mg]
+k - Potassium (K) [mg]
+vitc - Total Ascorbic Acid [mg]
