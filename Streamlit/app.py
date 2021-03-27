@@ -1504,6 +1504,7 @@ def lactose_page():
     st.subheader("Data Source of the above given data")
     my_expander=st.beta_expander("Click Here !!")
     with my_expander:
+        'The above values of lactose content have been obtained from the following sources:'
         '1. [Click to view the accesible page](https://www.dairy.com.au/dairy-matters/you-ask-we-answer/what-is-the-lactose-content-of-different-dairy-products)'
         
         '2. [Click to view the accesible page](https://nutritiondata.self.com/facts/dairy-and-egg-products/0/2)'
