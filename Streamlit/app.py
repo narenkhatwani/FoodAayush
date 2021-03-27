@@ -1541,13 +1541,13 @@ def anaemia_page():
     #iron deficiency
     st.markdown(f"<span style='color: #367588;font-size: 24px;font-weight: bold;'>Top Foods rich in Iron</span>", unsafe_allow_html=True)
 
-    iron= df_demographics['category']
+    iron= df_demographics
 
     iron_top=iron.sort_values(by='fe', ascending= False)
     
     iron_top=iron_top.head(15)
 
-    fig_iron_food = go.Figure(go.Funnelarea(values=vitd3_top['fe'].values, text=vitd3_top['name'],title = { "text": "Food items with high Vitamin D3 percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
+    fig_iron_food = go.Figure(go.Funnelarea(values=iron_top['fe'].values, text=iron_top['name'],title = { "text": "Food items with high Vitamin D3 percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
 
     fig_iron_food.update_layout(height=800, width=700)
 
