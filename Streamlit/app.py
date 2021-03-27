@@ -1502,7 +1502,7 @@ def lactose_page():
     
 
     #d2
-    st.markdown(f"<span style='color:#367588;font-size: 24px;font-weight: bold;'>Top 15 Foods rich in Vitamin D2</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color:#367588;font-size: 24px;font-weight: bold;'>Top Foods rich in Vitamin D2</span>", unsafe_allow_html=True)
 
     vitd2= df_demographics[df_demographics['category'].isin(['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar'])]
 
@@ -1517,7 +1517,7 @@ def lactose_page():
     st.plotly_chart(fig_vitd2_food)
 
     #d3
-    st.markdown(f"<span style='color: #367588;font-size: 24px;font-weight: bold;'>Top 15 Foods rich in Vitamin D3</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 24px;font-weight: bold;'>Top Foods rich in Vitamin D3</span>", unsafe_allow_html=True)
 
     vitd3= df_demographics[df_demographics['category'].isin(['Eggs', 'White Meat', 'Red Meat', 'Seafood'])]
 
@@ -1533,10 +1533,25 @@ def lactose_page():
     
 
 def anaemia_page():
-    st.title("Anaemia")
+    st.title("Iron deficiency Anaemia")
 
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Haemoglobin is the protein in the red blood cells that is responsible for carrying oxygen to the tissues. Anaemia occurs when the level of haemoglobin in the blood is low.  The symptoms of anaemia include headaches, fatigue, weakness, dizziness, shortness of breath, and various other symptoms. Iron is needed to make haemoglobin. Thus, when there is a deficiency of iron, it leads to low levels of haemoglobin in the blood, causing anaemia. It may be caused by low consumption of iron, internal bleeding, and inability to absorb iron. Also, it is especially common in women, due to pregnancy and blood loss during menstruation. It is therefore necessary, especially for women, to consume foods that are rich in iron. The below pyramid shows the foods which have highest amounts of iron.</h6>",unsafe_allow_html=True)
     st.markdown("")
+
+    #iron deficiency
+    st.markdown(f"<span style='color: #367588;font-size: 24px;font-weight: bold;'>Top Foods rich in Iron</span>", unsafe_allow_html=True)
+
+    iron= df_demographics['category']
+
+    iron_top=iron.sort_values(by='fe', ascending= False)
+    
+    iron_top=iron_top.head(15)
+
+    fig_iron_food = go.Figure(go.Funnelarea(values=vitd3_top['fe'].values, text=vitd3_top['name'],title = { "text": "Food items with high Vitamin D3 percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
+
+    fig_iron_food.update_layout(height=800, width=700)
+
+    st.plotly_chart(fig_iron_food)
 
 
 def gallstones_page():
@@ -1552,6 +1567,7 @@ if __name__ == "__main__":
 
 
 
+#code to be used to text display with html properties
 
 #st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
 #st.markdown("")
