@@ -1511,7 +1511,7 @@ def lactose_page():
         '3. [Click to view the accesible page](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5471386/)'
 
     st.write("")
-    st.title("title")
+    st.title("Alternatives to compensate for other nutrients present in dairy products")
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Milk products should not be completely avoided, as it can cause deficiencies of calcium and vitamin D. Calcium deficiency can cause easy occurrence of bone fractures, weak and brittle nails, and muscle cramps while deficiency of vitamin D can cause osteoporosis, increased risk of heart disease, muscle pain and hair loss. People having lactose intolerance should make sure that they consume enough calcium and Vitamin D from other foods that do not contain lactose.</h6>",unsafe_allow_html=True)
     st.markdown("")
