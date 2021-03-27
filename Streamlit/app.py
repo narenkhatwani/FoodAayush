@@ -1519,15 +1519,15 @@ def lactose_page():
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top 10 Calcium Rich Food Items</span>", unsafe_allow_html=True)
 
     #high calcium items 
-    calcium= df_demographics[df_demographics['category'].isin(['Seafood'])]
+    calcium= df_demographics[df_demographics['category'].isin(['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Eggs', 'White Meat', 'Red Meat', 'Seafood'])]
 
     calcium_top=calcium.sort_values(by='ca', ascending= False)
     
-    calcium_top=calcium_top.head(10)
+    calcium_top=calcium_top.head(15)
 
     fig_calcium_food = go.Figure(go.Funnelarea(values=calcium_top['ca'].values, text=calcium_top['name'],title = { "text": "Food items with high Calcium percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
 
-    fig_calcium_food.update_layout(height=620, width=700)
+    fig_calcium_food.update_layout(height=800, width=700)
 
     st.plotly_chart(fig_calcium_food)
 
