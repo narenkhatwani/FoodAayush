@@ -313,217 +313,217 @@ L001,"Milk, whole, Buffalo",6,80.68,3.68,0.67,6.58,0,0,0,8.39,449,4630,1919,200,
 L002,"Milk, whole, Cow",6,86.64,3.26,0.68,4.48,0,0,0,4.94,305,2707,1214,138,4.28,Dairy
 L003,Paneer,6,51.96,18.86,1.98,14.78,0,0,0,12.41,1079,8851,4300,439,9.12,Dairy
 L004,Khoa,6,42.51,16.34,4,20.62,0,0,0,16.53,1322,12936,5664,790,12.86,Dairy
-M001,"Egg, poultry, whole, raw",6,76.51,13.28,0.81,9.15,0,0,0,0,564,2958,3481,1152,,Eggs
-M002,"Egg, poultry, white, raw",6,86.68,10.84,0.75,0.06,0,0,0,0,187,0,0,0,,Eggs
-M003,"Egg, poultry, yolk, raw",6,53.57,15.74,1.05,26.34,0,0,0,0,1242,8580,10068,3238,,Eggs
-M004,"Egg, poultry, whole, boiled",6,73.46,13.43,0.86,10.54,0,0,0,0,618,3464,3991,1294,,Eggs
-M005,"Egg, poultry, white, boiled",6,83.54,12.37,0.81,0.26,0,0,0,0,220,0,0,0,,Eggs
-M006,"Egg, poultry, yolk, boiled",6,51.42,16.13,1.38,27.46,0,0,0,0,1290,8819,10643,3333,,Eggs
-M007,"Egg, poultry, omlet",3,68.48,16.53,0.96,11.6,0,0,0,0,710,3179,4615,3168,,Eggs
-M008,"Egg, country hen, whole, raw",1,72.96,13.14,0.86,13,0,0,0,0,704,3792,5061,1936,,Eggs
-M009,"Egg, country hen, whole, boiled",1,70.43,14.43,0.94,14.1,0,0,0,0,767,4074,5747,1882,,Eggs
-M010,"Egg, country hen, omlet",1,67.8,14.8,1.08,16.3,0,0,0,0,855,4886,6424,2317,,Eggs
-M011,"Egg, duck, whole, boiled",1,71.61,13.8,0.97,13.61,0,0,0,0,738,3598,6098,1745,,Eggs
-M012,"Egg, duck, whole, raw",1,70.53,14.6,0.99,13.83,0,0,0,0,760,3373,6063,1684,,Eggs
-M013,"Egg, duck, whole, omlet",1,68.9,15.1,1.18,14.8,0,0,0,0,804,3871,6483,1886,,Eggs
-M014,"Egg, quial, whole, raw",1,75.11,12.39,0.94,11.46,0,0,0,0,635,2788,4210,2399,,Eggs
-M015,"Egg, quial, whole, boiled",1,74.41,13.03,0.99,11.5,0,0,0,0,647,2726,4391,2403,,Eggs
-N001,"Chicken, poultry, leg, skinless",4,67.61,19.44,1.14,12.64,0,0,0,0,1605,1157,1560,661,,White Meat
-N002,"Chicken, poultry, thigh, skinless",6,67.58,18.18,1.14,14.23,0,0,0,0,836,1071,1461,520,,White Meat
-N003,"Chicken, poultry, breast, skinless",5,67.15,21.81,1.19,9,0,0,0,0,704,816,991,367,,White Meat
-N004,"Chicken, poultry, wing, skinless",5,67.48,17.42,1.13,13.81,0,0,0,0,807,1241,1777,658,,White Meat
-N005,"Poultry, chicken, liver",1,73.2,21.57,1.11,4.08,0,0,0,0,518,1328,681,1013,,White Meat
-N006,"Poultry, chicken, gizzard",1,78.05,18.22,1.46,2.07,0,0,0,0,386,772,716,464,,White Meat
-N007,"Country hen, leg, with skin",1,70.02,17.01,1.2,11.73,0,0,0,0,723,534,681,400,,White Meat
-N008,"Country hen, thigh, with skin",1,67.46,18.29,1.23,12.82,0,0,0,0,785,610,750,360,,White Meat
-N009,"Country hen, breast, with skin",1,66.53,22.08,1.14,10.2,0,0,0,0,753,419,453,262,,White Meat
-N010,"Country hen, wing, with skin",1,68.01,18.65,1.14,12.09,0,0,0,0,764,688,836,451,,White Meat
-N011,"Duck, meat, with skin",1,73.49,19.07,1.22,6.03,0,0,0,0,547,345,2215,304,,White Meat
-N012,"Emu, meat, skinless",1,71.65,22.65,0.98,4.62,0,0,0,0,556,200,242,144,,Red Meat
-N013,"Guinea fowl, meat, with skin",1,75.21,20.52,0.92,3.24,0,0,0,0,469,1138,928,995,,White Meat
-N014,"Pigeon, meat, with skin",1,74.61,17.94,1.32,6.03,0,0,0,0,528,1828,2588,1282,,White Meat
-N015,"Quail, meat, skinless",1,71.58,20.92,1.35,5.95,0,0,0,0,576,2024,2789,810,,White Meat
-N016,"Turkey, leg, with skin",1,69.24,20.3,1.21,8.15,0,0,0,0,647,980,938,1058,,White Meat
-N017,"Turkey, thigh, with skin",1,72.17,20.46,0.97,6.31,0,0,0,0,581,1015,927,1035,,White Meat
-N018,"Turkey, breast, with skin",1,68.44,21.96,1.01,8.04,0,0,0,0,671,934,884,1055,,White Meat
-N019,"Turkey, wing, with skin",1,66.16,21.91,0.97,10.77,0,0,0,0,771,897,826,913,,White Meat
-O001,"Goat, shoulder",6,66.39,20.33,0.9,11.94,0,0,0,0,787,5444,4902,643,,Red Meat
-O002,"Goat, chops",6,72.46,20.39,0.99,5.98,0,0,0,0,568,2877,2346,259,,Red Meat
-O003,"Goat, legs",6,68.85,22.07,0.97,7.94,0,0,0,0,669,3665,3038,567,,Red Meat
-O004,"Goat, brain",5,76.74,13.82,1.29,8.06,0,0,0,0,533,2138,1447,939,,Red Meat
-O005,"Goat, tongue",4,68.4,16.63,1.02,13.68,0,0,0,0,789,5028,4916,758,,Red Meat
-O006,"Goat, lungs",4,79.03,16.86,0.74,3.09,0,0,0,0,401,1564,894,374,,Red Meat
-O007,"Goat, heart",5,75.15,19.38,0.95,4.4,0,0,0,0,492,1939,1025,427,,Red Meat
-O008,"Goat, liver",6,73.37,20.32,1.3,4.88,0,0,0,0,526,1770,921,924,,Red Meat
-O009,"Goat, tripe",5,80.94,15.36,0.23,3.36,0,0,0,0,386,1682,1154,246,,Red Meat
-O010,"Goat, spleen",4,77.93,18.45,1.15,2.37,0,0,0,0,401,1200,616,352,,Red Meat
-O011,"Goat, kidneys",4,80.26,15.6,1.1,2.93,0,0,0,0,374,1143,566,480,,Red Meat
-O012,"Goat, tube (small intestine)",3,78.12,12.92,0.54,8.26,0,0,0,0,525,4445,2504,619,,Red Meat
-O013,"Goat, testis",2,84.29,12.32,0.87,2.39,0,0,0,0,298,1215,590,382,,Red Meat
-O014,"Sheep, shoulder",5,66.51,18.24,0.86,14.31,0,0,0,0,840,6916,5096,1099,,Red Meat
-O015,"Sheep, chops",4,75.66,18,1.09,5.15,0,0,0,0,496,2773,1916,309,,Red Meat
-O016,"Sheep, leg",5,68.26,21.42,0.94,8.69,0,0,0,0,686,3745,2605,669,,Red Meat
-O017,"Sheep, brain",1,78.36,13.05,1.19,7.29,0,0,0,0,492,2040,1183,866,,Red Meat
-O018,"Sheep, tongue",1,68.7,16.61,1.06,13.53,0,0,0,0,783,5576,5875,938,,Red Meat
-O019,"Sheep, lungs",2,80.41,16.12,0.97,2.41,0,0,0,0,363,1138,767,301,,Red Meat
-O020,"Sheep, heart",1,77.06,18.19,0.97,3.66,0,0,0,0,445,1677,873,332,,Red Meat
-O021,"Sheep, liver",4,69.71,22.26,1.26,4.87,0,0,0,0,559,1822,772,1014,,Red Meat
-O022,"Sheep, tripe",2,78.81,16.76,0.26,4.05,0,0,0,0,435,1962,1534,210,,Red Meat
-O023,"Sheep, spleen",1,79.66,16.02,1.17,3.02,0,0,0,0,384,1533,764,466,,Red Meat
-O024,"Sheep, kidneys",2,79.77,16.22,1,2.92,0,0,0,0,384,1127,588,463,,Red Meat
-O025,"Beef, shoulder",6,63.84,20.56,0.95,14.59,0,0,0,0,889,7046,6227,1008,,Red Meat
-O026,"Beef, chops",4,72.4,19.82,0.96,6.71,0,0,0,0,585,3031,2680,437,,Red Meat
-O027,"Beef, round (leg)",6,68.04,22.64,1.19,7.38,0,0,0,0,658,2998,3280,480,,Red Meat
-O028,"Beef, brain",4,78.71,10.55,1.37,9.28,0,0,0,0,523,2490,1869,848,,Red Meat
-O029,"Beef, tongue",4,70.97,15.63,0.73,12.57,0,0,0,0,731,6287,4741,484,,Red Meat
-O030,"Beef, lungs",3,80.83,15.66,1.13,2.28,0,0,0,0,351,1198,647,244,,Red Meat
-O031,"Beef, heart",5,77.77,17.68,0.87,3.57,0,0,0,0,433,1479,848,490,,Red Meat
-O032,"Beef, liver",6,74.15,20.73,1.07,3.96,0,0,0,0,499,1543,826,566,,Red Meat
-O033,"Beef, tripe",5,83.74,13.1,0.55,2.51,0,0,0,0,316,1371,833,95.26,,Red Meat
-O034,"Beef, spleen",6,79.03,17.42,1.22,2.22,0,0,0,0,378,1160,480,393,,Red Meat
-O035,"Beef, kidneys",3,77.59,17.09,1.22,4.01,0,0,0,0,439,1743,835,291,,Red Meat
-O036,"Calf, shoulder",2,70.49,20.98,0.94,7.47,0,0,0,0,633,3510,2647,689,,Red Meat
-O037,"Calf, chops",2,72.66,22.47,0.92,3.85,0,0,0,0,524,1966,1034,449,,Red Meat
-O038,"Calf, round (leg)",2,71.13,21.1,0.74,6.92,0,0,0,0,615,2263,2433,497,,Red Meat
-O039,"Calf, brain",2,81.19,9.84,1.26,7.6,0,0,0,0,448,2202,1460,603,,Red Meat
-O040,"Calf, tongue",2,69.44,17.78,0.93,11.76,0,0,0,0,737,5630,4406,737,,Red Meat
-O041,"Calf, heart",1,73.44,18.84,0.86,3.75,0,0,0,0,459,1489,696,773,,Red Meat
-O042,"Calf, liver",1,73.66,21.02,1.26,3.95,0,0,0,0,503,1616,670,643,,Red Meat
-O043,"Calf, spleen",1,78.65,17.71,1.41,2.12,0,0,0,0,379,1030,513,397,,Red Meat
-O044,"Calf, kidneys",2,80.23,15.16,1.02,3.5,0,0,0,0,387,1464,660,491,,Red Meat
-O045,"Mithun, shoulder",1,68.86,19.05,0.84,11.14,0,0,0,0,736,4436,2157,3613,,Red Meat
-O046,"Mithun, chops",1,73.81,18.19,0.79,6.12,0,0,0,0,536,2736,1276,1596,,Red Meat
-O047,"Mithun, round (leg)",1,72.25,19.61,0.9,4.1,0,0,0,0,485,1442,1918,1700,,Red Meat
-O048,"Pork, shoulder",6,62.92,17.41,0.75,18.83,0,0,0,0,993,6887,8114,2129,,Red Meat
-O049,"Pork, chops",6,68.4,19.41,0.64,11.3,0,0,0,0,748,4803,4972,660,,Red Meat
-O050,"Pork, ham",6,61.94,18.83,0.62,18.55,0,0,0,0,1006,6938,8065,1875,,Red Meat
-O051,"Pork, lungs",4,81.12,15.13,0.93,2.74,0,0,0,0,358,1247,867,469,,Red Meat
-O052,"Pork, heart",4,77.74,16.31,1.01,4.87,0,0,0,0,457,1575,1247,1019,,Red Meat
-O053,"Pork, liver",5,74.88,19.89,1.18,3.94,0,0,0,0,484,1325,700,896,,Red Meat
-O054,"Pork, stomach",1,76.51,15.36,0.23,7.81,0,0,0,0,550,3327,2690,1090,,Red Meat
-O055,"Pork, spleen",3,80.93,15.13,1.13,2.71,0,0,0,0,357,1245,820,397,,Red Meat
-O056,"Pork, kidneys",5,80.92,14.35,0.97,3.65,0,0,0,0,379,1169,846,714,,Red Meat
-O057,"Pork, tube (small intestine)",1,75.42,14.96,0.55,8.98,0,0,0,0,587,4109,3174,892,,Red Meat
-O058,"Hare, shoulder",1,71.06,21.13,1.17,6.58,0,0,0,0,603,2698,1606,1720,,Red Meat
-O059,"Hare, chops",1,75.47,20.62,1.27,2.55,0,0,0,0,445,1028,613,690,,Red Meat
-O060,"Hare, leg",1,73,20.52,1.26,4.16,0,0,0,0,503,910,514,555,,Red Meat
-O061,"Rabbit, shoulder",1,70.75,20.01,1.19,7.96,0,0,0,0,635,3142,2332,1813,,White Meat
-O062,"Rabbit, chops",1,71.03,22.61,1.35,4.88,0,0,0,0,565,1907,1480,1083,,White Meat
-O063,"Rabbit, leg",1,70.33,21.31,1.26,5.99,0,0,0,0,584,1575,1203,877,,White Meat
-P001,Allathi (Elops machnata),1,75.91,21.77,1.06,0.98,0,0,0,0,406,346,165,261,,Seafood
-P002,Aluva (Parastromateus niger),3,75.71,21.63,1.39,1.8,0,0,0,0,434,755,288,490,,Seafood
-P003,Anchovy (Stolephorus indicus),2,77.77,19.88,1.62,0.78,0,0,0,0,367,248,50.36,290,,Seafood
-P004,Ari fish (Aprion virescens ),1,77.09,22.01,1.34,1.11,0,0,0,0,415,408,166,319,,Seafood
-P005,Betki (Lates calcarifer),1,82.52,15.28,1.12,0.29,0,0,0,0,284,86.4,53.27,57.36,,Seafood
-P006,Black snapper (Macolor niger),1,78.09,19.5,1.19,1.24,0,0,0,0,377,470,251,293,,Seafood
-P007,Bombay duck (Harpadon nehereus),2,83.24,13.53,1.07,1.03,0,0,0,0,287,398,171,252,,Seafood
-P008,Bommuralu (Muraenesox cinerius),3,76.42,22.3,1.21,2.87,0,0,0,0,485,1238,701,594,,Seafood
-P009,Cat fish (Tachysurus thalassinus),1,76.22,22.18,1.32,2.13,0,0,0,0,456,792,430,619,,Seafood
-P010,Chakla (Rachycentron canadum),5,78.36,20.21,1.07,1.68,0,0,0,0,406,654,352,422,,Seafood
-P011,Chappal (Aluterus monoceros ),1,80.61,17.17,1.23,0.67,0,0,0,0,317,199,74.51,208,,Seafood
-P012,Chelu (Elagatis bipinnulata),2,76.36,20.02,1.28,0.7,0,0,0,0,366,229,104,179,,Seafood
-P013,Chembali (Lutjanus quinquelineatus),1,77.54,20.06,0.86,1.77,0,0,0,0,406,700,369,440,,Seafood
-P014,Eri meen (Pristipomoides filamentosus),1,76.54,22.3,1.28,2.02,0,0,0,0,454,739,340,666,,Seafood
-P015,Gobro (Epinephelus diacanthus),2,78.84,19.37,0.98,0.88,0,0,0,0,362,289,138,251,,Seafood
-P016,Guitar fish (Rhinobatus prahli),1,75.73,22.56,1.32,0.44,0,0,0,0,400,114,36.87,143,,Seafood
-P017,Hilsa (Tenualosa ilisha),2,60.09,21.8,1.11,18.49,0,0,0,0,1083,9286,6021,1801,,Seafood
-P018,Jallal (Arius sp.),1,77.5,21.55,1.17,1.46,0,0,0,0,420,519,311,389,,Seafood
-P019,Jathi vela meen (Lethrinus lentjan),2,75.66,22.45,1.26,1.92,0,0,0,0,453,837,519,294,,Seafood
-P020,Kadal bral (Synodus indicus),1,79.66,18.72,1.27,1.34,0,0,0,0,368,478,192,436,,Seafood
-P021,Kadali (Nemipterus mesoprion),1,73.74,22.07,1.06,4.2,0,0,0,0,530,1611,818,1342,,Seafood
-P022,Kalamaara (Leptomelanosoma indicum),2,75.5,20.89,1.08,4.54,0,0,0,0,523,2107,1079,907,,Seafood
-P023,Kalava (Epinephelus coioides),1,80.02,19.38,1.34,1.2,0,0,0,0,374,455,250,275,,Seafood
-P024,Kanamayya (Lutjanus rivulatus),2,77.59,20.19,1.07,0.65,0,0,0,0,367,209,113,168,,Seafood
-P025,Kannadi paarai (Alectis indicus),3,76.25,22.09,1.28,1.27,0,0,0,0,423,479,234,329,,Seafood
-P026,Karimeen (Etroplus suratensis),1,78.66,19.68,0.97,1.38,0,0,0,0,386,577,290,274,,Seafood
-P027,Karnagawala (Anchoa hepsetus),1,79.22,19.52,1.45,0.84,0,0,0,0,363,255,85.26,301,,Seafood
-P028,Kayrai (Thunnus albacores),2,72.69,20.15,1.28,3,0,0,0,0,454,1096,583,980,,Seafood
-P029,Kiriyan (Atule mate),1,72.39,22.49,0.94,4.7,0,0,0,0,556,2102,1068,1069,,Seafood
-P030,Kite fish (Mobula kuhlii),1,77.61,23.07,1.5,0.56,0,0,0,0,413,169,67.62,143,,Seafood
-P031,Korka (Terapon jarbua),1,72.25,23.72,1.09,3.36,0,0,0,0,528,1407,687,898,,Seafood
-P032,Kulam paarai (Carangoides fulvoguttatus),1,73.44,21.62,1.25,3.6,0,0,0,0,501,1430,678,1107,,Seafood
-P033,Maagaa (Polynemus plebeius),1,79.23,20.11,1.01,0.67,0,0,0,0,366,201,96.12,146,,Seafood
-P034,Mackerel (Rastrelliger kanagurta),3,74.55,21.51,1.2,1.53,0,0,0,0,423,604,216,470,,Seafood
-P035,Manda clathi (Naso reticulatus),1,76.32,21.27,1.48,1,0,0,0,0,398,337,171,278,,Seafood
-P036,Matha (Acanthurus mata),2,79.81,21.17,1.35,0.79,0,0,0,0,389,297,106,188,,Seafood
-P037,Milk fish (Chanos chanos),1,72.22,23.66,1.12,1.09,0,0,0,0,442,366,188,321,,Seafood
-P038,Moon fish (Mene maculata),1,74.21,20.74,1.69,4.69,0,0,0,0,526,2929,932,374,,Seafood
-P039,Mullet (Mugil cephalus),3,76.12,20.23,1.16,1.32,0,0,0,0,393,495,219,378,,Seafood
-P040,Mural (Tylosurus crocodilus crocodilus),1,78.96,19.04,1.11,0.58,0,0,0,0,345,349,80.76,354,,Seafood
-P041,Myil meen (Istiophorus platypterus),2,75.57,22.89,1.21,0.56,0,0,0,0,410,150,55.25,179,,Seafood
-P042,Nalla bontha (Epinephelus sp.),1,79.32,19.82,1,0.72,0,0,0,0,364,238,127,166,,Seafood
-P043,Narba (Caranx sexfasciatus),2,76.37,21.95,1.17,1.6,0,0,0,0,432,603,259,487,,Seafood
-P044,Paarai (Caranx heberi),1,75.77,21.58,1.21,1.84,0,0,0,0,435,720,276,578,,Seafood
-P045,Padayappa (Canthidermis maculata),1,79.18,19.7,1.26,0.69,0,0,0,0,360,169,83.65,248,,Seafood
-P046,Pali kora (Panna microdon),1,78.63,19.25,1,1.81,0,0,0,0,394,761,352,431,,Seafood
-P047,Pambada (Lepturacanthus savala),2,74.67,21.95,1.41,4.44,0,0,0,0,537,1959,857,1185,,Seafood
-P048,Pandukopa (Pseudosciaena manchurica),1,77.46,19.73,1.15,0.65,0,0,0,0,360,195,89.63,182,,Seafood
-P049,Parava (Lactarius lactarius),1,77.19,21.5,1.08,2.74,0,0,0,0,467,1184,621,610,,Seafood
-P050,Parcus (Psettodes erumei),1,79.01,19.87,1.12,0.62,0,0,0,0,361,166,70.55,197,,Seafood
-P051,Parrot fish (Scarus ghobban),1,76.84,20.82,1.4,0.57,0,0,0,0,375,174,135,78,,Seafood
-P052,Perinkilichai (Pinjalo pinjalo),1,78.33,20.89,1.02,0.87,0,0,0,0,387,290,101,278,,Seafood
-P053,Phopat (Coryphaena hippurus),4,76.42,22.05,1.24,1.33,0,0,0,0,424,441,198,456,,Seafood
-P054,Piranha (Pygopritis sp.),1,76.15,20.46,0.93,5.43,0,0,0,0,549,1973,2357,589,,Seafood
-P055,"Pomfret, black (Parastromateus niger)",1,74.43,18.91,0.97,4.83,0,0,0,0,515,2229,972,1161,,Seafood
-P056,"Pomfret, snub nose (Trachinotus blochii)",2,77.81,21.05,1.29,0.46,0,0,0,0,375,145,72.77,128,,Seafood
-P057,"Pomfret, white (Pampus argenteus)",2,75.91,19.02,1.01,5.12,0,0,0,0,513,2669,1049,919,,Seafood
-P058,Pranel (Gerres sp.),1,79.54,19.69,0.76,1.89,0,0,0,0,405,827,374,419,,Seafood
-P059,Pulli paarai (Gnathanodon speciosus),1,75.99,20.06,1.19,1.55,0,0,0,0,399,593,208,505,,Seafood
-P060,Queen fish (Scomberoides commersonianus),3,76.63,20.97,1.22,1.17,0,0,0,0,400,693,332,536,,Seafood
-P061,Raai fish (Lobotes surinamensis),2,77.14,21.61,1.11,1.69,0,0,0,0,430,654,311,465,,Seafood
-P062,Raai vanthu (Epinephelus chlorostigma),1,79.95,19.39,0.92,2.17,0,0,0,0,410,864,423,596,,Seafood
-P063,Rani (Pink perch),1,78.55,18.83,1.01,1.49,0,0,0,0,377,2926,1878,1112,,Seafood
-P064,"Ray fish, bow head, spotted (Rhina ancylostoma)",1,80.3,19.03,1.15,0.7,0,0,0,0,349,187,98.7,222,,Seafood
-P065,Red snapper (Lutjanus argentimaculatus),1,76.28,22.79,1.26,1.34,0,0,0,0,437,485,299,325,,Seafood
-P066,"Red snapper, small (Priacanthus hamrur)",1,76.31,21.5,1.1,2.3,0,0,0,0,451,861,407,734,,Seafood
-P067,Sadaya (Platax orbicularis ),1,75.53,20.68,1.32,2.97,0,0,0,0,462,1059,444,1128,,Seafood
-P068,Salmon (Salmo salar),1,67.84,20.97,1.13,9.86,0,0,0,0,721,4305,2453,2297,,Seafood
-P069,Sangada (Nemipterus japonicus),1,78.51,20.26,1.26,2.67,0,0,0,0,443,1128,513,706,,Seafood
-P070,Sankata paarai (Caranx ignobilis),1,74.88,21.87,1.18,1.68,0,0,0,0,434,3317,1876,1746,,Seafood
-P071,Sardine (Sardinella longiceps),1,72.29,17.91,0.84,8.99,0,0,0,0,637,1250,630,770,,Seafood
-P072,Shark (Carcharhinus sorrah),2,72.82,21.6,1.08,0.83,0,0,0,0,398,275,126,230,,Seafood
-P073,"Shark, hammer head (Sphyrna mokarran)",1,74.61,23.4,0.92,0.8,0,0,0,0,432,264,103,232,,Seafood
-P074,"Shark, spotted (Stegostoma fasciatum)",1,78.83,20.95,1.04,0.75,0,0,0,0,384,253,137,169,,Seafood
-P075,Shelavu (Sphyraena jello),4,74.6,22.46,1.26,1.74,0,0,0,0,446,677,369,431,,Seafood
-P076,Silan (Silonia silondia),1,70.12,22.72,0.77,6.68,0,0,0,0,633,3615,3199,1140,,Seafood
-P077,Silk fish (Beryx sp.),1,77.61,20.65,1.05,1.53,0,0,0,0,408,497,281,506,,Seafood
-P078,Silver carp (Hypophthalmichthys molitrix),1,72.47,21.71,0.95,5.17,0,0,0,0,555,1826,1964,894,,Seafood
-P079,Sole fish (Cynoglossus arel),1,80.18,19.05,1.06,1.18,0,0,0,0,367,416,167,370,,Seafood
-P080,Stingray (Dasyatis pastinaca),1,75.67,23.98,1.14,0.68,0,0,0,0,408,289,173,174,,Seafood
-P081,Tarlava (Drepane punctata),2,76.76,21.72,1.14,1.2,0,0,0,0,414,504,207,265,,Seafood
-P082,Tholam (Plectorhinchus schotaf),2,76.2,20.78,1.06,2.13,0,0,0,0,432,856,510,481,,Seafood
-P083,Tilapia (Oreochromis niloticus),1,79.57,18.48,1.18,1.08,0,0,0,0,349,413,254,199,,Seafood
-P084,Tuna (Euthynnus affinis),5,72.12,24.5,1.11,1.44,0,0,0,0,470,660,300,575,,Seafood
-P085,"Tuna, striped (Katsuwonus pelamis)",1,77.76,21.28,0.87,1.12,0,0,0,0,403,424,168,306,,Seafood
-P086,Valava (Chirocentrus nudus),1,77.25,21.8,1.27,1.06,0,0,0,0,410,403,107,336,,Seafood
-P087,Vanjaram (Scomberomorus commerson ),2,72.3,22.28,1.33,5.18,0,0,0,0,570,2229,1078,1384,,Seafood
-P088,Vela meen (Aprion virescens),1,71.82,22.16,1.34,4.34,0,0,0,0,537,1857,851,1199,,Seafood
-P089,Vora (Siganus javus),2,76.94,20.14,1.26,2.14,0,0,0,0,422,1207,467,647,,Seafood
-P090,Whale shark (Galeocerdo cuvier),1,77.59,21.83,1.48,0.82,0,0,0,0,401,266,135,220,,Seafood
-P091,Xiphinis (Xiphias gladius),1,79.22,19.82,1.15,0.88,0,0,0,0,370,363,184,134,,Seafood
-P092,"Eggs, Cat fish (Ompok bimaculatus)",1,69.34,24.68,1.57,5.28,0,0,0,0,600,1818,1125,1436,,Seafood
-Q001,Crab (Menippe mercenaria),1,79.77,10.23,1.74,1.41,0,0,0,0,343,214,140,256,,Seafood
-Q002,"Crab, sea (Portunus sanguinolentus)",1,79.67,15.36,0.92,0.6,0,0,0,0,283,129,64.32,146,,Seafood
-Q003,"Lobster, brown (Thenus orientalis)",1,81.48,15.96,1.29,0.56,0,0,0,0,292,106,72.73,118,,Seafood
-Q004,"Lobster, king size (Thenus orientalis)",1,77.77,18.54,1.08,0.78,0,0,0,0,375,174,129,206,,Seafood
-Q005,Mud crab (Scylla tranquebarica),1,83.1,10,2.6,0.55,0,0,0,0,190,95.11,66.63,129,,Seafood
-Q006,Oyster (Crassostrea sp.),1,82.5,9.51,2.47,2.44,0,0,0,0,252,1087,298,651,,Seafood
-Q007,"Tiger prawns, brown (Solenocera crassicornis)",1,82.41,14.85,0.94,0.56,0,0,0,0,273,121,76.53,101,,Seafood
-Q008,"Tiger Prawns, orange (Penaeus monodon)",1,81.48,14.25,0.83,0.74,0,0,0,0,270,177,88.3,204,,Seafood
-R001,"Clam, green shell (Perna viridis)",1,80.07,12.14,2.44,0.98,0,0,0,0,243,285,92.24,263,,Seafood
-R002,"Clam, white shell, ribbed (Meretrix meretrix)",1,80.27,11.82,0.85,1.34,0,0,0,0,250,441,127,418,,Seafood
-R003,Octopus (Octopus vulgaris),1,80.45,14.71,1.21,1.12,0,0,0,0,334,325,69.95,383,,Seafood
-R004,"Squid, black (Loligo sp.)",1,80.59,16.1,0.99,1.07,0,0,0,0,335,287,56.42,388,,Seafood
-R005,"Squid, hard shell (Sepia pharaonis)",1,80.52,16.82,0.75,0.93,0,0,0,0,320,227,61.67,303,,Seafood
-R006,"Squid, red (Loligo duvauceli)",2,80.85,16.25,1.15,1.44,0,0,0,0,329,448,83.36,545,,Seafood
-R007,"Squid, white, small (Uroteuthis duvauceli )",1,79.38,17.41,1.19,1.15,0,0,0,0,353,304,62.57,441,,Seafood
-S001,Cat fish (Tandanus tandanus),2,77.23,15.86,0.93,6.24,0,0,0,0,518,2182,2055,978,,Seafood
-S002,Catla (Catla catla),6,78.43,17.94,0.94,2.15,0,0,0,0,394,1670,1237,815,,Seafood
-S003,Freshwater Eel (Anguilla anguilla),1,75.57,20.41,1.03,2.63,0,0,0,0,451,981,733,600,,Seafood
-S004,Gold fish (Carassius auratus),2,79.07,16.91,1.1,2.94,0,0,0,0,396,1077,625,0.85,,Seafood
-S005,Pangas (Pangasianodon hypophthalmus),6,68.5,17.12,1.12,16.77,0,0,0,0,852,863,714,510,,Seafood
-S006,Rohu (Labeo rohita),6,76.34,19.71,1.28,2.39,0,0,0,0,428,2047,2618,747,,Seafood
-S007,Crab (Pachygrapsus sp.),1,80.58,13.23,1.23,0.89,0,0,0,0,327,214,140,256,,Seafood
-S008,"Prawns, big (Macrobrachium rosenbergii)",1,77.43,19.24,0.84,0.52,0,0,0,0,380,86.86,56.77,94.61,,Seafood
-S009,"Prawns, small (Macrobrachium sp.)",3,82.58,13.07,0.86,0.78,0,0,0,0,297,197,152,166,,Seafood
-S010,Tiger prawns (Macrobrachium sp.),2,83.24,14.24,0.83,0.66,0,0,0,0,284,134,120,136,,Seafood
+M001,"Egg, poultry, whole, raw",6,76.51,13.28,0.81,9.15,0,0,0,0,564,2958,3481,1152,0,Eggs
+M002,"Egg, poultry, white, raw",6,86.68,10.84,0.75,0.06,0,0,0,0,187,0,0,0,0,Eggs
+M003,"Egg, poultry, yolk, raw",6,53.57,15.74,1.05,26.34,0,0,0,0,1242,8580,10068,3238,0,Eggs
+M004,"Egg, poultry, whole, boiled",6,73.46,13.43,0.86,10.54,0,0,0,0,618,3464,3991,1294,0,Eggs
+M005,"Egg, poultry, white, boiled",6,83.54,12.37,0.81,0.26,0,0,0,0,220,0,0,0,0,Eggs
+M006,"Egg, poultry, yolk, boiled",6,51.42,16.13,1.38,27.46,0,0,0,0,1290,8819,10643,3333,0,Eggs
+M007,"Egg, poultry, omlet",3,68.48,16.53,0.96,11.6,0,0,0,0,710,3179,4615,3168,0,Eggs
+M008,"Egg, country hen, whole, raw",1,72.96,13.14,0.86,13,0,0,0,0,704,3792,5061,1936,0,Eggs
+M009,"Egg, country hen, whole, boiled",1,70.43,14.43,0.94,14.1,0,0,0,0,767,4074,5747,1882,0,Eggs
+M010,"Egg, country hen, omlet",1,67.8,14.8,1.08,16.3,0,0,0,0,855,4886,6424,2317,0,Eggs
+M011,"Egg, duck, whole, boiled",1,71.61,13.8,0.97,13.61,0,0,0,0,738,3598,6098,1745,0,Eggs
+M012,"Egg, duck, whole, raw",1,70.53,14.6,0.99,13.83,0,0,0,0,760,3373,6063,1684,0,Eggs
+M013,"Egg, duck, whole, omlet",1,68.9,15.1,1.18,14.8,0,0,0,0,804,3871,6483,1886,0,Eggs
+M014,"Egg, quial, whole, raw",1,75.11,12.39,0.94,11.46,0,0,0,0,635,2788,4210,2399,0,Eggs
+M015,"Egg, quial, whole, boiled",1,74.41,13.03,0.99,11.5,0,0,0,0,647,2726,4391,2403,0,Eggs
+N001,"Chicken, poultry, leg, skinless",4,67.61,19.44,1.14,12.64,0,0,0,0,1605,1157,1560,661,0,White Meat
+N002,"Chicken, poultry, thigh, skinless",6,67.58,18.18,1.14,14.23,0,0,0,0,836,1071,1461,520,0,White Meat
+N003,"Chicken, poultry, breast, skinless",5,67.15,21.81,1.19,9,0,0,0,0,704,816,991,367,0,White Meat
+N004,"Chicken, poultry, wing, skinless",5,67.48,17.42,1.13,13.81,0,0,0,0,807,1241,1777,658,0,White Meat
+N005,"Poultry, chicken, liver",1,73.2,21.57,1.11,4.08,0,0,0,0,518,1328,681,1013,0,White Meat
+N006,"Poultry, chicken, gizzard",1,78.05,18.22,1.46,2.07,0,0,0,0,386,772,716,464,0,White Meat
+N007,"Country hen, leg, with skin",1,70.02,17.01,1.2,11.73,0,0,0,0,723,534,681,400,0,White Meat
+N008,"Country hen, thigh, with skin",1,67.46,18.29,1.23,12.82,0,0,0,0,785,610,750,360,0,White Meat
+N009,"Country hen, breast, with skin",1,66.53,22.08,1.14,10.2,0,0,0,0,753,419,453,262,0,White Meat
+N010,"Country hen, wing, with skin",1,68.01,18.65,1.14,12.09,0,0,0,0,764,688,836,451,0,White Meat
+N011,"Duck, meat, with skin",1,73.49,19.07,1.22,6.03,0,0,0,0,547,345,2215,304,0,White Meat
+N012,"Emu, meat, skinless",1,71.65,22.65,0.98,4.62,0,0,0,0,556,200,242,144,0,Red Meat
+N013,"Guinea fowl, meat, with skin",1,75.21,20.52,0.92,3.24,0,0,0,0,469,1138,928,995,0,White Meat
+N014,"Pigeon, meat, with skin",1,74.61,17.94,1.32,6.03,0,0,0,0,528,1828,2588,1282,0,White Meat
+N015,"Quail, meat, skinless",1,71.58,20.92,1.35,5.95,0,0,0,0,576,2024,2789,810,0,White Meat
+N016,"Turkey, leg, with skin",1,69.24,20.3,1.21,8.15,0,0,0,0,647,980,938,1058,0,White Meat
+N017,"Turkey, thigh, with skin",1,72.17,20.46,0.97,6.31,0,0,0,0,581,1015,927,1035,0,White Meat
+N018,"Turkey, breast, with skin",1,68.44,21.96,1.01,8.04,0,0,0,0,671,934,884,1055,0,White Meat
+N019,"Turkey, wing, with skin",1,66.16,21.91,0.97,10.77,0,0,0,0,771,897,826,913,0,White Meat
+O001,"Goat, shoulder",6,66.39,20.33,0.9,11.94,0,0,0,0,787,5444,4902,643,0,Red Meat
+O002,"Goat, chops",6,72.46,20.39,0.99,5.98,0,0,0,0,568,2877,2346,259,0,Red Meat
+O003,"Goat, legs",6,68.85,22.07,0.97,7.94,0,0,0,0,669,3665,3038,567,0,Red Meat
+O004,"Goat, brain",5,76.74,13.82,1.29,8.06,0,0,0,0,533,2138,1447,939,0,Red Meat
+O005,"Goat, tongue",4,68.4,16.63,1.02,13.68,0,0,0,0,789,5028,4916,758,0,Red Meat
+O006,"Goat, lungs",4,79.03,16.86,0.74,3.09,0,0,0,0,401,1564,894,374,0,Red Meat
+O007,"Goat, heart",5,75.15,19.38,0.95,4.4,0,0,0,0,492,1939,1025,427,0,Red Meat
+O008,"Goat, liver",6,73.37,20.32,1.3,4.88,0,0,0,0,526,1770,921,924,0,Red Meat
+O009,"Goat, tripe",5,80.94,15.36,0.23,3.36,0,0,0,0,386,1682,1154,246,0,Red Meat
+O010,"Goat, spleen",4,77.93,18.45,1.15,2.37,0,0,0,0,401,1200,616,352,0,Red Meat
+O011,"Goat, kidneys",4,80.26,15.6,1.1,2.93,0,0,0,0,374,1143,566,480,0,Red Meat
+O012,"Goat, tube (small intestine)",3,78.12,12.92,0.54,8.26,0,0,0,0,525,4445,2504,619,0,Red Meat
+O013,"Goat, testis",2,84.29,12.32,0.87,2.39,0,0,0,0,298,1215,590,382,0,Red Meat
+O014,"Sheep, shoulder",5,66.51,18.24,0.86,14.31,0,0,0,0,840,6916,5096,1099,0,Red Meat
+O015,"Sheep, chops",4,75.66,18,1.09,5.15,0,0,0,0,496,2773,1916,309,0,Red Meat
+O016,"Sheep, leg",5,68.26,21.42,0.94,8.69,0,0,0,0,686,3745,2605,669,0,Red Meat
+O017,"Sheep, brain",1,78.36,13.05,1.19,7.29,0,0,0,0,492,2040,1183,866,0,Red Meat
+O018,"Sheep, tongue",1,68.7,16.61,1.06,13.53,0,0,0,0,783,5576,5875,938,0,Red Meat
+O019,"Sheep, lungs",2,80.41,16.12,0.97,2.41,0,0,0,0,363,1138,767,301,0,Red Meat
+O020,"Sheep, heart",1,77.06,18.19,0.97,3.66,0,0,0,0,445,1677,873,332,0,Red Meat
+O021,"Sheep, liver",4,69.71,22.26,1.26,4.87,0,0,0,0,559,1822,772,1014,0,Red Meat
+O022,"Sheep, tripe",2,78.81,16.76,0.26,4.05,0,0,0,0,435,1962,1534,210,0,Red Meat
+O023,"Sheep, spleen",1,79.66,16.02,1.17,3.02,0,0,0,0,384,1533,764,466,0,Red Meat
+O024,"Sheep, kidneys",2,79.77,16.22,1,2.92,0,0,0,0,384,1127,588,463,0,Red Meat
+O025,"Beef, shoulder",6,63.84,20.56,0.95,14.59,0,0,0,0,889,7046,6227,1008,0,Red Meat
+O026,"Beef, chops",4,72.4,19.82,0.96,6.71,0,0,0,0,585,3031,2680,437,0,Red Meat
+O027,"Beef, round (leg)",6,68.04,22.64,1.19,7.38,0,0,0,0,658,2998,3280,480,0,Red Meat
+O028,"Beef, brain",4,78.71,10.55,1.37,9.28,0,0,0,0,523,2490,1869,848,0,Red Meat
+O029,"Beef, tongue",4,70.97,15.63,0.73,12.57,0,0,0,0,731,6287,4741,484,0,Red Meat
+O030,"Beef, lungs",3,80.83,15.66,1.13,2.28,0,0,0,0,351,1198,647,244,0,Red Meat
+O031,"Beef, heart",5,77.77,17.68,0.87,3.57,0,0,0,0,433,1479,848,490,0,Red Meat
+O032,"Beef, liver",6,74.15,20.73,1.07,3.96,0,0,0,0,499,1543,826,566,0,Red Meat
+O033,"Beef, tripe",5,83.74,13.1,0.55,2.51,0,0,0,0,316,1371,833,95.26,0,Red Meat
+O034,"Beef, spleen",6,79.03,17.42,1.22,2.22,0,0,0,0,378,1160,480,393,0,Red Meat
+O035,"Beef, kidneys",3,77.59,17.09,1.22,4.01,0,0,0,0,439,1743,835,291,0,Red Meat
+O036,"Calf, shoulder",2,70.49,20.98,0.94,7.47,0,0,0,0,633,3510,2647,689,0,Red Meat
+O037,"Calf, chops",2,72.66,22.47,0.92,3.85,0,0,0,0,524,1966,1034,449,0,Red Meat
+O038,"Calf, round (leg)",2,71.13,21.1,0.74,6.92,0,0,0,0,615,2263,2433,497,0,Red Meat
+O039,"Calf, brain",2,81.19,9.84,1.26,7.6,0,0,0,0,448,2202,1460,603,0,Red Meat
+O040,"Calf, tongue",2,69.44,17.78,0.93,11.76,0,0,0,0,737,5630,4406,737,0,Red Meat
+O041,"Calf, heart",1,73.44,18.84,0.86,3.75,0,0,0,0,459,1489,696,773,0,Red Meat
+O042,"Calf, liver",1,73.66,21.02,1.26,3.95,0,0,0,0,503,1616,670,643,0,Red Meat
+O043,"Calf, spleen",1,78.65,17.71,1.41,2.12,0,0,0,0,379,1030,513,397,0,Red Meat
+O044,"Calf, kidneys",2,80.23,15.16,1.02,3.5,0,0,0,0,387,1464,660,491,0,Red Meat
+O045,"Mithun, shoulder",1,68.86,19.05,0.84,11.14,0,0,0,0,736,4436,2157,3613,0,Red Meat
+O046,"Mithun, chops",1,73.81,18.19,0.79,6.12,0,0,0,0,536,2736,1276,1596,0,Red Meat
+O047,"Mithun, round (leg)",1,72.25,19.61,0.9,4.1,0,0,0,0,485,1442,1918,1700,0,Red Meat
+O048,"Pork, shoulder",6,62.92,17.41,0.75,18.83,0,0,0,0,993,6887,8114,2129,0,Red Meat
+O049,"Pork, chops",6,68.4,19.41,0.64,11.3,0,0,0,0,748,4803,4972,660,0,Red Meat
+O050,"Pork, ham",6,61.94,18.83,0.62,18.55,0,0,0,0,1006,6938,8065,1875,0,Red Meat
+O051,"Pork, lungs",4,81.12,15.13,0.93,2.74,0,0,0,0,358,1247,867,469,0,Red Meat
+O052,"Pork, heart",4,77.74,16.31,1.01,4.87,0,0,0,0,457,1575,1247,1019,0,Red Meat
+O053,"Pork, liver",5,74.88,19.89,1.18,3.94,0,0,0,0,484,1325,700,896,0,Red Meat
+O054,"Pork, stomach",1,76.51,15.36,0.23,7.81,0,0,0,0,550,3327,2690,1090,0,Red Meat
+O055,"Pork, spleen",3,80.93,15.13,1.13,2.71,0,0,0,0,357,1245,820,397,0,Red Meat
+O056,"Pork, kidneys",5,80.92,14.35,0.97,3.65,0,0,0,0,379,1169,846,714,0,Red Meat
+O057,"Pork, tube (small intestine)",1,75.42,14.96,0.55,8.98,0,0,0,0,587,4109,3174,892,0,Red Meat
+O058,"Hare, shoulder",1,71.06,21.13,1.17,6.58,0,0,0,0,603,2698,1606,1720,0,Red Meat
+O059,"Hare, chops",1,75.47,20.62,1.27,2.55,0,0,0,0,445,1028,613,690,0,Red Meat
+O060,"Hare, leg",1,73,20.52,1.26,4.16,0,0,0,0,503,910,514,555,0,Red Meat
+O061,"Rabbit, shoulder",1,70.75,20.01,1.19,7.96,0,0,0,0,635,3142,2332,1813,0,White Meat
+O062,"Rabbit, chops",1,71.03,22.61,1.35,4.88,0,0,0,0,565,1907,1480,1083,0,White Meat
+O063,"Rabbit, leg",1,70.33,21.31,1.26,5.99,0,0,0,0,584,1575,1203,877,0,White Meat
+P001,Allathi (Elops machnata),1,75.91,21.77,1.06,0.98,0,0,0,0,406,346,165,261,0,Seafood
+P002,Aluva (Parastromateus niger),3,75.71,21.63,1.39,1.8,0,0,0,0,434,755,288,490,0,Seafood
+P003,Anchovy (Stolephorus indicus),2,77.77,19.88,1.62,0.78,0,0,0,0,367,248,50.36,290,0,Seafood
+P004,Ari fish (Aprion virescens ),1,77.09,22.01,1.34,1.11,0,0,0,0,415,408,166,319,0,Seafood
+P005,Betki (Lates calcarifer),1,82.52,15.28,1.12,0.29,0,0,0,0,284,86.4,53.27,57.36,0,Seafood
+P006,Black snapper (Macolor niger),1,78.09,19.5,1.19,1.24,0,0,0,0,377,470,251,293,0,Seafood
+P007,Bombay duck (Harpadon nehereus),2,83.24,13.53,1.07,1.03,0,0,0,0,287,398,171,252,0,Seafood
+P008,Bommuralu (Muraenesox cinerius),3,76.42,22.3,1.21,2.87,0,0,0,0,485,1238,701,594,0,Seafood
+P009,Cat fish (Tachysurus thalassinus),1,76.22,22.18,1.32,2.13,0,0,0,0,456,792,430,619,0,Seafood
+P010,Chakla (Rachycentron canadum),5,78.36,20.21,1.07,1.68,0,0,0,0,406,654,352,422,0,Seafood
+P011,Chappal (Aluterus monoceros ),1,80.61,17.17,1.23,0.67,0,0,0,0,317,199,74.51,208,0,Seafood
+P012,Chelu (Elagatis bipinnulata),2,76.36,20.02,1.28,0.7,0,0,0,0,366,229,104,179,0,Seafood
+P013,Chembali (Lutjanus quinquelineatus),1,77.54,20.06,0.86,1.77,0,0,0,0,406,700,369,440,0,Seafood
+P014,Eri meen (Pristipomoides filamentosus),1,76.54,22.3,1.28,2.02,0,0,0,0,454,739,340,666,0,Seafood
+P015,Gobro (Epinephelus diacanthus),2,78.84,19.37,0.98,0.88,0,0,0,0,362,289,138,251,0,Seafood
+P016,Guitar fish (Rhinobatus prahli),1,75.73,22.56,1.32,0.44,0,0,0,0,400,114,36.87,143,0,Seafood
+P017,Hilsa (Tenualosa ilisha),2,60.09,21.8,1.11,18.49,0,0,0,0,1083,9286,6021,1801,0,Seafood
+P018,Jallal (Arius sp.),1,77.5,21.55,1.17,1.46,0,0,0,0,420,519,311,389,0,Seafood
+P019,Jathi vela meen (Lethrinus lentjan),2,75.66,22.45,1.26,1.92,0,0,0,0,453,837,519,294,0,Seafood
+P020,Kadal bral (Synodus indicus),1,79.66,18.72,1.27,1.34,0,0,0,0,368,478,192,436,0,Seafood
+P021,Kadali (Nemipterus mesoprion),1,73.74,22.07,1.06,4.2,0,0,0,0,530,1611,818,1342,0,Seafood
+P022,Kalamaara (Leptomelanosoma indicum),2,75.5,20.89,1.08,4.54,0,0,0,0,523,2107,1079,907,0,Seafood
+P023,Kalava (Epinephelus coioides),1,80.02,19.38,1.34,1.2,0,0,0,0,374,455,250,275,0,Seafood
+P024,Kanamayya (Lutjanus rivulatus),2,77.59,20.19,1.07,0.65,0,0,0,0,367,209,113,168,0,Seafood
+P025,Kannadi paarai (Alectis indicus),3,76.25,22.09,1.28,1.27,0,0,0,0,423,479,234,329,0,Seafood
+P026,Karimeen (Etroplus suratensis),1,78.66,19.68,0.97,1.38,0,0,0,0,386,577,290,274,0,Seafood
+P027,Karnagawala (Anchoa hepsetus),1,79.22,19.52,1.45,0.84,0,0,0,0,363,255,85.26,301,0,Seafood
+P028,Kayrai (Thunnus albacores),2,72.69,20.15,1.28,3,0,0,0,0,454,1096,583,980,0,Seafood
+P029,Kiriyan (Atule mate),1,72.39,22.49,0.94,4.7,0,0,0,0,556,2102,1068,1069,0,Seafood
+P030,Kite fish (Mobula kuhlii),1,77.61,23.07,1.5,0.56,0,0,0,0,413,169,67.62,143,0,Seafood
+P031,Korka (Terapon jarbua),1,72.25,23.72,1.09,3.36,0,0,0,0,528,1407,687,898,0,Seafood
+P032,Kulam paarai (Carangoides fulvoguttatus),1,73.44,21.62,1.25,3.6,0,0,0,0,501,1430,678,1107,0,Seafood
+P033,Maagaa (Polynemus plebeius),1,79.23,20.11,1.01,0.67,0,0,0,0,366,201,96.12,146,0,Seafood
+P034,Mackerel (Rastrelliger kanagurta),3,74.55,21.51,1.2,1.53,0,0,0,0,423,604,216,470,0,Seafood
+P035,Manda clathi (Naso reticulatus),1,76.32,21.27,1.48,1,0,0,0,0,398,337,171,278,0,Seafood
+P036,Matha (Acanthurus mata),2,79.81,21.17,1.35,0.79,0,0,0,0,389,297,106,188,0,Seafood
+P037,Milk fish (Chanos chanos),1,72.22,23.66,1.12,1.09,0,0,0,0,442,366,188,321,0,Seafood
+P038,Moon fish (Mene maculata),1,74.21,20.74,1.69,4.69,0,0,0,0,526,2929,932,374,0,Seafood
+P039,Mullet (Mugil cephalus),3,76.12,20.23,1.16,1.32,0,0,0,0,393,495,219,378,0,Seafood
+P040,Mural (Tylosurus crocodilus crocodilus),1,78.96,19.04,1.11,0.58,0,0,0,0,345,349,80.76,354,0,Seafood
+P041,Myil meen (Istiophorus platypterus),2,75.57,22.89,1.21,0.56,0,0,0,0,410,150,55.25,179,0,Seafood
+P042,Nalla bontha (Epinephelus sp.),1,79.32,19.82,1,0.72,0,0,0,0,364,238,127,166,0,Seafood
+P043,Narba (Caranx sexfasciatus),2,76.37,21.95,1.17,1.6,0,0,0,0,432,603,259,487,0,Seafood
+P044,Paarai (Caranx heberi),1,75.77,21.58,1.21,1.84,0,0,0,0,435,720,276,578,0,Seafood
+P045,Padayappa (Canthidermis maculata),1,79.18,19.7,1.26,0.69,0,0,0,0,360,169,83.65,248,0,Seafood
+P046,Pali kora (Panna microdon),1,78.63,19.25,1,1.81,0,0,0,0,394,761,352,431,0,Seafood
+P047,Pambada (Lepturacanthus savala),2,74.67,21.95,1.41,4.44,0,0,0,0,537,1959,857,1185,0,Seafood
+P048,Pandukopa (Pseudosciaena manchurica),1,77.46,19.73,1.15,0.65,0,0,0,0,360,195,89.63,182,0,Seafood
+P049,Parava (Lactarius lactarius),1,77.19,21.5,1.08,2.74,0,0,0,0,467,1184,621,610,0,Seafood
+P050,Parcus (Psettodes erumei),1,79.01,19.87,1.12,0.62,0,0,0,0,361,166,70.55,197,0,Seafood
+P051,Parrot fish (Scarus ghobban),1,76.84,20.82,1.4,0.57,0,0,0,0,375,174,135,78,0,Seafood
+P052,Perinkilichai (Pinjalo pinjalo),1,78.33,20.89,1.02,0.87,0,0,0,0,387,290,101,278,0,Seafood
+P053,Phopat (Coryphaena hippurus),4,76.42,22.05,1.24,1.33,0,0,0,0,424,441,198,456,0,Seafood
+P054,Piranha (Pygopritis sp.),1,76.15,20.46,0.93,5.43,0,0,0,0,549,1973,2357,589,0,Seafood
+P055,"Pomfret, black (Parastromateus niger)",1,74.43,18.91,0.97,4.83,0,0,0,0,515,2229,972,1161,0,Seafood
+P056,"Pomfret, snub nose (Trachinotus blochii)",2,77.81,21.05,1.29,0.46,0,0,0,0,375,145,72.77,128,0,Seafood
+P057,"Pomfret, white (Pampus argenteus)",2,75.91,19.02,1.01,5.12,0,0,0,0,513,2669,1049,919,0,Seafood
+P058,Pranel (Gerres sp.),1,79.54,19.69,0.76,1.89,0,0,0,0,405,827,374,419,0,Seafood
+P059,Pulli paarai (Gnathanodon speciosus),1,75.99,20.06,1.19,1.55,0,0,0,0,399,593,208,505,0,Seafood
+P060,Queen fish (Scomberoides commersonianus),3,76.63,20.97,1.22,1.17,0,0,0,0,400,693,332,536,0,Seafood
+P061,Raai fish (Lobotes surinamensis),2,77.14,21.61,1.11,1.69,0,0,0,0,430,654,311,465,0,Seafood
+P062,Raai vanthu (Epinephelus chlorostigma),1,79.95,19.39,0.92,2.17,0,0,0,0,410,864,423,596,0,Seafood
+P063,Rani (Pink perch),1,78.55,18.83,1.01,1.49,0,0,0,0,377,2926,1878,1112,0,Seafood
+P064,"Ray fish, bow head, spotted (Rhina ancylostoma)",1,80.3,19.03,1.15,0.7,0,0,0,0,349,187,98.7,222,0,Seafood
+P065,Red snapper (Lutjanus argentimaculatus),1,76.28,22.79,1.26,1.34,0,0,0,0,437,485,299,325,0,Seafood
+P066,"Red snapper, small (Priacanthus hamrur)",1,76.31,21.5,1.1,2.3,0,0,0,0,451,861,407,734,0,Seafood
+P067,Sadaya (Platax orbicularis ),1,75.53,20.68,1.32,2.97,0,0,0,0,462,1059,444,1128,0,Seafood
+P068,Salmon (Salmo salar),1,67.84,20.97,1.13,9.86,0,0,0,0,721,4305,2453,2297,0,Seafood
+P069,Sangada (Nemipterus japonicus),1,78.51,20.26,1.26,2.67,0,0,0,0,443,1128,513,706,0,Seafood
+P070,Sankata paarai (Caranx ignobilis),1,74.88,21.87,1.18,1.68,0,0,0,0,434,3317,1876,1746,0,Seafood
+P071,Sardine (Sardinella longiceps),1,72.29,17.91,0.84,8.99,0,0,0,0,637,1250,630,770,0,Seafood
+P072,Shark (Carcharhinus sorrah),2,72.82,21.6,1.08,0.83,0,0,0,0,398,275,126,230,0,Seafood
+P073,"Shark, hammer head (Sphyrna mokarran)",1,74.61,23.4,0.92,0.8,0,0,0,0,432,264,103,232,0,Seafood
+P074,"Shark, spotted (Stegostoma fasciatum)",1,78.83,20.95,1.04,0.75,0,0,0,0,384,253,137,169,0,Seafood
+P075,Shelavu (Sphyraena jello),4,74.6,22.46,1.26,1.74,0,0,0,0,446,677,369,431,0,Seafood
+P076,Silan (Silonia silondia),1,70.12,22.72,0.77,6.68,0,0,0,0,633,3615,3199,1140,0,Seafood
+P077,Silk fish (Beryx sp.),1,77.61,20.65,1.05,1.53,0,0,0,0,408,497,281,506,0,Seafood
+P078,Silver carp (Hypophthalmichthys molitrix),1,72.47,21.71,0.95,5.17,0,0,0,0,555,1826,1964,894,0,Seafood
+P079,Sole fish (Cynoglossus arel),1,80.18,19.05,1.06,1.18,0,0,0,0,367,416,167,370,0,Seafood
+P080,Stingray (Dasyatis pastinaca),1,75.67,23.98,1.14,0.68,0,0,0,0,408,289,173,174,0,Seafood
+P081,Tarlava (Drepane punctata),2,76.76,21.72,1.14,1.2,0,0,0,0,414,504,207,265,0,Seafood
+P082,Tholam (Plectorhinchus schotaf),2,76.2,20.78,1.06,2.13,0,0,0,0,432,856,510,481,0,Seafood
+P083,Tilapia (Oreochromis niloticus),1,79.57,18.48,1.18,1.08,0,0,0,0,349,413,254,199,0,Seafood
+P084,Tuna (Euthynnus affinis),5,72.12,24.5,1.11,1.44,0,0,0,0,470,660,300,575,0,Seafood
+P085,"Tuna, striped (Katsuwonus pelamis)",1,77.76,21.28,0.87,1.12,0,0,0,0,403,424,168,306,0,Seafood
+P086,Valava (Chirocentrus nudus),1,77.25,21.8,1.27,1.06,0,0,0,0,410,403,107,336,0,Seafood
+P087,Vanjaram (Scomberomorus commerson ),2,72.3,22.28,1.33,5.18,0,0,0,0,570,2229,1078,1384,0,Seafood
+P088,Vela meen (Aprion virescens),1,71.82,22.16,1.34,4.34,0,0,0,0,537,1857,851,1199,0,Seafood
+P089,Vora (Siganus javus),2,76.94,20.14,1.26,2.14,0,0,0,0,422,1207,467,647,0,Seafood
+P090,Whale shark (Galeocerdo cuvier),1,77.59,21.83,1.48,0.82,0,0,0,0,401,266,135,220,0,Seafood
+P091,Xiphinis (Xiphias gladius),1,79.22,19.82,1.15,0.88,0,0,0,0,370,363,184,134,0,Seafood
+P092,"Eggs, Cat fish (Ompok bimaculatus)",1,69.34,24.68,1.57,5.28,0,0,0,0,600,1818,1125,1436,0,Seafood
+Q001,Crab (Menippe mercenaria),1,79.77,10.23,1.74,1.41,0,0,0,0,343,214,140,256,0,Seafood
+Q002,"Crab, sea (Portunus sanguinolentus)",1,79.67,15.36,0.92,0.6,0,0,0,0,283,129,64.32,146,0,Seafood
+Q003,"Lobster, brown (Thenus orientalis)",1,81.48,15.96,1.29,0.56,0,0,0,0,292,106,72.73,118,0,Seafood
+Q004,"Lobster, king size (Thenus orientalis)",1,77.77,18.54,1.08,0.78,0,0,0,0,375,174,129,206,0,Seafood
+Q005,Mud crab (Scylla tranquebarica),1,83.1,10,2.6,0.55,0,0,0,0,190,95.11,66.63,129,0,Seafood
+Q006,Oyster (Crassostrea sp.),1,82.5,9.51,2.47,2.44,0,0,0,0,252,1087,298,651,0,Seafood
+Q007,"Tiger prawns, brown (Solenocera crassicornis)",1,82.41,14.85,0.94,0.56,0,0,0,0,273,121,76.53,101,0,Seafood
+Q008,"Tiger Prawns, orange (Penaeus monodon)",1,81.48,14.25,0.83,0.74,0,0,0,0,270,177,88.3,204,0,Seafood
+R001,"Clam, green shell (Perna viridis)",1,80.07,12.14,2.44,0.98,0,0,0,0,243,285,92.24,263,0,Seafood
+R002,"Clam, white shell, ribbed (Meretrix meretrix)",1,80.27,11.82,0.85,1.34,0,0,0,0,250,441,127,418,0,Seafood
+R003,Octopus (Octopus vulgaris),1,80.45,14.71,1.21,1.12,0,0,0,0,334,325,69.95,383,0,Seafood
+R004,"Squid, black (Loligo sp.)",1,80.59,16.1,0.99,1.07,0,0,0,0,335,287,56.42,388,0,Seafood
+R005,"Squid, hard shell (Sepia pharaonis)",1,80.52,16.82,0.75,0.93,0,0,0,0,320,227,61.67,303,0,Seafood
+R006,"Squid, red (Loligo duvauceli)",2,80.85,16.25,1.15,1.44,0,0,0,0,329,448,83.36,545,0,Seafood
+R007,"Squid, white, small (Uroteuthis duvauceli )",1,79.38,17.41,1.19,1.15,0,0,0,0,353,304,62.57,441,0,Seafood
+S001,Cat fish (Tandanus tandanus),2,77.23,15.86,0.93,6.24,0,0,0,0,518,2182,2055,978,0,Seafood
+S002,Catla (Catla catla),6,78.43,17.94,0.94,2.15,0,0,0,0,394,1670,1237,815,0,Seafood
+S003,Freshwater Eel (Anguilla anguilla),1,75.57,20.41,1.03,2.63,0,0,0,0,451,981,733,600,0,Seafood
+S004,Gold fish (Carassius auratus),2,79.07,16.91,1.1,2.94,0,0,0,0,396,1077,625,0.85,0,Seafood
+S005,Pangas (Pangasianodon hypophthalmus),6,68.5,17.12,1.12,16.77,0,0,0,0,852,863,714,510,0,Seafood
+S006,Rohu (Labeo rohita),6,76.34,19.71,1.28,2.39,0,0,0,0,428,2047,2618,747,0,Seafood
+S007,Crab (Pachygrapsus sp.),1,80.58,13.23,1.23,0.89,0,0,0,0,327,214,140,256,0,Seafood
+S008,"Prawns, big (Macrobrachium rosenbergii)",1,77.43,19.24,0.84,0.52,0,0,0,0,380,86.86,56.77,94.61,0,Seafood
+S009,"Prawns, small (Macrobrachium sp.)",3,82.58,13.07,0.86,0.78,0,0,0,0,297,197,152,166,0,Seafood
+S010,Tiger prawns (Macrobrachium sp.),2,83.24,14.24,0.83,0.66,0,0,0,0,284,134,120,136,0,Seafood
