@@ -1447,15 +1447,15 @@ def diabetes_page():
 
 
 def lactose_page():
-    st.title("Lactose")
+    st.title("Food Suggestions for Lactose Intolerant Patients")
 
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Lactose is a sugar present in milk and dairy products. Lactose intolerance is a digestive problem which is caused due to low amounts of an enzyme called lactase. Lactase helps in digestion of lactose, and therefore when this enzyme is deficient, then lactose passes undigested through the intestines, possibly causing symptoms such as nausea, diarrhoea, and gas. People having lactose intolerance do not need to completely avoid dairy products, however, they can consume only upto 12 grams of lactose at a time safely.  </h6>",unsafe_allow_html=True)
     st.markdown("")
     
     
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Protein Content</span>", unsafe_allow_html=True)
-    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Protein (grams)</span>", unsafe_allow_html=True)
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>First, we have found the foods having the highest amounts of protein and have represented the amounts of protein in these foods graphically.</h6>",unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Lactose Content</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Lactose (grams)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The amounts of lactose in some common dairy products are displayed here with the help of a bar graph.</h6>",unsafe_allow_html=True)
     st.markdown("")
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
@@ -1466,10 +1466,10 @@ def lactose_page():
 
     protein_rich= prot.sort_values(by='lactose', ascending= False)
     
-    top_20=protein_rich.head(20)
+    top_20=protein_rich.head(4)
     
-    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
-    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    fig = px.bar(top_20, x='lactose', y='name', color='lactose')
+    fig.update_layout(title='Foods with Lactose Content', autosize=False,width=750, height=700,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig)
 
 
