@@ -1426,17 +1426,17 @@ def disease_demographics():
     pages = {
         "1. Food Suggestions for Diabetic Patients": diabetes_page,
         "2. Food Suggestions for Lactose Intolerance":lactose_page,
-        "3. Food Suggestions for Vitiligo Patients":vitiligo_page,
+        "3. Food Suggestions for Anaemia Patients":anaemia_page,
         "4. Food Suggestions for patients suffering from Kidney/Gall Bladder Stones":gallstones_page
     }
 
-
+    #title 
     st.title("Navigate through demographics 🧭 ")
 
-    # Widget to select your page, you can choose between radio buttons or a selectbox
+    #Widget to select your page, you can choose between radio buttons or a selectbox
     page = st.radio("(Choose an option to get redirected)", tuple(pages.keys()))
     
-    # Display the selected page
+    #Display the selected page
     pages[page]()
 
 def diabetes_page():
@@ -1451,10 +1451,30 @@ def lactose_page():
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
     st.markdown("")
+    
+    
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Protein Content</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Protein (grams)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>First, we have found the foods having the highest amounts of protein and have represented the amounts of protein in these foods graphically.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
+    
+    #protein
+
+    prot= df_demographics[df_demographics['category'].isin(categories)]
+
+    protein_rich= prot.sort_values(by='lactose', ascending= False)
+    
+    top_20=protein_rich.head(20)
+    
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
+    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig)
 
 
-def vitiligo_page():
-    st.title("Vitiligo")
+def anaemia_page():
+    st.title("Anaemia")
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
     st.markdown("")
