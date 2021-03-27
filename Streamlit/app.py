@@ -1409,6 +1409,14 @@ def diabetes_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
     st.markdown("")
 
+    carbs_largest=df_demographics.groupby('category')['choavldf'].nlargest(5)
+
+    st.write(carbs_largest)
+
+    #df2= df_demographics.apply(lambda x: x.sort_values([""]))
+    #carbs=df2.groupby('category')
+    #st.write(carbs) 
+
 
 def lactose_page():
     st.title("Food Suggestions for Lactose Intolerant Patients")
@@ -1566,9 +1574,7 @@ if __name__ == "__main__":
     main()
 
 
-
 #code to be used to text display with html properties
-
 #st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
 #st.markdown("")
 
