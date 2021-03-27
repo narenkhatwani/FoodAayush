@@ -1452,7 +1452,6 @@ def lactose_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Lactose is a sugar present in milk and dairy products. Lactose intolerance is a digestive problem which is caused due to low amounts of an enzyme called lactase. Lactase helps in digestion of lactose, and therefore when this enzyme is deficient, then lactose passes undigested through the intestines, possibly causing symptoms such as nausea, diarrhoea, and gas. People having lactose intolerance do not need to completely avoid dairy products, however, they can consume only upto 12 grams of lactose at a time safely.  </h6>",unsafe_allow_html=True)
     st.markdown("")
     
-    
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Lactose Content</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Lactose (grams)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The amounts of lactose in some common dairy products are displayed here with the help of a bar graph.</h6>",unsafe_allow_html=True)
@@ -1460,17 +1459,78 @@ def lactose_page():
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
-    #protein
+    #lactose
 
-    prot= df_demographics[df_demographics['category'].isin(categories)]
+    lact= df_demographics[df_demographics['category'].isin(categories)]
 
-    protein_rich= prot.sort_values(by='lactose', ascending= False)
+    lactose_rich= lact.sort_values(by='lactose', ascending= False)
     
-    top_20=protein_rich.head(4)
+    top_20=lactose_rich.head(4)
     
     fig = px.bar(top_20, x='lactose', y='name', color='lactose')
     fig.update_layout(title='Foods with Lactose Content', autosize=False,width=750, height=700,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig)
+
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>People with lactose intolerance should consume small amounts of milk or products at a time. Also, there are some dairy products that have low amounts of lactose. These include:</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Dairy products with less amount of lactose</span>", unsafe_allow_html=True)
+
+    
+    cols = st.beta_columns(2)
+    
+    
+    cols[0].write(f"<h6 style='text-align: left;font-size:22px;font-weight: bold;line-height: 1.3;'>Food items</h6>",unsafe_allow_html=True)
+
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Butter</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Ghee</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Parmesan Cheese</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Cheddar Cheese</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Swiss Cheese</h6>",unsafe_allow_html=True)    
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Heavy Cream</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Probiotic Yoghurt</h6>",unsafe_allow_html=True)
+
+    cols[1].write(f"<h6 style='text-align: left;font-size:22px;font-weight: bold;line-height: 1.3;'>Lactose Content (per 100grams)</h6>",unsafe_allow_html=True)
+
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.1 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.0029 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.1 g</h6>",unsafe_allow_html=True)    
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.1 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>3 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>5 g</h6>",unsafe_allow_html=True)
+
+    st.write("")
+    st.subheader("Data Source of the above given data")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        'The above values of lactose content have been obtained from the following sources:'
+        '1. [Click to view the accesible page](https://www.dairy.com.au/dairy-matters/you-ask-we-answer/what-is-the-lactose-content-of-different-dairy-products)'
+        
+        '2. [Click to view the accesible page](https://nutritiondata.self.com/facts/dairy-and-egg-products/0/2)'
+     
+        '3. [Click to view the accesible page](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5471386/)'
+
+    st.write("")
+    st.title("Alternatives to compensate for other nutrients present in dairy products")
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Milk products should not be completely avoided, as it can cause deficiencies of calcium and vitamin D. Calcium deficiency can cause easy occurrence of bone fractures, weak and brittle nails, and muscle cramps while deficiency of vitamin D can cause osteoporosis, increased risk of heart disease, muscle pain and hair loss. People having lactose intolerance should make sure that they consume enough calcium and Vitamin D from other foods that do not contain lactose.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top 10 Calcium Rich Food Items</span>", unsafe_allow_html=True)
+
+    #high calcium items 
+    calcium= df_demographics[df_demographics['category'].isin(['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Eggs', 'White Meat', 'Red Meat', 'Seafood'])]
+
+    calcium_top=calcium.sort_values(by='ca', ascending= False)
+    
+    calcium_top=calcium_top.head(15)
+
+    fig_calcium_food = go.Figure(go.Funnelarea(values=calcium_top['ca'].values, text=calcium_top['name'],title = { "text": "Food items with high Calcium percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
+
+    fig_calcium_food.update_layout(height=800, width=700)
+
+    st.plotly_chart(fig_calcium_food)
 
 
 def anaemia_page():
