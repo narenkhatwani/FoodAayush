@@ -1474,29 +1474,36 @@ def lactose_page():
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>People with lactose intolerance should consume small amounts of milk or products at a time. Also, there are some dairy products that have low amounts of lactose. These include:</h6>",unsafe_allow_html=True)
     st.markdown("")
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Dairy products with less amount of lactose</span>", unsafe_allow_html=True)
 
-
-    st.title("Dairy products with less amount of lactose")
-    i=0
+    
     cols = st.beta_columns(2)
     
-    cols[0].write(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top 10 Calcium Rich Food Items</span>", unsafe_allow_html=True)
-    cols[0].write('hi')
-    cols[0].write('hi')
-    cols[0].write('hi')
-    cols[0].write('hi')
-    cols[0].write('hi')
-    cols[0].write('hi')
-
-    cols[1].write('hi')
-    cols[1].write('hi')
-    cols[1].write('hi')
-    cols[1].write('hi')
-    cols[1].write('hi')
-    cols[1].write('hi')
-    cols[1].write('hi')
     
+    cols[0].write(f"<h6 style='text-align: center;font-size:24px;font-weight: bold;line-height: 1.3;'>Food items</h6>",unsafe_allow_html=True)
 
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Butter</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Ghee</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Parmesan Cheese</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Cheddar Cheese</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Swiss Cheese</h6>",unsafe_allow_html=True)    
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Heavy Cream</h6>",unsafe_allow_html=True)
+    cols[0].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>Probiotic Yoghurt</h6>",unsafe_allow_html=True)
+
+    cols[1].write(f"<h6 style='text-align: center;font-size:24px;font-weight: bold;line-height: 1.3;'>Lactose Content (in grams)</h6>",unsafe_allow_html=True)
+
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'> g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'> g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.1 g</h6>",unsafe_allow_html=True)    
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.1 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>3 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>5 g</h6>",unsafe_allow_html=True)
+
+    st.subheader("")
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Milk products should not be completely avoided, as it can cause deficiencies of calcium and vitamin D. Calcium deficiency can cause easy occurrence of bone fractures, weak and brittle nails, and muscle cramps while deficiency of vitamin D can cause osteoporosis, increased risk of heart disease, muscle pain and hair loss. People having lactose intolerance should make sure that they consume enough calcium and Vitamin D from other foods that do not contain lactose.</h6>",unsafe_allow_html=True)
+    st.markdown("")
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top 10 Calcium Rich Food Items</span>", unsafe_allow_html=True)
 
