@@ -1452,7 +1452,6 @@ def lactose_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Lactose is a sugar present in milk and dairy products. Lactose intolerance is a digestive problem which is caused due to low amounts of an enzyme called lactase. Lactase helps in digestion of lactose, and therefore when this enzyme is deficient, then lactose passes undigested through the intestines, possibly causing symptoms such as nausea, diarrhoea, and gas. People having lactose intolerance do not need to completely avoid dairy products, however, they can consume only upto 12 grams of lactose at a time safely.  </h6>",unsafe_allow_html=True)
     st.markdown("")
     
-    
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Lactose Content</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Lactose (grams)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The amounts of lactose in some common dairy products are displayed here with the help of a bar graph.</h6>",unsafe_allow_html=True)
@@ -1460,17 +1459,59 @@ def lactose_page():
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
-    #protein
+    #lactose
 
-    prot= df_demographics[df_demographics['category'].isin(categories)]
+    lact= df_demographics[df_demographics['category'].isin(categories)]
 
-    protein_rich= prot.sort_values(by='lactose', ascending= False)
+    lactose_rich= lact.sort_values(by='lactose', ascending= False)
     
-    top_20=protein_rich.head(4)
+    top_20=lactose_rich.head(4)
     
     fig = px.bar(top_20, x='lactose', y='name', color='lactose')
     fig.update_layout(title='Foods with Lactose Content', autosize=False,width=750, height=700,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig)
+
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>People with lactose intolerance should consume small amounts of milk or products at a time. Also, there are some dairy products that have low amounts of lactose. These include:</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+
+    st.title("Dairy products with less amount of lactose")
+    i=0
+    cols = st.beta_columns(2)
+    
+    cols[0].write(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top 10 Calcium Rich Food Items</span>", unsafe_allow_html=True)
+    cols[0].write('hi')
+    cols[0].write('hi')
+    cols[0].write('hi')
+    cols[0].write('hi')
+    cols[0].write('hi')
+    cols[0].write('hi')
+
+    cols[1].write('hi')
+    cols[1].write('hi')
+    cols[1].write('hi')
+    cols[1].write('hi')
+    cols[1].write('hi')
+    cols[1].write('hi')
+    cols[1].write('hi')
+    
+
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top 10 Calcium Rich Food Items</span>", unsafe_allow_html=True)
+
+    #high calcium items 
+    calcium= df_demographics[df_demographics['category'].isin(['Seafood'])]
+
+    calcium_top=calcium.sort_values(by='ca', ascending= False)
+    
+    calcium_top=calcium_top.head(10)
+
+    fig_calcium_food = go.Figure(go.Funnelarea(values=calcium_top['ca'].values, text=calcium_top['name'],title = { "text": "Food items with high Calcium percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
+
+    fig_calcium_food.update_layout(height=620, width=700)
+
+    st.plotly_chart(fig_calcium_food)
 
 
 def anaemia_page():
