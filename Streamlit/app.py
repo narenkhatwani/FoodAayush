@@ -73,6 +73,8 @@ def main():
     pages[page]()
 
     st.sidebar.subheader("Check out our [Github Repository](https://github.com/narenkhatwani/FoodAayush)")
+
+
 def about_page():
     st.markdown("<h1 style='text-align: center;'>Food Aayush 🍲 🩺</h1>", unsafe_allow_html=True)
     
@@ -187,22 +189,6 @@ def page_first():
         st.write(data)
 
     
-
-    #ifct image
-    st.image("resources/ingredient_page/ifct_cover.png")
-    #background image for the webapp
-    page_bg_img = '''
-    <style>
-    body {
-    background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
-    background-size: cover;
-    }
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
-
-
 def page_second():
     #sidebar title
     st.title("Search for a Recipe 😋")
@@ -641,19 +627,6 @@ def page_second():
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Calorie Count - {count_calories} kCal</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Cuisine - {cuisine}</span>", unsafe_allow_html=True)
   
-    
-
-    #background image for the page
-    page_bg_img = '''
-    <style>
-    body {
-    background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
-    background-size: cover;
-    }
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-    
  
 def page_three():
     st.title("Calorie Calculator 🍲 🧮")
@@ -695,16 +668,7 @@ def page_three():
         st.markdown(f"<span style='color: #367588;font-size: 19px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
     else:
         st.markdown(f"<span style='color: #367588;font-size: 19px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
-    #background image for the webapp
-    page_bg_img = '''
-    <style>
-    body {
-    background-image: url("https://cutewallpaper.org/21/website-background-wallpaper/Geometric-abstract-grey-background-for-bussines-templates-.jpg");
-    background-size: cover;
-    }
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+    
 
 
 def page_fourth():
@@ -1517,7 +1481,7 @@ def lactose_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Milk products should not be completely avoided, as it can cause deficiencies of calcium and vitamin D. Calcium deficiency can cause easy occurrence of bone fractures, weak and brittle nails, and muscle cramps while deficiency of vitamin D can cause osteoporosis, increased risk of heart disease, muscle pain and hair loss. People having lactose intolerance should make sure that they consume enough calcium and Vitamin D from other foods that do not contain lactose.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top 10 Calcium Rich Food Items</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top Calcium Rich Food Items</span>", unsafe_allow_html=True)
 
     #high calcium items 
     calcium= df_demographics[df_demographics['category'].isin(['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Eggs', 'White Meat', 'Red Meat', 'Seafood'])]
@@ -1532,6 +1496,41 @@ def lactose_page():
 
     st.plotly_chart(fig_calcium_food)
 
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top Foods rich in Vitamin D</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>There are five forms of vitamin D, of which vitamin D2 and D3 are the most common. Vitamin D2 is found in plant-based foods while vitamin D3 is found in animal-sourced foods.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+
+    #d2
+    st.markdown(f"<span style='color:#367588;font-size: 24px;font-weight: bold;'>Top 15 Foods rich in Vitamin D2</span>", unsafe_allow_html=True)
+
+    vitd2= df_demographics[df_demographics['category'].isin(['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar'])]
+
+    vitd2_top=vitd2.sort_values(by='ergcal', ascending= False)
+    
+    vitd2_top=vitd2_top.head(15)
+
+    fig_vitd2_food = go.Figure(go.Funnelarea(values=vitd2_top['ergcal'].values, text=vitd2_top['name'],title = { "text": "Food items with high Vitamin D2 percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
+
+    fig_vitd2_food.update_layout(height=800, width=700)
+
+    st.plotly_chart(fig_vitd2_food)
+
+    #d3
+    st.markdown(f"<span style='color: #367588;font-size: 24px;font-weight: bold;'>Top 15 Foods rich in Vitamin D3</span>", unsafe_allow_html=True)
+
+    vitd3= df_demographics[df_demographics['category'].isin(['Eggs', 'White Meat', 'Red Meat', 'Seafood'])]
+
+    vitd3_top=vitd3.sort_values(by='chocal', ascending= False)
+    
+    vitd3_top=vitd3_top.head(15)
+
+    fig_vitd3_food = go.Figure(go.Funnelarea(values=vitd3_top['chocal'].values, text=vitd3_top['name'],title = { "text": "Food items with high Vitamin D3 percentages"},marker = {"colors": ["deepskyblue", "lightsalmon", "tan", "teal", "silver","deepskyblue", "lightsalmon", "tan", "teal", "silver"],"line": {"color": ["wheat", "wheat", "blue", "wheat", "wheat","wheat", "wheat", "blue", "wheat", "wheat"]}}))
+
+    fig_vitd3_food.update_layout(height=800, width=700)
+
+    st.plotly_chart(fig_vitd3_food)
+    
 
 def anaemia_page():
     st.title("Anaemia")
