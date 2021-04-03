@@ -19,13 +19,16 @@
 
 # Project Collaborators
 
-Mentor- Prof Richard Joseph
+Mentor - Prof Richard Joseph
 
-Collaborators- 
+**Collaborators:**
+
 Streamlit - Naren Khatwani and Adithya Shrivsatava
-Flutter App - Rahul Sohandani
-Flutter UI - Adithya Shrivastava
-IoT Device - Raghav Potdar
 
+Flutter App - Rahul Sohandani
+
+Flutter UI - Adithya Shrivastava 
+
+IoT Device - Raghav Potdar
 
 
