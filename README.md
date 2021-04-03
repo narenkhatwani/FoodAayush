@@ -2,7 +2,10 @@
 
 ### Incase you want to skip the documentation part 🥱 jump to the output directly 😎
 
-## https://warm-eyrie-72803.herokuapp.com/
+#### Streamlit
+#### https://warm-eyrie-72803.herokuapp.com/
+#### Flutter
+####
 
 #### Abstract ####
 
@@ -18,7 +21,11 @@
 
 Mentor- Prof Richard Joseph
 
-Collaborators- Naren Khatwani, Raghav Potdar, Rahul Sohandani, Adithya Shrivastava,
+Collaborators- 
+Streamlit - Naren Khatwani and Adithya Shrivsatava
+Flutter App - Rahul Sohandani
+Flutter UI - Adithya Shrivastava
+IoT Device - Raghav Potdar
 
 
 
