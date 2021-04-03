@@ -17,11 +17,9 @@
 
 
 
-# Project Collaborators
+**Mentor** - Prof Richard Joseph
 
-Mentor - Prof Richard Joseph
-
-**Collaborators:**
+**Project Collaborators:**
 
 Streamlit - Naren Khatwani and Adithya Shrivsatava
 
@@ -31,4 +29,5 @@ Flutter UI - Adithya Shrivastava
 
 IoT Device - Raghav Potdar
 
+Image Classification Model - Rahul Sohandani
 
