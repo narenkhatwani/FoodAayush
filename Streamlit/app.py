@@ -1409,28 +1409,27 @@ def diabetes_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Diabetes is a condition in which the glucose level in blood (also called as blood sugar level) is too high. The pancreas produces a hormone called insulin which helps in the generation of energy from glucose. When the insulin produced is not sufficient to generate energy from glucose, the glucose stays in blood, which ultimately leads to diabetes. Diabetes is of two types, type 1 and type 2 diabetes. While the cause of type 1 diabetes is unknown, obesity and excessive consumption of sugar is one of the causes of type 2 diabetes. Diabetic patients need to control their sugar consumption, so as not to increase the glucose level in the blood. Also, since carbohydrates are broken down into glucose, they increase the glucose level in blood. Therefore, carbohydrate consumption also needs to be controlled. Carbohydrates also include fiber, but fiber does not raise blood sugar levels as it is expelled from the body undigested.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
-    carbs_largest=df_demographics.groupby('category')['choavldf'].nlargest(5)
-
-    st.write(carbs_largest)
+    glus_largest=df_demographics.groupby('category')['glus'].nlargest(5)
+    st.write(glus_largest)
 
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
-    #carbohydrates
+    #diabetes
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Carbohydrate Content</span>", unsafe_allow_html=True)
-    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Carbohydrates (grams)</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Glucose Content</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Glucose (grams)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, the foods highest in carbohydrate content are displayed. Jaggery, which is a form of cane sugar, has the highest amount of carbohydrates among the food items present in the dataset. Most of the high-carbohydrate foods include grains, some fruits such as dates, raisins, and apricot, and some nuts such as areca nut.</h6>",unsafe_allow_html=True)
     
     st.markdown("")
     
     carbs= df_demographics[df_demographics['category'].isin(categories)]
 
-    carbs_rich= carbs.sort_values(by='choavldf', ascending= False)
+    carbs_rich= carbs.sort_values(by='glus', ascending= False)
     
     top_20_carbs=carbs_rich.head(20)
     
-    fig1 = px.bar(top_20_carbs, x='name', y='choavldf', color='choavldf')
-    fig1.update_layout(title='Top 20 Foods High in Carbohydrates', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    fig1 = px.bar(top_20_carbs, x='name', y='glus', color='glus')
+    fig1.update_layout(title='Top 20 Foods High in Glucose', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig1)
     
 
