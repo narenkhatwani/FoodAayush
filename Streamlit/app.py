@@ -1343,12 +1343,12 @@ def demographic_dimensional_page():
          sizeref=750,
         color = df_demographics_nonveg['fasat'].values,
         colorscale = 'Portland',
-        colorbar = dict(title = 'Total Fat (% Daily Value)'),
+        colorbar = dict(title = 'Cholesterol (% Daily Value)'),
         line=dict(color='rgb(255, 255, 255)')
         )
     )
     data=[trace1]
-    layout=dict(scene = dict(xaxis_title='',yaxis_title='Protein (g)',zaxis_title='Cholesterol (g)'),height=800, width=800, title='3D Scatter Plot of Fatty foods (% Daily Value)')
+    layout=dict(scene = dict(xaxis_title='',yaxis_title='Protein (g)',zaxis_title='Cholesterol (g)'),height=800, width=800, title='3D Scatter Plot of Protein and Cholesterol Content in Non-vegetarian Foods')
     fig=dict(data=data, layout=layout) 
 
     st.plotly_chart(fig)
