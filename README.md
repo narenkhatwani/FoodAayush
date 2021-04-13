@@ -25,7 +25,7 @@ Streamlit - Naren Khatwani and Adithya Shrivsatava
 
 Flutter App - Rahul Sohandani
 
-Flutter UI - Adithya Shrivastava 
+Flutter UI - Rahul Sohandani and Adithya Shrivastava 
 
 IoT Device - Raghav Potdar
 
