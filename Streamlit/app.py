@@ -1614,7 +1614,7 @@ def gallstones_page():
     top_20=oxalates_rich.head(20)
     
     fig1 = px.bar(top_20, x='name', y='oxalt', color='oxalt')
-    fig1.update_layout(title='Top 20 Foods having high amount of oxalates', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    fig1.update_layout(title='Foods having highest amounts of Oxalate', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig1)
 
     #2nd graph
@@ -1632,7 +1632,7 @@ def gallstones_page():
     top_20=citric_rich.head(20)
     
     fig2 = px.bar(top_20, x='name', y='citac', color='citac')
-    fig2.update_layout(title='Top 20 ', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    fig2.update_layout(title='Top Foods rich in Citric Acid', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig2)
 
     #3rd graph
@@ -1641,17 +1641,17 @@ def gallstones_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>It is a common misconception that calcium intake should be reduced in order to prevent kidney stones. However, calcium binds with oxalate in the intestine, and leads to the formation of calcium oxalate in the intestine, which in turn reduces the oxalate absorption and urinary oxalate excretion. Therefore, calcium intake should be kept sufficiently high. Following are some calcium-rich foods from the dataset.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
-    #protein
+    #calcium
 
-    prot= df_demographics[df_demographics['category'].isin(categories)]
+    calc= df_demographics[df_demographics['category'].isin(categories)]
 
-    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    calc_rich= calc.sort_values(by='ca', ascending= False)
     
-    top_20=protein_rich.head(20)
+    top_20=calc_rich.head(20)
     
-    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
-    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
-    st.plotly_chart(fig)
+    fig3 = px.bar(top_20, x='name', y='ca', color='ca')
+    fig3.update_layout(title='Top Foods rich in Calcium', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig3)
 
     
    #gall stones
@@ -1661,45 +1661,42 @@ def gallstones_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The gallbladder is an organ that stores bile, which is a fluid that is produced by the liver and used for digestion.  According to Harvard Health Publications, 80% of gallbladder stones, or gallstones, are formed when the amount of cholesterol in the bile is high. There are several risk factors that may lead to the formation of gallstones. Among these, the diet related risk factors include excessive consumption of high-fat or high-cholesterol foods, or low consumption of fibrous foods.  To avoid formation of gallstones, it is recommended to consume high-fiber foods, whole grains, healthy (unsaturated) fats, and foods high in vitamin C. Consumption of refined carbohydrates, sugar, and saturated fats should be reduced.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
-
+    #4th graph
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in saturated fat (should not be consumed)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Higher consumption of saturated fats increases levels of bad cholesterol, which in turn increases the risk of gallstones. Following are the foods from the dataset having highest amounts of saturated fat. The consumption of these foods should be minimized.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
-    #Based on categories
-    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
-    #protein
+    #saturated fat
 
-    prot= df_demographics[df_demographics['category'].isin(categories)]
+    fasat= df_demographics[df_demographics['category'].isin(categories)]
 
-    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    fasat_rich= fasat.sort_values(by='fasat', ascending= False)
     
-    top_20=protein_rich.head(20)
+    top_20=fasat_rich.head(20)
     
-    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
-    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
-    st.plotly_chart(fig)
+    fig4 = px.bar(top_20, x='name', y='fasat', color='fasat')
+    fig4.update_layout(title='Foods having highest amounts of Saturated Fat', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig4)
 
+    #5th graph
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in fiber (should be consumed)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Dietary fiber, especially insoluble fiber, reduces bile acids and the levels of cholesterol in bile. Therefore, consumption of a high-fiber diet can prevent formation of gallstones. The foods in the dataset that are highest in fiber are shown in the graph below.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
-    #Based on categories
-    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
-    
-    #protein
 
-    prot= df_demographics[df_demographics['category'].isin(categories)]
+    #fiber
 
-    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    fibtg= df_demographics[df_demographics['category'].isin(categories)]
+
+    fibtg_rich= fibtg.sort_values(by='fibtg', ascending= False)
     
-    top_20=protein_rich.head(20)
+    top_20=fibtg_rich.head(20)
     
-    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
-    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
-    st.plotly_chart(fig)
+    fig5 = px.bar(top_20, x='name', y='fibtg', color='fibtg')
+    fig5.update_layout(title='Top Foods rich in Fiber', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig5)
 
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in vitamin C (should be consumed)</span>", unsafe_allow_html=True)
@@ -1709,17 +1706,17 @@ def gallstones_page():
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
-    #protein
+    #vitamin c
 
-    prot= df_demographics[df_demographics['category'].isin(categories)]
+    vitc= df_demographics[df_demographics['category'].isin(categories)]
 
-    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    vitc_rich= vitc.sort_values(by='vitc', ascending= False)
     
-    top_20=protein_rich.head(20)
+    top_20=vitc_rich.head(20)
     
-    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
-    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
-    st.plotly_chart(fig)
+    fig6 = px.bar(top_20, x='name', y='vitc', color='vitc')
+    fig6.update_layout(title='Top Foods rich in Vitamin C', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig6)
 
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
