@@ -1582,13 +1582,13 @@ def gallstones_page():
     st.title("Kidney Stones")
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Kidney stones are caused due to accumulation of certain minerals in the urine. The most prominent cause of kidney stones is dehydration. Dehydration causes an increase in the concentrations of minerals in the urine. There are 4 types of kidney stones: calcium oxalate and calcium phosphate stones, uric acid stones, struvite stones, and cystine stones. Calcium oxalate stones are the most common.</h6>",unsafe_allow_html=True)
-    st.markdown("")
 
-    st.subheader("Excessive consumption of the following nutrients can cause kidney stones:")
+    st.header("Excessive consumption of the following nutrients can cause kidney stones:")
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>1. Oxalate: Foods such as nuts, chocolate, tea, spinach are high in oxalate. Consuming these foods excessively can increase the amounts of oxalate in the urine and thereby increase the risk of calcium oxalate stones.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
+
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>2. Sodium: High consumption of sodium can increase the formation of calcium in the urine. Therefore, to avoid kidney stones, the consumption of salt should be limited. Processed foods, canned foods, and fast food should be avoided as they are high in sodium. Baking soda should also be avoided.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
@@ -1600,25 +1600,130 @@ def gallstones_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Consumption of foods high in oxalate raises the urinary oxalate levels. This increases the risk of calcium oxalate stones. Therefore, consumption of oxalate-containing foods should be minimized. The below graph shows the foods in the dataset which have highest oxalate levels.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
-    st.markdown("graph")
-
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in oxalate (should not be consumed)</span>", unsafe_allow_html=True)
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
-    st.markdown("")
-    st.markdown("graph")
-
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in oxalate (should not be consumed)</span>", unsafe_allow_html=True)
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
-    st.markdown("")
-    st.markdown("graph")
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in oxalate (should not be consumed)</span>", unsafe_allow_html=True)
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
-    st.markdown("")
-    st.markdown("graph")
+    #protein
 
+    prot= df_demographics[df_demographics['category'].isin(categories)]
+
+    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    
+    top_20=protein_rich.head(20)
+    
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
+    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig)
+
+
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in citric acid (should be consumed)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>For prevention of kidney stones, one must stay adequately hydrated. Also, the consumption of citrus fruits should be increased. Citrus fruits have high amounts of citric acid, which is beneficial for people having kidney stones as it increases the amounts of citrate in the urine. Citrate binds with calcium oxalate and prevents the formation of crystals. The below graph shows the foods from the dataset having the highest amounts of citric acid.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
+    
+    #protein
+
+    prot= df_demographics[df_demographics['category'].isin(categories)]
+
+    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    
+    top_20=protein_rich.head(20)
+    
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
+    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig)
+
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in calcium (should be consumed) </span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>It is a common misconception that calcium intake should be reduced in order to prevent kidney stones. However, calcium binds with oxalate in the intestine, and leads to the formation of calcium oxalate in the intestine, which in turn reduces the oxalate absorption and urinary oxalate excretion. Therefore, calcium intake should be kept sufficiently high. Following are some calcium-rich foods from the dataset.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
+    
+    #protein
+
+    prot= df_demographics[df_demographics['category'].isin(categories)]
+
+    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    
+    top_20=protein_rich.head(20)
+    
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
+    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig)
+
+    
+   
 
     st.title("Gall Bladder Stones")
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The gallbladder is an organ that stores bile, which is a fluid that is produced by the liver and used for digestion.  According to Harvard Health Publications, 80% of gallbladder stones, or gallstones, are formed when the amount of cholesterol in the bile is high. There are several risk factors that may lead to the formation of gallstones. Among these, the diet related risk factors include excessive consumption of high-fat or high-cholesterol foods, or low consumption of fibrous foods.  To avoid formation of gallstones, it is recommended to consume high-fiber foods, whole grains, healthy (unsaturated) fats, and foods high in vitamin C. Consumption of refined carbohydrates, sugar, and saturated fats should be reduced.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in saturated fat (should not be consumed)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Higher consumption of saturated fats increases levels of bad cholesterol, which in turn increases the risk of gallstones. Following are the foods from the dataset having highest amounts of saturated fat. The consumption of these foods should be minimized.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
+    
+    #protein
+
+    prot= df_demographics[df_demographics['category'].isin(categories)]
+
+    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    
+    top_20=protein_rich.head(20)
+    
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
+    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig)
+
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in fiber (should be consumed)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Dietary fiber, especially insoluble fiber, reduces bile acids and the levels of cholesterol in bile. Therefore, consumption of a high-fiber diet can prevent formation of gallstones. The foods in the dataset that are highest in fiber are shown in the graph below.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
+    
+    #protein
+
+    prot= df_demographics[df_demographics['category'].isin(categories)]
+
+    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    
+    top_20=protein_rich.head(20)
+    
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
+    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig)
+
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in vitamin C (should be consumed)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Vitamin C helps to break down cholesterol in the gallbladder and regulates its conversion into bile acids. Therefore, lack of vitamin C increases the risk of gallstones. The graph shows the foods in the dataset that have the highest levels of vitamin C. Adequate amounts of vitamin C should be consumed to reduce the risk of gallstones.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
+    
+    #protein
+
+    prot= df_demographics[df_demographics['category'].isin(categories)]
+
+    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    
+    top_20=protein_rich.head(20)
+    
+    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
+    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig)
+
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
 if __name__ == "__main__":
