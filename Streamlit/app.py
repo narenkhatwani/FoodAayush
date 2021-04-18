@@ -1595,6 +1595,8 @@ def gallstones_page():
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>3. Animal Protein: Excessive consumption of animal protein can increase the amounts of uric acid in the urine, thus increasing the risk of uric acid stones.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
+    #1st graph
+
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in oxalate (should not be consumed)</span>", unsafe_allow_html=True)
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Consumption of foods high in oxalate raises the urinary oxalate levels. This increases the risk of calcium oxalate stones. Therefore, consumption of oxalate-containing foods should be minimized. The below graph shows the foods in the dataset which have highest oxalate levels.</h6>",unsafe_allow_html=True)
@@ -1603,47 +1605,42 @@ def gallstones_page():
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
-    #
+    #oxalates
 
-    prot= df_demographics[df_demographics['category'].isin(categories)]
+    oxalates= df_demographics[df_demographics['category'].isin(categories)]
 
-    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    oxalates_rich= oxalates.sort_values(by='oxalt', ascending= False)
     
-    top_20=protein_rich.head(20)
+    top_20=oxalates_rich.head(20)
     
-    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
-    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
-    st.plotly_chart(fig)
+    fig1 = px.bar(top_20, x='name', y='oxalt', color='oxalt')
+    fig1.update_layout(title='Top 20 Foods having high amount of oxalates', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig1)
 
-
+    #2nd graph
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in citric acid (should be consumed)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>For prevention of kidney stones, one must stay adequately hydrated. Also, the consumption of citrus fruits should be increased. Citrus fruits have high amounts of citric acid, which is beneficial for people having kidney stones as it increases the amounts of citrate in the urine. Citrate binds with calcium oxalate and prevents the formation of crystals. The below graph shows the foods from the dataset having the highest amounts of citric acid.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
-    #Based on categories
-    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
-    
-    #protein
+    #citric acid
 
-    prot= df_demographics[df_demographics['category'].isin(categories)]
+    citric= df_demographics[df_demographics['category'].isin(categories)]
 
-    protein_rich= prot.sort_values(by='protcnt', ascending= False)
+    protein_rich= prot.sort_values(by='citac', ascending= False)
     
     top_20=protein_rich.head(20)
     
-    fig = px.bar(top_20, x='name', y='protcnt', color='protcnt')
-    fig.update_layout(title='Top 20 Protein Rich Foods', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
-    st.plotly_chart(fig)
+    fig2 = px.bar(top_20, x='name', y='citac', color='citac')
+    fig2.update_layout(title='Top 20 ', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
+    st.plotly_chart(fig2)
 
+    #3rd graph
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in calcium (should be consumed) </span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>It is a common misconception that calcium intake should be reduced in order to prevent kidney stones. However, calcium binds with oxalate in the intestine, and leads to the formation of calcium oxalate in the intestine, which in turn reduces the oxalate absorption and urinary oxalate excretion. Therefore, calcium intake should be kept sufficiently high. Following are some calcium-rich foods from the dataset.</h6>",unsafe_allow_html=True)
     st.markdown("")
     
-    #Based on categories
-    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
-    
     #protein
 
     prot= df_demographics[df_demographics['category'].isin(categories)]
@@ -1657,7 +1654,7 @@ def gallstones_page():
     st.plotly_chart(fig)
 
     
-   
+   #gall stones
 
     st.title("Gall Bladder Stones")
 
