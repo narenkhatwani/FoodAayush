@@ -1300,7 +1300,7 @@ def demographic_categorized_page():
     st.markdown("")
 
     #title 2nd pyramid graph blue text
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Alternatvies to seafood for Vegetarians</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Alternatives to seafood for Vegetarians</span>", unsafe_allow_html=True)
 
     #high protein legumes (for vegetarians)
     legumes= df_demographics[df_demographics['category'].isin(['Legumes'])]
@@ -1563,7 +1563,7 @@ def anaemia_page():
     st.markdown("")
 
     #iron deficiency
-    st.markdown(f"<span style='color: #367588;font-size: 24px;font-weight: bold;'>Top Foods rich in Iron</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Top Foods rich in Iron</span>", unsafe_allow_html=True)
 
     iron= df_demographics
 
@@ -1579,11 +1579,46 @@ def anaemia_page():
 
 
 def gallstones_page():
-    st.title("Kidney/ Gall Bladder Stones")
+    st.title("Kidney Stones")
 
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Kidney stones are caused due to accumulation of certain minerals in the urine. The most prominent cause of kidney stones is dehydration. Dehydration causes an increase in the concentrations of minerals in the urine. There are 4 types of kidney stones: calcium oxalate and calcium phosphate stones, uric acid stones, struvite stones, and cystine stones. Calcium oxalate stones are the most common.</h6>",unsafe_allow_html=True)
     st.markdown("")
 
+    st.subheader("Excessive consumption of the following nutrients can cause kidney stones:")
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>1. Oxalate: Foods such as nuts, chocolate, tea, spinach are high in oxalate. Consuming these foods excessively can increase the amounts of oxalate in the urine and thereby increase the risk of calcium oxalate stones.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>2. Sodium: High consumption of sodium can increase the formation of calcium in the urine. Therefore, to avoid kidney stones, the consumption of salt should be limited. Processed foods, canned foods, and fast food should be avoided as they are high in sodium. Baking soda should also be avoided.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>3. Animal Protein: Excessive consumption of animal protein can increase the amounts of uric acid in the urine, thus increasing the risk of uric acid stones.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in oxalate (should not be consumed)</span>", unsafe_allow_html=True)
+
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Consumption of foods high in oxalate raises the urinary oxalate levels. This increases the risk of calcium oxalate stones. Therefore, consumption of oxalate-containing foods should be minimized. The below graph shows the foods in the dataset which have highest oxalate levels.</h6>",unsafe_allow_html=True)
+    st.markdown("")
+
+    st.markdown("graph")
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in oxalate (should not be consumed)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    st.markdown("graph")
+
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in oxalate (should not be consumed)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    st.markdown("graph")
+    
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in oxalate (should not be consumed)</span>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>description</h6>",unsafe_allow_html=True)
+    st.markdown("")
+    st.markdown("graph")
+
+
+    st.title("Gall Bladder Stones")
 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
 if __name__ == "__main__":
