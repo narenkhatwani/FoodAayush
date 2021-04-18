@@ -1603,7 +1603,7 @@ def gallstones_page():
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
-    # 
+    #
 
     prot= df_demographics[df_demographics['category'].isin(categories)]
 
