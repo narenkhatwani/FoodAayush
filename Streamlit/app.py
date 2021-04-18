@@ -1627,9 +1627,9 @@ def gallstones_page():
 
     citric= df_demographics[df_demographics['category'].isin(categories)]
 
-    protein_rich= prot.sort_values(by='citac', ascending= False)
+    citric_rich= citric.sort_values(by='citac', ascending= False)
     
-    top_20=protein_rich.head(20)
+    top_20=citric_rich.head(20)
     
     fig2 = px.bar(top_20, x='name', y='citac', color='citac')
     fig2.update_layout(title='Top 20 ', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
