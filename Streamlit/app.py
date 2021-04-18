@@ -809,6 +809,31 @@ def page_fourth():
     st.subheader("Reason for possible contribution to heart disease -")
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'> {reason_item}</span>", unsafe_allow_html=True)
   
+    st.subheader("To view the sources of this data:")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "1: [Source 1](https://www.factchecker.in/punjab-tamil-nadu-haryana-have-highest-burden-of-heart-disease-in-india/)"
+        "2: [Source 2](https://traveltriangle.com/blog/assam-food/)"
+        "3: [Source 3](https://www.holidify.com/pages/food-of-meghalaya-1672.html)"
+        "4: [Source 4](https://www.holidify.com/pages/food-of-tripura-1692.html)"
+        "5: [Source 5](https://timesofindia.indiatimes.com/life-style/food-news/7-dishes-from-nagaland-that-are-worth-trying/photostory/78618476.cms?picid=78618690)"
+        "6: [Source 6](https://food.ndtv.com/food-drinks/7-delectable-mizoram-foods-you-should-definitely-try-once-1813228)"
+        "7: [Source 7](https://pickyourtrail.com/blog/dishes-in-arunachal-pradesh/)"
+        "8: [Source 8](https://www.holidify.com/pages/food-of-manipur-1659.html)"
+        "9: [Source 9](https://www.tarladalal.com/calories-for-vada-pav-2811#:~:text=One%20serving%20of%20Vada%20Pav%20gives%20197%20calories.,adult%20diet%20of%202%2C000%20calories.)"
+        "10: [Source 10](https://m.tarladalal.com/calories-for-dabeli--mumbai-roadside-recipes--33401#:~:text=One%20Dabeli%20gives%20199%20calories,adult%20diet%20of%202%2C000%20calories.)"
+        "11: [Source 11](https://recipes.timesofindia.com/recipes/babru/rs71608958.cms)"
+        "12: [Source 12](https://www.tarladalal.com/calories-for-puttu-kerala-homemade-rice-puttu-for-breakfast-41331)"
+        "13: [Source 13](https://www.yowangdu.com/tibetan-food/calories-in-momos-steamed.html)"
+        "14: [Source 14](https://www.myweekendkitchen.in/spicy-mashed-potato-indian/)"
+        "15: [Source 15](https://www.latimes.com/food/la-fo-watchrec2nov01-story.html#:~:text=Each%20samosa%3A%20184%20calories%3B%205,cholesterol%3B%20134%20mg.)"
+        "16: [Source 16](https://www.vahrehvah.com/chenna-jhili)"
+        "17: [Source 17](https://m.tarladalal.com/calories-for-malai-kofta-2174#:~:text=How%20many%20calories%20does%20one,fat%20which%20is%20220%20calories.)"
+        "18: [Source 18](https://recipes.timesofindia.com/recipes/arsa/rs58975118.cms)"
+        "19: [Source 19](https://www.myfitnesspal.com/food/calories/kajjikayalu-87321333)"
+        "20: [Source 20](https://www.fitbit.com/foods/Mutton+Roasted/19687)"
+				
+			
 
 def page_five():
     df = pd.read_csv("resources/Food_Matrix/Food_Matrix1.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
