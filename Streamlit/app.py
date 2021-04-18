@@ -6,7 +6,6 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
-import altair as alt
 import json
 import matplotlib.patches as mpatches
 from matplotlib import cm
@@ -49,9 +48,11 @@ data2= load_data2()
 df_demographics = pd.read_csv("resources/assets_modified/01cat.csv")
 df_demographics_nonveg= pd.read_csv("resources/assets_modified/02cat.csv")
 
+#drop row/column if all values there are NA
 df_demographics.dropna()
 
 
+#the main function that is called first and foremost with the navigation options in the sidebar
 def main():
     # Register your pages
     pages = {
@@ -72,14 +73,17 @@ def main():
     # Display the selected page
     pages[page]()
 
+    #github repository link to the whole project in the sidebar
     st.sidebar.subheader("Check out our [Github Repository](https://github.com/narenkhatwani/FoodAayush)")
 
 
+#function for the about page
 def about_page():
     st.markdown("<h1 style='text-align: center;'>Food Aayush 🍲 🩺</h1>", unsafe_allow_html=True)
     
     st.subheader("About FoodAayush 🤔")
 
+    #all the necessary descriptions
     st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial, sans-serif;line-height: 1.5;'>Food is an essential parameter that plays an important role in the survival of humans. It also plays a major part in depicting a country’s culture. Healthy, nutritious, and high-quality food results in not only a better lifestyle but also develops a person’s immunity and health. Likewise, the consumption of low-quality food which might be deprived of nutritional value impacts a person’s health negatively and makes them susceptible to all types of diseases. In India, there is a persistent complaint, in any civic body-related food section, about the quality of meals available. Likewise, the quality of the oil is also an important factor while cooking any meal. Therefore, the Quality of oil used in frying the food to affect its taste must be monitored too. Its continuous exposure to relatively high temperatures results in degradation of its quality. The purpose of this study is to build an application for the detection of the quality of food and also to detect repeated frying on cooking oils based on the visual properties of the oils. Classification of food items is done on the basis of time left for consumption, edibility, quality, color, and rancidity. The food items are further classified as stale or usable using artificial intelligence algorithms based on the images acquired through a Cell Phone’s camera.</h6>", unsafe_allow_html=True)
     st.markdown("")
     st.subheader("Activity Diagram ♺")
@@ -89,6 +93,7 @@ def about_page():
     st.subheader("Classification of food items and cooking oils based on quality")
     st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>Food becomes stale if there is excessive exposure to environmental factors such as heat and humidity. Similarly, if a cooking oil sample is exposed to heat, or is used in cooking repeatedly, it will become rancid. The second part of our application is the classification of food items based on their freshness and oils based on their rancidity. A classification model is developed for classifying food items into various freshness levels based on their visual properties. For oils, the classification is done on the basis of the visual properties as well as the pH value of the oil sample. The pH value is recorded using a pH sensor integrated with the application. These features are included in our mobile application which is developed using the Flutter toolkit.</h6>", unsafe_allow_html=True)
     
+    #using the layout customization features of streamlit for expanders - to show sources of data which are collapsible in nature
     st.title("For Data Sources ")
     my_expander=st.beta_expander("Click Here !!")
     with my_expander:
@@ -130,6 +135,7 @@ def about_page():
         "zn - Zinc (Zn) [mg]"
         "k - Potassium (K) [mg]"
 
+    #this function works on streamlit==0.71.0
     #background image for the webapp
     page_bg_img = '''
     <style>
@@ -140,8 +146,9 @@ def about_page():
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
+    
 
-
+#first page function
 def page_first():
     
     st.title("Ingredient Information 🍅 🥕 🥒 ")
@@ -167,6 +174,7 @@ def page_first():
     count_carbohydrate = data.loc[(data["name"] == food_list) , 'choavldf'].iloc[0]
     count_energy = data.loc[(data["name"] == food_list) , 'enerc'].iloc[0]
 
+    #displaying the corresponding values to the above parameters
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Water- {count_water}g</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Protein- {count_protein}g</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Ash- {count_ash}g</span>", unsafe_allow_html=True)
@@ -178,18 +186,19 @@ def page_first():
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Energy- {count_energy}kJ</span>", unsafe_allow_html=True)
     
 
-    #infct information
+    #ifct database information
     st.subheader("Some Information about the data source 📊")
     st.markdown("<h6 style='text-align: justify;font-size:110%;font-family:Arial,sans-serif;line-height: 1.5;'>The above data is taken from the dataset “Indian Food Composition Tables, 2017”, of the National Institute of Nutrition. The approach taken for creation of this dataset was to sample the key foods from all over India which contribute to the nutrient intake of 75% of the population. The consumption data and nutrient composition for the various foods is found and the foods have been ranked according to their contribution to the diet in terms of nutrients.</h6>", unsafe_allow_html=True)
     st.markdown("")
     
-    #to print a small iframe of the csv file
+    #to print a small iframe of the csv file using the checkbox
     raw_data=st.checkbox('See Raw Data')
     if raw_data: 
         st.write(data)
 
     
 def page_second():
+
     #sidebar title
     st.title("Search for a Recipe 😋")
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>All recipes require a variety of ingredients, such as vegetables, flour, spices and milk products. Here, you can search the possible dishes with any desired combination of ingredients. You can also view the calories in the dish and the cuisine. Please enter a minimum of two ingredients to search for dishes.</h6>",unsafe_allow_html=True)
@@ -198,10 +207,11 @@ def page_second():
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Dataset Preview 📋</span>", unsafe_allow_html=True)
     data2
 
+    #default value is NA for the choice
     all_ingredients1 = ["NA"]
     gg = data2.loc[:, data2.columns != 'Name of Dish'].values.tolist()
 
-
+    #printed a list first in streamlit of the unique values in the particular choice and then copied it to give the options here
     ingredient_1 = st.selectbox('Search for 1st Ingredient',([
     "NA",
     "Potato",
@@ -261,7 +271,7 @@ def page_second():
     ]))
     st.write('You selected:', ingredient_1)
 
-
+    #printed a list first in streamlit of the unique values in the particular choice and then copied it to give the options here
     ingredient_2 = st.selectbox('Search for 2nd Ingredient',([
     "NA",
     "Tomato",
@@ -305,7 +315,7 @@ def page_second():
     st.write('You selected:', ingredient_2)
 
 
-
+    #printed a list first in streamlit of the unique values in the particular choice and then copied it to give the options here
     ingredient_3 = st.selectbox('Search for 3rd Ingredient',([
     "NA",
     "Onion",
@@ -551,6 +561,7 @@ def page_second():
     ]))
     st.write('You selected:', ingredient_9)
 
+    #printed a list first in streamlit of the unique values in the particular choice and then copied it to give the options here
     ingredient_10 = st.selectbox('Search for 10th Ingredient',([
     "NA",
     "White Bread",
@@ -613,6 +624,7 @@ def page_second():
 
     st.title("View calories and cuisine of a dish 🥗 🧑🏾‍🤝‍🧑🏼")
 
+    #take user input to select the dish from the name column (used unique function for non repetition of values)
     dish_name = st.selectbox("Search your dish here:", data2["Name of Dish"].unique())
 
 
@@ -627,7 +639,7 @@ def page_second():
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Calorie Count - {count_calories} kCal</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 22px;font-weight: bold;'>Cuisine - {cuisine}</span>", unsafe_allow_html=True)
   
- 
+#clorie calculator function
 def page_three():
     st.title("Calorie Calculator 🍲 🧮")
     
@@ -636,8 +648,10 @@ def page_three():
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Add your total daily intake of calories</span>", unsafe_allow_html=True)
 
+    #slider for user input
     x = st.slider('(in terms of Calories)',0,3000)
 
+    #the generalised ideal percentages considered from various data sources
     fat_value= x*(30/100)
     sat_fat_value= x*(7/100)
     trans_fat_value= x*(1/100)
@@ -656,8 +670,10 @@ def page_three():
     st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>Choose your gender ⚥</span>", unsafe_allow_html=True)
     gender = st.selectbox('*Your calorie intake depends on your gender',('Male', 'Female', 'Other','Rather Not Say'))
 
+    #display selected choice
     st.markdown(f"<span style='color: black;font-size: 20px;font-weight: bold;'>You selected: {gender}</span>", unsafe_allow_html=True)
 
+    #if else use for all the possible variations - hard coded because choice are very few 
     if (gender == 'Male'):
         st.markdown(f"<span style='color: #367588;font-size: 19px;font-weight: bold;'>Your ideal daily calorie intake should be 2500 Cal</span>", unsafe_allow_html=True)
         st.markdown(f"<span style='color: #367588;font-size: 19px;font-weight: bold;'>Your ideal daily water intake should be 3.7 L</span>", unsafe_allow_html=True)
@@ -685,6 +701,7 @@ def page_fourth():
     if raw_data: 
         st.write(df2)
     
+
     #Data Source
     #https://www.factchecker.in/punjab-tamil-nadu-haryana-have-highest-burden-of-heart-disease-in-india/
 
@@ -693,6 +710,7 @@ def page_fourth():
 
     #Loading JSON file
     #File Source: https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson
+    
     with open("resources/streamlit_map/india_states.geojson") as json_file:
         indian_map = json.load(json_file)
 
@@ -896,6 +914,13 @@ def page_five():
 
     st.pyplot(plt,dpi=100)
 
+    st.subheader("To view the sources of this data:")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "1: [Source 1](https://www.foreversunday.org/food-combinations-ayurveda/)"
+        "2: [Source 2](https://parenting.firstcry.com/articles/magazine-food-combinations-you-should-strictly-avoid-eating/)"
+        "3: [Source 3](https://parenting.firstcry.com/articles/magazine-food-combinations-you-should-strictly-avoid-eating/)"
+        "4: [Source 4](https://www.scoopwhoop.com/toxic-food-combinations/)"
 
 def demographic_main():
     # Register your pages
@@ -969,6 +994,7 @@ def demographic_pruning_page():
     #values 
     st.write(df_demographics.describe())
     
+    #expander feature of streamlit layout functionality for data sources - collapsible expander
     st.subheader("For the abbreviation and units used in the upcoming features")
     my_expander=st.beta_expander("Click Here !!")
     with my_expander:
@@ -1013,6 +1039,8 @@ def demographic_correlation_page():
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The graph shown below is the plot of protein v/s carbohydrates. It shows the trend between the amount of protein and the amount of carbohydrates in the food items present in the dataset.</h6>",unsafe_allow_html=True)
     
+
+    #kde plots are used here - A kernel density estimate (KDE) plot is a method for visualizing the distribution of observations in a dataset, analagous to a histogram
     #1st plot
     #kde plot
     fig, ax = plt.subplots(figsize=(12,3))
@@ -1418,7 +1446,7 @@ def diabetes_page():
 
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Analysis of Glucose Content</span>", unsafe_allow_html=True)
     st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Glucose (grams)</span>", unsafe_allow_html=True)
-    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, the foods highest in carbohydrate content are displayed. Jaggery, which is a form of cane sugar, has the highest amount of carbohydrates among the food items present in the dataset. Most of the high-carbohydrate foods include grains, some fruits such as dates, raisins, and apricot, and some nuts such as areca nut.</h6>",unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Here, the food items in the dataset which are highest in glucose are displayed. Raisins and tamarind are at the top of the list. People having diabetes should consume these food items in very controlled quantities, in order to avoid raising their blood sugar level.</h6>",unsafe_allow_html=True)
     
     st.markdown("")
     
@@ -1432,7 +1460,6 @@ def diabetes_page():
     fig1.update_layout(title='Top 20 Foods High in Glucose', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig1)
     
-
 
 def lactose_page():
     st.title("Food Suggestions for Lactose Intolerant Patients")
@@ -1601,7 +1628,8 @@ def gallstones_page():
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Consumption of foods high in oxalate raises the urinary oxalate levels. This increases the risk of calcium oxalate stones. Therefore, consumption of oxalate-containing foods should be minimized. The below graph shows the foods in the dataset which have highest oxalate levels.</h6>",unsafe_allow_html=True)
     st.markdown("")
-
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Oxalates (milligrams)</span>", unsafe_allow_html=True)
+    
     #Based on categories
     categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
@@ -1622,7 +1650,7 @@ def gallstones_page():
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in citric acid (should be consumed)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>For prevention of kidney stones, one must stay adequately hydrated. Also, the consumption of citrus fruits should be increased. Citrus fruits have high amounts of citric acid, which is beneficial for people having kidney stones as it increases the amounts of citrate in the urine. Citrate binds with calcium oxalate and prevents the formation of crystals. The below graph shows the foods from the dataset having the highest amounts of citric acid.</h6>",unsafe_allow_html=True)
     st.markdown("")
-    
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Citric Acid (milligrams)</span>", unsafe_allow_html=True)
     #citric acid
 
     citric= df_demographics[df_demographics['category'].isin(categories)]
@@ -1640,7 +1668,7 @@ def gallstones_page():
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in calcium (should be consumed) </span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>It is a common misconception that calcium intake should be reduced in order to prevent kidney stones. However, calcium binds with oxalate in the intestine, and leads to the formation of calcium oxalate in the intestine, which in turn reduces the oxalate absorption and urinary oxalate excretion. Therefore, calcium intake should be kept sufficiently high. Following are some calcium-rich foods from the dataset.</h6>",unsafe_allow_html=True)
     st.markdown("")
-    
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Calcium (milligrams)</span>", unsafe_allow_html=True)
     #calcium
 
     calc= df_demographics[df_demographics['category'].isin(categories)]
@@ -1665,7 +1693,7 @@ def gallstones_page():
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in saturated fat (should not be consumed)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Higher consumption of saturated fats increases levels of bad cholesterol, which in turn increases the risk of gallstones. Following are the foods from the dataset having highest amounts of saturated fat. The consumption of these foods should be minimized.</h6>",unsafe_allow_html=True)
     st.markdown("")
-    
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Saturated Fat (milligrams)</span>", unsafe_allow_html=True)
     
     #saturated fat
 
@@ -1684,7 +1712,8 @@ def gallstones_page():
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in fiber (should be consumed)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Dietary fiber, especially insoluble fiber, reduces bile acids and the levels of cholesterol in bile. Therefore, consumption of a high-fiber diet can prevent formation of gallstones. The foods in the dataset that are highest in fiber are shown in the graph below.</h6>",unsafe_allow_html=True)
     st.markdown("")
-    
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Fiber (grams)</span>", unsafe_allow_html=True)
+
 
     #fiber
 
@@ -1699,12 +1728,10 @@ def gallstones_page():
     st.plotly_chart(fig5)
 
 
-    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in vitamin C (should be consumed)</span>", unsafe_allow_html=True)
+    st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in Vitamin C (should be consumed)</span>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Vitamin C helps to break down cholesterol in the gallbladder and regulates its conversion into bile acids. Therefore, lack of vitamin C increases the risk of gallstones. The graph shows the foods in the dataset that have the highest levels of vitamin C. Adequate amounts of vitamin C should be consumed to reduce the risk of gallstones.</h6>",unsafe_allow_html=True)
     st.markdown("")
-    
-    #Based on categories
-    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
+    st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Vitamin C (milligrams)</span>", unsafe_allow_html=True)
     
     #vitamin c
 
@@ -1718,10 +1745,13 @@ def gallstones_page():
     fig6.update_layout(title='Top Foods rich in Vitamin C', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig6)
 
-
+#calling the main function to basically invoke the whole code 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
 if __name__ == "__main__":
     main()
+
+
+
 
 
 #code to be used to text display with html properties
@@ -1730,3 +1760,6 @@ if __name__ == "__main__":
 
 #blue title
 #st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>1</span>", unsafe_allow_html=True)
+
+#units of parameters
+#st.markdown(f"<span style='color: #367588;font-size: 12px;font-weight: bold;'>Units: Protein (grams) & Carbohydrates (grams)</span>", unsafe_allow_html=True)
