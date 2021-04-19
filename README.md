@@ -3,7 +3,7 @@
 ### Incase you want to skip the documentation part 🥱 jump to the output directly 😎
 
 #### Streamlit
-#### https://warm-eyrie-72803.herokuapp.com/
+#### https://food-aayush.herokuapp.com/
 #### Flutter
 ####
 
