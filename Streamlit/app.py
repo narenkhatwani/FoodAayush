@@ -1444,7 +1444,8 @@ def disease_demographics():
         "1. Food Suggestions for Diabetic Patients": diabetes_page,
         "2. Food Suggestions for Lactose Intolerance":lactose_page,
         "3. Food Suggestions for Anaemia Patients":anaemia_page,
-        "4. Food Suggestions for patients suffering from Kidney/Gall Bladder Stones":gallstones_page
+        "4. Food Suggestions for patients suffering from Kidney Stones":kidneystones_page,
+        "5. Food Suggestions for patients suffering from Gallbladder Stones":gallstones_page
     }
 
     #title 
@@ -1630,7 +1631,7 @@ def anaemia_page():
     st.plotly_chart(fig_iron_food)
 
 
-def gallstones_page():
+def kidneystones_page():
     st.title("Kidney Stones")
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>Kidney stones are caused due to accumulation of certain minerals in the urine. The most prominent cause of kidney stones is dehydration. Dehydration causes an increase in the concentrations of minerals in the urine. There are 4 types of kidney stones: calcium oxalate and calcium phosphate stones, uric acid stones, struvite stones, and cystine stones. Calcium oxalate stones are the most common.</h6>",unsafe_allow_html=True)
@@ -1664,7 +1665,7 @@ def gallstones_page():
 
     oxalates_rich= oxalates.sort_values(by='oxalt', ascending= False)
     
-    top_20=oxalates_rich.head(20)
+    top_20=oxalates_rich.head(10)
     
     fig1 = px.bar(top_20, x='name', y='oxalt', color='oxalt')
     fig1.update_layout(title='Foods having highest amounts of Oxalate', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
@@ -1682,7 +1683,7 @@ def gallstones_page():
 
     citric_rich= citric.sort_values(by='citac', ascending= False)
     
-    top_20=citric_rich.head(20)
+    top_20=citric_rich.head(10)
     
     fig2 = px.bar(top_20, x='name', y='citac', color='citac')
     fig2.update_layout(title='Top Foods rich in Citric Acid', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
@@ -1700,19 +1701,24 @@ def gallstones_page():
 
     calc_rich= calc.sort_values(by='ca', ascending= False)
     
-    top_20=calc_rich.head(20)
+    top_20=calc_rich.head(10)
     
     fig3 = px.bar(top_20, x='name', y='ca', color='ca')
     fig3.update_layout(title='Top Foods rich in Calcium', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig3)
 
     
+
+def gallstones_page():
    #gall stones
 
     st.title("Gall Bladder Stones")
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The gallbladder is an organ that stores bile, which is a fluid that is produced by the liver and used for digestion.  According to Harvard Health Publications, 80% of gallbladder stones, or gallstones, are formed when the amount of cholesterol in the bile is high. There are several risk factors that may lead to the formation of gallstones. Among these, the diet related risk factors include excessive consumption of high-fat or high-cholesterol foods, or low consumption of fibrous foods.  To avoid formation of gallstones, it is recommended to consume high-fiber foods, whole grains, healthy (unsaturated) fats, and foods high in vitamin C. Consumption of refined carbohydrates, sugar, and saturated fats should be reduced.</h6>",unsafe_allow_html=True)
     st.markdown("")
+    
+    #Based on categories
+    categories=['Grains', 'Legumes', 'Vegetables', 'Fruits', 'Spices', 'Nuts', 'Seeds', 'Juice', 'Sugar', 'Dairy', 'Eggs', 'White Meat', 'Red Meat', 'Seafood']
     
     #4th graph
     st.markdown(f"<span style='color: #000080;font-size: 24px;font-weight: bold;'>Foods highest in saturated fat (should not be consumed)</span>", unsafe_allow_html=True)
