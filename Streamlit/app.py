@@ -685,7 +685,13 @@ def page_three():
     else:
         st.markdown(f"<span style='color: #367588;font-size: 19px;font-weight: bold;'>Sorry, info not available :)</span>", unsafe_allow_html=True)
     
-
+    st.subheader("To view the sources of this data:")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "1: [What should my daily intake of calories be?](https://www.nhs.uk/common-health-questions/food-and-diet/what-should-my-daily-intake-of-calories-be/#:~:text=Generally%2C%20the%20recommended%20daily%20calorie,women%20and%202%2C500%20for%20men.)"
+        "2: [How Much Water Should You Drink Per Day?](https://www.healthline.com/nutrition/how-much-water-should-you-drink-per-day#how-much-you-need)"
+        
+        
 
 def page_fourth():
     st.title('Indian Map for Heart Disease 🫀')
@@ -1486,6 +1492,11 @@ def diabetes_page():
     fig1.update_layout(title='Top 20 Foods High in Glucose', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig1)
     
+    st.subheader("To view the sources of this data:")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "1: [Types of Diabetes: Causes, Identification, and More](https://www.healthline.com/health/diabetes/types-of-diabetes)"
+        
 
 def lactose_page():
     st.title("Food Suggestions for Lactose Intolerant Patients")
@@ -1533,7 +1544,7 @@ def lactose_page():
 
     cols[1].write(f"<h6 style='text-align: left;font-size:22px;font-weight: bold;line-height: 1.3;'>Lactose Content (per 100grams)</h6>",unsafe_allow_html=True)
 
-    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.1 g</h6>",unsafe_allow_html=True)
+    cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.688 g</h6>",unsafe_allow_html=True)
     cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.0029 g</h6>",unsafe_allow_html=True)
     cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0 g</h6>",unsafe_allow_html=True)
     cols[1].write(f"<h6 style='text-align: left;font-size:120%;font-family:Arial,sans-serif;line-height: 1.5;'>0.1 g</h6>",unsafe_allow_html=True)    
@@ -1547,10 +1558,8 @@ def lactose_page():
     with my_expander:
         'The above values of lactose content have been obtained from the following sources:'
         '1. [Click to view the accesible page](https://www.dairy.com.au/dairy-matters/you-ask-we-answer/what-is-the-lactose-content-of-different-dairy-products)'
-        
-        '2. [Click to view the accesible page](https://nutritiondata.self.com/facts/dairy-and-egg-products/0/2)'
      
-        '3. [Click to view the accesible page](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5471386/)'
+        '2. [Click to view the accesible page](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5471386/)'
 
     st.write("")
     st.title("Alternatives to compensate for other nutrients present in dairy products")
@@ -1607,7 +1616,16 @@ def lactose_page():
     fig_vitd3_food.update_layout(height=800, width=700)
 
     st.plotly_chart(fig_vitd3_food)
-    
+
+    st.subheader("To view the sources of this data:")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "1: [Everything You Need to Know About Lactose Intolerance](https://www.healthline.com/health/lactose-intolerance#TOC_TITLE_HDR_1)"
+        "2: [Eating, Diet, & Nutrition for Lactose Intolerance](https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/eating-diet-nutrition)"
+        "3: [Hypocalcemia (Calcium Deficiency Disease)](https://www.healthline.com/health/calcium-deficiency-disease#symptoms)"
+        "4: [8 Signs and Symptoms of Vitamin D Deficiency](https://www.healthline.com/nutrition/vitamin-d-deficiency-symptoms)"
+        "5: [Vitamin D Deficiency](https://www.webmd.com/diet/guide/vitamin-d-deficiency#1)"
+                
 
 def anaemia_page():
     st.title("Iron deficiency Anaemia")
@@ -1630,6 +1648,11 @@ def anaemia_page():
 
     st.plotly_chart(fig_iron_food)
 
+    st.subheader("To view the sources of this data:")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "1: [10 Signs and Symptoms of Iron Deficiency](https://www.healthline.com/nutrition/iron-deficiency-signs-symptoms)"
+        
 
 def kidneystones_page():
     st.title("Kidney Stones")
@@ -1707,12 +1730,19 @@ def kidneystones_page():
     fig3.update_layout(title='Top Foods rich in Calcium', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig3)
 
+    st.subheader("To view the sources of this data:")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "1: [Kidney Stone Diet: Foods to Eat and Avoid](https://www.healthline.com/health/kidney-stone-diet)"
+        "2: [5 steps for preventing kidney stones - Harvard Health Blog](https://www.health.harvard.edu/blog/5-steps-for-preventing-kidney-stones-201310046721#:~:text=Avoid%20stone%2Dforming%20foods%3A%20Beets,consume%20them%20in%20smaller%20amounts.)"
+        "3: [Medical and dietary therapy for kidney stone prevention](https://doi.org/10.4111/kju.2014.55.12.775)"
+        
     
 
 def gallstones_page():
    #gall stones
 
-    st.title("Gall Bladder Stones")
+    st.title("Gallbladder Stones")
 
     st.markdown("<h6 style='text-align: justify;font-size:100%;font-family:Arial,sans-serif;line-height: 1.3;'>The gallbladder is an organ that stores bile, which is a fluid that is produced by the liver and used for digestion.  According to Harvard Health Publications, 80% of gallbladder stones, or gallstones, are formed when the amount of cholesterol in the bile is high. There are several risk factors that may lead to the formation of gallstones. Among these, the diet related risk factors include excessive consumption of high-fat or high-cholesterol foods, or low consumption of fibrous foods.  To avoid formation of gallstones, it is recommended to consume high-fiber foods, whole grains, healthy (unsaturated) fats, and foods high in vitamin C. Consumption of refined carbohydrates, sugar, and saturated fats should be reduced.</h6>",unsafe_allow_html=True)
     st.markdown("")
@@ -1775,6 +1805,14 @@ def gallstones_page():
     fig6 = px.bar(top_20, x='name', y='vitc', color='vitc')
     fig6.update_layout(title='Top Foods rich in Vitamin C', autosize=False,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig6)
+
+    st.subheader("To view the sources of this data:")
+    my_expander=st.beta_expander("Click Here !!")
+    with my_expander:
+        "1: [Gallstones: Symptoms, Causes, Risks, Treatment, Diet, & More](https://www.healthline.com/health/gallstones)"
+        "2: [Gallstones - Symptoms and causes](https://www.mayoclinic.org/diseases-conditions/gallstones/symptoms-causes/syc-20354214)"
+        "3: [Eating, Diet, & Nutrition for Gallstones](https://doi.org/10.1016/j.ymgmr.2015.10.001)"
+        
 
 #calling the main function to basically invoke the whole code 
 #https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/
