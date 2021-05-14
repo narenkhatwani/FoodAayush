@@ -16,7 +16,7 @@ One problem was PH sensor outputs an analog values in range of 0-5V, but ESP32 h
 
 Circuit Diagram:
 
-[img]https://i.imgur.com/EgfksJK.png[/img]
+![Imgur Image](https://i.imgur.com/EgfksJK.png)
 
 Code. 
 
