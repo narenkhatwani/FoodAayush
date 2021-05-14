@@ -14,11 +14,11 @@ PH sensor Calibration: Referred this for calibration
 
 One problem was PH sensor outputs an analog values in range of 0-5V, but ESP32 has ADC of 0-3.3V. So created a voltage divider circuit to reduced output voltage to 3V. 
 
-Circuit Diagram:
+### Circuit Diagram:
 
 ![Imgur Image](https://i.imgur.com/EgfksJK.png)
 
-Code. 
+### Code. 
 
 ```arduino
 #include "BluetoothSerial.h"
