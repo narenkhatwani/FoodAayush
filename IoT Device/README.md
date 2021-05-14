@@ -1,24 +1,93 @@
-# FoodAayush
+# IoT Device Documentation
 
-### Incase you want to skip the documentation part 🥱 jump to the output directly 😎
+### Theory
 
-## https://warm-eyrie-72803.herokuapp.com/
+This code collects value from Gravity PH sensor and send data to flutter app via bluetooth
 
-#### Abstract ####
+Hardware: ESP32 Microcontroller, Gravity PH sensor, Push Button, some resistors to make voltage divider circuit
 
-**Food is an essential parameter that plays an important role in the survival of humans. It also plays a major part in depicting a country’s culture. Healthy, nutritious, and high-quality food results in not only a better lifestyle but also develops a person’s immunity and health. Likewise, the consumption of low-quality food which might be deprived of nutritional value impacts a person’s health negatively and makes them susceptible to all types of diseases. In India, there is a persistent complaint, in any civic body-related food section, about the quality of meals available. Likewise, the quality of the oil is also an important factor while cooking any meal. Therefore, the Quality of oil used in frying the food to affect its taste must be monitored too. Its continuous exposure to relatively high temperatures results in degradation of its quality. The purpose of this study is to build an application for the detection of the quality of food and also to detect repeated frying on cooking oils based on the visual properties of the oils. Classification of food items is done on the basis of time left for consumption, edibility, quality, color, and rancidity. The food items are further classified as stale or usable using artificial intelligence algorithms based on the images acquired through a Cell Phone’s camera.**
+Software: Arduino IDE
 
+PH sensor Calibration: Referred this for calibration 
 
-![Imgur Image](https://i.imgur.com/OqjjZQA.jpg)
+[Measure pH with a low-cost Arduino pH sensor board](https://www.e-tinkers.com/2019/11/measure-ph-with-a-low-cost-arduino-ph-sensor-board/)
 
+One problem was PH sensor outputs an analog values in range of 0-5V, but ESP32 has ADC of 0-3.3V. So created a voltage divider circuit to reduced output voltage to 3V. 
 
+Circuit Diagram:
 
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f8fce07-7b6d-46c2-a8d1-d5d92bf3ae93/Screenshot_2021-05-14_204459.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f8fce07-7b6d-46c2-a8d1-d5d92bf3ae93/Screenshot_2021-05-14_204459.png)
 
-# Project Collaborators
+Code. 
 
-Mentor- Prof Richard Joseph
+```arduino
+#include "BluetoothSerial.h"
 
-Collaborators- Naren Khatwani, Raghav Potdar, Rahul Sohandani, Adithya Shrivastava,
+#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
+#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
+#endif
 
+//Ph sensor 
+const int sensorpin = 36;
+unsigned long int avgValue;
+float b;
+const float m = -5.929;
+int buf[10], temp;
 
+//Button to active ph sensor
+const int wakeuppin = 39;
 
+//Bluetooth
+const String BTname = "FoodAyush";
+String send_data = "";
+int buttonState = 0; 
+
+//Bluetooth serial object
+BluetoothSerial SerialBT;
+
+void setup() {
+  Serial.begin(115200);
+  SerialBT.begin(BTname); //Bluetooth device name
+  pinMode(wakeuppin,INPUT);
+  //Serial.println("The device started, now you can pair it with bluetooth!");
+}
+
+void calph() {
+  for (int i = 0; i < 10; i++) {
+    temp = analogRead(sensorpin);
+    buf[i] = (int)temp;
+    delay(10);
+  }
+  for (int i = 0; i < 9; i++) {
+    for (int j = 0; j < 10; j++) {
+      if (buf[i] > buf[j]) {
+        temp = buf[i];
+        buf[i] = buf[j];
+        buf[j] = temp;
+      }
+    }
+  }
+  avgValue = 0;
+  for (int i = 2; i < 8; i++) {
+    avgValue += buf[i];
+  }
+  //Serial.println(avgValue);
+  float phValue = (float)avgValue*3.3/4096/6;
+  phValue = 7 - (1.42 - phValue) * m;
+  Serial.print("pH:");
+  //Serial.print(phValue, 2);
+  send_data = String(round(phValue));
+  Serial.print(send_data);
+  SerialBT.println(send_data);
+  Serial.println(" ");
+  delay(500);
+}
+
+void loop(){
+  buttonState = digitalRead(wakeuppin);
+  if(buttonState == HIGH){
+    calph();
+    delay(1000);
+  }
+}
+```
