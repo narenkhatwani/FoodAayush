@@ -1,0 +1,12 @@
+Fresh Apple
+Fresh Banana
+Fresh Bitter Gourd
+Fresh Capsicum
+Fresh Orange
+Fresh Tomato
+Stale Apple
+Stale Banana
+Stale Bitter Gourd
+Stale Capsicum
+Stale Orange
+Stale Tomato
