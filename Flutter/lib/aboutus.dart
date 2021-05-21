@@ -1,3 +1,10 @@
+//This is a page that has been added for the users to gain additional information about the app and its developers.
+//A simple Container widget has been used to create a box, containing information entered in simple Text widgets.
+//These Text widgets are arranged vertically in a column within the Container, by declaring them as the children widgets of a Column widget.
+//The page also has two buttons (outside the Container widget), one which redirects the user to the Customer Care page and another which takes the user to the F.A.Qs page.
+//The buttons are created using the MaterialButton widget.
+//A splashcolor attribute is also added to the buttons.
+
 import 'package:flutter/material.dart';
 import 'package:foodaayush/faq.dart';
 import 'package:foodaayush/mainnavbar.dart';

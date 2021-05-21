@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 class Welcomescreen extends StatefulWidget {
@@ -36,8 +35,6 @@ class StartState extends State<Welcomescreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             new Center(
-              // alignment: Alignment(0.0, 0.0),
-              // height: 700,
               child: new Text(
                 'Food Aayush',
                 textAlign: TextAlign.center,

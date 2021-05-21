@@ -1,3 +1,11 @@
+//The new users of the application first need to sign up.
+//This page allows the new users to sign up by entering their Email ID and creating a password.
+//The Form widget is used to create this page.
+//The Email and Password fields are created by using the TextFormField widget inside the Form widget.
+//There is also a Confirm Password Field, also created using the TextFormField widget.
+//Form validation is added, in order to make sure that all information is entered correctly by the user.
+//After successfully signing up, the user will be directed to the login page.
+
 import 'package:firebase_auth/firebase_auth.dart';
 //import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';

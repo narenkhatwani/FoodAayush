@@ -1,24 +1,17 @@
 //import 'dart:io';
 
-//import 'package:camera/new/src/support_android/camera.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:foodaayush/aboutus.dart';
-//import 'package:foodaayush/addindividualingredients.dart';
 
 import 'package:foodaayush/firstsreen.dart';
-//import 'package:foodaayush/fresh.dart';
-//import 'package:foodaayush/home.dart';
 import 'package:foodaayush/mainnutriscreen.dart';
 import 'package:foodaayush/rancidity_check.dart';
-//import 'package:foodaayush/rancidity_check.dart';
 import 'package:foodaayush/signup.dart';
 
 import 'package:foodaayush/classify.dart';
 import 'login.dart';
-//import 'widgets.dart';
-//import 'package:camera/camera.dart';
 
 Future<Null> main() async {
   WidgetsFlutterBinding.ensureInitialized();

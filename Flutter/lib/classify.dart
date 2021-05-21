@@ -1,9 +1,10 @@
+//This is the page where image is captured and the InceptionV3 model classifies the food item by identifying which food it is and Into stale or fresh
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:tflite/tflite.dart';
 import 'package:image_picker/image_picker.dart';
-
 import 'mainnavbar.dart';
 
 class Classifier extends StatefulWidget {
@@ -38,7 +39,7 @@ class _ClassifierState extends State<Classifier> {
       //labels: "assets/labels.txt",
       model: "assets/float16_optimised_model_Inceptionv3.tflite",
       labels: "assets/ImageLabels.txt",
-      numThreads: 1,
+      numThreads: 4,
     );
   }
 

@@ -1,8 +1,6 @@
-//import 'package:camera/camera.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-//import 'package:foodaayush/fresh.dart';
 
 class HomeClass extends StatefulWidget {
   final User user;
@@ -27,7 +25,6 @@ class _HomeState extends State<HomeClass> {
           ),
         ),
         body: Container(
-            // width: 500,
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,

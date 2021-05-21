@@ -30,17 +30,13 @@ dependencies:
   firebase_core: ^1.0.2
   flutter_bluetooth_serial: ^0.2.2
   scoped_model: ^1.0.1
-  #flutter_ble: ^0.5.3
-  #flutter_blue: ^0.8.0
   
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2 
   camera: ^0.8.0
   path_provider: ^2.0.1
   path: ^1.8.0  
-  #easy_flutter_share:
 
 dev_dependencies:
   flutter_test:
@@ -63,8 +59,6 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     #- assets/Opening.JPG
-    #- assets/model_unquant.tflite
-    #- assets/labels.txt
     - assets/float16_optimised_model_Inceptionv3.tflite
     - assets/ImageLabels.txt
   # An image asset can refer to one or more resolution-specific "variants", see

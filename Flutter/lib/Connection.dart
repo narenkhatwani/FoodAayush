@@ -6,7 +6,6 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
-//import 'package:foodaayush/mainnavbar.dart';
 
 class ConnectPage extends StatefulWidget {
   final BluetoothDevice? server;

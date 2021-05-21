@@ -1,9 +1,14 @@
-// The login screen for the application has been designed here. A Container widget is used to create a small box with text fields for entering the Email ID and Password in order to log in to the application. The labelText attribute has been used in both text fields, which indicates to the user that the text field is for entering the Email ID or the password.  When the user clicks on a particular text field, e.g. the Email ID field, they are given a hint which instructs them on what to enter in the field. This is achieved using the hintText attribute. For security purposes, the password must not be visible while the user types it. So, the obscureText attribute is set to true in order for the password to be invisible. The Login button is created using a MaterialButton widget. A splashcolor attribute is added to the button, so that when the button is clicked, it creates an effect like an ink splash over the button and makes it more clearly visible that the button has been clicked. After successfully logging in, the user can access the features of the application.
+//The login screen for the application has been designed here.
+//The labelText attribute has been used in both text fields, which indicates to the user that the text field is for entering the Email ID or the password.
+//When the user clicks on a particular text field, e.g. the Email ID field, they are given a hint which instructs them on what to enter in the field.
+//This is achieved using the hintText attribute. For security purposes, the password must not be visible while the user types it.
+//So, the obscureText attribute is set to true in order for the password to be invisible.
+//The Login button is created using a MaterialButton widget.
+//After successfully logging in, the user can access the features of the application.
 
 //import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-//import 'package:foodaayush/constants.dart';
 import 'package:foodaayush/home.dart';
 
 class LoginClass extends StatefulWidget {

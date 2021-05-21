@@ -1,3 +1,7 @@
+//The Rancidity of the given oil is checked on this page.
+//A hardware device which is integrated to mobile application via bluetooth sends the pH on this page.
+//Based on the pH values obtained, the system determines whether the oil is rancid or edible.
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
@@ -98,13 +102,6 @@ class _MainPage extends State<Rancidity> {
         child: ListView(
           children: <Widget>[
             Divider(),
-            // ListTile(
-            //     title: const Text('General',
-            //         style: TextStyle(
-            //           color: Color(0xff196F3D),
-            //           fontFamily: 'Comfortaa',
-            //           fontSize: 15.0,
-            //         ))),
             SwitchListTile(
               title: const Text('Enable Bluetooth',
                   style: TextStyle(

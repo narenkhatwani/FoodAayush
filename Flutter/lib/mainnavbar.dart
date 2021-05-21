@@ -1,12 +1,22 @@
+//Here, the navigation bar for the application has been designed.
+//It is a side navigation bar, which is called as a drawer menu or a navigation drawer in Flutter.
+//It is created using the Drawer widget.
+//Then a ListView widget is used to add create a list of items in the navigation drawer.
+//Each item in the navigation drawer is created using a ListTile widget.
+//The dart files for all screens have to be imported into this dart file, so that all screens can be accessed from the navigation bar.
+//Also, the dart file for the navigation bar has been imported into every other dart file, in order for the navigation bar to be accessible from each screen.
+//A separate MaterialPageRoute is used to navigate to each screen from the navigation bar.
+//This MaterialPageRoute has to be added in the OnTap attribute of the ListTile widget for navigation to a particular screen along with the path to the desired screen.
+//Additionally, one of the ListTile widgets in the navigation drawer is used along with the url_launcher package to link the Flutter app to the Streamlit web app.
+//The URL of the Streamlit web app is given.
+//The url_launcher dependency has to be added to the pubspec.yaml file and the package needs to be imported.
+
 //Import dart files for all screens
 import 'package:flutter/material.dart';
 import 'package:foodaayush/classify.dart';
 import 'package:foodaayush/faq.dart';
 import 'package:foodaayush/aboutus.dart';
-//import 'package:foodaayush/home.dart';
-//import 'package:foodaayush/main.dart';
 import 'package:foodaayush/rancidity_check.dart';
-//import 'package:foodaayush/mainnutriscreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MainNavbar extends StatelessWidget {
@@ -33,6 +43,7 @@ class MainNavbar extends StatelessWidget {
                 color: Color(0xff196F3D),
               ),
             ),
+            //Each ListTile widget creates one item in the navigation drawer
             ListTile(
               title: Text(
                 'Identify the Freshness',
