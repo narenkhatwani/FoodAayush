@@ -29,5 +29,5 @@ Flutter UI - Rahul Sohandani and Adithya Shrivastava
 
 IoT Device - Raghav Potdar
 
-Image Classification Model - Rahul Sohandani
+Image Classification Model - Rahul Sohandani and Raghav Potdar
 
