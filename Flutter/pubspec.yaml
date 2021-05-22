@@ -36,11 +36,16 @@ dependencies:
   cupertino_icons: ^1.0.2 
   camera: ^0.8.0
   path_provider: ^2.0.1
-  path: ^1.8.0  
+  path: ^1.8.0 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.9.0" 
+
+flutter_icons:
+  android: "launcher_icon"
+  image_path: "assets/Food_Aayush.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -58,7 +63,7 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
-    #- assets/Opening.JPG
+    - assets/Food_Aayush.png
     - assets/float16_optimised_model_Inceptionv3.tflite
     - assets/ImageLabels.txt
   # An image asset can refer to one or more resolution-specific "variants", see

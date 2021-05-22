@@ -155,7 +155,7 @@ class _ConnectPageState extends State<ConnectPage> {
                       ),
                     ),
                   )
-                : myDouble < 6.0
+                : myDouble < 6.50
                     ? Container(
                         child: Text(
                           'Rancid',
