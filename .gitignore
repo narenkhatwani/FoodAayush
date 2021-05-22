@@ -1,3 +1,4 @@
 be/
 env.bat
 *.pyc
+.vscode/
