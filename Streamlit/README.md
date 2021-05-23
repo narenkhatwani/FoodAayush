@@ -30,3 +30,5 @@ Open the terminal/cmd in the Streamlit Folder and run the following command
 ```bash
 streamlit run app.py
 ```
+## How to Deploy a Streamlit Project on Heroku
+#### https://github.com/narenkhatwani/streamlit-deployment-heroku
