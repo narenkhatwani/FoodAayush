@@ -9,8 +9,7 @@
 #### Youtube Tutotrial
 #### https://youtu.be/fQFuHKvCv1E
 #### Accomplishments and Publications
-#### https://www.linkedin.com/posts/naren-khatwani-b05415181_i-am-happy-to-share-that-our-be-project-group-activity-6793489449914273793-H5BT
-
+#### https://www.linkedin.com/posts/narenkhatwani_i-am-happy-to-share-that-our-be-project-group-activity-6793489449914273793-VpEJ?utm_source=share&utm_medium=member_desktop
 
 #### Abstract ####
 
