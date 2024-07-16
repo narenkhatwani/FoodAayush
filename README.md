@@ -2,11 +2,9 @@
 
 ### Incase you want to skip the documentation part 🥱 jump to the output directly 😎
 
-#### Streamlit
-#### https://food-aayush.herokuapp.com/
 #### Flutter
 #### https://drive.google.com/file/d/1lxsCGpZCQmsy9IQyMJjI9kl7kz3Ezx4p/view?usp=sharing
-#### Youtube Tutotrial
+#### Youtube Tutorial
 #### https://youtu.be/fQFuHKvCv1E
 #### Accomplishments and Publications
 #### https://www.linkedin.com/posts/narenkhatwani_i-am-happy-to-share-that-our-be-project-group-activity-6793489449914273793-VpEJ?utm_source=share&utm_medium=member_desktop
