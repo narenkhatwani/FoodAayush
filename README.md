@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/286221410.svg)](https://doi.org/10.5281/zenodo.14029507)
+
 # FoodAayush
 
 ### Incase you want to skip the documentation part 🥱 jump to the output directly 😎
